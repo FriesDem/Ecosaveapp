@@ -134,7 +134,7 @@
             this.NavPanel.Controls.Add(this.CalculatorBtn);
             this.NavPanel.Controls.Add(this.TipsBtn);
             this.NavPanel.Controls.Add(this.HomeBtn);
-            this.NavPanel.Location = new System.Drawing.Point(335, 656);
+            this.NavPanel.Location = new System.Drawing.Point(335, 664);
             this.NavPanel.Name = "NavPanel";
             this.NavPanel.Size = new System.Drawing.Size(678, 100);
             this.NavPanel.TabIndex = 24;
@@ -518,7 +518,7 @@
             // 
             // CalculateBtn
             // 
-            this.CalculateBtn.Location = new System.Drawing.Point(750, 246);
+            this.CalculateBtn.Location = new System.Drawing.Point(803, 266);
             this.CalculateBtn.Name = "CalculateBtn";
             this.CalculateBtn.Size = new System.Drawing.Size(113, 62);
             this.CalculateBtn.TabIndex = 58;
