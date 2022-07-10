@@ -33,11 +33,6 @@
             this.BacklogoBtn = new System.Windows.Forms.PictureBox();
             this.MinimizeBtn = new System.Windows.Forms.Label();
             this.ExitBtn = new System.Windows.Forms.Label();
-            this.NavPanel = new System.Windows.Forms.Panel();
-            this.ProfileBtn = new System.Windows.Forms.Button();
-            this.CalculatorBtn = new System.Windows.Forms.Button();
-            this.TipsBtn = new System.Windows.Forms.Button();
-            this.HomeBtn = new System.Windows.Forms.Button();
             this.CalculatorLbl = new System.Windows.Forms.Label();
             this.UnitCostLbl = new System.Windows.Forms.Label();
             this.BalBFLbl = new System.Windows.Forms.Label();
@@ -78,8 +73,15 @@
             this.textBox23 = new System.Windows.Forms.TextBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.CalculateBtn = new System.Windows.Forms.Button();
+            this.NavPanel = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ProfileBtn = new System.Windows.Forms.Button();
+            this.CalculatorBtn = new System.Windows.Forms.Button();
+            this.TipsBtn = new System.Windows.Forms.Button();
+            this.HomeBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.NavPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Backbtn
@@ -126,62 +128,6 @@
             this.ExitBtn.Size = new System.Drawing.Size(18, 18);
             this.ExitBtn.TabIndex = 21;
             this.ExitBtn.Text = "X";
-            // 
-            // NavPanel
-            // 
-            this.NavPanel.BackColor = System.Drawing.Color.LightCyan;
-            this.NavPanel.Controls.Add(this.ProfileBtn);
-            this.NavPanel.Controls.Add(this.CalculatorBtn);
-            this.NavPanel.Controls.Add(this.TipsBtn);
-            this.NavPanel.Controls.Add(this.HomeBtn);
-            this.NavPanel.Location = new System.Drawing.Point(335, 664);
-            this.NavPanel.Name = "NavPanel";
-            this.NavPanel.Size = new System.Drawing.Size(678, 100);
-            this.NavPanel.TabIndex = 24;
-            // 
-            // ProfileBtn
-            // 
-            this.ProfileBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProfileBtn.BackgroundImage")));
-            this.ProfileBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ProfileBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ProfileBtn.Location = new System.Drawing.Point(522, 11);
-            this.ProfileBtn.Name = "ProfileBtn";
-            this.ProfileBtn.Size = new System.Drawing.Size(77, 49);
-            this.ProfileBtn.TabIndex = 3;
-            this.ProfileBtn.UseVisualStyleBackColor = true;
-            // 
-            // CalculatorBtn
-            // 
-            this.CalculatorBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CalculatorBtn.BackgroundImage")));
-            this.CalculatorBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CalculatorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculatorBtn.Location = new System.Drawing.Point(378, 11);
-            this.CalculatorBtn.Name = "CalculatorBtn";
-            this.CalculatorBtn.Size = new System.Drawing.Size(77, 49);
-            this.CalculatorBtn.TabIndex = 2;
-            this.CalculatorBtn.UseVisualStyleBackColor = true;
-            // 
-            // TipsBtn
-            // 
-            this.TipsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TipsBtn.BackgroundImage")));
-            this.TipsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.TipsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TipsBtn.Location = new System.Drawing.Point(242, 11);
-            this.TipsBtn.Name = "TipsBtn";
-            this.TipsBtn.Size = new System.Drawing.Size(77, 49);
-            this.TipsBtn.TabIndex = 1;
-            this.TipsBtn.UseVisualStyleBackColor = true;
-            // 
-            // HomeBtn
-            // 
-            this.HomeBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomeBtn.BackgroundImage")));
-            this.HomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HomeBtn.Location = new System.Drawing.Point(98, 11);
-            this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(77, 49);
-            this.HomeBtn.TabIndex = 0;
-            this.HomeBtn.UseVisualStyleBackColor = true;
             // 
             // CalculatorLbl
             // 
@@ -518,12 +464,79 @@
             // 
             // CalculateBtn
             // 
-            this.CalculateBtn.Location = new System.Drawing.Point(803, 266);
+            this.CalculateBtn.Location = new System.Drawing.Point(774, 286);
             this.CalculateBtn.Name = "CalculateBtn";
             this.CalculateBtn.Size = new System.Drawing.Size(113, 62);
             this.CalculateBtn.TabIndex = 58;
             this.CalculateBtn.Text = "Submit";
             this.CalculateBtn.UseVisualStyleBackColor = true;
+            // 
+            // NavPanel
+            // 
+            this.NavPanel.BackColor = System.Drawing.Color.LightCyan;
+            this.NavPanel.Controls.Add(this.pictureBox2);
+            this.NavPanel.Controls.Add(this.ProfileBtn);
+            this.NavPanel.Controls.Add(this.CalculatorBtn);
+            this.NavPanel.Controls.Add(this.TipsBtn);
+            this.NavPanel.Controls.Add(this.HomeBtn);
+            this.NavPanel.Location = new System.Drawing.Point(290, 665);
+            this.NavPanel.Name = "NavPanel";
+            this.NavPanel.Size = new System.Drawing.Size(741, 100);
+            this.NavPanel.TabIndex = 59;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(622, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 49);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
+            // 
+            // ProfileBtn
+            // 
+            this.ProfileBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProfileBtn.BackgroundImage")));
+            this.ProfileBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ProfileBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ProfileBtn.Location = new System.Drawing.Point(484, 11);
+            this.ProfileBtn.Name = "ProfileBtn";
+            this.ProfileBtn.Size = new System.Drawing.Size(77, 49);
+            this.ProfileBtn.TabIndex = 3;
+            this.ProfileBtn.UseVisualStyleBackColor = true;
+            // 
+            // CalculatorBtn
+            // 
+            this.CalculatorBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CalculatorBtn.BackgroundImage")));
+            this.CalculatorBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CalculatorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CalculatorBtn.Location = new System.Drawing.Point(337, 11);
+            this.CalculatorBtn.Name = "CalculatorBtn";
+            this.CalculatorBtn.Size = new System.Drawing.Size(77, 49);
+            this.CalculatorBtn.TabIndex = 2;
+            this.CalculatorBtn.UseVisualStyleBackColor = true;
+            // 
+            // TipsBtn
+            // 
+            this.TipsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TipsBtn.BackgroundImage")));
+            this.TipsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.TipsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TipsBtn.Location = new System.Drawing.Point(206, 11);
+            this.TipsBtn.Name = "TipsBtn";
+            this.TipsBtn.Size = new System.Drawing.Size(77, 49);
+            this.TipsBtn.TabIndex = 1;
+            this.TipsBtn.UseVisualStyleBackColor = true;
+            // 
+            // HomeBtn
+            // 
+            this.HomeBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomeBtn.BackgroundImage")));
+            this.HomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeBtn.Location = new System.Drawing.Point(73, 11);
+            this.HomeBtn.Name = "HomeBtn";
+            this.HomeBtn.Size = new System.Drawing.Size(77, 49);
+            this.HomeBtn.TabIndex = 0;
+            this.HomeBtn.UseVisualStyleBackColor = true;
             // 
             // Calculator
             // 
@@ -531,6 +544,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1320, 733);
+            this.Controls.Add(this.NavPanel);
             this.Controls.Add(this.CalculateBtn);
             this.Controls.Add(this.textBox24);
             this.Controls.Add(this.textBox23);
@@ -571,7 +585,6 @@
             this.Controls.Add(this.BalBFLbl);
             this.Controls.Add(this.UnitCostLbl);
             this.Controls.Add(this.CalculatorLbl);
-            this.Controls.Add(this.NavPanel);
             this.Controls.Add(this.MinimizeBtn);
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.Backbtn);
@@ -581,6 +594,7 @@
             this.Text = "Calculator";
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
             this.NavPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -592,11 +606,6 @@
         private System.Windows.Forms.PictureBox BacklogoBtn;
         private System.Windows.Forms.Label MinimizeBtn;
         private System.Windows.Forms.Label ExitBtn;
-        private System.Windows.Forms.Panel NavPanel;
-        private System.Windows.Forms.Button ProfileBtn;
-        private System.Windows.Forms.Button CalculatorBtn;
-        private System.Windows.Forms.Button TipsBtn;
-        private System.Windows.Forms.Button HomeBtn;
         private System.Windows.Forms.Label CalculatorLbl;
         private System.Windows.Forms.Label UnitCostLbl;
         private System.Windows.Forms.Label BalBFLbl;
@@ -637,5 +646,11 @@
         private System.Windows.Forms.TextBox textBox23;
         private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.Button CalculateBtn;
+        private System.Windows.Forms.Panel NavPanel;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button ProfileBtn;
+        private System.Windows.Forms.Button CalculatorBtn;
+        private System.Windows.Forms.Button TipsBtn;
+        private System.Windows.Forms.Button HomeBtn;
     }
 }

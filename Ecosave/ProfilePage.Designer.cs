@@ -36,20 +36,29 @@
             this.ProfileLbl = new System.Windows.Forms.Label();
             this.NameLbl = new System.Windows.Forms.Label();
             this.EditProfileBtn = new System.Windows.Forms.Label();
-            this.NavPanel = new System.Windows.Forms.Panel();
-            this.HomeBtn = new System.Windows.Forms.Button();
-            this.TipsBtn = new System.Windows.Forms.Button();
-            this.CalculatorBtn = new System.Windows.Forms.Button();
-            this.ProfileBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BuildingCount = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.NavPanel = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.ProfileBtn = new System.Windows.Forms.Button();
+            this.CalculatorBtn = new System.Windows.Forms.Button();
+            this.TipsBtn = new System.Windows.Forms.Button();
+            this.HomeBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
-            this.NavPanel.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.NavPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // BacklogoBtn
@@ -130,81 +139,15 @@
             this.EditProfileBtn.TabIndex = 22;
             this.EditProfileBtn.Text = "Edit Profile";
             // 
-            // NavPanel
-            // 
-            this.NavPanel.BackColor = System.Drawing.Color.LightCyan;
-            this.NavPanel.Controls.Add(this.ProfileBtn);
-            this.NavPanel.Controls.Add(this.CalculatorBtn);
-            this.NavPanel.Controls.Add(this.TipsBtn);
-            this.NavPanel.Controls.Add(this.HomeBtn);
-            this.NavPanel.Location = new System.Drawing.Point(334, 660);
-            this.NavPanel.Name = "NavPanel";
-            this.NavPanel.Size = new System.Drawing.Size(678, 100);
-            this.NavPanel.TabIndex = 23;
-            // 
-            // HomeBtn
-            // 
-            this.HomeBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomeBtn.BackgroundImage")));
-            this.HomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HomeBtn.Location = new System.Drawing.Point(98, 11);
-            this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(77, 49);
-            this.HomeBtn.TabIndex = 0;
-            this.HomeBtn.UseVisualStyleBackColor = true;
-            // 
-            // TipsBtn
-            // 
-            this.TipsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TipsBtn.BackgroundImage")));
-            this.TipsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.TipsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TipsBtn.Location = new System.Drawing.Point(242, 11);
-            this.TipsBtn.Name = "TipsBtn";
-            this.TipsBtn.Size = new System.Drawing.Size(77, 49);
-            this.TipsBtn.TabIndex = 1;
-            this.TipsBtn.UseVisualStyleBackColor = true;
-            // 
-            // CalculatorBtn
-            // 
-            this.CalculatorBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CalculatorBtn.BackgroundImage")));
-            this.CalculatorBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.CalculatorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculatorBtn.Location = new System.Drawing.Point(378, 11);
-            this.CalculatorBtn.Name = "CalculatorBtn";
-            this.CalculatorBtn.Size = new System.Drawing.Size(77, 49);
-            this.CalculatorBtn.TabIndex = 2;
-            this.CalculatorBtn.UseVisualStyleBackColor = true;
-            // 
-            // ProfileBtn
-            // 
-            this.ProfileBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProfileBtn.BackgroundImage")));
-            this.ProfileBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ProfileBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ProfileBtn.Location = new System.Drawing.Point(522, 11);
-            this.ProfileBtn.Name = "ProfileBtn";
-            this.ProfileBtn.Size = new System.Drawing.Size(77, 49);
-            this.ProfileBtn.TabIndex = 3;
-            this.ProfileBtn.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel1.Controls.Add(this.BuildingCount);
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.BuildingCount);
             this.panel1.Location = new System.Drawing.Point(824, 142);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(251, 140);
             this.panel1.TabIndex = 24;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(18, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(105, 103);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // BuildingCount
             // 
@@ -235,9 +178,140 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(642, 192);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 48);
+            this.label3.Size = new System.Drawing.Size(125, 48);
             this.label3.TabIndex = 26;
-            this.label3.Text = "Buildings";
+            this.label3.Text = "Devices";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // NavPanel
+            // 
+            this.NavPanel.BackColor = System.Drawing.Color.LightCyan;
+            this.NavPanel.Controls.Add(this.pictureBox2);
+            this.NavPanel.Controls.Add(this.ProfileBtn);
+            this.NavPanel.Controls.Add(this.CalculatorBtn);
+            this.NavPanel.Controls.Add(this.TipsBtn);
+            this.NavPanel.Controls.Add(this.HomeBtn);
+            this.NavPanel.Location = new System.Drawing.Point(290, 667);
+            this.NavPanel.Name = "NavPanel";
+            this.NavPanel.Size = new System.Drawing.Size(741, 100);
+            this.NavPanel.TabIndex = 38;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(622, 11);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(60, 49);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
+            // 
+            // ProfileBtn
+            // 
+            this.ProfileBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProfileBtn.BackgroundImage")));
+            this.ProfileBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ProfileBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ProfileBtn.Location = new System.Drawing.Point(484, 11);
+            this.ProfileBtn.Name = "ProfileBtn";
+            this.ProfileBtn.Size = new System.Drawing.Size(77, 49);
+            this.ProfileBtn.TabIndex = 3;
+            this.ProfileBtn.UseVisualStyleBackColor = true;
+            // 
+            // CalculatorBtn
+            // 
+            this.CalculatorBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CalculatorBtn.BackgroundImage")));
+            this.CalculatorBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CalculatorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CalculatorBtn.Location = new System.Drawing.Point(337, 11);
+            this.CalculatorBtn.Name = "CalculatorBtn";
+            this.CalculatorBtn.Size = new System.Drawing.Size(77, 49);
+            this.CalculatorBtn.TabIndex = 2;
+            this.CalculatorBtn.UseVisualStyleBackColor = true;
+            // 
+            // TipsBtn
+            // 
+            this.TipsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TipsBtn.BackgroundImage")));
+            this.TipsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.TipsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TipsBtn.Location = new System.Drawing.Point(206, 11);
+            this.TipsBtn.Name = "TipsBtn";
+            this.TipsBtn.Size = new System.Drawing.Size(77, 49);
+            this.TipsBtn.TabIndex = 1;
+            this.TipsBtn.UseVisualStyleBackColor = true;
+            // 
+            // HomeBtn
+            // 
+            this.HomeBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomeBtn.BackgroundImage")));
+            this.HomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomeBtn.Location = new System.Drawing.Point(73, 11);
+            this.HomeBtn.Name = "HomeBtn";
+            this.HomeBtn.Size = new System.Drawing.Size(77, 49);
+            this.HomeBtn.TabIndex = 0;
+            this.HomeBtn.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(31, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 74);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(642, 370);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 48);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Number of";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Poppins", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(642, 418);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 48);
+            this.label4.TabIndex = 40;
+            this.label4.Text = "Rooms";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Location = new System.Drawing.Point(824, 343);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(251, 140);
+            this.panel2.TabIndex = 40;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(31, 22);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(117, 91);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 39;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(153, 32);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(57, 63);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "1";
             // 
             // ProfilePage
             // 
@@ -245,10 +319,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1320, 733);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.NavPanel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.NavPanel);
             this.Controls.Add(this.EditProfileBtn);
             this.Controls.Add(this.NameLbl);
             this.Controls.Add(this.ProfileLbl);
@@ -260,10 +337,14 @@
             this.Name = "ProfilePage";
             this.Text = "ProfilePage";
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
-            this.NavPanel.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.NavPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -278,15 +359,21 @@
         private System.Windows.Forms.Label ProfileLbl;
         private System.Windows.Forms.Label NameLbl;
         private System.Windows.Forms.Label EditProfileBtn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label BuildingCount;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel NavPanel;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button ProfileBtn;
         private System.Windows.Forms.Button CalculatorBtn;
         private System.Windows.Forms.Button TipsBtn;
         private System.Windows.Forms.Button HomeBtn;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label BuildingCount;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label5;
     }
 }
