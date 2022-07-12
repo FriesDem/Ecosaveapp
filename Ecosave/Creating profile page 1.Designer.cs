@@ -44,11 +44,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.HowManyRoomsTB = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.HowManyDeviceTB = new System.Windows.Forms.TextBox();
+            this.SUYASubBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.NavPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -206,7 +207,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.HowManyRoomsTB);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Location = new System.Drawing.Point(298, 282);
             this.panel2.Name = "panel2";
@@ -223,13 +224,13 @@
             this.pictureBox3.TabIndex = 39;
             this.pictureBox3.TabStop = false;
             // 
-            // textBox1
+            // HowManyRoomsTB
             // 
-            this.textBox1.Location = new System.Drawing.Point(162, 35);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(72, 66);
-            this.textBox1.TabIndex = 40;
+            this.HowManyRoomsTB.Location = new System.Drawing.Point(162, 35);
+            this.HowManyRoomsTB.Multiline = true;
+            this.HowManyRoomsTB.Name = "HowManyRoomsTB";
+            this.HowManyRoomsTB.Size = new System.Drawing.Size(72, 66);
+            this.HowManyRoomsTB.TabIndex = 40;
             // 
             // label2
             // 
@@ -245,7 +246,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.HowManyDeviceTB);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(732, 282);
             this.panel1.Name = "panel1";
@@ -262,13 +263,23 @@
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
-            // textBox2
+            // HowManyDeviceTB
             // 
-            this.textBox2.Location = new System.Drawing.Point(156, 35);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(72, 66);
-            this.textBox2.TabIndex = 41;
+            this.HowManyDeviceTB.Location = new System.Drawing.Point(156, 35);
+            this.HowManyDeviceTB.Multiline = true;
+            this.HowManyDeviceTB.Name = "HowManyDeviceTB";
+            this.HowManyDeviceTB.Size = new System.Drawing.Size(72, 66);
+            this.HowManyDeviceTB.TabIndex = 41;
+            // 
+            // SUYASubBtn
+            // 
+            this.SUYASubBtn.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SUYASubBtn.Location = new System.Drawing.Point(588, 507);
+            this.SUYASubBtn.Name = "SUYASubBtn";
+            this.SUYASubBtn.Size = new System.Drawing.Size(102, 44);
+            this.SUYASubBtn.TabIndex = 45;
+            this.SUYASubBtn.Text = "Submit";
+            this.SUYASubBtn.UseVisualStyleBackColor = true;
             // 
             // Creating_profile_page_1
             // 
@@ -276,6 +287,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1320, 733);
+            this.Controls.Add(this.SUYASubBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel2);
@@ -320,11 +332,12 @@
         private System.Windows.Forms.Label AccountLbl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox HowManyRoomsTB;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox HowManyDeviceTB;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button SUYASubBtn;
     }
 }

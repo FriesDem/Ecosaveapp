@@ -41,6 +41,7 @@
             this.FPass = new System.Windows.Forms.Label();
             this.DHAALbl = new System.Windows.Forms.Label();
             this.CAABtn = new System.Windows.Forms.Label();
+            this.SigninBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -146,7 +147,7 @@
             this.FPass.AutoSize = true;
             this.FPass.Font = new System.Drawing.Font("Poppins ExtraLight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FPass.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.FPass.Location = new System.Drawing.Point(592, 535);
+            this.FPass.Location = new System.Drawing.Point(592, 588);
             this.FPass.Name = "FPass";
             this.FPass.Size = new System.Drawing.Size(143, 28);
             this.FPass.TabIndex = 9;
@@ -174,12 +175,23 @@
             this.CAABtn.TabIndex = 11;
             this.CAABtn.Text = "Create an account";
             // 
+            // SigninBtn
+            // 
+            this.SigninBtn.Font = new System.Drawing.Font("Poppins", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SigninBtn.Location = new System.Drawing.Point(616, 533);
+            this.SigninBtn.Name = "SigninBtn";
+            this.SigninBtn.Size = new System.Drawing.Size(75, 23);
+            this.SigninBtn.TabIndex = 17;
+            this.SigninBtn.Text = "Sign In";
+            this.SigninBtn.UseVisualStyleBackColor = true;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1320, 733);
+            this.Controls.Add(this.SigninBtn);
             this.Controls.Add(this.CAABtn);
             this.Controls.Add(this.DHAALbl);
             this.Controls.Add(this.FPass);
@@ -215,6 +227,7 @@
         private System.Windows.Forms.Label FPass;
         private System.Windows.Forms.Label DHAALbl;
         private System.Windows.Forms.Label CAABtn;
+        private System.Windows.Forms.Button SigninBtn;
     }
 }
 
