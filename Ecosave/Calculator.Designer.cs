@@ -33,55 +33,36 @@
             this.BacklogoBtn = new System.Windows.Forms.PictureBox();
             this.MinimizeBtn = new System.Windows.Forms.Label();
             this.ExitBtn = new System.Windows.Forms.Label();
-            this.CalculatorLbl = new System.Windows.Forms.Label();
-            this.UnitCostLbl = new System.Windows.Forms.Label();
-            this.BalBFLbl = new System.Windows.Forms.Label();
-            this.TotalLbl = new System.Windows.Forms.Label();
-            this.Energy1stLbl = new System.Windows.Forms.Label();
-            this.EnergyNLbl = new System.Windows.Forms.Label();
-            this.CustomerCLbl = new System.Windows.Forms.Label();
-            this.SubtotalLbl = new System.Windows.Forms.Label();
-            this.FXlbl = new System.Windows.Forms.Label();
-            this.FuelnIppLbl = new System.Windows.Forms.Label();
-            this.TotalElectLbl = new System.Windows.Forms.Label();
-            this.GCTlbl = new System.Windows.Forms.Label();
-            this.TaxportLbl = new System.Windows.Forms.Label();
-            this.NonTaxLbl = new System.Windows.Forms.Label();
-            this.TotalLbl2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.CalculateBtn = new System.Windows.Forms.Button();
             this.NavPanel = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ProfileBtn = new System.Windows.Forms.Button();
             this.CalculatorBtn = new System.Windows.Forms.Button();
             this.TipsBtn = new System.Windows.Forms.Button();
             this.HomeBtn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Callbl = new System.Windows.Forms.Label();
+            this.CalCB = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.NavPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Backbtn
@@ -128,348 +109,6 @@
             this.ExitBtn.Size = new System.Drawing.Size(18, 18);
             this.ExitBtn.TabIndex = 21;
             this.ExitBtn.Text = "X";
-            // 
-            // CalculatorLbl
-            // 
-            this.CalculatorLbl.AutoSize = true;
-            this.CalculatorLbl.Font = new System.Drawing.Font("Poppins", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalculatorLbl.ForeColor = System.Drawing.SystemColors.InactiveBorder;
-            this.CalculatorLbl.Location = new System.Drawing.Point(47, 61);
-            this.CalculatorLbl.Name = "CalculatorLbl";
-            this.CalculatorLbl.Size = new System.Drawing.Size(193, 56);
-            this.CalculatorLbl.TabIndex = 25;
-            this.CalculatorLbl.Text = "Calculator";
-            // 
-            // UnitCostLbl
-            // 
-            this.UnitCostLbl.AutoSize = true;
-            this.UnitCostLbl.Font = new System.Drawing.Font("Poppins", 12F);
-            this.UnitCostLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.UnitCostLbl.Location = new System.Drawing.Point(427, 112);
-            this.UnitCostLbl.Name = "UnitCostLbl";
-            this.UnitCostLbl.Size = new System.Drawing.Size(83, 28);
-            this.UnitCostLbl.TabIndex = 26;
-            this.UnitCostLbl.Text = "Unit Cost";
-            // 
-            // BalBFLbl
-            // 
-            this.BalBFLbl.AutoSize = true;
-            this.BalBFLbl.Font = new System.Drawing.Font("Poppins ExtraLight", 12F);
-            this.BalBFLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BalBFLbl.Location = new System.Drawing.Point(29, 149);
-            this.BalBFLbl.Name = "BalBFLbl";
-            this.BalBFLbl.Size = new System.Drawing.Size(211, 28);
-            this.BalBFLbl.TabIndex = 27;
-            this.BalBFLbl.Text = "Balance Brought Forward";
-            // 
-            // TotalLbl
-            // 
-            this.TotalLbl.AutoSize = true;
-            this.TotalLbl.Font = new System.Drawing.Font("Poppins", 12F);
-            this.TotalLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TotalLbl.Location = new System.Drawing.Point(587, 112);
-            this.TotalLbl.Name = "TotalLbl";
-            this.TotalLbl.Size = new System.Drawing.Size(51, 28);
-            this.TotalLbl.TabIndex = 28;
-            this.TotalLbl.Text = "Total";
-            // 
-            // Energy1stLbl
-            // 
-            this.Energy1stLbl.AutoSize = true;
-            this.Energy1stLbl.Font = new System.Drawing.Font("Poppins ExtraLight", 12F);
-            this.Energy1stLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Energy1stLbl.Location = new System.Drawing.Point(29, 189);
-            this.Energy1stLbl.Name = "Energy1stLbl";
-            this.Energy1stLbl.Size = new System.Drawing.Size(87, 28);
-            this.Energy1stLbl.TabIndex = 29;
-            this.Energy1stLbl.Text = "Energy 1st";
-            // 
-            // EnergyNLbl
-            // 
-            this.EnergyNLbl.AutoSize = true;
-            this.EnergyNLbl.Font = new System.Drawing.Font("Poppins ExtraLight", 12F);
-            this.EnergyNLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.EnergyNLbl.Location = new System.Drawing.Point(29, 231);
-            this.EnergyNLbl.Name = "EnergyNLbl";
-            this.EnergyNLbl.Size = new System.Drawing.Size(102, 28);
-            this.EnergyNLbl.TabIndex = 30;
-            this.EnergyNLbl.Text = "Energy next";
-            // 
-            // CustomerCLbl
-            // 
-            this.CustomerCLbl.AutoSize = true;
-            this.CustomerCLbl.Font = new System.Drawing.Font("Poppins ExtraLight", 12F);
-            this.CustomerCLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CustomerCLbl.Location = new System.Drawing.Point(29, 268);
-            this.CustomerCLbl.Name = "CustomerCLbl";
-            this.CustomerCLbl.Size = new System.Drawing.Size(154, 28);
-            this.CustomerCLbl.TabIndex = 31;
-            this.CustomerCLbl.Text = "Customer Charge";
-            // 
-            // SubtotalLbl
-            // 
-            this.SubtotalLbl.AutoSize = true;
-            this.SubtotalLbl.Font = new System.Drawing.Font("Poppins", 12F);
-            this.SubtotalLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SubtotalLbl.Location = new System.Drawing.Point(29, 308);
-            this.SubtotalLbl.Name = "SubtotalLbl";
-            this.SubtotalLbl.Size = new System.Drawing.Size(79, 28);
-            this.SubtotalLbl.TabIndex = 32;
-            this.SubtotalLbl.Text = "Subtotal";
-            // 
-            // FXlbl
-            // 
-            this.FXlbl.AutoSize = true;
-            this.FXlbl.Font = new System.Drawing.Font("Poppins ExtraLight", 12F);
-            this.FXlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.FXlbl.Location = new System.Drawing.Point(29, 352);
-            this.FXlbl.Name = "FXlbl";
-            this.FXlbl.Size = new System.Drawing.Size(123, 28);
-            this.FXlbl.TabIndex = 33;
-            this.FXlbl.Text = "FX Adjustment";
-            // 
-            // FuelnIppLbl
-            // 
-            this.FuelnIppLbl.AutoSize = true;
-            this.FuelnIppLbl.Font = new System.Drawing.Font("Poppins ExtraLight", 12F);
-            this.FuelnIppLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.FuelnIppLbl.Location = new System.Drawing.Point(29, 390);
-            this.FuelnIppLbl.Name = "FuelnIppLbl";
-            this.FuelnIppLbl.Size = new System.Drawing.Size(174, 28);
-            this.FuelnIppLbl.TabIndex = 34;
-            this.FuelnIppLbl.Text = "Fuel and IPP charges";
-            // 
-            // TotalElectLbl
-            // 
-            this.TotalElectLbl.AutoSize = true;
-            this.TotalElectLbl.Font = new System.Drawing.Font("Poppins", 12F);
-            this.TotalElectLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TotalElectLbl.Location = new System.Drawing.Point(29, 429);
-            this.TotalElectLbl.Name = "TotalElectLbl";
-            this.TotalElectLbl.Size = new System.Drawing.Size(204, 28);
-            this.TotalElectLbl.TabIndex = 35;
-            this.TotalElectLbl.Text = "Total Electricity Charges";
-            // 
-            // GCTlbl
-            // 
-            this.GCTlbl.AutoSize = true;
-            this.GCTlbl.Font = new System.Drawing.Font("Poppins", 12F);
-            this.GCTlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.GCTlbl.Location = new System.Drawing.Point(29, 470);
-            this.GCTlbl.Name = "GCTlbl";
-            this.GCTlbl.Size = new System.Drawing.Size(271, 28);
-            this.GCTlbl.TabIndex = 36;
-            this.GCTlbl.Text = "GCT @ 15% on Electricity charges";
-            // 
-            // TaxportLbl
-            // 
-            this.TaxportLbl.AutoSize = true;
-            this.TaxportLbl.Font = new System.Drawing.Font("Poppins ExtraLight", 12F);
-            this.TaxportLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TaxportLbl.Location = new System.Drawing.Point(29, 508);
-            this.TaxportLbl.Name = "TaxportLbl";
-            this.TaxportLbl.Size = new System.Drawing.Size(307, 28);
-            this.TaxportLbl.TabIndex = 37;
-            this.TaxportLbl.Text = "Taxable Portion of bill (above 150 KWH)";
-            // 
-            // NonTaxLbl
-            // 
-            this.NonTaxLbl.AutoSize = true;
-            this.NonTaxLbl.Font = new System.Drawing.Font("Poppins ExtraLight", 12F);
-            this.NonTaxLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NonTaxLbl.Location = new System.Drawing.Point(29, 540);
-            this.NonTaxLbl.Name = "NonTaxLbl";
-            this.NonTaxLbl.Size = new System.Drawing.Size(339, 28);
-            this.NonTaxLbl.TabIndex = 38;
-            this.NonTaxLbl.Text = "Non-taxable Portion of bill (below 150 KWH)";
-            // 
-            // TotalLbl2
-            // 
-            this.TotalLbl2.AutoSize = true;
-            this.TotalLbl2.Font = new System.Drawing.Font("Poppins", 12F);
-            this.TotalLbl2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.TotalLbl2.Location = new System.Drawing.Point(29, 583);
-            this.TotalLbl2.Name = "TotalLbl2";
-            this.TotalLbl2.Size = new System.Drawing.Size(51, 28);
-            this.TotalLbl2.TabIndex = 39;
-            this.TotalLbl2.Text = "Total";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(410, 153);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 40;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(410, 193);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 41;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(410, 235);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 42;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(410, 272);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 43;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(410, 356);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 44;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(410, 308);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 44;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(410, 394);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 45;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(410, 433);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 46;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(410, 474);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
-            this.textBox9.TabIndex = 47;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(410, 583);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
-            this.textBox10.TabIndex = 48;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(410, 512);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
-            this.textBox11.TabIndex = 48;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(410, 544);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
-            this.textBox12.TabIndex = 49;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(560, 197);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
-            this.textBox13.TabIndex = 50;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(560, 157);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
-            this.textBox14.TabIndex = 50;
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(560, 308);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
-            this.textBox15.TabIndex = 51;
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(560, 231);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
-            this.textBox16.TabIndex = 51;
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(560, 352);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
-            this.textBox17.TabIndex = 51;
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(560, 268);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 20);
-            this.textBox18.TabIndex = 51;
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(560, 394);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 20);
-            this.textBox19.TabIndex = 52;
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(560, 433);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 20);
-            this.textBox20.TabIndex = 53;
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(560, 474);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(100, 20);
-            this.textBox21.TabIndex = 54;
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(560, 516);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(100, 20);
-            this.textBox22.TabIndex = 55;
-            // 
-            // textBox23
-            // 
-            this.textBox23.Location = new System.Drawing.Point(560, 548);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(100, 20);
-            this.textBox23.TabIndex = 56;
-            // 
-            // textBox24
-            // 
-            this.textBox24.Location = new System.Drawing.Point(560, 587);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(100, 20);
-            this.textBox24.TabIndex = 57;
-            // 
-            // CalculateBtn
-            // 
-            this.CalculateBtn.Location = new System.Drawing.Point(774, 286);
-            this.CalculateBtn.Name = "CalculateBtn";
-            this.CalculateBtn.Size = new System.Drawing.Size(113, 62);
-            this.CalculateBtn.TabIndex = 58;
-            this.CalculateBtn.Text = "Submit";
-            this.CalculateBtn.UseVisualStyleBackColor = true;
             // 
             // NavPanel
             // 
@@ -538,53 +177,215 @@
             this.HomeBtn.TabIndex = 0;
             this.HomeBtn.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Azure;
+            this.panel1.Controls.Add(this.CalCB);
+            this.panel1.Controls.Add(this.Callbl);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.button16);
+            this.panel1.Controls.Add(this.button15);
+            this.panel1.Controls.Add(this.button14);
+            this.panel1.Controls.Add(this.button13);
+            this.panel1.Controls.Add(this.button12);
+            this.panel1.Controls.Add(this.button11);
+            this.panel1.Controls.Add(this.button10);
+            this.panel1.Controls.Add(this.button9);
+            this.panel1.Controls.Add(this.button8);
+            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Location = new System.Drawing.Point(167, 83);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(419, 558);
+            this.panel1.TabIndex = 60;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(33, 230);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(58, 54);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "7";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(110, 230);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(58, 54);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "8";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(188, 230);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(58, 54);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "9";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(188, 314);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(58, 54);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "6";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(34, 314);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(58, 54);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "4";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(110, 314);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(58, 54);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "5";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(33, 406);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(58, 54);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "1";
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(110, 406);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(58, 54);
+            this.button8.TabIndex = 7;
+            this.button8.Text = "2";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(188, 406);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(58, 54);
+            this.button9.TabIndex = 8;
+            this.button9.Text = "3";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(34, 484);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(152, 54);
+            this.button10.TabIndex = 9;
+            this.button10.Text = "0";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(198, 484);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(58, 54);
+            this.button11.TabIndex = 10;
+            this.button11.Text = ".";
+            this.button11.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(268, 230);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(58, 54);
+            this.button12.TabIndex = 11;
+            this.button12.Text = "+";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(338, 230);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(58, 54);
+            this.button13.TabIndex = 12;
+            this.button13.Text = "-";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(268, 314);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(58, 54);
+            this.button14.TabIndex = 12;
+            this.button14.Text = "*";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button15
+            // 
+            this.button15.Location = new System.Drawing.Point(338, 314);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(58, 54);
+            this.button15.TabIndex = 13;
+            this.button15.Text = "/";
+            this.button15.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            this.button16.Location = new System.Drawing.Point(266, 406);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(148, 54);
+            this.button16.TabIndex = 14;
+            this.button16.Text = "Enter";
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(311, 126);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 73);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "t";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // Callbl
+            // 
+            this.Callbl.AutoSize = true;
+            this.Callbl.Font = new System.Drawing.Font("Poppins", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Callbl.Location = new System.Drawing.Point(10, 14);
+            this.Callbl.Name = "Callbl";
+            this.Callbl.Size = new System.Drawing.Size(92, 26);
+            this.Callbl.TabIndex = 16;
+            this.Callbl.Text = "Calculator";
+            // 
+            // CalCB
+            // 
+            this.CalCB.FormattingEnabled = true;
+            this.CalCB.Location = new System.Drawing.Point(279, 14);
+            this.CalCB.Name = "CalCB";
+            this.CalCB.Size = new System.Drawing.Size(121, 21);
+            this.CalCB.TabIndex = 17;
+            // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1320, 733);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.NavPanel);
-            this.Controls.Add(this.CalculateBtn);
-            this.Controls.Add(this.textBox24);
-            this.Controls.Add(this.textBox23);
-            this.Controls.Add(this.textBox22);
-            this.Controls.Add(this.textBox21);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox14);
-            this.Controls.Add(this.textBox13);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.TotalLbl2);
-            this.Controls.Add(this.NonTaxLbl);
-            this.Controls.Add(this.TaxportLbl);
-            this.Controls.Add(this.GCTlbl);
-            this.Controls.Add(this.TotalElectLbl);
-            this.Controls.Add(this.FuelnIppLbl);
-            this.Controls.Add(this.FXlbl);
-            this.Controls.Add(this.SubtotalLbl);
-            this.Controls.Add(this.CustomerCLbl);
-            this.Controls.Add(this.EnergyNLbl);
-            this.Controls.Add(this.Energy1stLbl);
-            this.Controls.Add(this.TotalLbl);
-            this.Controls.Add(this.BalBFLbl);
-            this.Controls.Add(this.UnitCostLbl);
-            this.Controls.Add(this.CalculatorLbl);
             this.Controls.Add(this.MinimizeBtn);
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.Backbtn);
@@ -595,6 +396,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
             this.NavPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -606,51 +409,31 @@
         private System.Windows.Forms.PictureBox BacklogoBtn;
         private System.Windows.Forms.Label MinimizeBtn;
         private System.Windows.Forms.Label ExitBtn;
-        private System.Windows.Forms.Label CalculatorLbl;
-        private System.Windows.Forms.Label UnitCostLbl;
-        private System.Windows.Forms.Label BalBFLbl;
-        private System.Windows.Forms.Label TotalLbl;
-        private System.Windows.Forms.Label Energy1stLbl;
-        private System.Windows.Forms.Label EnergyNLbl;
-        private System.Windows.Forms.Label CustomerCLbl;
-        private System.Windows.Forms.Label SubtotalLbl;
-        private System.Windows.Forms.Label FXlbl;
-        private System.Windows.Forms.Label FuelnIppLbl;
-        private System.Windows.Forms.Label TotalElectLbl;
-        private System.Windows.Forms.Label GCTlbl;
-        private System.Windows.Forms.Label TaxportLbl;
-        private System.Windows.Forms.Label NonTaxLbl;
-        private System.Windows.Forms.Label TotalLbl2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.Button CalculateBtn;
         private System.Windows.Forms.Panel NavPanel;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button ProfileBtn;
         private System.Windows.Forms.Button CalculatorBtn;
         private System.Windows.Forms.Button TipsBtn;
         private System.Windows.Forms.Button HomeBtn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox CalCB;
+        private System.Windows.Forms.Label Callbl;
     }
 }
