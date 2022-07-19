@@ -12,14 +12,20 @@ namespace Ecosave
 {
     public partial class ProfilePage : Form
     {
-        public ProfilePage()
+      
+     public ProfilePage()
         {
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void HomeBtn_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BacklogoBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

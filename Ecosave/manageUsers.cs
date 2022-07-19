@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class LoginForm : Form
+    public partial class manageUsers : Form
     {
-        public LoginForm()
+        public manageUsers()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Title2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

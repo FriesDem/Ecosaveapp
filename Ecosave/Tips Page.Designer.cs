@@ -1,6 +1,6 @@
 ﻿namespace Ecosave
 {
-    partial class Store_Page
+    partial class Tips_Page
     {
         /// <summary>
         /// Required designer variable.
@@ -28,51 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Store_Page));
-            this.BacklogoBtn = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tips_Page));
             this.Backbtn = new System.Windows.Forms.Label();
+            this.BacklogoBtn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BacklogoBtn
-            // 
-            this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
-            this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(15, 27);
-            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.BacklogoBtn.Name = "BacklogoBtn";
-            this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
-            this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BacklogoBtn.TabIndex = 42;
-            this.BacklogoBtn.TabStop = false;
-            this.BacklogoBtn.Click += new System.EventHandler(this.BacklogoBtn_Click);
             // 
             // Backbtn
             // 
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(66, 36);
+            this.Backbtn.Location = new System.Drawing.Point(64, 22);
             this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Backbtn.Name = "Backbtn";
             this.Backbtn.Size = new System.Drawing.Size(56, 25);
-            this.Backbtn.TabIndex = 41;
+            this.Backbtn.TabIndex = 19;
             this.Backbtn.Text = "Back";
             // 
-            // Store_Page
+            // BacklogoBtn
+            // 
+            this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
+            this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
+            this.BacklogoBtn.Location = new System.Drawing.Point(3, 13);
+            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.BacklogoBtn.Name = "BacklogoBtn";
+            this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
+            this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.BacklogoBtn.TabIndex = 18;
+            this.BacklogoBtn.TabStop = false;
+            // 
+            // Tips_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
-            this.Controls.Add(this.BacklogoBtn);
+            this.ClientSize = new System.Drawing.Size(1412, 754);
             this.Controls.Add(this.Backbtn);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Store_Page";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Store_Page";
+            this.Controls.Add(this.BacklogoBtn);
+            this.Name = "Tips_Page";
+            this.Text = "Tips";
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -80,7 +75,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox BacklogoBtn;
+
         private System.Windows.Forms.Label Backbtn;
+        private System.Windows.Forms.PictureBox BacklogoBtn;
     }
 }

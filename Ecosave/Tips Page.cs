@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class CAAForm : Form
+    public partial class Tips_Page : Form
     {
-        public CAAForm()
+        public Tips_Page()
         {
             InitializeComponent();
         }
