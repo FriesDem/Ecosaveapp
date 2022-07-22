@@ -43,11 +43,14 @@
             this.CalculatorBtn = new System.Windows.Forms.Button();
             this.TipsBtn = new System.Windows.Forms.Button();
             this.HomeBtn = new System.Windows.Forms.Button();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.tsilogintext = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
             this.NavPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -69,42 +72,42 @@
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // profileToolStripMenuItem
             // 
             this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(66, 26);
             this.profileToolStripMenuItem.Text = "Profile";
             this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // calculatorToolStripMenuItem
             // 
             this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
-            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(90, 26);
             this.calculatorToolStripMenuItem.Text = "Calculator";
             this.calculatorToolStripMenuItem.Click += new System.EventHandler(this.calculatorToolStripMenuItem_Click);
             // 
             // storeToolStripMenuItem
             // 
             this.storeToolStripMenuItem.Name = "storeToolStripMenuItem";
-            this.storeToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
+            this.storeToolStripMenuItem.Size = new System.Drawing.Size(58, 26);
             this.storeToolStripMenuItem.Text = "Store";
             this.storeToolStripMenuItem.Click += new System.EventHandler(this.storeToolStripMenuItem_Click);
             // 
             // aboutUsToolStripMenuItem
             // 
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(84, 26);
             this.aboutUsToolStripMenuItem.Text = "About Us";
             this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
             // 
             // manageUserToolStripMenuItem
             // 
             this.manageUserToolStripMenuItem.Name = "manageUserToolStripMenuItem";
-            this.manageUserToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
+            this.manageUserToolStripMenuItem.Size = new System.Drawing.Size(110, 26);
             this.manageUserToolStripMenuItem.Text = "Manage User";
             this.manageUserToolStripMenuItem.Click += new System.EventHandler(this.manageUserToolStripMenuItem_Click);
             // 
@@ -114,8 +117,8 @@
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.NavPanel);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(961, 150);
-            this.toolStripContainer1.Location = new System.Drawing.Point(477, 868);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(961, 125);
+            this.toolStripContainer1.Location = new System.Drawing.Point(472, 835);
             this.toolStripContainer1.Name = "toolStripContainer1";
             this.toolStripContainer1.Size = new System.Drawing.Size(961, 175);
             this.toolStripContainer1.TabIndex = 5;
@@ -200,12 +203,29 @@
             this.HomeBtn.UseVisualStyleBackColor = true;
             this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsilogintext});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 1033);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1924, 22);
+            this.statusStrip1.TabIndex = 9;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // tsilogintext
+            // 
+            this.tsilogintext.Name = "tsilogintext";
+            this.tsilogintext.Size = new System.Drawing.Size(0, 18);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.toolStripContainer1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -224,6 +244,8 @@
             this.toolStripContainer1.PerformLayout();
             this.NavPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,5 +267,7 @@
         private System.Windows.Forms.Button CalculatorBtn;
         private System.Windows.Forms.Button TipsBtn;
         private System.Windows.Forms.Button HomeBtn;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel tsilogintext;
     }
 }

@@ -43,22 +43,22 @@ namespace Ecosave
 
                 var hashed_password = Utils.Hashpassword(password);
 
-                var user = _db.Users.FirstOrDefault(Queryable => Queryable.Email == email && Queryable.Password == hashed_password);
+                var user = _db.Users.FirstOrDefault(Queryable => Queryable.Email == email && Queryable.Password == hashed_password && Queryable.isActive == true);
             if (user == null)
                 {
                     MessageBox.Show("Please provide valid credentials");
                 }
             else
                 {
-                    var role = user.UserRoles.FirstOrDefault();
-                    var roleName = role.Role.shortname;
-                    var home = new Home(this, roleName);
+                
+                    var home = new Home(this, user);
+                
                     home.Show();
                     this.Hide();
                    
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
                 MessageBox.Show("Something Went Wrong. Please Try Again");
             }
@@ -67,8 +67,8 @@ namespace Ecosave
         private void FPass_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Password_Reset reset = new Password_Reset();
-            reset.Show();
+            ForgotPassword forgot = new ForgotPassword();
+            forgot.Show();
         }
 
         private void CAABtn_Click(object sender, EventArgs e)

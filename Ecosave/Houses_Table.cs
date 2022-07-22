@@ -12,13 +12,10 @@ namespace Ecosave
     using System;
     using System.Collections.Generic;
     
-    public partial class UserRole
+    public partial class Houses_Table
     {
-        public int id { get; set; }
-        public int userid { get; set; }
-        public int roleid { get; set; }
-    
-        public virtual Role Role { get; set; }
-        public virtual User User { get; set; }
+        public string ID { get; set; }
+        public string Number_of_Rooms { get; set; }
+        public string Number_of_Devices_per_Room { get; set; }
     }
 }

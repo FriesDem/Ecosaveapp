@@ -57,17 +57,21 @@
             this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BacklogoBtn.TabIndex = 18;
             this.BacklogoBtn.TabStop = false;
+            this.BacklogoBtn.Click += new System.EventHandler(this.BacklogoBtn_Click);
             // 
             // Tips_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1412, 754);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.Backbtn);
             this.Controls.Add(this.BacklogoBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Tips_Page";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tips";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

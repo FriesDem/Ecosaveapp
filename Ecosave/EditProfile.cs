@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CouncilGamingClub;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace Ecosave
         public EditProfile()
         {
             InitializeComponent();
+        }
+
+        private void BacklogoBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            if (!Utils.FormIsOpen("ProfilePage"))
+            {
+                var Profile = new ProfilePage();
+                Profile.MdiParent = this;
+                Profile.Show();
+
+            }
         }
     }
 }

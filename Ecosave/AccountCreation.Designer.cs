@@ -33,12 +33,10 @@
             this.AccountLbl = new System.Windows.Forms.Label();
             this.Namelbl = new System.Windows.Forms.Label();
             this.EmailLbl = new System.Windows.Forms.Label();
-            this.Phonenumberlbl = new System.Windows.Forms.Label();
             this.Passwordlbl = new System.Windows.Forms.Label();
             this.ConfirmPasswordlbl = new System.Windows.Forms.Label();
             this.NameTB = new System.Windows.Forms.TextBox();
             this.EmailTB = new System.Windows.Forms.TextBox();
-            this.PhonenumberTB = new System.Windows.Forms.TextBox();
             this.PasswordTB = new System.Windows.Forms.TextBox();
             this.ConfirmPassTB = new System.Windows.Forms.TextBox();
             this.ExitBtn = new System.Windows.Forms.Label();
@@ -99,24 +97,12 @@
             this.EmailLbl.TabIndex = 3;
             this.EmailLbl.Text = "Email";
             // 
-            // Phonenumberlbl
-            // 
-            this.Phonenumberlbl.AutoSize = true;
-            this.Phonenumberlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Phonenumberlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Phonenumberlbl.Location = new System.Drawing.Point(81, 433);
-            this.Phonenumberlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Phonenumberlbl.Name = "Phonenumberlbl";
-            this.Phonenumberlbl.Size = new System.Drawing.Size(120, 20);
-            this.Phonenumberlbl.TabIndex = 4;
-            this.Phonenumberlbl.Text = "Phone Number";
-            // 
             // Passwordlbl
             // 
             this.Passwordlbl.AutoSize = true;
             this.Passwordlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Passwordlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Passwordlbl.Location = new System.Drawing.Point(81, 538);
+            this.Passwordlbl.Location = new System.Drawing.Point(77, 455);
             this.Passwordlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Passwordlbl.Name = "Passwordlbl";
             this.Passwordlbl.Size = new System.Drawing.Size(83, 20);
@@ -128,7 +114,7 @@
             this.ConfirmPasswordlbl.AutoSize = true;
             this.ConfirmPasswordlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.ConfirmPasswordlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ConfirmPasswordlbl.Location = new System.Drawing.Point(81, 636);
+            this.ConfirmPasswordlbl.Location = new System.Drawing.Point(77, 553);
             this.ConfirmPasswordlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ConfirmPasswordlbl.Name = "ConfirmPasswordlbl";
             this.ConfirmPasswordlbl.Size = new System.Drawing.Size(147, 20);
@@ -155,21 +141,11 @@
             this.EmailTB.Size = new System.Drawing.Size(741, 22);
             this.EmailTB.TabIndex = 8;
             // 
-            // PhonenumberTB
-            // 
-            this.PhonenumberTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.PhonenumberTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PhonenumberTB.Location = new System.Drawing.Point(88, 468);
-            this.PhonenumberTB.Margin = new System.Windows.Forms.Padding(4);
-            this.PhonenumberTB.Name = "PhonenumberTB";
-            this.PhonenumberTB.Size = new System.Drawing.Size(741, 22);
-            this.PhonenumberTB.TabIndex = 9;
-            // 
             // PasswordTB
             // 
             this.PasswordTB.BackColor = System.Drawing.Color.SteelBlue;
             this.PasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PasswordTB.Location = new System.Drawing.Point(88, 572);
+            this.PasswordTB.Location = new System.Drawing.Point(84, 489);
             this.PasswordTB.Margin = new System.Windows.Forms.Padding(4);
             this.PasswordTB.Name = "PasswordTB";
             this.PasswordTB.Size = new System.Drawing.Size(741, 22);
@@ -179,7 +155,7 @@
             // 
             this.ConfirmPassTB.BackColor = System.Drawing.Color.SteelBlue;
             this.ConfirmPassTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ConfirmPassTB.Location = new System.Drawing.Point(88, 671);
+            this.ConfirmPassTB.Location = new System.Drawing.Point(84, 588);
             this.ConfirmPassTB.Margin = new System.Windows.Forms.Padding(4);
             this.ConfirmPassTB.Name = "ConfirmPassTB";
             this.ConfirmPassTB.Size = new System.Drawing.Size(741, 22);
@@ -239,7 +215,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(425, 736);
+            this.button1.Location = new System.Drawing.Point(430, 697);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 28);
@@ -274,12 +250,10 @@
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.ConfirmPassTB);
             this.Controls.Add(this.PasswordTB);
-            this.Controls.Add(this.PhonenumberTB);
             this.Controls.Add(this.EmailTB);
             this.Controls.Add(this.NameTB);
             this.Controls.Add(this.ConfirmPasswordlbl);
             this.Controls.Add(this.Passwordlbl);
-            this.Controls.Add(this.Phonenumberlbl);
             this.Controls.Add(this.EmailLbl);
             this.Controls.Add(this.Namelbl);
             this.Controls.Add(this.AccountLbl);
@@ -302,12 +276,10 @@
         private System.Windows.Forms.Label AccountLbl;
         private System.Windows.Forms.Label Namelbl;
         private System.Windows.Forms.Label EmailLbl;
-        private System.Windows.Forms.Label Phonenumberlbl;
         private System.Windows.Forms.Label Passwordlbl;
         private System.Windows.Forms.Label ConfirmPasswordlbl;
         private System.Windows.Forms.TextBox NameTB;
         private System.Windows.Forms.TextBox EmailTB;
-        private System.Windows.Forms.TextBox PhonenumberTB;
         private System.Windows.Forms.TextBox PasswordTB;
         private System.Windows.Forms.TextBox ConfirmPassTB;
         private System.Windows.Forms.Label ExitBtn;

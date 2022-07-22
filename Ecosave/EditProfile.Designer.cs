@@ -53,12 +53,13 @@
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
             this.BacklogoBtn.Location = new System.Drawing.Point(31, 15);
-            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
             this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BacklogoBtn.TabIndex = 17;
             this.BacklogoBtn.TabStop = false;
+            this.BacklogoBtn.Click += new System.EventHandler(this.BacklogoBtn_Click);
             // 
             // Backbtn
             // 
@@ -89,7 +90,7 @@
             this.ConfirmPassTB.BackColor = System.Drawing.Color.SteelBlue;
             this.ConfirmPassTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ConfirmPassTB.Location = new System.Drawing.Point(257, 617);
-            this.ConfirmPassTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ConfirmPassTB.Margin = new System.Windows.Forms.Padding(4);
             this.ConfirmPassTB.Name = "ConfirmPassTB";
             this.ConfirmPassTB.Size = new System.Drawing.Size(741, 22);
             this.ConfirmPassTB.TabIndex = 34;
@@ -99,7 +100,7 @@
             this.PasswordTB.BackColor = System.Drawing.Color.SteelBlue;
             this.PasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PasswordTB.Location = new System.Drawing.Point(257, 519);
-            this.PasswordTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PasswordTB.Margin = new System.Windows.Forms.Padding(4);
             this.PasswordTB.Name = "PasswordTB";
             this.PasswordTB.Size = new System.Drawing.Size(741, 22);
             this.PasswordTB.TabIndex = 33;
@@ -109,7 +110,7 @@
             this.PhonenumberTB.BackColor = System.Drawing.Color.SteelBlue;
             this.PhonenumberTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PhonenumberTB.Location = new System.Drawing.Point(257, 414);
-            this.PhonenumberTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PhonenumberTB.Margin = new System.Windows.Forms.Padding(4);
             this.PhonenumberTB.Name = "PhonenumberTB";
             this.PhonenumberTB.Size = new System.Drawing.Size(741, 22);
             this.PhonenumberTB.TabIndex = 32;
@@ -119,7 +120,7 @@
             this.EmailTB.BackColor = System.Drawing.Color.SteelBlue;
             this.EmailTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.EmailTB.Location = new System.Drawing.Point(257, 328);
-            this.EmailTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EmailTB.Margin = new System.Windows.Forms.Padding(4);
             this.EmailTB.Name = "EmailTB";
             this.EmailTB.Size = new System.Drawing.Size(741, 22);
             this.EmailTB.TabIndex = 31;
@@ -129,7 +130,7 @@
             this.NameTB.BackColor = System.Drawing.Color.SteelBlue;
             this.NameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.NameTB.Location = new System.Drawing.Point(257, 229);
-            this.NameTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NameTB.Margin = new System.Windows.Forms.Padding(4);
             this.NameTB.Name = "NameTB";
             this.NameTB.Size = new System.Drawing.Size(741, 22);
             this.NameTB.TabIndex = 30;
@@ -198,7 +199,7 @@
             // 
             this.EditProfileSubbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditProfileSubbtn.Location = new System.Drawing.Point(898, 672);
-            this.EditProfileSubbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EditProfileSubbtn.Margin = new System.Windows.Forms.Padding(4);
             this.EditProfileSubbtn.Name = "EditProfileSubbtn";
             this.EditProfileSubbtn.Size = new System.Drawing.Size(100, 28);
             this.EditProfileSubbtn.TabIndex = 35;
@@ -210,7 +211,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1210, 90);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1099, 693);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -238,8 +239,8 @@
             this.Controls.Add(this.EditProfileLbl);
             this.Controls.Add(this.Backbtn);
             this.Controls.Add(this.BacklogoBtn);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "EditProfile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditProfile";

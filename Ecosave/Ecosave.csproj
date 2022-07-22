@@ -87,23 +87,42 @@
     <Compile Include="About Us.Designer.cs">
       <DependentUpon>About Us.cs</DependentUpon>
     </Compile>
+    <Compile Include="Billing_Table.cs">
+      <DependentUpon>EcosaveDb.tt</DependentUpon>
+    </Compile>
     <Compile Include="Calculator.cs">
+      <DependentUpon>EcosaveDb.tt</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Calculator.Designer.cs">
       <DependentUpon>Calculator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adduser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adduser.Designer.cs">
+      <DependentUpon>Adduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Houses_Table.cs">
+      <DependentUpon>EcosaveDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Paasword Reset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paasword Reset.Designer.cs">
+      <DependentUpon>Paasword Reset.cs</DependentUpon>
     </Compile>
     <Compile Include="Tips Page.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tips Page.Designer.cs">
       <DependentUpon>Tips Page.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Password_Reset.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Password_Reset.Designer.cs">
-      <DependentUpon>Password_Reset.cs</DependentUpon>
     </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -198,14 +217,20 @@
     <EmbeddedResource Include="EditProfile.resx">
       <DependentUpon>EditProfile.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Adduser.resx">
+      <DependentUpon>Adduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paasword Reset.resx">
+      <DependentUpon>Paasword Reset.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tips Page.resx">
       <DependentUpon>Tips Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="manageUsers.resx">
       <DependentUpon>manageUsers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Password_Reset.resx">
-      <DependentUpon>Password_Reset.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

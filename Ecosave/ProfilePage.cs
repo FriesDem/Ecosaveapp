@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CouncilGamingClub;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,20 @@ namespace Ecosave
 {
     public partial class ProfilePage : Form
     {
-      
-     public ProfilePage()
+
+
+        String _realname;
+
+        public ProfilePage()
         {
             InitializeComponent();
+          
+        }
+        public ProfilePage(String newland)
+        {
+            InitializeComponent();
+       _realname = newland;
+            
         }
 
         private void HomeBtn_Click(object sender, EventArgs e)
@@ -27,5 +38,23 @@ namespace Ecosave
         {
             this.Close();
         }
+
+        private void EditProfileBtn_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("EditProfile"))
+            {
+                var EditProfile = new EditProfile();
+                EditProfile.MdiParent = this;
+                EditProfile.Show();
+
+            }
+        }
+
+        private void ProfilePage_Load(object sender, EventArgs e)
+        {
+            var newland = _realname;  
+            lbname.Text = newland;
+        }
     }
 }
+

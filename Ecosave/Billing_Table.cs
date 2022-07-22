@@ -12,13 +12,15 @@ namespace Ecosave
     using System;
     using System.Collections.Generic;
     
-    public partial class UserRole
+    public partial class Billing_Table
     {
-        public int id { get; set; }
-        public int userid { get; set; }
-        public int roleid { get; set; }
-    
-        public virtual Role Role { get; set; }
-        public virtual User User { get; set; }
+        public string ID { get; set; }
+        public string Fuel_Charge { get; set; }
+        public string Energy_Charge { get; set; }
+        public string Exchange_Rate { get; set; }
+        public string Reading_Type { get; set; }
+        public string Customer_Charge { get; set; }
+        public string IPP_Charge { get; set; }
+        public string Demand_Charge { get; set; }
     }
 }

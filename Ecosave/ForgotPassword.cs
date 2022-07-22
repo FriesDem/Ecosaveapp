@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class Password_Reset : Form
+    public partial class ForgotPassword : Form
     {
-        public Password_Reset()
+        public ForgotPassword()
         {
             InitializeComponent();
+        }
+
+        private void BacklogoBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            LoginForm login = new LoginForm();
+            login.Show();
         }
     }
 }

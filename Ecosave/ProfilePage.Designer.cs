@@ -44,6 +44,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.lbname = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -111,6 +112,7 @@
             this.EditProfileBtn.Size = new System.Drawing.Size(76, 17);
             this.EditProfileBtn.TabIndex = 22;
             this.EditProfileBtn.Text = "Edit Profile";
+            this.EditProfileBtn.Click += new System.EventHandler(this.EditProfileBtn_Click);
             // 
             // panel1
             // 
@@ -228,12 +230,24 @@
             this.label5.TabIndex = 1;
             this.label5.Text = "1";
             // 
+            // lbname
+            // 
+            this.lbname.AutoSize = true;
+            this.lbname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.lbname.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lbname.Location = new System.Drawing.Point(412, 208);
+            this.lbname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbname.Name = "lbname";
+            this.lbname.Size = new System.Drawing.Size(0, 17);
+            this.lbname.TabIndex = 41;
+            // 
             // ProfilePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.lbname);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
@@ -245,12 +259,13 @@
             this.Controls.Add(this.ProfileLbl);
             this.Controls.Add(this.Backbtn);
             this.Controls.Add(this.BacklogoBtn);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProfilePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProfilePage";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.ProfilePage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -280,5 +295,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbname;
     }
 }

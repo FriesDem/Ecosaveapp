@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class Calculator : Form
+    public partial class Calculator: Form
     {
         public Calculator()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void BacklogoBtn_Click(object sender, EventArgs e)

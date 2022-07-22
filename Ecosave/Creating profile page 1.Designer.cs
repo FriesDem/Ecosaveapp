@@ -54,7 +54,7 @@
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
             this.BacklogoBtn.Location = new System.Drawing.Point(16, 30);
-            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
             this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -116,7 +116,7 @@
             this.panel2.Controls.Add(this.HowManyRoomsTB);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Location = new System.Drawing.Point(491, 301);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(335, 172);
             this.panel2.TabIndex = 42;
@@ -124,7 +124,7 @@
             // HowManyRoomsTB
             // 
             this.HowManyRoomsTB.Location = new System.Drawing.Point(216, 43);
-            this.HowManyRoomsTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HowManyRoomsTB.Margin = new System.Windows.Forms.Padding(4);
             this.HowManyRoomsTB.Multiline = true;
             this.HowManyRoomsTB.Name = "HowManyRoomsTB";
             this.HowManyRoomsTB.Size = new System.Drawing.Size(95, 80);
@@ -134,7 +134,7 @@
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(41, 27);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(156, 112);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -159,7 +159,7 @@
             this.panel1.Controls.Add(this.HowManyDeviceTB);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(1093, 301);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(335, 172);
             this.panel1.TabIndex = 44;
@@ -167,7 +167,7 @@
             // HowManyDeviceTB
             // 
             this.HowManyDeviceTB.Location = new System.Drawing.Point(208, 43);
-            this.HowManyDeviceTB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.HowManyDeviceTB.Margin = new System.Windows.Forms.Padding(4);
             this.HowManyDeviceTB.Multiline = true;
             this.HowManyDeviceTB.Name = "HowManyDeviceTB";
             this.HowManyDeviceTB.Size = new System.Drawing.Size(95, 80);
@@ -177,7 +177,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(41, 31);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(133, 91);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -188,7 +188,7 @@
             // 
             this.SUYASubBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SUYASubBtn.Location = new System.Drawing.Point(889, 569);
-            this.SUYASubBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SUYASubBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SUYASubBtn.Name = "SUYASubBtn";
             this.SUYASubBtn.Size = new System.Drawing.Size(136, 54);
             this.SUYASubBtn.TabIndex = 45;
@@ -200,7 +200,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1906, 1008);
             this.Controls.Add(this.SUYASubBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
@@ -211,7 +211,7 @@
             this.Controls.Add(this.BacklogoBtn);
             this.Controls.Add(this.Backbtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Creating_profile_page_1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Creating_profile_page_1";

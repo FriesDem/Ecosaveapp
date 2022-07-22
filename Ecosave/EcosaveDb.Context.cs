@@ -27,6 +27,9 @@ namespace Ecosave
     
         public virtual DbSet<Devices_Table> Devices_Tables { get; set; }
         public virtual DbSet<Person_Table> Person_Tables { get; set; }
+        public virtual DbSet<Billing_Table> Billing_Tables { get; set; }
+        public virtual DbSet<Calculator> Calculators { get; set; }
+        public virtual DbSet<Houses_Table> Houses_Tables { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<UserRole> UserRoles { get; set; }
         public virtual DbSet<User> Users { get; set; }

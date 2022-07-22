@@ -5,6 +5,35 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="ECOSAVEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Billing Table">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Fuel Charge" Type="nchar" MaxLength="10" />
+          <Property Name="Energy Charge" Type="nchar" MaxLength="10" />
+          <Property Name="Exchange Rate" Type="nchar" MaxLength="10" />
+          <Property Name="Reading Type" Type="nchar" MaxLength="10" />
+          <Property Name="Customer Charge" Type="nchar" MaxLength="10" />
+          <Property Name="IPP Charge" Type="nchar" MaxLength="10" />
+          <Property Name="Demand Charge" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Calculator">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Power Average 1" Type="int" />
+          <Property Name="Power Average 2" Type="int" />
+          <Property Name="Power Average 3" Type="int" />
+          <Property Name="Power Average 4" Type="int" />
+          <Property Name="Power Average 5" Type="int" />
+          <Property Name="Power Average 6" Type="int" />
+          <Property Name="Power Average 7" Type="int" />
+          <Property Name="Power Average 8" Type="int" />
+          <Property Name="Power Average 9" Type="int" />
+          <Property Name="Power Average 10" Type="int" />
+        </EntityType>
         <EntityType Name="Devices Table">
           <Key>
             <PropertyRef Name="ID" />
@@ -17,12 +46,14 @@
           <Property Name="Power Input" Type="nchar" MaxLength="10" />
           <Property Name="Power Output" Type="nchar" MaxLength="10" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6013: The table/view 'ECOSAVE.dbo.Houses Table' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
         <EntityType Name="Houses Table">
-          <Property Name="Number of Rooms" Type="nchar" MaxLength="10" />
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Number of Rooms" Type="nchar" MaxLength="10" Nullable="false" />
           <Property Name="Number of Devices per Room" Type="nchar" MaxLength="10" />
-        </EntityType>-->
+        </EntityType>
         <EntityType Name="Person Table">
           <Key>
             <PropertyRef Name="ID" />
@@ -56,20 +87,21 @@ warning 6013: The table/view 'ECOSAVE.dbo.Houses Table' does not have a primary 
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="userid" Type="int" />
-          <Property Name="roleid" Type="int" />
+          <Property Name="userid" Type="int" Nullable="false" />
+          <Property Name="roleid" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="Password" Type="nvarchar" MaxLength="150" Nullable="false" />
           <Property Name="isActive" Type="bit" Nullable="false" />
         </EntityType>
         <Association Name="FK_UserRoles_Roles">
-          <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+          <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
           <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Roles">
@@ -81,7 +113,7 @@ warning 6013: The table/view 'ECOSAVE.dbo.Houses Table' does not have a primary 
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_UserRoles_Users">
-          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
           <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
@@ -93,7 +125,10 @@ warning 6013: The table/view 'ECOSAVE.dbo.Houses Table' does not have a primary 
           </ReferentialConstraint>
         </Association>
         <EntityContainer Name="ECOSAVEModelStoreContainer">
+          <EntitySet Name="Billing Table" EntityType="Self.Billing Table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Calculator" EntityType="Self.Calculator" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Devices Table" EntityType="Self.Devices Table" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Houses Table" EntityType="Self.Houses Table" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Person Table" EntityType="Self.Person Table" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UserRoles" EntityType="Self.UserRoles" Schema="dbo" store:Type="Tables" />
@@ -146,6 +181,9 @@ warning 6013: The table/view 'ECOSAVE.dbo.Houses Table' does not have a primary 
         <EntityContainer Name="ECOSAVEEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Devices_Tables" EntityType="Self.Devices_Table" />
           <EntitySet Name="Person_Tables" EntityType="Self.Person_Table" />
+          <EntitySet Name="Billing_Tables" EntityType="ECOSAVEModel.Billing_Table" />
+          <EntitySet Name="Calculators" EntityType="ECOSAVEModel.Calculator" />
+          <EntitySet Name="Houses_Tables" EntityType="ECOSAVEModel.Houses_Table" />
           <EntitySet Name="Roles" EntityType="ECOSAVEModel.Role" />
           <EntitySet Name="UserRoles" EntityType="ECOSAVEModel.UserRole" />
           <EntitySet Name="Users" EntityType="ECOSAVEModel.User" />
@@ -158,6 +196,43 @@ warning 6013: The table/view 'ECOSAVE.dbo.Houses Table' does not have a primary 
             <End Role="UserRole" EntitySet="UserRoles" />
           </AssociationSet>
         </EntityContainer>
+        <EntityType Name="Billing_Table">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Fuel_Charge" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Energy_Charge" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Exchange_Rate" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Reading_Type" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Customer_Charge" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="IPP_Charge" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Demand_Charge" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Calculator">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Power_Average_1" Type="Int32" />
+          <Property Name="Power_Average_2" Type="Int32" />
+          <Property Name="Power_Average_3" Type="Int32" />
+          <Property Name="Power_Average_4" Type="Int32" />
+          <Property Name="Power_Average_5" Type="Int32" />
+          <Property Name="Power_Average_6" Type="Int32" />
+          <Property Name="Power_Average_7" Type="Int32" />
+          <Property Name="Power_Average_8" Type="Int32" />
+          <Property Name="Power_Average_9" Type="Int32" />
+          <Property Name="Power_Average_10" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Houses_Table">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Number_of_Rooms" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Number_of_Devices_per_Room" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
         <EntityType Name="Role">
           <Key>
             <PropertyRef Name="id" />
@@ -172,8 +247,8 @@ warning 6013: The table/view 'ECOSAVE.dbo.Houses Table' does not have a primary 
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="userid" Type="Int32" />
-          <Property Name="roleid" Type="Int32" />
+          <Property Name="userid" Type="Int32" Nullable="false" />
+          <Property Name="roleid" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Role" Relationship="ECOSAVEModel.FK_UserRoles_Roles" FromRole="UserRole" ToRole="Role" />
           <NavigationProperty Name="User" Relationship="ECOSAVEModel.FK_UserRoles_Users" FromRole="UserRole" ToRole="User" />
         </EntityType>
@@ -182,13 +257,14 @@ warning 6013: The table/view 'ECOSAVE.dbo.Houses Table' does not have a primary 
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Password" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="isActive" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="UserRoles" Relationship="ECOSAVEModel.FK_UserRoles_Users" FromRole="User" ToRole="UserRole" />
         </EntityType>
         <Association Name="FK_UserRoles_Roles">
-          <End Type="ECOSAVEModel.Role" Role="Role" Multiplicity="0..1" />
+          <End Type="ECOSAVEModel.Role" Role="Role" Multiplicity="1" />
           <End Type="ECOSAVEModel.UserRole" Role="UserRole" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Role">
@@ -200,7 +276,7 @@ warning 6013: The table/view 'ECOSAVE.dbo.Houses Table' does not have a primary 
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_UserRoles_Users">
-          <End Type="ECOSAVEModel.User" Role="User" Multiplicity="0..1" />
+          <End Type="ECOSAVEModel.User" Role="User" Multiplicity="1" />
           <End Type="ECOSAVEModel.UserRole" Role="UserRole" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
@@ -251,6 +327,46 @@ warning 6013: The table/view 'ECOSAVE.dbo.Houses Table' does not have a primary 
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="Billing_Tables">
+            <EntityTypeMapping TypeName="ECOSAVEModel.Billing_Table">
+              <MappingFragment StoreEntitySet="Billing Table">
+                <ScalarProperty Name="Demand_Charge" ColumnName="Demand Charge" />
+                <ScalarProperty Name="IPP_Charge" ColumnName="IPP Charge" />
+                <ScalarProperty Name="Customer_Charge" ColumnName="Customer Charge" />
+                <ScalarProperty Name="Reading_Type" ColumnName="Reading Type" />
+                <ScalarProperty Name="Exchange_Rate" ColumnName="Exchange Rate" />
+                <ScalarProperty Name="Energy_Charge" ColumnName="Energy Charge" />
+                <ScalarProperty Name="Fuel_Charge" ColumnName="Fuel Charge" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Calculators">
+            <EntityTypeMapping TypeName="ECOSAVEModel.Calculator">
+              <MappingFragment StoreEntitySet="Calculator">
+                <ScalarProperty Name="Power_Average_10" ColumnName="Power Average 10" />
+                <ScalarProperty Name="Power_Average_9" ColumnName="Power Average 9" />
+                <ScalarProperty Name="Power_Average_8" ColumnName="Power Average 8" />
+                <ScalarProperty Name="Power_Average_7" ColumnName="Power Average 7" />
+                <ScalarProperty Name="Power_Average_6" ColumnName="Power Average 6" />
+                <ScalarProperty Name="Power_Average_5" ColumnName="Power Average 5" />
+                <ScalarProperty Name="Power_Average_4" ColumnName="Power Average 4" />
+                <ScalarProperty Name="Power_Average_3" ColumnName="Power Average 3" />
+                <ScalarProperty Name="Power_Average_2" ColumnName="Power Average 2" />
+                <ScalarProperty Name="Power_Average_1" ColumnName="Power Average 1" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Houses_Tables">
+            <EntityTypeMapping TypeName="ECOSAVEModel.Houses_Table">
+              <MappingFragment StoreEntitySet="Houses Table">
+                <ScalarProperty Name="Number_of_Devices_per_Room" ColumnName="Number of Devices per Room" />
+                <ScalarProperty Name="Number_of_Rooms" ColumnName="Number of Rooms" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Roles">
             <EntityTypeMapping TypeName="ECOSAVEModel.Role">
               <MappingFragment StoreEntitySet="Roles">
@@ -275,6 +391,7 @@ warning 6013: The table/view 'ECOSAVE.dbo.Houses Table' does not have a primary 
                 <ScalarProperty Name="isActive" ColumnName="isActive" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
