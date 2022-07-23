@@ -44,7 +44,7 @@ namespace Ecosave
             if (!Utils.FormIsOpen("EditProfile"))
             {
                 var EditProfile = new EditProfile();
-                EditProfile.MdiParent = this;
+                EditProfile.MdiParent = this.MdiParent;
                 EditProfile.Show();
 
             }

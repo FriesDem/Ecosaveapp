@@ -44,6 +44,7 @@
             this.Namelbl = new System.Windows.Forms.Label();
             this.EditProfileSubbtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnedit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -89,50 +90,50 @@
             // 
             this.ConfirmPassTB.BackColor = System.Drawing.Color.SteelBlue;
             this.ConfirmPassTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ConfirmPassTB.Location = new System.Drawing.Point(257, 617);
+            this.ConfirmPassTB.Location = new System.Drawing.Point(512, 584);
             this.ConfirmPassTB.Margin = new System.Windows.Forms.Padding(4);
             this.ConfirmPassTB.Name = "ConfirmPassTB";
-            this.ConfirmPassTB.Size = new System.Drawing.Size(741, 22);
+            this.ConfirmPassTB.Size = new System.Drawing.Size(192, 22);
             this.ConfirmPassTB.TabIndex = 34;
             // 
             // PasswordTB
             // 
             this.PasswordTB.BackColor = System.Drawing.Color.SteelBlue;
             this.PasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PasswordTB.Location = new System.Drawing.Point(257, 519);
+            this.PasswordTB.Location = new System.Drawing.Point(512, 485);
             this.PasswordTB.Margin = new System.Windows.Forms.Padding(4);
             this.PasswordTB.Name = "PasswordTB";
-            this.PasswordTB.Size = new System.Drawing.Size(741, 22);
+            this.PasswordTB.Size = new System.Drawing.Size(192, 22);
             this.PasswordTB.TabIndex = 33;
             // 
             // PhonenumberTB
             // 
             this.PhonenumberTB.BackColor = System.Drawing.Color.SteelBlue;
             this.PhonenumberTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PhonenumberTB.Location = new System.Drawing.Point(257, 414);
+            this.PhonenumberTB.Location = new System.Drawing.Point(512, 378);
             this.PhonenumberTB.Margin = new System.Windows.Forms.Padding(4);
             this.PhonenumberTB.Name = "PhonenumberTB";
-            this.PhonenumberTB.Size = new System.Drawing.Size(741, 22);
+            this.PhonenumberTB.Size = new System.Drawing.Size(192, 22);
             this.PhonenumberTB.TabIndex = 32;
             // 
             // EmailTB
             // 
             this.EmailTB.BackColor = System.Drawing.Color.SteelBlue;
             this.EmailTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmailTB.Location = new System.Drawing.Point(257, 328);
+            this.EmailTB.Location = new System.Drawing.Point(512, 294);
             this.EmailTB.Margin = new System.Windows.Forms.Padding(4);
             this.EmailTB.Name = "EmailTB";
-            this.EmailTB.Size = new System.Drawing.Size(741, 22);
+            this.EmailTB.Size = new System.Drawing.Size(275, 22);
             this.EmailTB.TabIndex = 31;
             // 
             // NameTB
             // 
             this.NameTB.BackColor = System.Drawing.Color.SteelBlue;
             this.NameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.NameTB.Location = new System.Drawing.Point(257, 229);
+            this.NameTB.Location = new System.Drawing.Point(512, 193);
             this.NameTB.Margin = new System.Windows.Forms.Padding(4);
             this.NameTB.Name = "NameTB";
-            this.NameTB.Size = new System.Drawing.Size(741, 22);
+            this.NameTB.Size = new System.Drawing.Size(192, 22);
             this.NameTB.TabIndex = 30;
             // 
             // ConfirmPasswordlbl
@@ -198,7 +199,7 @@
             // EditProfileSubbtn
             // 
             this.EditProfileSubbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditProfileSubbtn.Location = new System.Drawing.Point(898, 672);
+            this.EditProfileSubbtn.Location = new System.Drawing.Point(789, 674);
             this.EditProfileSubbtn.Margin = new System.Windows.Forms.Padding(4);
             this.EditProfileSubbtn.Name = "EditProfileSubbtn";
             this.EditProfileSubbtn.Size = new System.Drawing.Size(100, 28);
@@ -218,12 +219,23 @@
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
+            // btnedit
+            // 
+            this.btnedit.Location = new System.Drawing.Point(531, 45);
+            this.btnedit.Name = "btnedit";
+            this.btnedit.Size = new System.Drawing.Size(108, 23);
+            this.btnedit.TabIndex = 37;
+            this.btnedit.Text = "Edit";
+            this.btnedit.UseVisualStyleBackColor = true;
+            this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
+            // 
             // EditProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.btnedit);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.EditProfileSubbtn);
             this.Controls.Add(this.ConfirmPassTB);
@@ -245,6 +257,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EditProfile";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.EditProfile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -269,5 +282,6 @@
         private System.Windows.Forms.Label Namelbl;
         private System.Windows.Forms.Button EditProfileSubbtn;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnedit;
     }
 }

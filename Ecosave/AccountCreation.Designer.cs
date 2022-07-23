@@ -31,20 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CAAForm));
             this.CreateanLbl = new System.Windows.Forms.Label();
             this.AccountLbl = new System.Windows.Forms.Label();
-            this.Namelbl = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.EmailLbl = new System.Windows.Forms.Label();
             this.Passwordlbl = new System.Windows.Forms.Label();
             this.ConfirmPasswordlbl = new System.Windows.Forms.Label();
-            this.NameTB = new System.Windows.Forms.TextBox();
-            this.EmailTB = new System.Windows.Forms.TextBox();
-            this.PasswordTB = new System.Windows.Forms.TextBox();
-            this.ConfirmPassTB = new System.Windows.Forms.TextBox();
+            this.tbusername = new System.Windows.Forms.TextBox();
+            this.tbemail = new System.Windows.Forms.TextBox();
+            this.tbpassword = new System.Windows.Forms.TextBox();
+            this.tbconfirmpassword = new System.Windows.Forms.TextBox();
             this.ExitBtn = new System.Windows.Forms.Label();
             this.MinimizeBtn = new System.Windows.Forms.Label();
             this.Backbtn = new System.Windows.Forms.Label();
             this.BacklogoBtn = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnsubmit = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.showpass = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -73,17 +74,17 @@
             this.AccountLbl.TabIndex = 1;
             this.AccountLbl.Text = "Account";
             // 
-            // Namelbl
+            // label1
             // 
-            this.Namelbl.AutoSize = true;
-            this.Namelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Namelbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Namelbl.Location = new System.Drawing.Point(81, 249);
-            this.Namelbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Namelbl.Name = "Namelbl";
-            this.Namelbl.Size = new System.Drawing.Size(53, 20);
-            this.Namelbl.TabIndex = 2;
-            this.Namelbl.Text = "Name";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(81, 249);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Username";
             // 
             // EmailLbl
             // 
@@ -121,45 +122,47 @@
             this.ConfirmPasswordlbl.TabIndex = 6;
             this.ConfirmPasswordlbl.Text = "Confirm Password";
             // 
-            // NameTB
+            // tbusername
             // 
-            this.NameTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.NameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.NameTB.Location = new System.Drawing.Point(88, 283);
-            this.NameTB.Margin = new System.Windows.Forms.Padding(4);
-            this.NameTB.Name = "NameTB";
-            this.NameTB.Size = new System.Drawing.Size(741, 22);
-            this.NameTB.TabIndex = 7;
+            this.tbusername.BackColor = System.Drawing.Color.SteelBlue;
+            this.tbusername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbusername.Location = new System.Drawing.Point(88, 283);
+            this.tbusername.Margin = new System.Windows.Forms.Padding(4);
+            this.tbusername.Name = "tbusername";
+            this.tbusername.Size = new System.Drawing.Size(741, 22);
+            this.tbusername.TabIndex = 7;
             // 
-            // EmailTB
+            // tbemail
             // 
-            this.EmailTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.EmailTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmailTB.Location = new System.Drawing.Point(88, 382);
-            this.EmailTB.Margin = new System.Windows.Forms.Padding(4);
-            this.EmailTB.Name = "EmailTB";
-            this.EmailTB.Size = new System.Drawing.Size(741, 22);
-            this.EmailTB.TabIndex = 8;
+            this.tbemail.BackColor = System.Drawing.Color.SteelBlue;
+            this.tbemail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbemail.Location = new System.Drawing.Point(88, 382);
+            this.tbemail.Margin = new System.Windows.Forms.Padding(4);
+            this.tbemail.Name = "tbemail";
+            this.tbemail.Size = new System.Drawing.Size(741, 22);
+            this.tbemail.TabIndex = 8;
             // 
-            // PasswordTB
+            // tbpassword
             // 
-            this.PasswordTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.PasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PasswordTB.Location = new System.Drawing.Point(84, 489);
-            this.PasswordTB.Margin = new System.Windows.Forms.Padding(4);
-            this.PasswordTB.Name = "PasswordTB";
-            this.PasswordTB.Size = new System.Drawing.Size(741, 22);
-            this.PasswordTB.TabIndex = 10;
+            this.tbpassword.BackColor = System.Drawing.Color.SteelBlue;
+            this.tbpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbpassword.Location = new System.Drawing.Point(84, 489);
+            this.tbpassword.Margin = new System.Windows.Forms.Padding(4);
+            this.tbpassword.Name = "tbpassword";
+            this.tbpassword.PasswordChar = '*';
+            this.tbpassword.Size = new System.Drawing.Size(741, 22);
+            this.tbpassword.TabIndex = 10;
             // 
-            // ConfirmPassTB
+            // tbconfirmpassword
             // 
-            this.ConfirmPassTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.ConfirmPassTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ConfirmPassTB.Location = new System.Drawing.Point(84, 588);
-            this.ConfirmPassTB.Margin = new System.Windows.Forms.Padding(4);
-            this.ConfirmPassTB.Name = "ConfirmPassTB";
-            this.ConfirmPassTB.Size = new System.Drawing.Size(741, 22);
-            this.ConfirmPassTB.TabIndex = 11;
+            this.tbconfirmpassword.BackColor = System.Drawing.Color.SteelBlue;
+            this.tbconfirmpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbconfirmpassword.Location = new System.Drawing.Point(84, 588);
+            this.tbconfirmpassword.Margin = new System.Windows.Forms.Padding(4);
+            this.tbconfirmpassword.Name = "tbconfirmpassword";
+            this.tbconfirmpassword.PasswordChar = '*';
+            this.tbconfirmpassword.Size = new System.Drawing.Size(741, 22);
+            this.tbconfirmpassword.TabIndex = 11;
             // 
             // ExitBtn
             // 
@@ -212,17 +215,17 @@
             this.BacklogoBtn.TabStop = false;
             this.BacklogoBtn.Click += new System.EventHandler(this.BacklogoBtn_Click);
             // 
-            // button1
+            // btnsubmit
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(430, 697);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 28);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnsubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsubmit.Location = new System.Drawing.Point(430, 697);
+            this.btnsubmit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsubmit.Name = "btnsubmit";
+            this.btnsubmit.Size = new System.Drawing.Size(100, 28);
+            this.btnsubmit.TabIndex = 16;
+            this.btnsubmit.Text = "Submit";
+            this.btnsubmit.UseVisualStyleBackColor = true;
+            this.btnsubmit.Click += new System.EventHandler(this.btnsubmit_Click);
             // 
             // pictureBox1
             // 
@@ -236,26 +239,37 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
+            // showpass
+            // 
+            this.showpass.Location = new System.Drawing.Point(349, 535);
+            this.showpass.Name = "showpass";
+            this.showpass.Size = new System.Drawing.Size(137, 26);
+            this.showpass.TabIndex = 18;
+            this.showpass.Text = "Show / Hide";
+            this.showpass.UseVisualStyleBackColor = true;
+            this.showpass.Click += new System.EventHandler(this.showpass_Click);
+            // 
             // CAAForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1488, 800);
+            this.Controls.Add(this.showpass);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnsubmit);
             this.Controls.Add(this.BacklogoBtn);
             this.Controls.Add(this.Backbtn);
             this.Controls.Add(this.MinimizeBtn);
             this.Controls.Add(this.ExitBtn);
-            this.Controls.Add(this.ConfirmPassTB);
-            this.Controls.Add(this.PasswordTB);
-            this.Controls.Add(this.EmailTB);
-            this.Controls.Add(this.NameTB);
+            this.Controls.Add(this.tbconfirmpassword);
+            this.Controls.Add(this.tbpassword);
+            this.Controls.Add(this.tbemail);
+            this.Controls.Add(this.tbusername);
             this.Controls.Add(this.ConfirmPasswordlbl);
             this.Controls.Add(this.Passwordlbl);
             this.Controls.Add(this.EmailLbl);
-            this.Controls.Add(this.Namelbl);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.AccountLbl);
             this.Controls.Add(this.CreateanLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -274,19 +288,20 @@
 
         private System.Windows.Forms.Label CreateanLbl;
         private System.Windows.Forms.Label AccountLbl;
-        private System.Windows.Forms.Label Namelbl;
+        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label EmailLbl;
         private System.Windows.Forms.Label Passwordlbl;
         private System.Windows.Forms.Label ConfirmPasswordlbl;
-        private System.Windows.Forms.TextBox NameTB;
-        private System.Windows.Forms.TextBox EmailTB;
-        private System.Windows.Forms.TextBox PasswordTB;
-        private System.Windows.Forms.TextBox ConfirmPassTB;
+        private System.Windows.Forms.TextBox tbusername;
+        private System.Windows.Forms.TextBox tbemail;
+        private System.Windows.Forms.TextBox tbpassword;
+        private System.Windows.Forms.TextBox tbconfirmpassword;
         private System.Windows.Forms.Label ExitBtn;
         private System.Windows.Forms.Label MinimizeBtn;
         private System.Windows.Forms.Label Backbtn;
         private System.Windows.Forms.PictureBox BacklogoBtn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnsubmit;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button showpass;
     }
 }

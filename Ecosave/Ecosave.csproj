@@ -103,6 +103,18 @@
     <Compile Include="Adduser.Designer.cs">
       <DependentUpon>Adduser.cs</DependentUpon>
     </Compile>
+    <Compile Include="CalculatorInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorInfo.Designer.cs">
+      <DependentUpon>CalculatorInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Creating profile 1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creating profile 1.Designer.cs">
+      <DependentUpon>Creating profile 1.cs</DependentUpon>
+    </Compile>
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,11 +155,11 @@
       <DependentUpon>EcosaveDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Utils.cs" />
-    <Compile Include="Creating profile page 1.cs">
+    <Compile Include="Creating profile page 2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Creating profile page 1.Designer.cs">
-      <DependentUpon>Creating profile page 1.cs</DependentUpon>
+    <Compile Include="Creating profile page 2.Designer.cs">
+      <DependentUpon>Creating profile page 2.cs</DependentUpon>
     </Compile>
     <Compile Include="Devices_Table.cs">
       <DependentUpon>EcosaveDb.tt</DependentUpon>
@@ -211,8 +223,14 @@
     <EmbeddedResource Include="Calculator.resx">
       <DependentUpon>Calculator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Creating profile page 1.resx">
-      <DependentUpon>Creating profile page 1.cs</DependentUpon>
+    <EmbeddedResource Include="CalculatorInfo.resx">
+      <DependentUpon>CalculatorInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creating profile 1.resx">
+      <DependentUpon>Creating profile 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creating profile page 2.resx">
+      <DependentUpon>Creating profile page 2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditProfile.resx">
       <DependentUpon>EditProfile.cs</DependentUpon>

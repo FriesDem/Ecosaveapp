@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CouncilGamingClub;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace Ecosave
 {
     public partial class CAAForm : Form
     {
+        private readonly ECOSAVEEntities _db;
         public CAAForm()
         {
             InitializeComponent();
+            _db = new ECOSAVEEntities();
         }
 
         private void BacklogoBtn_Click(object sender, EventArgs e)
@@ -24,22 +27,89 @@ namespace Ecosave
             login.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
-
-        }
+    
 
         private void ExitBtn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
+
+        private void btnsubmit_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                var tpassword = tbpassword.Text;
+                var confirmpassword = tbconfirmpassword.Text;
+                var email1 = tbemail.Text;
+                if (!email1.Contains("@"))
+                {
+                    MessageBox.Show("Email is missing @");
+
+                    if (tpassword != confirmpassword)
+                    {
+                        MessageBox.Show("Password do not match.Please try again !!");
+                    }
+                }
+                if (email1.Contains("@"))
+                {
+                    if (tpassword.Equals(confirmpassword))
+                    {
+                        var username = tbusername.Text;
+                        var email = tbemail.Text;
+                        var roleid = 2;
+                        var password = Utils.Hashpassword(tbpassword.Text);
+                        var tbconfirm = Utils.Hashpassword(tbconfirmpassword.Text);
+                        var user = new User
+                        {
+                            Username = username,
+                            Email = email,
+                            Password = password,
+                            isActive = true
+                        };
+                        _db.Users.Add(user);
+                        _db.SaveChanges();
+
+                        var userid = user.ID;
+
+                        var userRole = new UserRole
+                        {
+                            roleid = roleid,
+                            userid = userid
+                        };
+
+                        _db.UserRoles.Add(userRole);
+                        _db.SaveChanges();
+
+                        MessageBox.Show("New User Added Succesfully");
+
+                        this.Close();
+                        Creating_profile_1 create = new Creating_profile_1();
+                        create.Show();
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("An error has occured");
+            }
+
+        }
+
+        private void showpass_Click(object sender, EventArgs e)
+        {
+            if ((tbpassword.PasswordChar == '*')&& (tbconfirmpassword.PasswordChar == '*'))
+            {
+                tbpassword.PasswordChar = '\0'; 
+                tbconfirmpassword.PasswordChar = '\0';
+            }
+            else
+            {
+                tbpassword.PasswordChar = '*';
+                tbconfirmpassword.PasswordChar = '*';
+            }
+        }
+
+       
     }
 }

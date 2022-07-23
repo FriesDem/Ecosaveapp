@@ -1,6 +1,6 @@
 ﻿namespace Ecosave
 {
-    partial class Creating_profile_page_1
+    partial class Creating_profile_page_2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Creating_profile_page_1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Creating_profile_page_2));
             this.BacklogoBtn = new System.Windows.Forms.PictureBox();
             this.Backbtn = new System.Windows.Forms.Label();
             this.CreateanLbl = new System.Windows.Forms.Label();
@@ -194,8 +194,9 @@
             this.SUYASubBtn.TabIndex = 45;
             this.SUYASubBtn.Text = "Submit";
             this.SUYASubBtn.UseVisualStyleBackColor = true;
+            this.SUYASubBtn.Click += new System.EventHandler(this.SUYASubBtn_Click);
             // 
-            // Creating_profile_page_1
+            // Creating_profile_page_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -212,9 +213,9 @@
             this.Controls.Add(this.Backbtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Creating_profile_page_1";
+            this.Name = "Creating_profile_page_2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Creating_profile_page_1";
+            this.Text = "Creating_profile_page_2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
             this.panel2.ResumeLayout(false);

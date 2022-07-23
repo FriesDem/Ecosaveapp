@@ -1,6 +1,6 @@
 ﻿namespace Ecosave
 {
-    partial class Store_Page
+    partial class CalculatorInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Store_Page));
-            this.BacklogoBtn = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalculatorInfo));
             this.Backbtn = new System.Windows.Forms.Label();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.BacklogoBtn = new System.Windows.Forms.PictureBox();
+            this.btnsubmit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Backbtn
+            // 
+            this.Backbtn.AutoSize = true;
+            this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Backbtn.Location = new System.Drawing.Point(66, 13);
+            this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Backbtn.Name = "Backbtn";
+            this.Backbtn.Size = new System.Drawing.Size(56, 25);
+            this.Backbtn.TabIndex = 26;
+            this.Backbtn.Text = "Back";
             // 
             // BacklogoBtn
             // 
@@ -44,44 +56,33 @@
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
             this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.BacklogoBtn.TabIndex = 42;
+            this.BacklogoBtn.TabIndex = 25;
             this.BacklogoBtn.TabStop = false;
             this.BacklogoBtn.Click += new System.EventHandler(this.BacklogoBtn_Click);
             // 
-            // Backbtn
+            // btnsubmit
             // 
-            this.Backbtn.AutoSize = true;
-            this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(74, 22);
-            this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Backbtn.Name = "Backbtn";
-            this.Backbtn.Size = new System.Drawing.Size(56, 25);
-            this.Backbtn.TabIndex = 41;
-            this.Backbtn.Text = "Back";
+            this.btnsubmit.Location = new System.Drawing.Point(558, 703);
+            this.btnsubmit.Name = "btnsubmit";
+            this.btnsubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnsubmit.TabIndex = 27;
+            this.btnsubmit.Text = "Submit";
+            this.btnsubmit.UseVisualStyleBackColor = true;
+            this.btnsubmit.Click += new System.EventHandler(this.btnsubmit_Click);
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(1891, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(36, 1046);
-            this.vScrollBar1.TabIndex = 43;
-            // 
-            // Store_Page
+            // CalculatorInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
-            this.Controls.Add(this.vScrollBar1);
-            this.Controls.Add(this.BacklogoBtn);
+            this.ClientSize = new System.Drawing.Size(1906, 1008);
+            this.Controls.Add(this.btnsubmit);
             this.Controls.Add(this.Backbtn);
+            this.Controls.Add(this.BacklogoBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Store_Page";
+            this.Name = "CalculatorInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Store_Page";
+            this.Text = "CalculatorInfo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
             this.ResumeLayout(false);
@@ -90,8 +91,9 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox BacklogoBtn;
+
         private System.Windows.Forms.Label Backbtn;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.PictureBox BacklogoBtn;
+        private System.Windows.Forms.Button btnsubmit;
     }
 }

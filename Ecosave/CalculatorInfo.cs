@@ -10,16 +10,23 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class Creating_profile_page_1 : Form
+    public partial class CalculatorInfo : Form
     {
-        public Creating_profile_page_1()
+        public CalculatorInfo()
         {
             InitializeComponent();
         }
 
         private void BacklogoBtn_Click(object sender, EventArgs e)
         {
-            this.Close();   
+            this.Close();
+        }
+
+        private void btnsubmit_Click(object sender, EventArgs e)
+        {
+            var Calculator = new Calculator();
+            Calculator.MdiParent = this.MdiParent;
+            Calculator.Show();
         }
     }
 }
