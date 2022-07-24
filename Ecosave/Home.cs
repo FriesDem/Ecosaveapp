@@ -82,7 +82,7 @@ namespace Ecosave
             {
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Calculator = new CalculatorInfo();
+                var Calculator = new Calculator_Page();
                 Calculator.MdiParent = this;
                 Calculator.Show();
             }

@@ -67,10 +67,6 @@
           <Property Name="Number of Houses" Type="int" />
           <Property Name="Number of Occupants" Type="int" />
           <Property Name="Occupation" Type="nchar" MaxLength="20" />
-          <Property Name="Username" Type="nchar" MaxLength="10" />
-          <Property Name="Password" Type="nchar" MaxLength="50" />
-          <Property Name="Email" Type="nchar" MaxLength="30" />
-          <Property Name="Telephone" Type="nchar" MaxLength="10" />
           <Property Name="Budget for Utilities" Type="money" />
           <Property Name="Income" Type="money" />
         </EntityType>
@@ -87,21 +83,21 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="userid" Type="int" Nullable="false" />
-          <Property Name="roleid" Type="int" Nullable="false" />
+          <Property Name="userid" Type="int" />
+          <Property Name="roleid" Type="int" />
         </EntityType>
         <EntityType Name="Users">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Username" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Username" Type="nvarchar" MaxLength="50" />
           <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="Password" Type="nvarchar" MaxLength="150" Nullable="false" />
           <Property Name="isActive" Type="bit" Nullable="false" />
         </EntityType>
         <Association Name="FK_UserRoles_Roles">
-          <End Role="Roles" Type="Self.Roles" Multiplicity="1" />
+          <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
           <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Roles">
@@ -113,7 +109,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_UserRoles_Users">
-          <End Role="Users" Type="Self.Users" Multiplicity="1" />
+          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
           <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
@@ -146,44 +142,12 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ECOSAVEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityType Name="Devices_Table">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Brand" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-          <Property Name="Model" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Year" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Number_of_Devices" Type="Int32" />
-          <Property Name="Power_Input" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Power_Output" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-        </EntityType>
-        <EntityType Name="Person_Table">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="First_Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Last_Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Parish" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-          <Property Name="Street" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="ZIP_Code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Number_of_Houses" Type="Int32" />
-          <Property Name="Number_of_Occupants" Type="Int32" />
-          <Property Name="Occupation" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-          <Property Name="Username" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Password" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-          <Property Name="Email" Type="String" MaxLength="30" FixedLength="true" Unicode="true" />
-          <Property Name="Telephone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Budget_for_Utilities" Type="Decimal" Precision="19" Scale="4" />
-          <Property Name="Income" Type="Decimal" Precision="19" Scale="4" />
-        </EntityType>
         <EntityContainer Name="ECOSAVEEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="Devices_Tables" EntityType="Self.Devices_Table" />
-          <EntitySet Name="Person_Tables" EntityType="Self.Person_Table" />
           <EntitySet Name="Billing_Tables" EntityType="ECOSAVEModel.Billing_Table" />
           <EntitySet Name="Calculators" EntityType="ECOSAVEModel.Calculator" />
+          <EntitySet Name="Devices_Tables" EntityType="ECOSAVEModel.Devices_Table" />
           <EntitySet Name="Houses_Tables" EntityType="ECOSAVEModel.Houses_Table" />
+          <EntitySet Name="Person_Tables" EntityType="ECOSAVEModel.Person_Table" />
           <EntitySet Name="Roles" EntityType="ECOSAVEModel.Role" />
           <EntitySet Name="UserRoles" EntityType="ECOSAVEModel.UserRole" />
           <EntitySet Name="Users" EntityType="ECOSAVEModel.User" />
@@ -225,6 +189,18 @@
           <Property Name="Power_Average_9" Type="Int32" />
           <Property Name="Power_Average_10" Type="Int32" />
         </EntityType>
+        <EntityType Name="Devices_Table">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Brand" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Model" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Year" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Number_of_Devices" Type="Int32" />
+          <Property Name="Power_Input" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Power_Output" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
         <EntityType Name="Houses_Table">
           <Key>
             <PropertyRef Name="ID" />
@@ -232,6 +208,22 @@
           <Property Name="ID" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="Number_of_Rooms" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="Number_of_Devices_per_Room" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Person_Table">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="First_Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Last_Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Parish" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Street" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="ZIP_Code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Number_of_Houses" Type="Int32" />
+          <Property Name="Number_of_Occupants" Type="Int32" />
+          <Property Name="Occupation" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Budget_for_Utilities" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="Income" Type="Decimal" Precision="19" Scale="4" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
@@ -247,8 +239,8 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="userid" Type="Int32" Nullable="false" />
-          <Property Name="roleid" Type="Int32" Nullable="false" />
+          <Property Name="userid" Type="Int32" />
+          <Property Name="roleid" Type="Int32" />
           <NavigationProperty Name="Role" Relationship="ECOSAVEModel.FK_UserRoles_Roles" FromRole="UserRole" ToRole="Role" />
           <NavigationProperty Name="User" Relationship="ECOSAVEModel.FK_UserRoles_Users" FromRole="UserRole" ToRole="User" />
         </EntityType>
@@ -257,14 +249,14 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Username" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Email" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Password" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="isActive" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="UserRoles" Relationship="ECOSAVEModel.FK_UserRoles_Users" FromRole="User" ToRole="UserRole" />
+          <Property Name="Username" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
         <Association Name="FK_UserRoles_Roles">
-          <End Type="ECOSAVEModel.Role" Role="Role" Multiplicity="1" />
+          <End Type="ECOSAVEModel.Role" Role="Role" Multiplicity="0..1" />
           <End Type="ECOSAVEModel.UserRole" Role="UserRole" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Role">
@@ -276,7 +268,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_UserRoles_Users">
-          <End Type="ECOSAVEModel.User" Role="User" Multiplicity="1" />
+          <End Type="ECOSAVEModel.User" Role="User" Multiplicity="0..1" />
           <End Type="ECOSAVEModel.UserRole" Role="UserRole" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
@@ -287,46 +279,12 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="ECOSAVEModelStoreContainer" CdmEntityContainer="ECOSAVEEntities">
-          <EntitySetMapping Name="Devices_Tables">
-            <EntityTypeMapping TypeName="ECOSAVEModel.Devices_Table">
-              <MappingFragment StoreEntitySet="Devices Table">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="Brand" ColumnName="Brand" />
-                <ScalarProperty Name="Model" ColumnName="Model" />
-                <ScalarProperty Name="Year" ColumnName="Year" />
-                <ScalarProperty Name="Number_of_Devices" ColumnName="Number of Devices" />
-                <ScalarProperty Name="Power_Input" ColumnName="Power Input" />
-                <ScalarProperty Name="Power_Output" ColumnName="Power Output" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Person_Tables">
-            <EntityTypeMapping TypeName="ECOSAVEModel.Person_Table">
-              <MappingFragment StoreEntitySet="Person Table">
-                <ScalarProperty Name="ID" ColumnName="ID" />
-                <ScalarProperty Name="First_Name" ColumnName="First Name" />
-                <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
-                <ScalarProperty Name="Parish" ColumnName="Parish" />
-                <ScalarProperty Name="Street" ColumnName="Street" />
-                <ScalarProperty Name="ZIP_Code" ColumnName="ZIP Code" />
-                <ScalarProperty Name="Number_of_Houses" ColumnName="Number of Houses" />
-                <ScalarProperty Name="Number_of_Occupants" ColumnName="Number of Occupants" />
-                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
-                <ScalarProperty Name="Username" ColumnName="Username" />
-                <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
-                <ScalarProperty Name="Budget_for_Utilities" ColumnName="Budget for Utilities" />
-                <ScalarProperty Name="Income" ColumnName="Income" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
           <EntitySetMapping Name="Billing_Tables">
             <EntityTypeMapping TypeName="ECOSAVEModel.Billing_Table">
               <MappingFragment StoreEntitySet="Billing Table">
@@ -358,11 +316,41 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="Devices_Tables">
+            <EntityTypeMapping TypeName="ECOSAVEModel.Devices_Table">
+              <MappingFragment StoreEntitySet="Devices Table">
+                <ScalarProperty Name="Power_Output" ColumnName="Power Output" />
+                <ScalarProperty Name="Power_Input" ColumnName="Power Input" />
+                <ScalarProperty Name="Number_of_Devices" ColumnName="Number of Devices" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="Brand" ColumnName="Brand" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="Houses_Tables">
             <EntityTypeMapping TypeName="ECOSAVEModel.Houses_Table">
               <MappingFragment StoreEntitySet="Houses Table">
                 <ScalarProperty Name="Number_of_Devices_per_Room" ColumnName="Number of Devices per Room" />
                 <ScalarProperty Name="Number_of_Rooms" ColumnName="Number of Rooms" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Person_Tables">
+            <EntityTypeMapping TypeName="ECOSAVEModel.Person_Table">
+              <MappingFragment StoreEntitySet="Person Table">
+                <ScalarProperty Name="Income" ColumnName="Income" />
+                <ScalarProperty Name="Budget_for_Utilities" ColumnName="Budget for Utilities" />
+                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+                <ScalarProperty Name="Number_of_Occupants" ColumnName="Number of Occupants" />
+                <ScalarProperty Name="Number_of_Houses" ColumnName="Number of Houses" />
+                <ScalarProperty Name="ZIP_Code" ColumnName="ZIP Code" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="Parish" ColumnName="Parish" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
+                <ScalarProperty Name="First_Name" ColumnName="First Name" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -388,10 +376,10 @@
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="ECOSAVEModel.User">
               <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="Username" ColumnName="Username" />
                 <ScalarProperty Name="isActive" ColumnName="isActive" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
                 <ScalarProperty Name="Email" ColumnName="Email" />
-                <ScalarProperty Name="Username" ColumnName="Username" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>

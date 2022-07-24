@@ -90,18 +90,14 @@
     <Compile Include="Billing_Table.cs">
       <DependentUpon>EcosaveDb.tt</DependentUpon>
     </Compile>
-    <Compile Include="Calculator.cs">
-      <DependentUpon>EcosaveDb.tt</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Calculator.Designer.cs">
-      <DependentUpon>Calculator.cs</DependentUpon>
-    </Compile>
     <Compile Include="Adduser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Adduser.Designer.cs">
       <DependentUpon>Adduser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculator.cs">
+      <DependentUpon>EcosaveDb.tt</DependentUpon>
     </Compile>
     <Compile Include="CalculatorInfo.cs">
       <SubType>Form</SubType>
@@ -120,6 +116,12 @@
     </Compile>
     <Compile Include="ForgotPassword.Designer.cs">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calc.Designer.cs">
+      <DependentUpon>Calc.cs</DependentUpon>
     </Compile>
     <Compile Include="Houses_Table.cs">
       <DependentUpon>EcosaveDb.tt</DependentUpon>
@@ -220,9 +222,6 @@
     <EmbeddedResource Include="About Us.resx">
       <DependentUpon>About Us.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Calculator.resx">
-      <DependentUpon>Calculator.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CalculatorInfo.resx">
       <DependentUpon>CalculatorInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -240,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calc.resx">
+      <DependentUpon>Calc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paasword Reset.resx">
       <DependentUpon>Paasword Reset.cs</DependentUpon>

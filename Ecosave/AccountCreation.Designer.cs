@@ -55,10 +55,9 @@
             this.CreateanLbl.AutoSize = true;
             this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateanLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CreateanLbl.Location = new System.Drawing.Point(77, 95);
-            this.CreateanLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CreateanLbl.Location = new System.Drawing.Point(58, 77);
             this.CreateanLbl.Name = "CreateanLbl";
-            this.CreateanLbl.Size = new System.Drawing.Size(166, 39);
+            this.CreateanLbl.Size = new System.Drawing.Size(133, 31);
             this.CreateanLbl.TabIndex = 0;
             this.CreateanLbl.Text = "Create an";
             // 
@@ -67,10 +66,9 @@
             this.AccountLbl.AutoSize = true;
             this.AccountLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AccountLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AccountLbl.Location = new System.Drawing.Point(77, 133);
-            this.AccountLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AccountLbl.Location = new System.Drawing.Point(58, 108);
             this.AccountLbl.Name = "AccountLbl";
-            this.AccountLbl.Size = new System.Drawing.Size(140, 39);
+            this.AccountLbl.Size = new System.Drawing.Size(113, 31);
             this.AccountLbl.TabIndex = 1;
             this.AccountLbl.Text = "Account";
             // 
@@ -79,10 +77,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(81, 249);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(61, 202);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 20);
+            this.label1.Size = new System.Drawing.Size(73, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Username";
             // 
@@ -91,10 +88,9 @@
             this.EmailLbl.AutoSize = true;
             this.EmailLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.EmailLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.EmailLbl.Location = new System.Drawing.Point(81, 347);
-            this.EmailLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.EmailLbl.Location = new System.Drawing.Point(61, 282);
             this.EmailLbl.Name = "EmailLbl";
-            this.EmailLbl.Size = new System.Drawing.Size(51, 20);
+            this.EmailLbl.Size = new System.Drawing.Size(42, 17);
             this.EmailLbl.TabIndex = 3;
             this.EmailLbl.Text = "Email";
             // 
@@ -103,10 +99,9 @@
             this.Passwordlbl.AutoSize = true;
             this.Passwordlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Passwordlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Passwordlbl.Location = new System.Drawing.Point(77, 455);
-            this.Passwordlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Passwordlbl.Location = new System.Drawing.Point(58, 370);
             this.Passwordlbl.Name = "Passwordlbl";
-            this.Passwordlbl.Size = new System.Drawing.Size(83, 20);
+            this.Passwordlbl.Size = new System.Drawing.Size(69, 17);
             this.Passwordlbl.TabIndex = 5;
             this.Passwordlbl.Text = "Password";
             // 
@@ -115,10 +110,9 @@
             this.ConfirmPasswordlbl.AutoSize = true;
             this.ConfirmPasswordlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.ConfirmPasswordlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ConfirmPasswordlbl.Location = new System.Drawing.Point(77, 553);
-            this.ConfirmPasswordlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ConfirmPasswordlbl.Location = new System.Drawing.Point(58, 449);
             this.ConfirmPasswordlbl.Name = "ConfirmPasswordlbl";
-            this.ConfirmPasswordlbl.Size = new System.Drawing.Size(147, 20);
+            this.ConfirmPasswordlbl.Size = new System.Drawing.Size(121, 17);
             this.ConfirmPasswordlbl.TabIndex = 6;
             this.ConfirmPasswordlbl.Text = "Confirm Password";
             // 
@@ -126,42 +120,38 @@
             // 
             this.tbusername.BackColor = System.Drawing.Color.SteelBlue;
             this.tbusername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbusername.Location = new System.Drawing.Point(88, 283);
-            this.tbusername.Margin = new System.Windows.Forms.Padding(4);
+            this.tbusername.Location = new System.Drawing.Point(66, 230);
             this.tbusername.Name = "tbusername";
-            this.tbusername.Size = new System.Drawing.Size(741, 22);
+            this.tbusername.Size = new System.Drawing.Size(556, 20);
             this.tbusername.TabIndex = 7;
             // 
             // tbemail
             // 
             this.tbemail.BackColor = System.Drawing.Color.SteelBlue;
             this.tbemail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbemail.Location = new System.Drawing.Point(88, 382);
-            this.tbemail.Margin = new System.Windows.Forms.Padding(4);
+            this.tbemail.Location = new System.Drawing.Point(66, 310);
             this.tbemail.Name = "tbemail";
-            this.tbemail.Size = new System.Drawing.Size(741, 22);
+            this.tbemail.Size = new System.Drawing.Size(556, 20);
             this.tbemail.TabIndex = 8;
             // 
             // tbpassword
             // 
             this.tbpassword.BackColor = System.Drawing.Color.SteelBlue;
             this.tbpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbpassword.Location = new System.Drawing.Point(84, 489);
-            this.tbpassword.Margin = new System.Windows.Forms.Padding(4);
+            this.tbpassword.Location = new System.Drawing.Point(63, 397);
             this.tbpassword.Name = "tbpassword";
             this.tbpassword.PasswordChar = '*';
-            this.tbpassword.Size = new System.Drawing.Size(741, 22);
+            this.tbpassword.Size = new System.Drawing.Size(556, 20);
             this.tbpassword.TabIndex = 10;
             // 
             // tbconfirmpassword
             // 
             this.tbconfirmpassword.BackColor = System.Drawing.Color.SteelBlue;
             this.tbconfirmpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbconfirmpassword.Location = new System.Drawing.Point(84, 588);
-            this.tbconfirmpassword.Margin = new System.Windows.Forms.Padding(4);
+            this.tbconfirmpassword.Location = new System.Drawing.Point(63, 478);
             this.tbconfirmpassword.Name = "tbconfirmpassword";
             this.tbconfirmpassword.PasswordChar = '*';
-            this.tbconfirmpassword.Size = new System.Drawing.Size(741, 22);
+            this.tbconfirmpassword.Size = new System.Drawing.Size(556, 20);
             this.tbconfirmpassword.TabIndex = 11;
             // 
             // ExitBtn
@@ -169,10 +159,9 @@
             this.ExitBtn.AutoSize = true;
             this.ExitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ExitBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ExitBtn.Location = new System.Drawing.Point(1427, 20);
-            this.ExitBtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ExitBtn.Location = new System.Drawing.Point(1070, 16);
             this.ExitBtn.Name = "ExitBtn";
-            this.ExitBtn.Size = new System.Drawing.Size(24, 24);
+            this.ExitBtn.Size = new System.Drawing.Size(18, 18);
             this.ExitBtn.TabIndex = 12;
             this.ExitBtn.Text = "X";
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
@@ -183,10 +172,9 @@
             this.MinimizeBtn.AutoSize = true;
             this.MinimizeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinimizeBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.MinimizeBtn.Location = new System.Drawing.Point(1403, 20);
-            this.MinimizeBtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MinimizeBtn.Location = new System.Drawing.Point(1052, 16);
             this.MinimizeBtn.Name = "MinimizeBtn";
-            this.MinimizeBtn.Size = new System.Drawing.Size(16, 24);
+            this.MinimizeBtn.Size = new System.Drawing.Size(13, 18);
             this.MinimizeBtn.TabIndex = 13;
             this.MinimizeBtn.Text = "-";
             // 
@@ -195,10 +183,9 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(81, 22);
-            this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Backbtn.Location = new System.Drawing.Point(61, 18);
             this.Backbtn.Name = "Backbtn";
-            this.Backbtn.Size = new System.Drawing.Size(56, 25);
+            this.Backbtn.Size = new System.Drawing.Size(45, 20);
             this.Backbtn.TabIndex = 14;
             this.Backbtn.Text = "Back";
             // 
@@ -206,10 +193,9 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(29, 22);
-            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.BacklogoBtn.Location = new System.Drawing.Point(22, 18);
             this.BacklogoBtn.Name = "BacklogoBtn";
-            this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
+            this.BacklogoBtn.Size = new System.Drawing.Size(40, 28);
             this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BacklogoBtn.TabIndex = 15;
             this.BacklogoBtn.TabStop = false;
@@ -218,10 +204,9 @@
             // btnsubmit
             // 
             this.btnsubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsubmit.Location = new System.Drawing.Point(430, 697);
-            this.btnsubmit.Margin = new System.Windows.Forms.Padding(4);
+            this.btnsubmit.Location = new System.Drawing.Point(322, 566);
             this.btnsubmit.Name = "btnsubmit";
-            this.btnsubmit.Size = new System.Drawing.Size(100, 28);
+            this.btnsubmit.Size = new System.Drawing.Size(75, 23);
             this.btnsubmit.TabIndex = 16;
             this.btnsubmit.Text = "Submit";
             this.btnsubmit.UseVisualStyleBackColor = true;
@@ -231,19 +216,19 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(990, 65);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(742, 53);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(752, 844);
+            this.pictureBox1.Size = new System.Drawing.Size(564, 686);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
             // showpass
             // 
-            this.showpass.Location = new System.Drawing.Point(349, 535);
+            this.showpass.Location = new System.Drawing.Point(262, 435);
+            this.showpass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showpass.Name = "showpass";
-            this.showpass.Size = new System.Drawing.Size(137, 26);
+            this.showpass.Size = new System.Drawing.Size(103, 21);
             this.showpass.TabIndex = 18;
             this.showpass.Text = "Show / Hide";
             this.showpass.UseVisualStyleBackColor = true;
@@ -251,10 +236,10 @@
             // 
             // CAAForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1488, 800);
+            this.ClientSize = new System.Drawing.Size(1115, 640);
             this.Controls.Add(this.showpass);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnsubmit);
@@ -273,7 +258,6 @@
             this.Controls.Add(this.AccountLbl);
             this.Controls.Add(this.CreateanLbl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CAAForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CAAForm";

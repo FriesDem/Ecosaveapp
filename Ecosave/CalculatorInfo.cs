@@ -24,9 +24,7 @@ namespace Ecosave
 
         private void btnsubmit_Click(object sender, EventArgs e)
         {
-            var Calculator = new Calculator();
-            Calculator.MdiParent = this.MdiParent;
-            Calculator.Show();
+            
         }
     }
 }

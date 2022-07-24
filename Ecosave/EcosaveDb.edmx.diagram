@@ -5,17 +5,17 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="20f8963825f7437ebe34db90d9ec41f5" Name="Diagram1" ZoomLevel="115">
-        <EntityTypeShape EntityType="ECOSAVEModel.Devices_Table" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Person_Table" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Billing_Table" Width="1.5" PointX="2.125" PointY="7.25" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Calculator" Width="1.5" PointX="4.125" PointY="7.25" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Houses_Table" Width="1.5" PointX="9.125" PointY="5.25" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Role" Width="1.5" PointX="5.375" PointY="1" />
-        <EntityTypeShape EntityType="ECOSAVEModel.UserRole" Width="1.5" PointX="7.625" PointY="0.875" />
-        <EntityTypeShape EntityType="ECOSAVEModel.User" Width="1.5" PointX="5.375" PointY="3.875" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Billing_Table" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Calculator" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Devices_Table" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Houses_Table" Width="1.5" PointX="6.75" PointY="4.75" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Person_Table" Width="1.5" PointX="4.75" PointY="0.5" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Role" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="ECOSAVEModel.UserRole" Width="1.5" PointX="3" PointY="0.875" />
+        <EntityTypeShape EntityType="ECOSAVEModel.User" Width="1.5" PointX="0.75" PointY="3.875" />
         <AssociationConnector Association="ECOSAVEModel.FK_UserRoles_Roles" />
         <AssociationConnector Association="ECOSAVEModel.FK_UserRoles_Users" />
-        </Diagram>
+      </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>
