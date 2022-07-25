@@ -15,8 +15,8 @@ namespace Ecosave
     public partial class UserRole
     {
         public int id { get; set; }
-        public Nullable<int> userid { get; set; }
-        public Nullable<int> roleid { get; set; }
+        public int userid { get; set; }
+        public int roleid { get; set; }
     
         public virtual Role Role { get; set; }
         public virtual User User { get; set; }

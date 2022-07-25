@@ -26,6 +26,7 @@ namespace Ecosave
         {
             function = '+';
             firstVal = userVal;
+
             userVal = "";
         }
 
@@ -161,8 +162,9 @@ namespace Ecosave
             calculatorDisplay.Text = userVal;
         }
 
-        
-
-        
+        private void BacklogoBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

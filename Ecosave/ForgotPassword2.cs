@@ -11,23 +11,28 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class Paasword_Reset : Form
+    public partial class ForgotPassword2 : Form
     {
         private readonly ECOSAVEEntities _db;
         private User _user;
-        public Paasword_Reset(User user)
+        public ForgotPassword2(User user)
         {
             InitializeComponent();
             _db = new ECOSAVEEntities();
             _user = user;
-        }
+        }   
 
-        private void BacklogoBtn_Click(object sender, EventArgs e)
+        private void BacklogoBtn_Click_1(object sender, EventArgs e)
         {
+            Close();
 
+            {
+                ForgotPassword fpass = new ForgotPassword();
+                fpass.Show();
+            }
         }
 
-        private void btnreset_Click(object sender, EventArgs e)
+        private void btnreset_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -38,21 +43,38 @@ namespace Ecosave
                     MessageBox.Show("Password do not match.Please try again !!");
                 }
                 
-                var user = _db.Users.FirstOrDefault(q => q.ID == _user.ID);
+                 var user = _db.Users.FirstOrDefault(q => q.Email == _user.Email);
                 
-               
+
+                
+                    
                     _user.Password = Utils.Hashpassword(password);
                     _db.SaveChanges();
-                    MessageBox.Show("Password Was Reset Succesfully!");
+                MessageBox.Show("Password Was Reset Succesfully!");
                 Close();
 
+               
+                    LoginForm login = new LoginForm();
+                    login.Show();
+                
             }
+
             catch (Exception)
             {
 
                 MessageBox.Show("An Error Has Occured.Please To Try Again!");
             }
 
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            Close();
+
+            {
+                LoginForm login = new LoginForm();
+                login.Show();
+            }
         }
     }
 }

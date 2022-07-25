@@ -32,19 +32,22 @@
             this.BacklogoBtn = new System.Windows.Forms.PictureBox();
             this.Backbtn = new System.Windows.Forms.Label();
             this.EditProfileLbl = new System.Windows.Forms.Label();
-            this.ConfirmPassTB = new System.Windows.Forms.TextBox();
-            this.PasswordTB = new System.Windows.Forms.TextBox();
-            this.PhonenumberTB = new System.Windows.Forms.TextBox();
-            this.EmailTB = new System.Windows.Forms.TextBox();
-            this.NameTB = new System.Windows.Forms.TextBox();
-            this.ConfirmPasswordlbl = new System.Windows.Forms.Label();
-            this.Passwordlbl = new System.Windows.Forms.Label();
-            this.Phonenumberlbl = new System.Windows.Forms.Label();
-            this.EmailLbl = new System.Windows.Forms.Label();
+            this.OccupationTB = new System.Windows.Forms.TextBox();
+            this.ZipcodeTB = new System.Windows.Forms.TextBox();
+            this.StreetTB = new System.Windows.Forms.TextBox();
+            this.ParishTB = new System.Windows.Forms.TextBox();
+            this.FNameTB = new System.Windows.Forms.TextBox();
+            this.Occcupation = new System.Windows.Forms.Label();
+            this.Zipcode = new System.Windows.Forms.Label();
+            this.Street = new System.Windows.Forms.Label();
+            this.parish = new System.Windows.Forms.Label();
             this.Namelbl = new System.Windows.Forms.Label();
             this.EditProfileSubbtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnedit = new System.Windows.Forms.Button();
+            this.LNameTB = new System.Windows.Forms.TextBox();
+            this.PhoneNumberTB = new System.Windows.Forms.TextBox();
+            this.PhoneNumber = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -86,103 +89,103 @@
             this.EditProfileLbl.TabIndex = 21;
             this.EditProfileLbl.Text = "Edit Profile";
             // 
-            // ConfirmPassTB
+            // OccupationTB
             // 
-            this.ConfirmPassTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.ConfirmPassTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ConfirmPassTB.Location = new System.Drawing.Point(512, 584);
-            this.ConfirmPassTB.Margin = new System.Windows.Forms.Padding(4);
-            this.ConfirmPassTB.Name = "ConfirmPassTB";
-            this.ConfirmPassTB.Size = new System.Drawing.Size(192, 22);
-            this.ConfirmPassTB.TabIndex = 34;
+            this.OccupationTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.OccupationTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.OccupationTB.Location = new System.Drawing.Point(451, 596);
+            this.OccupationTB.Margin = new System.Windows.Forms.Padding(4);
+            this.OccupationTB.Name = "OccupationTB";
+            this.OccupationTB.Size = new System.Drawing.Size(275, 22);
+            this.OccupationTB.TabIndex = 34;
             // 
-            // PasswordTB
+            // ZipcodeTB
             // 
-            this.PasswordTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.PasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PasswordTB.Location = new System.Drawing.Point(512, 485);
-            this.PasswordTB.Margin = new System.Windows.Forms.Padding(4);
-            this.PasswordTB.Name = "PasswordTB";
-            this.PasswordTB.Size = new System.Drawing.Size(192, 22);
-            this.PasswordTB.TabIndex = 33;
+            this.ZipcodeTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.ZipcodeTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZipcodeTB.Location = new System.Drawing.Point(490, 509);
+            this.ZipcodeTB.Margin = new System.Windows.Forms.Padding(4);
+            this.ZipcodeTB.Name = "ZipcodeTB";
+            this.ZipcodeTB.Size = new System.Drawing.Size(192, 22);
+            this.ZipcodeTB.TabIndex = 33;
             // 
-            // PhonenumberTB
+            // StreetTB
             // 
-            this.PhonenumberTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.PhonenumberTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PhonenumberTB.Location = new System.Drawing.Point(512, 378);
-            this.PhonenumberTB.Margin = new System.Windows.Forms.Padding(4);
-            this.PhonenumberTB.Name = "PhonenumberTB";
-            this.PhonenumberTB.Size = new System.Drawing.Size(192, 22);
-            this.PhonenumberTB.TabIndex = 32;
+            this.StreetTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.StreetTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StreetTB.Location = new System.Drawing.Point(451, 404);
+            this.StreetTB.Margin = new System.Windows.Forms.Padding(4);
+            this.StreetTB.Name = "StreetTB";
+            this.StreetTB.Size = new System.Drawing.Size(275, 22);
+            this.StreetTB.TabIndex = 32;
             // 
-            // EmailTB
+            // ParishTB
             // 
-            this.EmailTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.EmailTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmailTB.Location = new System.Drawing.Point(512, 294);
-            this.EmailTB.Margin = new System.Windows.Forms.Padding(4);
-            this.EmailTB.Name = "EmailTB";
-            this.EmailTB.Size = new System.Drawing.Size(275, 22);
-            this.EmailTB.TabIndex = 31;
+            this.ParishTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.ParishTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ParishTB.Location = new System.Drawing.Point(451, 319);
+            this.ParishTB.Margin = new System.Windows.Forms.Padding(4);
+            this.ParishTB.Name = "ParishTB";
+            this.ParishTB.Size = new System.Drawing.Size(275, 22);
+            this.ParishTB.TabIndex = 31;
             // 
-            // NameTB
+            // FNameTB
             // 
-            this.NameTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.NameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.NameTB.Location = new System.Drawing.Point(512, 193);
-            this.NameTB.Margin = new System.Windows.Forms.Padding(4);
-            this.NameTB.Name = "NameTB";
-            this.NameTB.Size = new System.Drawing.Size(192, 22);
-            this.NameTB.TabIndex = 30;
+            this.FNameTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.FNameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FNameTB.Location = new System.Drawing.Point(375, 227);
+            this.FNameTB.Margin = new System.Windows.Forms.Padding(4);
+            this.FNameTB.Name = "FNameTB";
+            this.FNameTB.Size = new System.Drawing.Size(192, 22);
+            this.FNameTB.TabIndex = 30;
             // 
-            // ConfirmPasswordlbl
+            // Occcupation
             // 
-            this.ConfirmPasswordlbl.AutoSize = true;
-            this.ConfirmPasswordlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ConfirmPasswordlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ConfirmPasswordlbl.Location = new System.Drawing.Point(250, 583);
-            this.ConfirmPasswordlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.ConfirmPasswordlbl.Name = "ConfirmPasswordlbl";
-            this.ConfirmPasswordlbl.Size = new System.Drawing.Size(147, 20);
-            this.ConfirmPasswordlbl.TabIndex = 29;
-            this.ConfirmPasswordlbl.Text = "Confirm Password";
+            this.Occcupation.AutoSize = true;
+            this.Occcupation.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Occcupation.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Occcupation.Location = new System.Drawing.Point(248, 568);
+            this.Occcupation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Occcupation.Name = "Occcupation";
+            this.Occcupation.Size = new System.Drawing.Size(94, 20);
+            this.Occcupation.TabIndex = 29;
+            this.Occcupation.Text = "Ocuupation";
             // 
-            // Passwordlbl
+            // Zipcode
             // 
-            this.Passwordlbl.AutoSize = true;
-            this.Passwordlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Passwordlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Passwordlbl.Location = new System.Drawing.Point(250, 484);
-            this.Passwordlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Passwordlbl.Name = "Passwordlbl";
-            this.Passwordlbl.Size = new System.Drawing.Size(83, 20);
-            this.Passwordlbl.TabIndex = 28;
-            this.Passwordlbl.Text = "Password";
+            this.Zipcode.AutoSize = true;
+            this.Zipcode.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Zipcode.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Zipcode.Location = new System.Drawing.Point(250, 474);
+            this.Zipcode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Zipcode.Name = "Zipcode";
+            this.Zipcode.Size = new System.Drawing.Size(67, 20);
+            this.Zipcode.TabIndex = 28;
+            this.Zipcode.Text = "Zipcode";
             // 
-            // Phonenumberlbl
+            // Street
             // 
-            this.Phonenumberlbl.AutoSize = true;
-            this.Phonenumberlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.Phonenumberlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Phonenumberlbl.Location = new System.Drawing.Point(250, 380);
-            this.Phonenumberlbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Phonenumberlbl.Name = "Phonenumberlbl";
-            this.Phonenumberlbl.Size = new System.Drawing.Size(120, 20);
-            this.Phonenumberlbl.TabIndex = 27;
-            this.Phonenumberlbl.Text = "Phone Number";
+            this.Street.AutoSize = true;
+            this.Street.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Street.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Street.Location = new System.Drawing.Point(253, 377);
+            this.Street.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Street.Name = "Street";
+            this.Street.Size = new System.Drawing.Size(54, 20);
+            this.Street.TabIndex = 27;
+            this.Street.Text = "Street";
             // 
-            // EmailLbl
+            // parish
             // 
-            this.EmailLbl.AutoSize = true;
-            this.EmailLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.EmailLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.EmailLbl.Location = new System.Drawing.Point(250, 293);
-            this.EmailLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.EmailLbl.Name = "EmailLbl";
-            this.EmailLbl.Size = new System.Drawing.Size(51, 20);
-            this.EmailLbl.TabIndex = 26;
-            this.EmailLbl.Text = "Email";
+            this.parish.AutoSize = true;
+            this.parish.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.parish.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.parish.Location = new System.Drawing.Point(250, 293);
+            this.parish.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.parish.Name = "parish";
+            this.parish.Size = new System.Drawing.Size(57, 20);
+            this.parish.TabIndex = 26;
+            this.parish.Text = "Parish";
             // 
             // Namelbl
             // 
@@ -199,7 +202,7 @@
             // EditProfileSubbtn
             // 
             this.EditProfileSubbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditProfileSubbtn.Location = new System.Drawing.Point(789, 674);
+            this.EditProfileSubbtn.Location = new System.Drawing.Point(799, 755);
             this.EditProfileSubbtn.Margin = new System.Windows.Forms.Padding(4);
             this.EditProfileSubbtn.Name = "EditProfileSubbtn";
             this.EditProfileSubbtn.Size = new System.Drawing.Size(100, 28);
@@ -221,7 +224,7 @@
             // 
             // btnedit
             // 
-            this.btnedit.Location = new System.Drawing.Point(531, 45);
+            this.btnedit.Location = new System.Drawing.Point(535, 147);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(108, 23);
             this.btnedit.TabIndex = 37;
@@ -229,24 +232,59 @@
             this.btnedit.UseVisualStyleBackColor = true;
             this.btnedit.Click += new System.EventHandler(this.btnedit_Click);
             // 
+            // LNameTB
+            // 
+            this.LNameTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.LNameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LNameTB.Location = new System.Drawing.Point(616, 227);
+            this.LNameTB.Margin = new System.Windows.Forms.Padding(4);
+            this.LNameTB.Name = "LNameTB";
+            this.LNameTB.Size = new System.Drawing.Size(192, 22);
+            this.LNameTB.TabIndex = 38;
+            // 
+            // PhoneNumberTB
+            // 
+            this.PhoneNumberTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.PhoneNumberTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PhoneNumberTB.Location = new System.Drawing.Point(490, 684);
+            this.PhoneNumberTB.Margin = new System.Windows.Forms.Padding(4);
+            this.PhoneNumberTB.Name = "PhoneNumberTB";
+            this.PhoneNumberTB.Size = new System.Drawing.Size(192, 22);
+            this.PhoneNumberTB.TabIndex = 40;
+            // 
+            // PhoneNumber
+            // 
+            this.PhoneNumber.AutoSize = true;
+            this.PhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.PhoneNumber.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PhoneNumber.Location = new System.Drawing.Point(248, 653);
+            this.PhoneNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PhoneNumber.Name = "PhoneNumber";
+            this.PhoneNumber.Size = new System.Drawing.Size(120, 20);
+            this.PhoneNumber.TabIndex = 39;
+            this.PhoneNumber.Text = "Phone Number";
+            // 
             // EditProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.PhoneNumberTB);
+            this.Controls.Add(this.PhoneNumber);
+            this.Controls.Add(this.LNameTB);
             this.Controls.Add(this.btnedit);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.EditProfileSubbtn);
-            this.Controls.Add(this.ConfirmPassTB);
-            this.Controls.Add(this.PasswordTB);
-            this.Controls.Add(this.PhonenumberTB);
-            this.Controls.Add(this.EmailTB);
-            this.Controls.Add(this.NameTB);
-            this.Controls.Add(this.ConfirmPasswordlbl);
-            this.Controls.Add(this.Passwordlbl);
-            this.Controls.Add(this.Phonenumberlbl);
-            this.Controls.Add(this.EmailLbl);
+            this.Controls.Add(this.OccupationTB);
+            this.Controls.Add(this.ZipcodeTB);
+            this.Controls.Add(this.StreetTB);
+            this.Controls.Add(this.ParishTB);
+            this.Controls.Add(this.FNameTB);
+            this.Controls.Add(this.Occcupation);
+            this.Controls.Add(this.Zipcode);
+            this.Controls.Add(this.Street);
+            this.Controls.Add(this.parish);
             this.Controls.Add(this.Namelbl);
             this.Controls.Add(this.EditProfileLbl);
             this.Controls.Add(this.Backbtn);
@@ -270,18 +308,21 @@
         private System.Windows.Forms.PictureBox BacklogoBtn;
         private System.Windows.Forms.Label Backbtn;
         private System.Windows.Forms.Label EditProfileLbl;
-        private System.Windows.Forms.TextBox ConfirmPassTB;
-        private System.Windows.Forms.TextBox PasswordTB;
-        private System.Windows.Forms.TextBox PhonenumberTB;
-        private System.Windows.Forms.TextBox EmailTB;
-        private System.Windows.Forms.TextBox NameTB;
-        private System.Windows.Forms.Label ConfirmPasswordlbl;
-        private System.Windows.Forms.Label Passwordlbl;
-        private System.Windows.Forms.Label Phonenumberlbl;
-        private System.Windows.Forms.Label EmailLbl;
+        private System.Windows.Forms.TextBox OccupationTB;
+        private System.Windows.Forms.TextBox ZipcodeTB;
+        private System.Windows.Forms.TextBox StreetTB;
+        private System.Windows.Forms.TextBox ParishTB;
+        private System.Windows.Forms.TextBox FNameTB;
+        private System.Windows.Forms.Label Occcupation;
+        private System.Windows.Forms.Label Zipcode;
+        private System.Windows.Forms.Label Street;
+        private System.Windows.Forms.Label parish;
         private System.Windows.Forms.Label Namelbl;
         private System.Windows.Forms.Button EditProfileSubbtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnedit;
+        private System.Windows.Forms.TextBox LNameTB;
+        private System.Windows.Forms.TextBox PhoneNumberTB;
+        private System.Windows.Forms.Label PhoneNumber;
     }
 }

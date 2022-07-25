@@ -24,10 +24,13 @@ namespace Ecosave
             Caa.Show();
         }
 
-        private void btnsubmit_Click(object sender, EventArgs e)
-        {this.Close();
-            var createprofile = new Creating_profile_page_2();
-            createprofile.Show();
+
+        private void btnsubmit_Click_1(object sender, EventArgs e)
+        {
+            
+                this.Close();
+                var createprofile = new Creating_profile_page_2();
+                createprofile.Show();
         }
     }
 }

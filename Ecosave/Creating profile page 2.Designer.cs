@@ -42,6 +42,10 @@
             this.HowManyDeviceTB = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.SUYASubBtn = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.LNameTB = new System.Windows.Forms.TextBox();
+            this.FNameTB = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -103,7 +107,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(486, 250);
+            this.label1.Location = new System.Drawing.Point(264, 222);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(332, 29);
@@ -115,7 +119,7 @@
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
             this.panel2.Controls.Add(this.HowManyRoomsTB);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(491, 301);
+            this.panel2.Location = new System.Drawing.Point(269, 273);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(335, 172);
@@ -146,7 +150,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(1080, 250);
+            this.label2.Location = new System.Drawing.Point(858, 222);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(348, 29);
@@ -158,7 +162,7 @@
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
             this.panel1.Controls.Add(this.HowManyDeviceTB);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(1093, 301);
+            this.panel1.Location = new System.Drawing.Point(871, 273);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(335, 172);
@@ -187,21 +191,69 @@
             // SUYASubBtn
             // 
             this.SUYASubBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SUYASubBtn.Location = new System.Drawing.Point(889, 569);
+            this.SUYASubBtn.Location = new System.Drawing.Point(673, 671);
             this.SUYASubBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SUYASubBtn.Name = "SUYASubBtn";
-            this.SUYASubBtn.Size = new System.Drawing.Size(136, 54);
+            this.SUYASubBtn.Size = new System.Drawing.Size(136, 30);
             this.SUYASubBtn.TabIndex = 45;
             this.SUYASubBtn.Text = "Submit";
             this.SUYASubBtn.UseVisualStyleBackColor = true;
             this.SUYASubBtn.Click += new System.EventHandler(this.SUYASubBtn_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(867, 496);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 20);
+            this.label3.TabIndex = 65;
+            this.label3.Text = "Income";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(248, 496);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(153, 20);
+            this.label4.TabIndex = 64;
+            this.label4.Text = "Budget For Utilities";
+            // 
+            // LNameTB
+            // 
+            this.LNameTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.LNameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LNameTB.Location = new System.Drawing.Point(984, 494);
+            this.LNameTB.Margin = new System.Windows.Forms.Padding(4);
+            this.LNameTB.Name = "LNameTB";
+            this.LNameTB.Size = new System.Drawing.Size(222, 22);
+            this.LNameTB.TabIndex = 63;
+            // 
+            // FNameTB
+            // 
+            this.FNameTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.FNameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FNameTB.Location = new System.Drawing.Point(409, 497);
+            this.FNameTB.Margin = new System.Windows.Forms.Padding(4);
+            this.FNameTB.Name = "FNameTB";
+            this.FNameTB.Size = new System.Drawing.Size(195, 22);
+            this.FNameTB.TabIndex = 62;
             // 
             // Creating_profile_page_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1906, 1008);
+            this.ClientSize = new System.Drawing.Size(1469, 741);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.LNameTB);
+            this.Controls.Add(this.FNameTB);
             this.Controls.Add(this.SUYASubBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
@@ -216,7 +268,6 @@
             this.Name = "Creating_profile_page_2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Creating_profile_page_2";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -244,5 +295,9 @@
         private System.Windows.Forms.TextBox HowManyDeviceTB;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button SUYASubBtn;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox LNameTB;
+        private System.Windows.Forms.TextBox FNameTB;
     }
 }

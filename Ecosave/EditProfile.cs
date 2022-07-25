@@ -32,20 +32,24 @@ namespace Ecosave
 
         private void btnedit_Click(object sender, EventArgs e)
         {
-            NameTB.Visible = true;
-            PhonenumberTB.Visible = true;
-            EmailTB.Visible = true;
-            PasswordTB.Visible = true;
-            ConfirmPassTB.Visible = true;
+            FNameTB.Visible = true;
+            LNameTB.Visible = true;
+            StreetTB.Visible = true;
+            ParishTB.Visible = true;
+            ZipcodeTB.Visible = true;
+            OccupationTB.Visible = true;
+            PhoneNumber.Visible = true;
         }
 
         private void EditProfile_Load(object sender, EventArgs e)
         {    
-            NameTB.Visible = false;
-            PhonenumberTB.Visible = false;
-            EmailTB.Visible = false;
-            PasswordTB.Visible = false;
-            ConfirmPassTB.Visible = false;
+            FNameTB.Visible = false;
+            LNameTB.Visible = false;
+            StreetTB.Visible = false;
+            ParishTB.Visible = false;
+            ZipcodeTB.Visible = false;
+            OccupationTB.Visible = false;
+            PhoneNumber.Visible = false;
 
         }
     }

@@ -123,6 +123,12 @@
     <Compile Include="Calc.Designer.cs">
       <DependentUpon>Calc.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForgotPassword2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword2.Designer.cs">
+      <DependentUpon>ForgotPassword2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Houses_Table.cs">
       <DependentUpon>EcosaveDb.tt</DependentUpon>
     </Compile>
@@ -242,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Calc.resx">
       <DependentUpon>Calc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword2.resx">
+      <DependentUpon>ForgotPassword2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paasword Reset.resx">
       <DependentUpon>Paasword Reset.cs</DependentUpon>
