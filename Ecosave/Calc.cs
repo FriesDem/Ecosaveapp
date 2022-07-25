@@ -26,7 +26,6 @@ namespace Ecosave
         {
             function = '+';
             firstVal = userVal;
-
             userVal = "";
         }
 

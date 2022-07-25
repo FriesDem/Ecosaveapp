@@ -41,5 +41,48 @@ namespace Ecosave
             Process.Start(sInfo);
         
         }
+
+        private void btnview3_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.co.uk/s?k=energy+saving+kettle&i=kitchen&ref=nb_sb_noss");
+            Process.Start(sInfo);
+        }
+
+        private void btnview4_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.com/s?k=portable+solar+fridge&crid=29CWMKOSOO70I&sprefix=portable+solar+fridge%2Caps%2C148&ref=nb_sb_noss_1");
+            Process.Start(sInfo);
+        }
+
+        private void btnview5_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.com/s?k=solar+generator&crid=UP3AGFVA0Q3G&sprefix=solar+generator%2Caps%2C161&ref=nb_sb_noss_1");
+            Process.Start(sInfo);
+        }
+
+        private void btnview6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnview7_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.com/s?k=smart+electric+outlet&crid=2WMMPBQKT7G5O&sprefix=smart+electric+outle%2Caps%2C154&ref=nb_sb_noss_2");
+            Process.Start(sInfo);
+        
+        }
+
+        private void btnview8_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.com/s?k=smart+meters&crid=3REM71OZ2D8A1&sprefix=smart+meters%2Caps%2C164&ref=nb_sb_noss_1");
+            Process.Start(sInfo);
+        }
+
+        private void btnview9_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.com/s?k=tumble+dryer+balls&crid=399X1X617DRJZ&sprefix=tumble+dryer+balls%2Caps%2C163&ref=nb_sb_noss_1");
+            Process.Start(sInfo);
+       
+        }
     }
 }
