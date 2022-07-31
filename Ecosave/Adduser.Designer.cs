@@ -76,7 +76,7 @@
             this.CreateanLbl.AutoSize = true;
             this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateanLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CreateanLbl.Location = new System.Drawing.Point(625, 54);
+            this.CreateanLbl.Location = new System.Drawing.Point(564, 55);
             this.CreateanLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CreateanLbl.Name = "CreateanLbl";
             this.CreateanLbl.Size = new System.Drawing.Size(498, 39);
@@ -123,7 +123,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1468, -44);
+            this.pictureBox1.Location = new System.Drawing.Point(1464, 55);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(699, 844);

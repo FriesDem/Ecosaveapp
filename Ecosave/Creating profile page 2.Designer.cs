@@ -44,8 +44,11 @@
             this.SUYASubBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.LNameTB = new System.Windows.Forms.TextBox();
-            this.FNameTB = new System.Windows.Forms.TextBox();
+            this.IncomeTB = new System.Windows.Forms.TextBox();
+            this.BudgetTB = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.OccupantsTB = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -95,7 +98,7 @@
             this.AccountLbl.AutoSize = true;
             this.AccountLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AccountLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AccountLbl.Location = new System.Drawing.Point(185, 94);
+            this.AccountLbl.Location = new System.Drawing.Point(363, 30);
             this.AccountLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AccountLbl.Name = "AccountLbl";
             this.AccountLbl.Size = new System.Drawing.Size(216, 39);
@@ -127,11 +130,11 @@
             // 
             // HowManyRoomsTB
             // 
-            this.HowManyRoomsTB.Location = new System.Drawing.Point(216, 43);
+            this.HowManyRoomsTB.Location = new System.Drawing.Point(205, 108);
             this.HowManyRoomsTB.Margin = new System.Windows.Forms.Padding(4);
             this.HowManyRoomsTB.Multiline = true;
             this.HowManyRoomsTB.Name = "HowManyRoomsTB";
-            this.HowManyRoomsTB.Size = new System.Drawing.Size(95, 80);
+            this.HowManyRoomsTB.Size = new System.Drawing.Size(31, 31);
             this.HowManyRoomsTB.TabIndex = 40;
             // 
             // pictureBox3
@@ -170,11 +173,11 @@
             // 
             // HowManyDeviceTB
             // 
-            this.HowManyDeviceTB.Location = new System.Drawing.Point(208, 43);
+            this.HowManyDeviceTB.Location = new System.Drawing.Point(182, 91);
             this.HowManyDeviceTB.Margin = new System.Windows.Forms.Padding(4);
             this.HowManyDeviceTB.Multiline = true;
             this.HowManyDeviceTB.Name = "HowManyDeviceTB";
-            this.HowManyDeviceTB.Size = new System.Drawing.Size(95, 80);
+            this.HowManyDeviceTB.Size = new System.Drawing.Size(34, 31);
             this.HowManyDeviceTB.TabIndex = 41;
             // 
             // pictureBox1
@@ -191,7 +194,7 @@
             // SUYASubBtn
             // 
             this.SUYASubBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SUYASubBtn.Location = new System.Drawing.Point(673, 671);
+            this.SUYASubBtn.Location = new System.Drawing.Point(709, 668);
             this.SUYASubBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SUYASubBtn.Name = "SUYASubBtn";
             this.SUYASubBtn.Size = new System.Drawing.Size(136, 30);
@@ -217,32 +220,66 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(248, 496);
+            this.label4.Location = new System.Drawing.Point(265, 550);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(153, 20);
             this.label4.TabIndex = 64;
             this.label4.Text = "Budget For Utilities";
             // 
-            // LNameTB
+            // IncomeTB
             // 
-            this.LNameTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.LNameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LNameTB.Location = new System.Drawing.Point(984, 494);
-            this.LNameTB.Margin = new System.Windows.Forms.Padding(4);
-            this.LNameTB.Name = "LNameTB";
-            this.LNameTB.Size = new System.Drawing.Size(222, 22);
-            this.LNameTB.TabIndex = 63;
+            this.IncomeTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.IncomeTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IncomeTB.Location = new System.Drawing.Point(984, 494);
+            this.IncomeTB.Margin = new System.Windows.Forms.Padding(4);
+            this.IncomeTB.Name = "IncomeTB";
+            this.IncomeTB.Size = new System.Drawing.Size(222, 22);
+            this.IncomeTB.TabIndex = 63;
             // 
-            // FNameTB
+            // BudgetTB
             // 
-            this.FNameTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.FNameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FNameTB.Location = new System.Drawing.Point(409, 497);
-            this.FNameTB.Margin = new System.Windows.Forms.Padding(4);
-            this.FNameTB.Name = "FNameTB";
-            this.FNameTB.Size = new System.Drawing.Size(195, 22);
-            this.FNameTB.TabIndex = 62;
+            this.BudgetTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.BudgetTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BudgetTB.Location = new System.Drawing.Point(489, 551);
+            this.BudgetTB.Margin = new System.Windows.Forms.Padding(4);
+            this.BudgetTB.Name = "BudgetTB";
+            this.BudgetTB.Size = new System.Drawing.Size(195, 22);
+            this.BudgetTB.TabIndex = 62;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(265, 465);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(177, 20);
+            this.label5.TabIndex = 67;
+            this.label5.Text = "Number Of Occupants";
+            // 
+            // OccupantsTB
+            // 
+            this.OccupantsTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.OccupantsTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.OccupantsTB.Location = new System.Drawing.Point(489, 463);
+            this.OccupantsTB.Margin = new System.Windows.Forms.Padding(4);
+            this.OccupantsTB.Name = "OccupantsTB";
+            this.OccupantsTB.Size = new System.Drawing.Size(195, 22);
+            this.OccupantsTB.TabIndex = 66;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(81, 151);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(424, 20);
+            this.label6.TabIndex = 68;
+            this.label6.Text = "These information are collected to better define your bill";
             // 
             // Creating_profile_page_2
             // 
@@ -250,10 +287,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1469, 741);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.OccupantsTB);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.LNameTB);
-            this.Controls.Add(this.FNameTB);
+            this.Controls.Add(this.IncomeTB);
+            this.Controls.Add(this.BudgetTB);
             this.Controls.Add(this.SUYASubBtn);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
@@ -297,7 +337,10 @@
         private System.Windows.Forms.Button SUYASubBtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox LNameTB;
-        private System.Windows.Forms.TextBox FNameTB;
+        private System.Windows.Forms.TextBox IncomeTB;
+        private System.Windows.Forms.TextBox BudgetTB;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox OccupantsTB;
+        private System.Windows.Forms.Label label6;
     }
 }

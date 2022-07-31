@@ -5,14 +5,15 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="20f8963825f7437ebe34db90d9ec41f5" Name="Diagram1" ZoomLevel="115">
-        <EntityTypeShape EntityType="ECOSAVEModel.Billing_Table" Width="1.5" PointX="2.75" PointY="4.5" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Calculator" Width="1.5" PointX="4.75" PointY="4.5" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Devices_Table" Width="1.5" PointX="5.75" PointY="0.5" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Houses_Table" Width="1.5" PointX="6.75" PointY="4.5" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Person_Table" Width="1.5" PointX="6.75" PointY="7.5" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Role" Width="1.5" PointX="0.75" PointY="4.875" />
-        <EntityTypeShape EntityType="ECOSAVEModel.UserRole" Width="1.5" PointX="3" PointY="0.75" />
-        <EntityTypeShape EntityType="ECOSAVEModel.User" Width="1.5" PointX="0.75" PointY="0.625" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Billing_Table" Width="1.5" PointX="5.75" PointY="0.875" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Calculator" Width="1.5" PointX="5.75" PointY="4.875" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Devices_Table" Width="1.5" PointX="7.75" PointY="0.875" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Houses_Table" Width="1.5" PointX="7.75" PointY="4.875" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Person_Table" Width="1.5" PointX="3" PointY="5.375" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Role" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ECOSAVEModel.UserRole" Width="1.5" PointX="3" PointY="2.625" />
+        <EntityTypeShape EntityType="ECOSAVEModel.User" Width="1.5" PointX="0.75" PointY="3.5" />
+        <AssociationConnector Association="ECOSAVEModel.FK_Person_Table_Users" />
         <AssociationConnector Association="ECOSAVEModel.FK_UserRoles_Roles" />
         <AssociationConnector Association="ECOSAVEModel.FK_UserRoles_Users" />
       </Diagram>

@@ -52,5 +52,11 @@ namespace Ecosave
             }
             
         }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            tbusername.Text = "";
+            tbemail.Text = "";
+        }
     }
 }

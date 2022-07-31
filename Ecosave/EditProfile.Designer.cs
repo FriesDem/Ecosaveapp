@@ -47,7 +47,14 @@
             this.btnedit = new System.Windows.Forms.Button();
             this.LNameTB = new System.Windows.Forms.TextBox();
             this.PhoneNumberTB = new System.Windows.Forms.TextBox();
-            this.PhoneNumber = new System.Windows.Forms.Label();
+            this.Phone = new System.Windows.Forms.Label();
+            this.fname = new System.Windows.Forms.Label();
+            this.lname = new System.Windows.Forms.Label();
+            this.parishlb = new System.Windows.Forms.Label();
+            this.streetlb = new System.Windows.Forms.Label();
+            this.zipcodelb = new System.Windows.Forms.Label();
+            this.occupationlb = new System.Windows.Forms.Label();
+            this.phonenumb = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -209,6 +216,7 @@
             this.EditProfileSubbtn.TabIndex = 35;
             this.EditProfileSubbtn.Text = "Submit";
             this.EditProfileSubbtn.UseVisualStyleBackColor = true;
+            this.EditProfileSubbtn.Click += new System.EventHandler(this.EditProfileSubbtn_Click);
             // 
             // pictureBox1
             // 
@@ -224,7 +232,7 @@
             // 
             // btnedit
             // 
-            this.btnedit.Location = new System.Drawing.Point(535, 147);
+            this.btnedit.Location = new System.Drawing.Point(469, 147);
             this.btnedit.Name = "btnedit";
             this.btnedit.Size = new System.Drawing.Size(108, 23);
             this.btnedit.TabIndex = 37;
@@ -252,17 +260,94 @@
             this.PhoneNumberTB.Size = new System.Drawing.Size(192, 22);
             this.PhoneNumberTB.TabIndex = 40;
             // 
-            // PhoneNumber
+            // Phone
             // 
-            this.PhoneNumber.AutoSize = true;
-            this.PhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.PhoneNumber.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PhoneNumber.Location = new System.Drawing.Point(248, 653);
-            this.PhoneNumber.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.Size = new System.Drawing.Size(120, 20);
-            this.PhoneNumber.TabIndex = 39;
-            this.PhoneNumber.Text = "Phone Number";
+            this.Phone.AutoSize = true;
+            this.Phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Phone.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Phone.Location = new System.Drawing.Point(248, 653);
+            this.Phone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Phone.Name = "Phone";
+            this.Phone.Size = new System.Drawing.Size(120, 20);
+            this.Phone.TabIndex = 39;
+            this.Phone.Text = "Phone Number";
+            // 
+            // fname
+            // 
+            this.fname.AutoSize = true;
+            this.fname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.fname.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.fname.Location = new System.Drawing.Point(382, 203);
+            this.fname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.fname.Name = "fname";
+            this.fname.Size = new System.Drawing.Size(0, 20);
+            this.fname.TabIndex = 41;
+            // 
+            // lname
+            // 
+            this.lname.AutoSize = true;
+            this.lname.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lname.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lname.Location = new System.Drawing.Point(621, 203);
+            this.lname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lname.Name = "lname";
+            this.lname.Size = new System.Drawing.Size(0, 20);
+            this.lname.TabIndex = 42;
+            // 
+            // parishlb
+            // 
+            this.parishlb.AutoSize = true;
+            this.parishlb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.parishlb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.parishlb.Location = new System.Drawing.Point(447, 293);
+            this.parishlb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.parishlb.Name = "parishlb";
+            this.parishlb.Size = new System.Drawing.Size(0, 20);
+            this.parishlb.TabIndex = 43;
+            // 
+            // streetlb
+            // 
+            this.streetlb.AutoSize = true;
+            this.streetlb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.streetlb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.streetlb.Location = new System.Drawing.Point(447, 380);
+            this.streetlb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.streetlb.Name = "streetlb";
+            this.streetlb.Size = new System.Drawing.Size(0, 20);
+            this.streetlb.TabIndex = 44;
+            // 
+            // zipcodelb
+            // 
+            this.zipcodelb.AutoSize = true;
+            this.zipcodelb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.zipcodelb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.zipcodelb.Location = new System.Drawing.Point(486, 485);
+            this.zipcodelb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.zipcodelb.Name = "zipcodelb";
+            this.zipcodelb.Size = new System.Drawing.Size(0, 20);
+            this.zipcodelb.TabIndex = 45;
+            // 
+            // occupationlb
+            // 
+            this.occupationlb.AutoSize = true;
+            this.occupationlb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.occupationlb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.occupationlb.Location = new System.Drawing.Point(447, 568);
+            this.occupationlb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.occupationlb.Name = "occupationlb";
+            this.occupationlb.Size = new System.Drawing.Size(0, 20);
+            this.occupationlb.TabIndex = 46;
+            // 
+            // phonenumb
+            // 
+            this.phonenumb.AutoSize = true;
+            this.phonenumb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.phonenumb.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.phonenumb.Location = new System.Drawing.Point(486, 660);
+            this.phonenumb.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.phonenumb.Name = "phonenumb";
+            this.phonenumb.Size = new System.Drawing.Size(0, 20);
+            this.phonenumb.TabIndex = 47;
             // 
             // EditProfile
             // 
@@ -270,8 +355,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.phonenumb);
+            this.Controls.Add(this.occupationlb);
+            this.Controls.Add(this.zipcodelb);
+            this.Controls.Add(this.streetlb);
+            this.Controls.Add(this.parishlb);
+            this.Controls.Add(this.lname);
+            this.Controls.Add(this.fname);
             this.Controls.Add(this.PhoneNumberTB);
-            this.Controls.Add(this.PhoneNumber);
+            this.Controls.Add(this.Phone);
             this.Controls.Add(this.LNameTB);
             this.Controls.Add(this.btnedit);
             this.Controls.Add(this.pictureBox1);
@@ -323,6 +415,13 @@
         private System.Windows.Forms.Button btnedit;
         private System.Windows.Forms.TextBox LNameTB;
         private System.Windows.Forms.TextBox PhoneNumberTB;
-        private System.Windows.Forms.Label PhoneNumber;
+        private System.Windows.Forms.Label Phone;
+        private System.Windows.Forms.Label fname;
+        private System.Windows.Forms.Label lname;
+        private System.Windows.Forms.Label parishlb;
+        private System.Windows.Forms.Label streetlb;
+        private System.Windows.Forms.Label zipcodelb;
+        private System.Windows.Forms.Label occupationlb;
+        private System.Windows.Forms.Label phonenumb;
     }
 }

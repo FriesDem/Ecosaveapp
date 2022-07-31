@@ -103,6 +103,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(551, 204);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(206, 205);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 44;
             this.pictureBox1.TabStop = false;
             // 
@@ -112,6 +113,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(832, 204);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(205, 205);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 45;
             this.pictureBox2.TabStop = false;
             // 
@@ -121,6 +123,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(1107, 204);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(215, 205);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 46;
             this.pictureBox3.TabStop = false;
             // 
@@ -130,6 +133,7 @@
             this.pictureBox4.Location = new System.Drawing.Point(224, 204);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(277, 205);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 47;
             this.pictureBox4.TabStop = false;
             // 
@@ -139,6 +143,7 @@
             this.pictureBox5.Location = new System.Drawing.Point(1383, 559);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(298, 205);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 48;
             this.pictureBox5.TabStop = false;
             // 
@@ -148,6 +153,7 @@
             this.pictureBox6.Location = new System.Drawing.Point(1031, 559);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(225, 205);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 49;
             this.pictureBox6.TabStop = false;
             // 
@@ -157,6 +163,7 @@
             this.pictureBox7.Location = new System.Drawing.Point(1383, 204);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(298, 205);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 50;
             this.pictureBox7.TabStop = false;
             // 
@@ -166,6 +173,7 @@
             this.pictureBox8.Location = new System.Drawing.Point(224, 559);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(285, 205);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox8.TabIndex = 51;
             this.pictureBox8.TabStop = false;
             // 
@@ -175,6 +183,7 @@
             this.pictureBox9.Location = new System.Drawing.Point(617, 559);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(298, 205);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 52;
             this.pictureBox9.TabStop = false;
             // 
@@ -371,7 +380,7 @@
             // 
             // btnview8
             // 
-            this.btnview8.Location = new System.Drawing.Point(1181, 770);
+            this.btnview8.Location = new System.Drawing.Point(1198, 770);
             this.btnview8.Name = "btnview8";
             this.btnview8.Size = new System.Drawing.Size(75, 23);
             this.btnview8.TabIndex = 70;

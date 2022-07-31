@@ -43,8 +43,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Backbtn = new System.Windows.Forms.Label();
             this.BacklogoBtn = new System.Windows.Forms.PictureBox();
+            this.reveal = new System.Windows.Forms.PictureBox();
+            this.reveal2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reveal)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reveal2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -204,12 +208,36 @@
             this.BacklogoBtn.TabStop = false;
             this.BacklogoBtn.Click += new System.EventHandler(this.BacklogoBtn_Click_1);
             // 
+            // reveal
+            // 
+            this.reveal.Image = ((System.Drawing.Image)(resources.GetObject("reveal.Image")));
+            this.reveal.Location = new System.Drawing.Point(1006, 389);
+            this.reveal.Name = "reveal";
+            this.reveal.Size = new System.Drawing.Size(38, 17);
+            this.reveal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.reveal.TabIndex = 53;
+            this.reveal.TabStop = false;
+            this.reveal.Click += new System.EventHandler(this.reveal_Click);
+            // 
+            // reveal2
+            // 
+            this.reveal2.Image = ((System.Drawing.Image)(resources.GetObject("reveal2.Image")));
+            this.reveal2.Location = new System.Drawing.Point(1006, 460);
+            this.reveal2.Name = "reveal2";
+            this.reveal2.Size = new System.Drawing.Size(38, 17);
+            this.reveal2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.reveal2.TabIndex = 54;
+            this.reveal2.TabStop = false;
+            this.reveal2.Click += new System.EventHandler(this.reveal2_Click);
+            // 
             // ForgotPassword2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1488, 829);
+            this.Controls.Add(this.reveal2);
+            this.Controls.Add(this.reveal);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -230,6 +258,8 @@
             this.Text = "FotgotPassord2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reveal)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reveal2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -251,5 +281,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Backbtn;
         private System.Windows.Forms.PictureBox BacklogoBtn;
+        private System.Windows.Forms.PictureBox reveal;
+        private System.Windows.Forms.PictureBox reveal2;
     }
 }

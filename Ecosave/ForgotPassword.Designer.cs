@@ -39,6 +39,7 @@
             this.tbemail = new System.Windows.Forms.TextBox();
             this.tbusername = new System.Windows.Forms.TextBox();
             this.CreateanLbl = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -112,6 +113,7 @@
             this.btnCancel.TabIndex = 47;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnreset
             // 
@@ -149,12 +151,25 @@
             this.CreateanLbl.TabIndex = 39;
             this.CreateanLbl.Text = "Password Reset ";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(66, 144);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(609, 20);
+            this.label1.TabIndex = 51;
+            this.label1.Text = "Please enter your email that was used to register and your username to validate ";
+            // 
             // ForgotPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1470, 782);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -188,5 +203,6 @@
         private System.Windows.Forms.TextBox tbemail;
         private System.Windows.Forms.TextBox tbusername;
         private System.Windows.Forms.Label CreateanLbl;
+        private System.Windows.Forms.Label label1;
     }
 }

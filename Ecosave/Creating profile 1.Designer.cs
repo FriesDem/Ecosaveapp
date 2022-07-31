@@ -49,6 +49,7 @@
             this.EditProfileLbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -249,7 +250,7 @@
             this.EditProfileLbl.AutoSize = true;
             this.EditProfileLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditProfileLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.EditProfileLbl.Location = new System.Drawing.Point(530, 8);
+            this.EditProfileLbl.Location = new System.Drawing.Point(437, 13);
             this.EditProfileLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EditProfileLbl.Name = "EditProfileLbl";
             this.EditProfileLbl.Size = new System.Drawing.Size(252, 39);
@@ -280,12 +281,25 @@
             this.label2.TabIndex = 61;
             this.label2.Text = "Last";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(83, 73);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(223, 20);
+            this.label3.TabIndex = 62;
+            this.label3.Text = "Please to enter relevant data";
+            // 
             // Creating_profile_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1469, 741);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PhoneNumberTB);
@@ -339,5 +353,6 @@
         private System.Windows.Forms.Label EditProfileLbl;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

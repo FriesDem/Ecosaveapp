@@ -41,7 +41,9 @@
             this.DHAALbl = new System.Windows.Forms.Label();
             this.CAABtn = new System.Windows.Forms.Label();
             this.SigninBtn = new System.Windows.Forms.Button();
+            this.reveal = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reveal)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -189,12 +191,24 @@
             this.SigninBtn.UseVisualStyleBackColor = true;
             this.SigninBtn.Click += new System.EventHandler(this.SigninBtn_Click);
             // 
+            // reveal
+            // 
+            this.reveal.Image = ((System.Drawing.Image)(resources.GetObject("reveal.Image")));
+            this.reveal.Location = new System.Drawing.Point(1070, 632);
+            this.reveal.Name = "reveal";
+            this.reveal.Size = new System.Drawing.Size(38, 17);
+            this.reveal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.reveal.TabIndex = 18;
+            this.reveal.TabStop = false;
+            this.reveal.Click += new System.EventHandler(this.reveal_Click);
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1488, 829);
+            this.Controls.Add(this.reveal);
             this.Controls.Add(this.SigninBtn);
             this.Controls.Add(this.CAABtn);
             this.Controls.Add(this.DHAALbl);
@@ -211,8 +225,9 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "LoginForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.reveal)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,6 +247,7 @@
         private System.Windows.Forms.Label DHAALbl;
         private System.Windows.Forms.Label CAABtn;
         private System.Windows.Forms.Button SigninBtn;
+        private System.Windows.Forms.PictureBox reveal;
     }
 }
 

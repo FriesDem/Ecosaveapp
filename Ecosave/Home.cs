@@ -47,7 +47,7 @@ namespace Ecosave
 
             }
 
-            var Profile = new ProfilePage(newland);
+            var Profile = new ProfilePage(_user);
 
         }
 
@@ -67,7 +67,7 @@ namespace Ecosave
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var newland = tsilogintext.Text;
-                var Profile = new ProfilePage(newland);
+                var Profile = new ProfilePage(_user);
                 Profile.MdiParent = this;
                 Profile.Show();
 
@@ -88,7 +88,7 @@ namespace Ecosave
         private void storeToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            if (!Utils.FormIsOpen("manageUsers"))
+            
                 if (!Utils.FormIsOpen("Store_Page"))
                 {
                     if (ActiveMdiChild != null)
@@ -101,7 +101,7 @@ namespace Ecosave
         private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            if (!Utils.FormIsOpen("manageUsers"))
+            
                 if (!Utils.FormIsOpen("About_Us"))
                 {
                     if (ActiveMdiChild != null)
@@ -125,7 +125,7 @@ namespace Ecosave
 
         private void HomeBtn_Click(object sender, EventArgs e)
         {
-            if (!Utils.FormIsOpen("manageUsers"))
+            
                 if (!Utils.FormIsOpen("About_Us"))
                 {
                     if (ActiveMdiChild != null)
@@ -154,7 +154,7 @@ namespace Ecosave
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var newland = tsilogintext.Text;
-                var Profile = new ProfilePage(newland); ;
+                var Profile = new ProfilePage(_user); 
                 Profile.MdiParent = this;
                 Profile.Show();
 

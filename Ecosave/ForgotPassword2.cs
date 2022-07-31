@@ -38,17 +38,25 @@ namespace Ecosave
             {
                 var password = tbpassword.Text;
                 var confirmpassword = tbconfirmpassword.Text;
+               
                 if (password != confirmpassword)
                 {
                     MessageBox.Show("Password do not match.Please try again !!");
                 }
-                
-                 var user = _db.Users.FirstOrDefault(q => q.Email == _user.Email);
+                if (password.Equals(confirmpassword))
+                {
+                    
+                    var user = _db.Users.FirstOrDefault(q => q.Email == _user.Email);
+                    {
+                        user.Password = Utils.Hashpassword(password);
+                    };
+                }
+                   
                 
 
                 
                     
-                    _user.Password = Utils.Hashpassword(password);
+                   
                     _db.SaveChanges();
                 MessageBox.Show("Password Was Reset Succesfully!");
                 Close();
@@ -69,11 +77,31 @@ namespace Ecosave
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-            Close();
+            tbpassword.Text = "";
+            tbconfirmpassword.Text = "";
+        }
 
+        private void reveal_Click(object sender, EventArgs e)
+        {
+            if (tbpassword.PasswordChar == '*')
             {
-                LoginForm login = new LoginForm();
-                login.Show();
+                tbpassword.PasswordChar = '\0';
+            }
+            else
+            {
+                tbpassword.PasswordChar = '*';
+            }
+        }
+
+        private void reveal2_Click(object sender, EventArgs e)
+        {
+            if (tbconfirmpassword.PasswordChar == '*')
+            {
+                tbconfirmpassword.PasswordChar = '\0';
+            }
+            else
+            {
+                tbconfirmpassword.PasswordChar = '*';
             }
         }
     }

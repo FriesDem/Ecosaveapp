@@ -82,6 +82,19 @@ namespace Ecosave
         {
 this.Close();
         }
+
+        private void reveal_Click(object sender, EventArgs e)
+        {
+            if (PasswordTB2.PasswordChar == '*')
+            {
+                PasswordTB2.PasswordChar = '\0';
+            }
+            else
+            {
+                PasswordTB2.PasswordChar = '*';
+           
+            }
+        }
     }
     }
 
