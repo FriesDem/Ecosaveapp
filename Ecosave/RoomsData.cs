@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class About_Us : Form
+    public partial class RoomsData : Form
     {
-        public About_Us()
+        public RoomsData()
         {
             InitializeComponent();
         }
@@ -21,7 +21,5 @@ namespace Ecosave
         {
             this.Close();
         }
-
-     
     }
 }

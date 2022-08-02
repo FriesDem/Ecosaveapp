@@ -21,10 +21,14 @@ namespace Ecosave
         public string Street { get; set; }
         public string ZIP_Code { get; set; }
         public Nullable<int> Number_of_Houses { get; set; }
+        public Nullable<int> Number_of_Devices { get; set; }
         public Nullable<int> Number_of_Occupants { get; set; }
         public string Occupation { get; set; }
         public string Telephone { get; set; }
         public Nullable<decimal> Budget_for_Utilities { get; set; }
         public Nullable<decimal> Income { get; set; }
+        public Nullable<int> UserID { get; set; }
+    
+        public virtual User User { get; set; }
     }
 }

@@ -22,32 +22,50 @@ namespace Ecosave
             ecosaveDB = new ECOSAVEEntities();
             calculator = new Calculator();
         }
-        
-        
+        string firstVal = "";
+        string secondVal = "";
         double result = 0.0;
-        int equalBtnCount = 0;
-        string function = "";
-        bool functionPerformed = false;
-        int numDevices;
-        
-        double finalAvg = 0.0;
-        double tempVal;
-       
+        string userVal = "";
+        char function = '\0';
+
+        private void plusBtn_Click(object sender, EventArgs e)
+        {
+            function = '+';
+            firstVal = userVal;
+            userVal = "";
+        }
+
+        private void minusBtn_Click(object sender, EventArgs e)
+        {
+            function = '-';
+            firstVal = userVal;
+            userVal = "";
+        }
+
+        private void multiplyBtn_Click(object sender, EventArgs e)
+        {
+            function = '*';
+            firstVal = userVal;
+            userVal = "";
+        }
+
         private void clearBtn_Click(object sender, EventArgs e)
         {
             calculatorDisplay.Text = "0";
             tempValueLabel.Text = "";
 
             result = 0.0;
-            
+            userVal = "";
         }
 
         private void equalBtn_Click(object sender, EventArgs e)
         {
-            
-            equalBtnCount++;
+            secondVal = userVal;
+            double firstNum, secondNum;
+            firstNum = Convert.ToDouble(firstVal);
+            secondNum = Convert.ToDouble(secondVal);
 
-            if (numDevices == 0)
+            if (function == '+')
             {
                 MessageBox.Show("Please choose the number of devices you wish to find the average of first");
             }
@@ -84,74 +102,91 @@ namespace Ecosave
                     tempValueLabel.Text = "";
                     finalAvg = result / numDevices;
 
-                    MessageBox.Show($" Your Power Average is {finalAvg}\n Click the submit button to submit your device averages");
-                    calculatorDisplay.Visible = false;
-                }
+            else
+            {
+                MessageBox.Show("Please Enter a Valid Value");
             }
-            
-                   
-                  
-                        
-                                      
+        }
+
+        private void divisionBtn_Click(object sender, EventArgs e)
+        {
+            function = '/';
+            firstVal = userVal;
+            userVal = "";
         }
 
         
 
         private void num0_Click(object sender, EventArgs e)
         {
-            if (calculatorDisplay.Text == "0" || functionPerformed == true)
-                calculatorDisplay.Clear();
-                functionPerformed = false;
-
-            Button button = (Button)sender;
-            if(button.Text == ".")
-            {
-                if(!calculatorDisplay.Text.Contains("."))
-                    calculatorDisplay.Text += button.Text; 
-            }
-            else
-            calculatorDisplay.Text +=  button.Text;
-            
+            calculatorDisplay.Text = "";
+            userVal += "0";
+            calculatorDisplay.Text = userVal;
         }
+        private void num1_Click(object sender, EventArgs e)
+        {
+            calculatorDisplay.Text = "";
+            userVal += "1";
+            calculatorDisplay.Text = userVal;
+        }
+        private void num2_Click(object sender, EventArgs e)
+        {
+            calculatorDisplay.Text = "";
+            userVal += "2";
+            calculatorDisplay.Text = userVal;
+        }
+
+        private void num3_Click(object sender, EventArgs e)
+        {
+            calculatorDisplay.Text = "";
+            userVal += "3";
+            calculatorDisplay.Text = userVal;
+
+        }
+
         
-        private void submitBtn_Click(object sender, EventArgs e)
-        {          
-                 
-            calculator.Number_Of_Devices = numDevices;
-            calculator.Power_Average = finalAvg;
-            ecosaveDB.Calculators.Add(calculator);
-            ecosaveDB.SaveChanges();
-            MessageBox.Show($"The final average of your devices is {finalAvg.ToString("N1")}");
-            calculatorDisplay.Visible = true;
-            numDevices = 0;
-            numberOfDevices.Text = "0"; 
-        }
-
-        private void numDevicesBtn_Click(object sender, EventArgs e)
-        {                      
-            numDevices = int.Parse(numberOfDevices.Text);   
-
-            MessageBox.Show("Now, Enter the kwh of the device * the number of hours used\nFormat: kwH * hours used\n");
-            numberOfDevices.Visible = false;
-            calculatorDisplay.Visible = true;
-                 
-        }
-
-        private void Calculator_Page_Load(object sender, EventArgs e)
+        private void num4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Choose the number of devices you will be finding the average for.\n Then, input the power rating times the number" +
-                "of hours you use for each. \nThis will give you your average. \nE.g. 60 * 5 = 300 kwH.");
-            calculatorDisplay.Visible = false;
+            calculatorDisplay.Text = "";
+            userVal += "4";
+            calculatorDisplay.Text = userVal;
+        }
+        private void num5_Click(object sender, EventArgs e)
+        {
+            calculatorDisplay.Text = "";
+            userVal += "5";
+            calculatorDisplay.Text = userVal;
+        }
+        private void num6_Click(object sender, EventArgs e)
+        {
+            calculatorDisplay.Text = "";
+            userVal += "6";
+            calculatorDisplay.Text = userVal;
         }
 
-        private void arithmeticBtn(object sender, EventArgs e)
+        private void num7_Click(object sender, EventArgs e)
         {
-            Button button = (Button)sender;
-            function = button.Text;
-            functionPerformed = true;
-            tempVal = Double.Parse(calculatorDisplay.Text);
-            tempValueLabel.Text = tempVal.ToString() + " " + function;
-               
+            calculatorDisplay.Text = "";
+            userVal += "7";
+            calculatorDisplay.Text = userVal;
         }
+
+        private void num8_Click(object sender, EventArgs e)
+        {
+            calculatorDisplay.Text = "";
+            userVal += "8";
+            calculatorDisplay.Text = userVal;
+        }
+
+        private void num9_Click(object sender, EventArgs e)
+        {
+            calculatorDisplay.Text = "";
+            userVal += "9";
+            calculatorDisplay.Text = userVal;
+        }
+
+        
+
+        
     }
 }

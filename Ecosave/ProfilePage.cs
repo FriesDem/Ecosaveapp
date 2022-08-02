@@ -13,21 +13,19 @@ namespace Ecosave
 {
     public partial class ProfilePage : Form
     {
-
-
-        String _realname;
-
-        public ProfilePage()
+        private readonly ECOSAVEEntities _db;
+        private User _user;
+            public ProfilePage()
         {
             InitializeComponent();
-          
+           
         }
-        public ProfilePage(String newland)
+        public ProfilePage(User user)
         {
             InitializeComponent();
-       _realname = newland;
-            
-        }
+            _db = new ECOSAVEEntities();
+            _user = user;
+            }
 
         private void HomeBtn_Click(object sender, EventArgs e)
         {
@@ -43,7 +41,7 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("EditProfile"))
             {
-                var EditProfile = new EditProfile();
+                var EditProfile = new EditProfile(_user);
                 EditProfile.MdiParent = this.MdiParent;
                 EditProfile.Show();
 
@@ -52,8 +50,45 @@ namespace Ecosave
 
         private void ProfilePage_Load(object sender, EventArgs e)
         {
-            var newland = _realname;  
-            lbname.Text = newland;
+             
+            var user = _db.Person_Tables.FirstOrDefault(x => x.UserID == _user.ID);
+            if (user == null)
+            {
+                MessageBox.Show("Invalid User");
+                return;
+            }
+            if (user != null)
+            {
+                var first = user.First_Name.Trim();
+                var last = user.Last_Name.Trim();
+                name.Text = first + last;
+                DeviceCount.Text = user.Number_of_Devices.ToString();
+                NumberRooms.Text = user.Number_of_Houses.ToString();
+            }
+        }
+
+        private void DeviceData_Click(object sender, EventArgs e)
+        {
+            
+            if (!Utils.FormIsOpen("DeviceData"))
+            {
+                var DeviceData = new DeviceData();
+                DeviceData.MdiParent = this.MdiParent;
+                DeviceData.Show();
+
+            }
+        }
+
+        private void Roomsdata_Click(object sender, EventArgs e)
+        {
+           
+            if (!Utils.FormIsOpen("RoomsData"))
+            {
+                var RoomsData = new RoomsData();
+                RoomsData.MdiParent = this.MdiParent;
+                RoomsData.Show();
+
+            }
         }
     }
 }

@@ -94,7 +94,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(75, 180);
+            this.btnRefresh.Location = new System.Drawing.Point(58, 180);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(98, 25);
             this.btnRefresh.TabIndex = 25;
@@ -104,7 +104,7 @@
             // 
             // btnAddUser
             // 
-            this.btnAddUser.Location = new System.Drawing.Point(75, 304);
+            this.btnAddUser.Location = new System.Drawing.Point(58, 304);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(98, 25);
             this.btnAddUser.TabIndex = 26;
@@ -114,7 +114,7 @@
             // 
             // btnResetPassword
             // 
-            this.btnResetPassword.Location = new System.Drawing.Point(75, 442);
+            this.btnResetPassword.Location = new System.Drawing.Point(58, 442);
             this.btnResetPassword.Name = "btnResetPassword";
             this.btnResetPassword.Size = new System.Drawing.Size(154, 25);
             this.btnResetPassword.TabIndex = 27;
@@ -124,9 +124,9 @@
             // 
             // btnDeactivateUser
             // 
-            this.btnDeactivateUser.Location = new System.Drawing.Point(75, 599);
+            this.btnDeactivateUser.Location = new System.Drawing.Point(58, 599);
             this.btnDeactivateUser.Name = "btnDeactivateUser";
-            this.btnDeactivateUser.Size = new System.Drawing.Size(188, 25);
+            this.btnDeactivateUser.Size = new System.Drawing.Size(259, 25);
             this.btnDeactivateUser.TabIndex = 28;
             this.btnDeactivateUser.Text = "Deactivate User / Activate";
             this.btnDeactivateUser.UseVisualStyleBackColor = true;

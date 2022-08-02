@@ -36,15 +36,18 @@
             this.EditProfileBtn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BuildingCount = new System.Windows.Forms.Label();
+            this.DeviceCount = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.NumberRooms = new System.Windows.Forms.Label();
             this.lbname = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.Label();
+            this.DeviceData = new System.Windows.Forms.Button();
+            this.Roomsdata = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -117,8 +120,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.DeviceData);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.BuildingCount);
+            this.panel1.Controls.Add(this.DeviceCount);
             this.panel1.Location = new System.Drawing.Point(1146, 181);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
@@ -136,17 +140,17 @@
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
-            // BuildingCount
+            // DeviceCount
             // 
-            this.BuildingCount.AutoSize = true;
-            this.BuildingCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.BuildingCount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.BuildingCount.Location = new System.Drawing.Point(204, 39);
-            this.BuildingCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.BuildingCount.Name = "BuildingCount";
-            this.BuildingCount.Size = new System.Drawing.Size(69, 76);
-            this.BuildingCount.TabIndex = 1;
-            this.BuildingCount.Text = "1";
+            this.DeviceCount.AutoSize = true;
+            this.DeviceCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.DeviceCount.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.DeviceCount.Location = new System.Drawing.Point(204, 39);
+            this.DeviceCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DeviceCount.Name = "DeviceCount";
+            this.DeviceCount.Size = new System.Drawing.Size(69, 76);
+            this.DeviceCount.TabIndex = 1;
+            this.DeviceCount.Text = "1";
             // 
             // label2
             // 
@@ -199,8 +203,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel2.Controls.Add(this.Roomsdata);
             this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.NumberRooms);
             this.panel2.Location = new System.Drawing.Point(1146, 429);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
@@ -218,17 +223,17 @@
             this.pictureBox3.TabIndex = 39;
             this.pictureBox3.TabStop = false;
             // 
-            // label5
+            // NumberRooms
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(204, 39);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 76);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "1";
+            this.NumberRooms.AutoSize = true;
+            this.NumberRooms.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.NumberRooms.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.NumberRooms.Location = new System.Drawing.Point(204, 39);
+            this.NumberRooms.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.NumberRooms.Name = "NumberRooms";
+            this.NumberRooms.Size = new System.Drawing.Size(69, 76);
+            this.NumberRooms.TabIndex = 1;
+            this.NumberRooms.Text = "1";
             // 
             // lbname
             // 
@@ -241,12 +246,44 @@
             this.lbname.Size = new System.Drawing.Size(0, 17);
             this.lbname.TabIndex = 41;
             // 
+            // name
+            // 
+            this.name.AutoSize = true;
+            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.name.Location = new System.Drawing.Point(412, 208);
+            this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(0, 17);
+            this.name.TabIndex = 42;
+            // 
+            // DeviceData
+            // 
+            this.DeviceData.Location = new System.Drawing.Point(171, 147);
+            this.DeviceData.Name = "DeviceData";
+            this.DeviceData.Size = new System.Drawing.Size(163, 24);
+            this.DeviceData.TabIndex = 40;
+            this.DeviceData.Text = "Enter Device Data";
+            this.DeviceData.UseVisualStyleBackColor = true;
+            this.DeviceData.Click += new System.EventHandler(this.DeviceData_Click);
+            // 
+            // Roomsdata
+            // 
+            this.Roomsdata.Location = new System.Drawing.Point(194, 145);
+            this.Roomsdata.Name = "Roomsdata";
+            this.Roomsdata.Size = new System.Drawing.Size(141, 24);
+            this.Roomsdata.TabIndex = 41;
+            this.Roomsdata.Text = "Enter Room Data";
+            this.Roomsdata.UseVisualStyleBackColor = true;
+            this.Roomsdata.Click += new System.EventHandler(this.Roomsdata_Click);
+            // 
             // ProfilePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.name);
             this.Controls.Add(this.lbname);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label4);
@@ -286,7 +323,7 @@
         private System.Windows.Forms.Label NameLbl;
         private System.Windows.Forms.Label EditProfileBtn;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label BuildingCount;
+        private System.Windows.Forms.Label DeviceCount;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -294,7 +331,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label NumberRooms;
         private System.Windows.Forms.Label lbname;
+        private System.Windows.Forms.Label name;
+        private System.Windows.Forms.Button DeviceData;
+        private System.Windows.Forms.Button Roomsdata;
     }
 }

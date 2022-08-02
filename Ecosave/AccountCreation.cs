@@ -45,7 +45,6 @@ namespace Ecosave
                 if (!email1.Contains("@"))
                 {
                     MessageBox.Show("Email is missing @");
-
                     if (tpassword != confirmpassword)
                     {
                         MessageBox.Show("Password do not match.Please try again !!");
@@ -84,7 +83,7 @@ namespace Ecosave
                         MessageBox.Show("New User Added Succesfully");
 
                         this.Close();
-                        Creating_profile_1 create = new Creating_profile_1();
+                        Creating_profile_1 create = new Creating_profile_1(user);
                         create.Show();
                     }
                 }
@@ -96,20 +95,28 @@ namespace Ecosave
 
         }
 
-        private void showpass_Click(object sender, EventArgs e)
+        private void reveal_Click(object sender, EventArgs e)
         {
-            if ((tbpassword.PasswordChar == '*')&& (tbconfirmpassword.PasswordChar == '*'))
+            if (tbpassword.PasswordChar == '*') 
             {
-                tbpassword.PasswordChar = '\0'; 
-                tbconfirmpassword.PasswordChar = '\0';
+                tbpassword.PasswordChar = '\0';
             }
             else
             {
                 tbpassword.PasswordChar = '*';
-                tbconfirmpassword.PasswordChar = '*';
             }
         }
 
-       
+        private void reveal2_Click(object sender, EventArgs e)
+        {
+            if  (tbconfirmpassword.PasswordChar == '*')
+            {
+                tbconfirmpassword.PasswordChar = '\0';
+            }
+            else
+            {
+                tbconfirmpassword.PasswordChar = '*';
+            }
+        }
     }
 }

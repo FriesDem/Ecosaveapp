@@ -15,16 +15,13 @@ namespace Ecosave
     public partial class Billing_Table
     {
         public string ID { get; set; }
-        public string Fuel_Charge { get; set; }
-        public string Energy_Charge { get; set; }
-        public string Exchange_Rate { get; set; }
+        public Nullable<double> Energy_Used { get; set; }
+        public Nullable<double> Fuel_Charge { get; set; }
+        public Nullable<double> Energy_Charge { get; set; }
+        public Nullable<double> Exchange_Rate { get; set; }
         public string Reading_Type { get; set; }
         public string Customer_Charge { get; set; }
         public string IPP_Charge { get; set; }
         public string Demand_Charge { get; set; }
-        public Nullable<double> Energy_Used { get; set; }
-        public Nullable<double> Final_Charge { get; set; }
-    
-        public virtual Calculator Calculator { get; set; }
     }
 }

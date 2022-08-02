@@ -24,7 +24,11 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
           <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+=======
+          <Property Name="ID" Type="int" Nullable="false" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
           <Property Name="Power Average" Type="float" />
           <Property Name="Number Of Devices" Type="int" />
         </EntityType>
@@ -44,26 +48,33 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="nchar" MaxLength="10" Nullable="false" />
-          <Property Name="Number of Rooms" Type="nchar" MaxLength="10" Nullable="false" />
-          <Property Name="Number of Devices per Room" Type="nchar" MaxLength="10" />
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Number of Rooms" Type="int" />
+          <Property Name="Number of Devices per Room" Type="int" />
         </EntityType>
         <EntityType Name="Person Table">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="First Name" Type="nchar" MaxLength="10" />
-          <Property Name="Last Name" Type="nchar" MaxLength="10" />
-          <Property Name="Parish" Type="nchar" MaxLength="20" />
-          <Property Name="Street" Type="nchar" MaxLength="10" />
+          <Property Name="First Name" Type="nchar" MaxLength="50" />
+          <Property Name="Last Name" Type="nchar" MaxLength="50" />
+          <Property Name="Parish" Type="nchar" MaxLength="200" />
+          <Property Name="Street" Type="nchar" MaxLength="100" />
           <Property Name="ZIP Code" Type="nchar" MaxLength="10" />
           <Property Name="Number of Houses" Type="int" />
+          <Property Name="Number of Devices" Type="int" />
           <Property Name="Number of Occupants" Type="int" />
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
           <Property Name="Occupation" Type="nchar" MaxLength="20" />
           <Property Name="Telephone" Type="nchar" MaxLength="10" />
+=======
+          <Property Name="Occupation" Type="nchar" MaxLength="200" />
+          <Property Name="Telephone" Type="nchar" MaxLength="15" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
           <Property Name="Budget for Utilities" Type="money" />
           <Property Name="Income" Type="money" />
+          <Property Name="UserID" Type="int" />
         </EntityType>
         <EntityType Name="Roles">
           <Key>
@@ -91,6 +102,7 @@
           <Property Name="Password" Type="nvarchar" MaxLength="150" Nullable="false" />
           <Property Name="isActive" Type="bit" Nullable="false" />
         </EntityType>
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
         <Association Name="FK_Calculator_Billing Table">
           <End Role="Billing Table" Type="Self.Billing Table" Multiplicity="1" />
           <End Role="Calculator" Type="Self.Calculator" Multiplicity="0..1" />
@@ -100,6 +112,17 @@
             </Principal>
             <Dependent Role="Calculator">
               <PropertyRef Name="ID" />
+=======
+        <Association Name="FK_Person Table_Users">
+          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+          <End Role="Person Table" Type="Self.Person Table" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Person Table">
+              <PropertyRef Name="UserID" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -136,9 +159,15 @@
           <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UserRoles" EntityType="Self.UserRoles" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
           <AssociationSet Name="FK_Calculator_Billing Table" Association="Self.FK_Calculator_Billing Table">
             <End Role="Billing Table" EntitySet="Billing Table" />
             <End Role="Calculator" EntitySet="Calculator" />
+=======
+          <AssociationSet Name="FK_Person Table_Users" Association="Self.FK_Person Table_Users">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Person Table" EntitySet="Person Table" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
           </AssociationSet>
           <AssociationSet Name="FK_UserRoles_Roles" Association="Self.FK_UserRoles_Roles">
             <End Role="Roles" EntitySet="Roles" />
@@ -153,10 +182,36 @@
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ECOSAVEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
+=======
+        <EntityContainer Name="ECOSAVEEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Billing_Tables" EntityType="ECOSAVEModel.Billing_Table" />
+          <EntitySet Name="Calculators" EntityType="ECOSAVEModel.Calculator" />
+          <EntitySet Name="Devices_Tables" EntityType="ECOSAVEModel.Devices_Table" />
+          <EntitySet Name="Houses_Tables" EntityType="ECOSAVEModel.Houses_Table" />
+          <EntitySet Name="Person_Tables" EntityType="ECOSAVEModel.Person_Table" />
+          <EntitySet Name="Roles" EntityType="ECOSAVEModel.Role" />
+          <EntitySet Name="UserRoles" EntityType="ECOSAVEModel.UserRole" />
+          <EntitySet Name="Users" EntityType="ECOSAVEModel.User" />
+          <AssociationSet Name="FK_Person_Table_Users" Association="ECOSAVEModel.FK_Person_Table_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Person_Table" EntitySet="Person_Tables" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserRoles_Roles" Association="ECOSAVEModel.FK_UserRoles_Roles">
+            <End Role="Role" EntitySet="Roles" />
+            <End Role="UserRole" EntitySet="UserRoles" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserRoles_Users" Association="ECOSAVEModel.FK_UserRoles_Users">
+            <End Role="User" EntitySet="Users" />
+            <End Role="UserRole" EntitySet="UserRoles" />
+          </AssociationSet>
+        </EntityContainer>
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
         <EntityType Name="Billing_Table">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
           <Property Name="ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Fuel_Charge" Type="String" />
           <Property Name="Energy_Charge" Type="String" />
@@ -167,16 +222,33 @@
           <Property Name="Demand_Charge" Type="String" />
           <Property Name="Energy_Used" Type="Double" />
           <NavigationProperty Name="Calculator" Relationship="ECOSAVEModel.FK_Calculator_Billing_Table" FromRole="Billing_Table" ToRole="Calculator" />
+=======
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Energy_Used" Type="Double" />
+          <Property Name="Fuel_Charge" Type="Double" />
+          <Property Name="Energy_Charge" Type="Double" />
+          <Property Name="Exchange_Rate" Type="Double" />
+          <Property Name="Reading_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Customer_Charge" Type="Double" />
+          <Property Name="IPP_Charge" Type="Double" />
+          <Property Name="Demand_Charge" Type="Double" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
           <Property Name="Final_Charge" Type="Double" />
         </EntityType>
         <EntityType Name="Calculator">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
           <Property Name="ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Power_Average" Type="Double" />
           <Property Name="Number_Of_Devices" Type="Int32" />
           <NavigationProperty Name="Billing_Table" Relationship="ECOSAVEModel.FK_Calculator_Billing_Table" FromRole="Calculator" ToRole="Billing_Table" />
+=======
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Power_Average" Type="Double" />
+          <Property Name="Number_Of_Devices" Type="Int32" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
         </EntityType>
         <EntityType Name="Devices_Table">
           <Key>
@@ -194,26 +266,40 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
           <Property Name="ID" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="Number_of_Rooms" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
           <Property Name="Number_of_Devices_per_Room" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+=======
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Number_of_Rooms" Type="Int32" />
+          <Property Name="Number_of_Devices_per_Room" Type="Int32" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
         </EntityType>
         <EntityType Name="Person_Table">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="First_Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Last_Name" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Parish" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
-          <Property Name="Street" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="First_Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Last_Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Parish" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
+          <Property Name="Street" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
           <Property Name="ZIP_Code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
           <Property Name="Number_of_Houses" Type="Int32" />
+          <Property Name="Number_of_Devices" Type="Int32" />
           <Property Name="Number_of_Occupants" Type="Int32" />
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
           <Property Name="Occupation" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
           <Property Name="Telephone" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+=======
+          <Property Name="Occupation" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
+          <Property Name="Telephone" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
           <Property Name="Budget_for_Utilities" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="Income" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="UserID" Type="Int32" />
+          <NavigationProperty Name="User" Relationship="ECOSAVEModel.FK_Person_Table_Users" FromRole="Person_Table" ToRole="User" />
         </EntityType>
         <EntityType Name="Role">
           <Key>
@@ -231,23 +317,54 @@
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="userid" Type="Int32" Nullable="false" />
           <Property Name="roleid" Type="Int32" Nullable="false" />
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
           <NavigationProperty Name="Role" Relationship="Self.FK_UserRoles_Roles" FromRole="UserRoles" ToRole="Roles" />
           <NavigationProperty Name="User" Relationship="Self.FK_UserRoles_Users" FromRole="UserRoles" ToRole="Users" />
+=======
+          <NavigationProperty Name="Role" Relationship="ECOSAVEModel.FK_UserRoles_Roles" FromRole="UserRole" ToRole="Role" />
+          <NavigationProperty Name="User" Relationship="ECOSAVEModel.FK_UserRoles_Users" FromRole="UserRole" ToRole="User" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
         </EntityType>
         <EntityType Name="User">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
           <Property Name="Username" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Password" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="isActive" Type="Boolean" Nullable="false" />
           <NavigationProperty Name="UserRoles" Relationship="Self.FK_UserRoles_Users" FromRole="Users" ToRole="UserRoles" />
+=======
+          <Property Name="Username" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="isActive" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Person_Table" Relationship="ECOSAVEModel.FK_Person_Table_Users" FromRole="User" ToRole="Person_Table" />
+          <NavigationProperty Name="UserRoles" Relationship="ECOSAVEModel.FK_UserRoles_Users" FromRole="User" ToRole="UserRole" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
         </EntityType>
+        <Association Name="FK_Person_Table_Users">
+          <End Type="ECOSAVEModel.User" Role="User" Multiplicity="0..1" />
+          <End Type="ECOSAVEModel.Person_Table" Role="Person_Table" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Person_Table">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_UserRoles_Roles">
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
           <End Role="Roles" Type="Self.Role" Multiplicity="1" />
           <End Role="UserRoles" Type="Self.UserRole" Multiplicity="*" />
+=======
+          <End Type="ECOSAVEModel.Role" Role="Role" Multiplicity="1" />
+          <End Type="ECOSAVEModel.UserRole" Role="UserRole" Multiplicity="*" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
           <ReferentialConstraint>
             <Principal Role="Roles">
               <PropertyRef Name="id" />
@@ -258,8 +375,13 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_UserRoles_Users">
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
           <End Role="Users" Type="Self.User" Multiplicity="1" />
           <End Role="UserRoles" Type="Self.UserRole" Multiplicity="*" />
+=======
+          <End Type="ECOSAVEModel.User" Role="User" Multiplicity="1" />
+          <End Type="ECOSAVEModel.UserRole" Role="UserRole" Multiplicity="*" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
           <ReferentialConstraint>
             <Principal Role="Users">
               <PropertyRef Name="ID" />
@@ -313,6 +435,16 @@
             <EntityTypeMapping TypeName="ECOSAVEModel.Billing_Table">
               <MappingFragment StoreEntitySet="Billing Table">
                 <ScalarProperty Name="Final_Charge" ColumnName="Final Charge" />
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
+=======
+                <ScalarProperty Name="Demand_Charge" ColumnName="Demand Charge" />
+                <ScalarProperty Name="IPP_Charge" ColumnName="IPP Charge" />
+                <ScalarProperty Name="Customer_Charge" ColumnName="Customer Charge" />
+                <ScalarProperty Name="Reading_Type" ColumnName="Reading Type" />
+                <ScalarProperty Name="Exchange_Rate" ColumnName="Exchange Rate" />
+                <ScalarProperty Name="Energy_Charge" ColumnName="Energy Charge" />
+                <ScalarProperty Name="Fuel_Charge" ColumnName="Fuel Charge" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
                 <ScalarProperty Name="Energy_Used" ColumnName="Energy Used" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Fuel_Charge" ColumnName="Fuel Charge" />
@@ -329,6 +461,10 @@
             <EntityTypeMapping TypeName="ECOSAVEModel.Calculator">
               <MappingFragment StoreEntitySet="Calculator">
                 <ScalarProperty Name="Number_Of_Devices" ColumnName="Number Of Devices" />
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
+=======
+                <ScalarProperty Name="Power_Average" ColumnName="Power Average" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Power_Average" ColumnName="Power Average" />
               </MappingFragment>
@@ -359,6 +495,22 @@
           <EntitySetMapping Name="Person_Tables">
             <EntityTypeMapping TypeName="ECOSAVEModel.Person_Table">
               <MappingFragment StoreEntitySet="Person Table">
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
+=======
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="Income" ColumnName="Income" />
+                <ScalarProperty Name="Budget_for_Utilities" ColumnName="Budget for Utilities" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="Occupation" ColumnName="Occupation" />
+                <ScalarProperty Name="Number_of_Occupants" ColumnName="Number of Occupants" />
+                <ScalarProperty Name="Number_of_Devices" ColumnName="Number of Devices" />
+                <ScalarProperty Name="Number_of_Houses" ColumnName="Number of Houses" />
+                <ScalarProperty Name="ZIP_Code" ColumnName="ZIP Code" />
+                <ScalarProperty Name="Street" ColumnName="Street" />
+                <ScalarProperty Name="Parish" ColumnName="Parish" />
+                <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
+                <ScalarProperty Name="First_Name" ColumnName="First Name" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="First_Name" ColumnName="First Name" />
                 <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
@@ -395,6 +547,13 @@
           <EntitySetMapping Name="Users">
             <EntityTypeMapping TypeName="ECOSAVEModel.User">
               <MappingFragment StoreEntitySet="Users">
+<<<<<<< HEAD:Ecosave/ECOSAVE.edmx
+=======
+                <ScalarProperty Name="isActive" ColumnName="isActive" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5:Ecosave/EcosaveDb.edmx
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Username" ColumnName="Username" />
                 <ScalarProperty Name="Email" ColumnName="Email" />

@@ -38,7 +38,9 @@ namespace Ecosave
 
         private void btncancel_Click(object sender, EventArgs e)
         {
-            Close();
+            tbusername.Text = "";
+            tbemail.Text = "";
+            cbroles.SelectedValue = 0;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -72,7 +74,12 @@ namespace Ecosave
 
                 MessageBox.Show("New User Added Succesfully");
                 _manageUsers.PopulateGrid();
-                Close();
+                
+                Creating_profile_1 create = new Creating_profile_1(user);
+                create.MdiParent = this;
+                this.Close();
+                create.Show();
+                
             }
             catch (Exception)
             {

@@ -14,10 +14,16 @@ namespace Ecosave
     
     public partial class Calculator
     {
+<<<<<<< HEAD
         public string ID { get; set; }
         public Nullable<double> Power_Average { get; set; }
         public Nullable<int> Number_Of_Devices { get; set; }
     
         public virtual Billing_Table Billing_Table { get; set; }
+=======
+        public int ID { get; set; }
+        public Nullable<double> Power_Average { get; set; }
+        public Nullable<int> Number_Of_Devices { get; set; }
+>>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5
     }
 }

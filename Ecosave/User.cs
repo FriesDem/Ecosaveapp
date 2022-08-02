@@ -17,6 +17,7 @@ namespace Ecosave
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public User()
         {
+            this.Person_Table = new HashSet<Person_Table>();
             this.UserRoles = new HashSet<UserRole>();
         }
     
@@ -26,6 +27,8 @@ namespace Ecosave
         public string Password { get; set; }
         public bool isActive { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Person_Table> Person_Table { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UserRole> UserRoles { get; set; }
     }

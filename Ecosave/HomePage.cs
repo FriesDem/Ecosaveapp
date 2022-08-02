@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class About_Us : Form
+    public partial class HomePage : Form
     {
-        public About_Us()
+        public HomePage()
         {
             InitializeComponent();
         }
-
-        private void BacklogoBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-     
     }
 }
