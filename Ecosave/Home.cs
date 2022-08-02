@@ -186,7 +186,17 @@ namespace Ecosave
             Tips.Show();
         }
         }
-       
 
+        private void billingTableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("BillingTable"))
+            {
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var BillingTable = new Billing_Table_Screen();
+                BillingTable.MdiParent = this;
+                BillingTable.Show();
+            }
         }
+    }
 }

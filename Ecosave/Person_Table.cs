@@ -23,6 +23,7 @@ namespace Ecosave
         public Nullable<int> Number_of_Houses { get; set; }
         public Nullable<int> Number_of_Occupants { get; set; }
         public string Occupation { get; set; }
+        public string Telephone { get; set; }
         public Nullable<decimal> Budget_for_Utilities { get; set; }
         public Nullable<decimal> Income { get; set; }
     }

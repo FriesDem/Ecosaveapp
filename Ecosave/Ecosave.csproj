@@ -87,17 +87,23 @@
     <Compile Include="About Us.Designer.cs">
       <DependentUpon>About Us.cs</DependentUpon>
     </Compile>
-    <Compile Include="Billing_Table.cs">
-      <DependentUpon>EcosaveDb.tt</DependentUpon>
-    </Compile>
     <Compile Include="Adduser.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Adduser.Designer.cs">
       <DependentUpon>Adduser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Billing Table Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing Table Screen.Designer.cs">
+      <DependentUpon>Billing Table Screen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Billing_Table.cs">
+      <DependentUpon>ECOSAVE.tt</DependentUpon>
+    </Compile>
     <Compile Include="Calculator.cs">
-      <DependentUpon>EcosaveDb.tt</DependentUpon>
+      <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
     <Compile Include="CalculatorInfo.cs">
       <SubType>Form</SubType>
@@ -110,6 +116,24 @@
     </Compile>
     <Compile Include="Creating profile 1.Designer.cs">
       <DependentUpon>Creating profile 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Devices_Table.cs">
+      <DependentUpon>ECOSAVE.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ECOSAVE.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ECOSAVE.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ECOSAVE.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ECOSAVE.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ECOSAVE.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ECOSAVE.edmx</DependentUpon>
     </Compile>
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
@@ -124,13 +148,19 @@
       <DependentUpon>Calc.cs</DependentUpon>
     </Compile>
     <Compile Include="Houses_Table.cs">
-      <DependentUpon>EcosaveDb.tt</DependentUpon>
+      <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
     <Compile Include="Paasword Reset.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Paasword Reset.Designer.cs">
       <DependentUpon>Paasword Reset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Person_Table.cs">
+      <DependentUpon>ECOSAVE.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs">
+      <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
     <Compile Include="Tips Page.cs">
       <SubType>Form</SubType>
@@ -150,11 +180,11 @@
     <Compile Include="manageUsers.Designer.cs">
       <DependentUpon>manageUsers.cs</DependentUpon>
     </Compile>
-    <Compile Include="Role.cs">
-      <DependentUpon>EcosaveDb.tt</DependentUpon>
+    <Compile Include="User.cs">
+      <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
     <Compile Include="UserRole.cs">
-      <DependentUpon>EcosaveDb.tt</DependentUpon>
+      <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
     <Compile Include="Utils.cs" />
     <Compile Include="Creating profile page 2.cs">
@@ -162,24 +192,6 @@
     </Compile>
     <Compile Include="Creating profile page 2.Designer.cs">
       <DependentUpon>Creating profile page 2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Devices_Table.cs">
-      <DependentUpon>EcosaveDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EcosaveDb.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EcosaveDb.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EcosaveDb.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EcosaveDb.tt</DependentUpon>
-    </Compile>
-    <Compile Include="EcosaveDb.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>EcosaveDb.edmx</DependentUpon>
     </Compile>
     <Compile Include="EditProfile.cs">
       <SubType>Form</SubType>
@@ -199,9 +211,6 @@
     <Compile Include="AccountCreation.Designer.cs">
       <DependentUpon>AccountCreation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Person_Table.cs">
-      <DependentUpon>EcosaveDb.tt</DependentUpon>
-    </Compile>
     <Compile Include="ProfilePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,11 +225,11 @@
     <Compile Include="Store Page.Designer.cs">
       <DependentUpon>Store Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="User.cs">
-      <DependentUpon>EcosaveDb.tt</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="About Us.resx">
       <DependentUpon>About Us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Billing Table Screen.resx">
+      <DependentUpon>Billing Table Screen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CalculatorInfo.resx">
       <DependentUpon>CalculatorInfo.cs</DependentUpon>
@@ -276,12 +285,12 @@
     <EmbeddedResource Include="Store Page.resx">
       <DependentUpon>Store Page.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="EcosaveDb.edmx">
+    <EntityDeploy Include="ECOSAVE.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EcosaveDb.Designer.cs</LastGenOutput>
+      <LastGenOutput>ECOSAVE.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="EcosaveDb.edmx.diagram">
-      <DependentUpon>EcosaveDb.edmx</DependentUpon>
+    <None Include="ECOSAVE.edmx.diagram">
+      <DependentUpon>ECOSAVE.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -298,19 +307,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="EcosaveDb.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>EcosaveDb.Context.cs</LastGenOutput>
-      <DependentUpon>EcosaveDb.edmx</DependentUpon>
-    </Content>
-    <Content Include="EcosaveDb.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>EcosaveDb.edmx</DependentUpon>
-      <LastGenOutput>EcosaveDb.cs</LastGenOutput>
-    </Content>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Content Include="ECOSAVE.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ECOSAVE.edmx</DependentUpon>
+      <LastGenOutput>ECOSAVE.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ECOSAVE.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ECOSAVE.edmx</DependentUpon>
+      <LastGenOutput>ECOSAVE.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

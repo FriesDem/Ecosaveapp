@@ -22,5 +22,9 @@ namespace Ecosave
         public string Customer_Charge { get; set; }
         public string IPP_Charge { get; set; }
         public string Demand_Charge { get; set; }
+        public Nullable<double> Energy_Used { get; set; }
+        public Nullable<double> Final_Charge { get; set; }
+    
+        public virtual Calculator Calculator { get; set; }
     }
 }
