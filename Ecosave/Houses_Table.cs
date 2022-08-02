@@ -14,8 +14,8 @@ namespace Ecosave
     
     public partial class Houses_Table
     {
-        public string ID { get; set; }
-        public string Number_of_Rooms { get; set; }
-        public string Number_of_Devices_per_Room { get; set; }
+        public int ID { get; set; }
+        public Nullable<int> Number_of_Rooms { get; set; }
+        public Nullable<int> Number_of_Devices_per_Room { get; set; }
     }
 }

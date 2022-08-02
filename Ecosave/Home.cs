@@ -76,7 +76,7 @@ namespace Ecosave
         private void calculatorToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
-            if (!Utils.FormIsOpen("Calculator"))
+            if (!Utils.FormIsOpen("Calculator_Page"))
             {
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
@@ -125,19 +125,21 @@ namespace Ecosave
 
         private void HomeBtn_Click(object sender, EventArgs e)
         {
-            
-                if (!Utils.FormIsOpen("About_Us"))
+
+            if (!Utils.FormIsOpen("HomePage"))
+            {
                 {
                     if (ActiveMdiChild != null)
                         ActiveMdiChild.Close();
-                    var About_Us = new About_Us();
-                    About_Us.MdiParent = this;
-                    About_Us.Show();
+                    var HomePage = new HomePage();
+                    HomePage.MdiParent = this;
+                    HomePage.Show();
                 }
+            }
         }
         private void CalculatorBtn_Click(object sender, EventArgs e)
         {
-            if (!Utils.FormIsOpen("Calculator"))
+            if (!Utils.FormIsOpen("Calculator_Page"))
             {
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
@@ -185,6 +187,84 @@ namespace Ecosave
             }
         }
 
+        private void billingTableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Billing_Table_Screen"))
+            {
+                {
+                    if (ActiveMdiChild != null)
+                        ActiveMdiChild.Close();
+                    var Billing_Table = new Billing_Table_Screen();
+                    Billing_Table.MdiParent = this;
+                    Billing_Table.Show();
+                }
+            }
+        }
 
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("HomePage"))
+            {
+                {
+                    if (ActiveMdiChild != null)
+                        ActiveMdiChild.Close();
+                    var HomePage = new HomePage();
+                    HomePage.MdiParent = this;
+                    HomePage.Show();
+                }
+            }
+        }
+
+        private void tipsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Tips_Page"))
+            {
+                {
+                    if (ActiveMdiChild != null)
+                        ActiveMdiChild.Close();
+                    var Tips_Page = new Tips_Page();
+                    Tips_Page.MdiParent = this;
+                    Tips_Page.Show();
+                }
+            }
+        }
+
+        private void Aboutus_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("About_Us"))
+            {
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var About_Us = new About_Us();
+                About_Us.MdiParent = this;
+                About_Us.Show();
+            }
+        }
+
+        private void Storepage_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Store_Page"))
+            {
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Store_Page = new Store_Page();
+                Store_Page.MdiParent = this;
+                Store_Page.Show();
+            }
+        }
+
+        private void Bills_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Billing_Table_Screen"))
+            {
+                {
+                    if (ActiveMdiChild != null)
+                        ActiveMdiChild.Close();
+                    var Billing_Table = new Billing_Table_Screen();
+                    Billing_Table.MdiParent = this;
+                    Billing_Table.Show();
+                }
+            }
+        }
     }
 }

@@ -9,30 +9,24 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="nchar" MaxLength="10" Nullable="false" />
-          <Property Name="Fuel Charge" Type="nchar" MaxLength="10" />
-          <Property Name="Energy Charge" Type="nchar" MaxLength="10" />
-          <Property Name="Exchange Rate" Type="nchar" MaxLength="10" />
-          <Property Name="Reading Type" Type="nchar" MaxLength="10" />
-          <Property Name="Customer Charge" Type="nchar" MaxLength="10" />
-          <Property Name="IPP Charge" Type="nchar" MaxLength="10" />
-          <Property Name="Demand Charge" Type="nchar" MaxLength="10" />
+          <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Energy Used" Type="float" />
+          <Property Name="Fuel Charge" Type="float" />
+          <Property Name="Energy Charge" Type="float" />
+          <Property Name="Exchange Rate" Type="float" />
+          <Property Name="Reading Type" Type="nvarchar" MaxLength="50" />
+          <Property Name="Customer Charge" Type="float" />
+          <Property Name="IPP Charge" Type="float" />
+          <Property Name="Demand Charge" Type="float" />
+          <Property Name="Final Charge" Type="float" />
         </EntityType>
         <EntityType Name="Calculator">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Power Average 1" Type="int" />
-          <Property Name="Power Average 2" Type="int" />
-          <Property Name="Power Average 3" Type="int" />
-          <Property Name="Power Average 4" Type="int" />
-          <Property Name="Power Average 5" Type="int" />
-          <Property Name="Power Average 6" Type="int" />
-          <Property Name="Power Average 7" Type="int" />
-          <Property Name="Power Average 8" Type="int" />
-          <Property Name="Power Average 9" Type="int" />
-          <Property Name="Power Average 10" Type="int" />
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Power Average" Type="float" />
+          <Property Name="Number Of Devices" Type="int" />
         </EntityType>
         <EntityType Name="Devices Table">
           <Key>
@@ -50,9 +44,9 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="nchar" MaxLength="10" Nullable="false" />
-          <Property Name="Number of Rooms" Type="nchar" MaxLength="10" Nullable="false" />
-          <Property Name="Number of Devices per Room" Type="nchar" MaxLength="10" />
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="Number of Rooms" Type="int" />
+          <Property Name="Number of Devices per Room" Type="int" />
         </EntityType>
         <EntityType Name="Person Table">
           <Key>
@@ -187,30 +181,24 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Fuel_Charge" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Energy_Charge" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Exchange_Rate" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Reading_Type" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Customer_Charge" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="IPP_Charge" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Demand_Charge" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Energy_Used" Type="Double" />
+          <Property Name="Fuel_Charge" Type="Double" />
+          <Property Name="Energy_Charge" Type="Double" />
+          <Property Name="Exchange_Rate" Type="Double" />
+          <Property Name="Reading_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Customer_Charge" Type="Double" />
+          <Property Name="IPP_Charge" Type="Double" />
+          <Property Name="Demand_Charge" Type="Double" />
+          <Property Name="Final_Charge" Type="Double" />
         </EntityType>
         <EntityType Name="Calculator">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="Power_Average_1" Type="Int32" />
-          <Property Name="Power_Average_2" Type="Int32" />
-          <Property Name="Power_Average_3" Type="Int32" />
-          <Property Name="Power_Average_4" Type="Int32" />
-          <Property Name="Power_Average_5" Type="Int32" />
-          <Property Name="Power_Average_6" Type="Int32" />
-          <Property Name="Power_Average_7" Type="Int32" />
-          <Property Name="Power_Average_8" Type="Int32" />
-          <Property Name="Power_Average_9" Type="Int32" />
-          <Property Name="Power_Average_10" Type="Int32" />
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Power_Average" Type="Double" />
+          <Property Name="Number_Of_Devices" Type="Int32" />
         </EntityType>
         <EntityType Name="Devices_Table">
           <Key>
@@ -228,9 +216,9 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Number_of_Rooms" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Number_of_Devices_per_Room" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Number_of_Rooms" Type="Int32" />
+          <Property Name="Number_of_Devices_per_Room" Type="Int32" />
         </EntityType>
         <EntityType Name="Person_Table">
           <Key>
@@ -328,6 +316,7 @@
           <EntitySetMapping Name="Billing_Tables">
             <EntityTypeMapping TypeName="ECOSAVEModel.Billing_Table">
               <MappingFragment StoreEntitySet="Billing Table">
+                <ScalarProperty Name="Final_Charge" ColumnName="Final Charge" />
                 <ScalarProperty Name="Demand_Charge" ColumnName="Demand Charge" />
                 <ScalarProperty Name="IPP_Charge" ColumnName="IPP Charge" />
                 <ScalarProperty Name="Customer_Charge" ColumnName="Customer Charge" />
@@ -335,6 +324,7 @@
                 <ScalarProperty Name="Exchange_Rate" ColumnName="Exchange Rate" />
                 <ScalarProperty Name="Energy_Charge" ColumnName="Energy Charge" />
                 <ScalarProperty Name="Fuel_Charge" ColumnName="Fuel Charge" />
+                <ScalarProperty Name="Energy_Used" ColumnName="Energy Used" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -342,16 +332,8 @@
           <EntitySetMapping Name="Calculators">
             <EntityTypeMapping TypeName="ECOSAVEModel.Calculator">
               <MappingFragment StoreEntitySet="Calculator">
-                <ScalarProperty Name="Power_Average_10" ColumnName="Power Average 10" />
-                <ScalarProperty Name="Power_Average_9" ColumnName="Power Average 9" />
-                <ScalarProperty Name="Power_Average_8" ColumnName="Power Average 8" />
-                <ScalarProperty Name="Power_Average_7" ColumnName="Power Average 7" />
-                <ScalarProperty Name="Power_Average_6" ColumnName="Power Average 6" />
-                <ScalarProperty Name="Power_Average_5" ColumnName="Power Average 5" />
-                <ScalarProperty Name="Power_Average_4" ColumnName="Power Average 4" />
-                <ScalarProperty Name="Power_Average_3" ColumnName="Power Average 3" />
-                <ScalarProperty Name="Power_Average_2" ColumnName="Power Average 2" />
-                <ScalarProperty Name="Power_Average_1" ColumnName="Power Average 1" />
+                <ScalarProperty Name="Number_Of_Devices" ColumnName="Number Of Devices" />
+                <ScalarProperty Name="Power_Average" ColumnName="Power Average" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>

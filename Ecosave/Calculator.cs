@@ -14,16 +14,8 @@ namespace Ecosave
     
     public partial class Calculator
     {
-        public string ID { get; set; }
-        public Nullable<int> Power_Average_1 { get; set; }
-        public Nullable<int> Power_Average_2 { get; set; }
-        public Nullable<int> Power_Average_3 { get; set; }
-        public Nullable<int> Power_Average_4 { get; set; }
-        public Nullable<int> Power_Average_5 { get; set; }
-        public Nullable<int> Power_Average_6 { get; set; }
-        public Nullable<int> Power_Average_7 { get; set; }
-        public Nullable<int> Power_Average_8 { get; set; }
-        public Nullable<int> Power_Average_9 { get; set; }
-        public Nullable<int> Power_Average_10 { get; set; }
+        public int ID { get; set; }
+        public Nullable<double> Power_Average { get; set; }
+        public Nullable<int> Number_Of_Devices { get; set; }
     }
 }

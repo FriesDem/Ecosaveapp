@@ -124,6 +124,12 @@
     <Compile Include="Adduser.Designer.cs">
       <DependentUpon>Adduser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Billing_Table_Screen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Billing_Table_Screen.Designer.cs">
+      <DependentUpon>Billing_Table_Screen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Calculator.cs">
       <DependentUpon>EcosaveDb.tt</DependentUpon>
     </Compile>
@@ -162,6 +168,12 @@
     </Compile>
     <Compile Include="ForgotPassword2.Designer.cs">
       <DependentUpon>ForgotPassword2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="Houses_Table.cs">
       <DependentUpon>EcosaveDb.tt</DependentUpon>
@@ -268,6 +280,9 @@
     <EmbeddedResource Include="About Us.resx">
       <DependentUpon>About Us.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Billing_Table_Screen.resx">
+      <DependentUpon>Billing_Table_Screen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CalculatorInfo.resx">
       <DependentUpon>CalculatorInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword2.resx">
       <DependentUpon>ForgotPassword2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Paasword Reset.resx">
       <DependentUpon>Paasword Reset.cs</DependentUpon>
