@@ -35,6 +35,7 @@
             this.NameLbl = new System.Windows.Forms.Label();
             this.EditProfileBtn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.DeviceData = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DeviceCount = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,12 +43,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.Roomsdata = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.NumberRooms = new System.Windows.Forms.Label();
             this.lbname = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
-            this.DeviceData = new System.Windows.Forms.Button();
-            this.Roomsdata = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -59,7 +59,7 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(35, 15);
+            this.BacklogoBtn.Location = new System.Drawing.Point(35, 43);
             this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
@@ -73,7 +73,7 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(96, 24);
+            this.Backbtn.Location = new System.Drawing.Point(96, 52);
             this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Backbtn.Name = "Backbtn";
             this.Backbtn.Size = new System.Drawing.Size(56, 25);
@@ -85,7 +85,7 @@
             this.ProfileLbl.AutoSize = true;
             this.ProfileLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProfileLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ProfileLbl.Location = new System.Drawing.Point(663, 43);
+            this.ProfileLbl.Location = new System.Drawing.Point(660, 75);
             this.ProfileLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ProfileLbl.Name = "ProfileLbl";
             this.ProfileLbl.Size = new System.Drawing.Size(114, 39);
@@ -128,6 +128,16 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(335, 172);
             this.panel1.TabIndex = 24;
+            // 
+            // DeviceData
+            // 
+            this.DeviceData.Location = new System.Drawing.Point(171, 147);
+            this.DeviceData.Name = "DeviceData";
+            this.DeviceData.Size = new System.Drawing.Size(163, 24);
+            this.DeviceData.TabIndex = 40;
+            this.DeviceData.Text = "Enter Device Data";
+            this.DeviceData.UseVisualStyleBackColor = true;
+            this.DeviceData.Click += new System.EventHandler(this.DeviceData_Click);
             // 
             // pictureBox1
             // 
@@ -212,6 +222,16 @@
             this.panel2.Size = new System.Drawing.Size(335, 172);
             this.panel2.TabIndex = 40;
             // 
+            // Roomsdata
+            // 
+            this.Roomsdata.Location = new System.Drawing.Point(194, 145);
+            this.Roomsdata.Name = "Roomsdata";
+            this.Roomsdata.Size = new System.Drawing.Size(141, 24);
+            this.Roomsdata.TabIndex = 41;
+            this.Roomsdata.Text = "Enter Room Data";
+            this.Roomsdata.UseVisualStyleBackColor = true;
+            this.Roomsdata.Click += new System.EventHandler(this.Roomsdata_Click);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
@@ -256,26 +276,6 @@
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(0, 17);
             this.name.TabIndex = 42;
-            // 
-            // DeviceData
-            // 
-            this.DeviceData.Location = new System.Drawing.Point(171, 147);
-            this.DeviceData.Name = "DeviceData";
-            this.DeviceData.Size = new System.Drawing.Size(163, 24);
-            this.DeviceData.TabIndex = 40;
-            this.DeviceData.Text = "Enter Device Data";
-            this.DeviceData.UseVisualStyleBackColor = true;
-            this.DeviceData.Click += new System.EventHandler(this.DeviceData_Click);
-            // 
-            // Roomsdata
-            // 
-            this.Roomsdata.Location = new System.Drawing.Point(194, 145);
-            this.Roomsdata.Name = "Roomsdata";
-            this.Roomsdata.Size = new System.Drawing.Size(141, 24);
-            this.Roomsdata.TabIndex = 41;
-            this.Roomsdata.Text = "Enter Room Data";
-            this.Roomsdata.UseVisualStyleBackColor = true;
-            this.Roomsdata.Click += new System.EventHandler(this.Roomsdata_Click);
             // 
             // ProfilePage
             // 

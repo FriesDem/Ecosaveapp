@@ -39,7 +39,7 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(64, 22);
+            this.Backbtn.Location = new System.Drawing.Point(64, 60);
             this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Backbtn.Name = "Backbtn";
             this.Backbtn.Size = new System.Drawing.Size(56, 25);
@@ -50,7 +50,7 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(3, 13);
+            this.BacklogoBtn.Location = new System.Drawing.Point(3, 51);
             this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);

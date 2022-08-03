@@ -52,7 +52,7 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(74, 22);
+            this.Backbtn.Location = new System.Drawing.Point(74, 43);
             this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Backbtn.Name = "Backbtn";
             this.Backbtn.Size = new System.Drawing.Size(56, 25);
@@ -63,7 +63,7 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(13, 13);
+            this.BacklogoBtn.Location = new System.Drawing.Point(13, 34);
             this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
@@ -77,7 +77,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(9, 95);
+            this.label1.Location = new System.Drawing.Point(28, 149);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(494, 20);
@@ -89,7 +89,7 @@
             this.CreateanLbl.AutoSize = true;
             this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateanLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CreateanLbl.Location = new System.Drawing.Point(797, 33);
+            this.CreateanLbl.Location = new System.Drawing.Point(818, 95);
             this.CreateanLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CreateanLbl.Name = "CreateanLbl";
             this.CreateanLbl.Size = new System.Drawing.Size(274, 39);
@@ -101,7 +101,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(44, 146);
+            this.label2.Location = new System.Drawing.Point(63, 200);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(210, 20);
@@ -113,7 +113,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(44, 185);
+            this.label3.Location = new System.Drawing.Point(63, 239);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(290, 20);
@@ -125,7 +125,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(44, 222);
+            this.label4.Location = new System.Drawing.Point(63, 276);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(526, 20);

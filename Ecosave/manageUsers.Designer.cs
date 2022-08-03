@@ -47,7 +47,7 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(53, 4);
+            this.Backbtn.Location = new System.Drawing.Point(79, 65);
             this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Backbtn.Name = "Backbtn";
             this.Backbtn.Size = new System.Drawing.Size(56, 25);
@@ -58,7 +58,7 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(0, 4);
+            this.BacklogoBtn.Location = new System.Drawing.Point(13, 56);
             this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
@@ -72,7 +72,7 @@
             this.CreateanLbl.AutoSize = true;
             this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateanLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CreateanLbl.Location = new System.Drawing.Point(641, 26);
+            this.CreateanLbl.Location = new System.Drawing.Point(716, 87);
             this.CreateanLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CreateanLbl.Name = "CreateanLbl";
             this.CreateanLbl.Size = new System.Drawing.Size(230, 39);
@@ -84,7 +84,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(13, 83);
+            this.label1.Location = new System.Drawing.Point(60, 168);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(656, 20);
@@ -94,7 +94,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(58, 180);
+            this.btnRefresh.Location = new System.Drawing.Point(105, 265);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(98, 25);
             this.btnRefresh.TabIndex = 25;
@@ -104,7 +104,7 @@
             // 
             // btnAddUser
             // 
-            this.btnAddUser.Location = new System.Drawing.Point(58, 304);
+            this.btnAddUser.Location = new System.Drawing.Point(105, 389);
             this.btnAddUser.Name = "btnAddUser";
             this.btnAddUser.Size = new System.Drawing.Size(98, 25);
             this.btnAddUser.TabIndex = 26;
@@ -114,7 +114,7 @@
             // 
             // btnResetPassword
             // 
-            this.btnResetPassword.Location = new System.Drawing.Point(58, 442);
+            this.btnResetPassword.Location = new System.Drawing.Point(105, 527);
             this.btnResetPassword.Name = "btnResetPassword";
             this.btnResetPassword.Size = new System.Drawing.Size(154, 25);
             this.btnResetPassword.TabIndex = 27;
@@ -124,7 +124,7 @@
             // 
             // btnDeactivateUser
             // 
-            this.btnDeactivateUser.Location = new System.Drawing.Point(58, 599);
+            this.btnDeactivateUser.Location = new System.Drawing.Point(105, 684);
             this.btnDeactivateUser.Name = "btnDeactivateUser";
             this.btnDeactivateUser.Size = new System.Drawing.Size(259, 25);
             this.btnDeactivateUser.TabIndex = 28;
@@ -140,7 +140,7 @@
             this.manageuser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.manageuser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.manageuser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.manageuser.Location = new System.Drawing.Point(323, 180);
+            this.manageuser.Location = new System.Drawing.Point(370, 265);
             this.manageuser.Name = "manageuser";
             this.manageuser.RowHeadersWidth = 51;
             this.manageuser.RowTemplate.Height = 24;

@@ -205,19 +205,7 @@ namespace Ecosave
             }
         }
 
-        private void billingTableToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("Billing_Table_Screen"))
-            {
-                {
-                    if (ActiveMdiChild != null)
-                        ActiveMdiChild.Close();
-                    var Billing_Table = new Billing_Table_Screen();
-                    Billing_Table.MdiParent = this;
-                    Billing_Table.Show();
-                }
-            }
-        }
+       
 
         private void tipsToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -244,21 +232,6 @@ namespace Ecosave
                 About_Us.Show();
             }
         }
-
-        private void Bills_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("Billing_Table_Screen"))
-            {
-                {
-                    if (ActiveMdiChild != null)
-                        ActiveMdiChild.Close();
-                    var Billing_Table = new Billing_Table_Screen();
-                    Billing_Table.MdiParent = this;
-                    Billing_Table.Show();
-                }
-            }
-        }
-
-        
+       
     }
 }

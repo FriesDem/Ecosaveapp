@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.tsilogintext = new System.Windows.Forms.ToolStripStatusLabel();
-            this.Bills = new System.Windows.Forms.Button();
             this.Aboutus = new System.Windows.Forms.Button();
             this.Storepage = new System.Windows.Forms.Button();
             this.ProfileBtn = new System.Windows.Forms.Button();
@@ -40,7 +39,6 @@
             this.NavPanel = new System.Windows.Forms.Panel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
-            this.billingTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.manageUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.storeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,19 +59,6 @@
             // 
             this.tsilogintext.Name = "tsilogintext";
             this.tsilogintext.Size = new System.Drawing.Size(0, 16);
-            // 
-            // Bills
-            // 
-            this.Bills.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Bills.BackgroundImage")));
-            this.Bills.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Bills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Bills.Location = new System.Drawing.Point(909, 14);
-            this.Bills.Margin = new System.Windows.Forms.Padding(4);
-            this.Bills.Name = "Bills";
-            this.Bills.Size = new System.Drawing.Size(103, 60);
-            this.Bills.TabIndex = 7;
-            this.Bills.UseVisualStyleBackColor = true;
-            this.Bills.Click += new System.EventHandler(this.Bills_Click);
             // 
             // Aboutus
             // 
@@ -157,7 +142,6 @@
             // 
             this.NavPanel.AutoSize = true;
             this.NavPanel.BackColor = System.Drawing.Color.LightCyan;
-            this.NavPanel.Controls.Add(this.Bills);
             this.NavPanel.Controls.Add(this.Aboutus);
             this.NavPanel.Controls.Add(this.Storepage);
             this.NavPanel.Controls.Add(this.ProfileBtn);
@@ -167,7 +151,7 @@
             this.NavPanel.Location = new System.Drawing.Point(32, 32);
             this.NavPanel.Margin = new System.Windows.Forms.Padding(4);
             this.NavPanel.Name = "NavPanel";
-            this.NavPanel.Size = new System.Drawing.Size(1036, 78);
+            this.NavPanel.Size = new System.Drawing.Size(898, 78);
             this.NavPanel.TabIndex = 41;
             // 
             // statusStrip1
@@ -188,19 +172,12 @@
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.NavPanel);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(1098, 147);
-            this.toolStripContainer1.Location = new System.Drawing.Point(415, 839);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(967, 147);
+            this.toolStripContainer1.Location = new System.Drawing.Point(493, 840);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(1098, 172);
+            this.toolStripContainer1.Size = new System.Drawing.Size(967, 172);
             this.toolStripContainer1.TabIndex = 11;
             this.toolStripContainer1.Text = "toolStripContainer1";
-            // 
-            // billingTableToolStripMenuItem
-            // 
-            this.billingTableToolStripMenuItem.Name = "billingTableToolStripMenuItem";
-            this.billingTableToolStripMenuItem.Size = new System.Drawing.Size(104, 24);
-            this.billingTableToolStripMenuItem.Text = "Billing Table";
-            this.billingTableToolStripMenuItem.Click += new System.EventHandler(this.billingTableToolStripMenuItem_Click);
             // 
             // manageUserToolStripMenuItem
             // 
@@ -269,7 +246,6 @@
             this.storeToolStripMenuItem,
             this.aboutUsToolStripMenuItem,
             this.manageUserToolStripMenuItem,
-            this.billingTableToolStripMenuItem,
             this.tipsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -311,7 +287,6 @@
         #endregion
 
         private System.Windows.Forms.ToolStripStatusLabel tsilogintext;
-        private System.Windows.Forms.Button Bills;
         private System.Windows.Forms.Button Aboutus;
         private System.Windows.Forms.Button Storepage;
         private System.Windows.Forms.Button ProfileBtn;
@@ -321,7 +296,6 @@
         private System.Windows.Forms.Panel NavPanel;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
-        private System.Windows.Forms.ToolStripMenuItem billingTableToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem manageUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem storeToolStripMenuItem;

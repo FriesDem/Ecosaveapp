@@ -67,7 +67,7 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(13, 13);
+            this.BacklogoBtn.Location = new System.Drawing.Point(13, 51);
             this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
@@ -81,7 +81,7 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(74, 22);
+            this.Backbtn.Location = new System.Drawing.Point(74, 60);
             this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Backbtn.Name = "Backbtn";
             this.Backbtn.Size = new System.Drawing.Size(56, 25);
@@ -192,7 +192,7 @@
             this.NameLbl.AutoSize = true;
             this.NameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.NameLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NameLbl.Location = new System.Drawing.Point(883, 18);
+            this.NameLbl.Location = new System.Drawing.Point(885, 51);
             this.NameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLbl.Name = "NameLbl";
             this.NameLbl.Size = new System.Drawing.Size(234, 29);
@@ -312,7 +312,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(747, 91);
+            this.label10.Location = new System.Drawing.Point(749, 124);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(509, 29);

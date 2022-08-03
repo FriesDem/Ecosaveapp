@@ -57,7 +57,7 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(52, 13);
+            this.Backbtn.Location = new System.Drawing.Point(66, 52);
             this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Backbtn.Name = "Backbtn";
             this.Backbtn.Size = new System.Drawing.Size(56, 25);
@@ -68,7 +68,7 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(-1, 13);
+            this.BacklogoBtn.Location = new System.Drawing.Point(13, 52);
             this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
@@ -82,7 +82,7 @@
             this.NameLbl.AutoSize = true;
             this.NameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.NameLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NameLbl.Location = new System.Drawing.Point(862, 31);
+            this.NameLbl.Location = new System.Drawing.Point(852, 78);
             this.NameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLbl.Name = "NameLbl";
             this.NameLbl.Size = new System.Drawing.Size(234, 29);
@@ -95,7 +95,7 @@
             this.Title2.BackColor = System.Drawing.Color.Transparent;
             this.Title2.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Title2.Location = new System.Drawing.Point(972, 343);
+            this.Title2.Location = new System.Drawing.Point(962, 390);
             this.Title2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Title2.Name = "Title2";
             this.Title2.Size = new System.Drawing.Size(170, 69);
@@ -108,7 +108,7 @@
             this.Title1.BackColor = System.Drawing.Color.Transparent;
             this.Title1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Title1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.Title1.Location = new System.Drawing.Point(801, 346);
+            this.Title1.Location = new System.Drawing.Point(791, 393);
             this.Title1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Title1.Name = "Title1";
             this.Title1.Size = new System.Drawing.Size(163, 69);
@@ -118,7 +118,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(651, 90);
+            this.pictureBox1.Location = new System.Drawing.Point(641, 137);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(641, 322);
