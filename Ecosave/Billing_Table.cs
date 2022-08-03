@@ -20,8 +20,9 @@ namespace Ecosave
         public Nullable<double> Energy_Charge { get; set; }
         public Nullable<double> Exchange_Rate { get; set; }
         public string Reading_Type { get; set; }
-        public string Customer_Charge { get; set; }
-        public string IPP_Charge { get; set; }
-        public string Demand_Charge { get; set; }
+        public Nullable<double> Customer_Charge { get; set; }
+        public Nullable<double> IPP_Charge { get; set; }
+        public Nullable<double> Demand_Charge { get; set; }
+        public Nullable<double> Final_Charge { get; set; }
     }
 }

@@ -51,7 +51,7 @@ namespace Ecosave
             else
                 {
                 
-                    var home = new Home(this, user);
+                    var home = new Home( this,user);
                 
                     home.Show();
                     this.Hide();

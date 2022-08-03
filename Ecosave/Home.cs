@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 namespace Ecosave
 {
     public partial class Home : Form
@@ -26,13 +27,14 @@ namespace Ecosave
             _user = user;
             _RoleName = user.UserRoles.FirstOrDefault().Role.shortname;
         }
+
         private void Home_FormClosing(object sender, FormClosingEventArgs e)
         {
             _login.Close();
         }
+
         private void Home_Load(object sender, EventArgs e)
         {
-
             if (_user.Password == Utils.DefaultHashpassword())
             {
                 var resetpassword = new Paasword_Reset(_user);
@@ -48,7 +50,6 @@ namespace Ecosave
             }
 
             var Profile = new ProfilePage(_user);
-
         }
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
@@ -59,11 +60,12 @@ namespace Ecosave
                 log.Show();
             }
         }
+
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("ProfilePage"))
             {
-                
+
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var newland = tsilogintext.Text;
@@ -73,9 +75,9 @@ namespace Ecosave
 
             }
         }
+
         private void calculatorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             if (!Utils.FormIsOpen("Calculator_Page"))
             {
                 if (ActiveMdiChild != null)
@@ -85,32 +87,31 @@ namespace Ecosave
                 Calculate.Show();
             }
         }
+
         private void storeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            
-                if (!Utils.FormIsOpen("Store_Page"))
-                {
-                    if (ActiveMdiChild != null)
-                        ActiveMdiChild.Close();
-                    var Store_Page = new Store_Page();
-                    Store_Page.MdiParent = this;
-                    Store_Page.Show();
-                }
+            if (!Utils.FormIsOpen("Store_Page"))
+            {
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Store_Page = new Store_Page();
+                Store_Page.MdiParent = this;
+                Store_Page.Show();
+            }
         }
+
         private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
-            
-                if (!Utils.FormIsOpen("About_Us"))
-                {
-                    if (ActiveMdiChild != null)
-                        ActiveMdiChild.Close();
-                    var About_Us = new About_Us();
-                    About_Us.MdiParent = this;
-                    About_Us.Show();
-                }
+            if (!Utils.FormIsOpen("About_Us"))
+            {
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var About_Us = new About_Us();
+                About_Us.MdiParent = this;
+                About_Us.Show();
+            }
         }
+
         private void manageUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("manageUsers"))
@@ -123,9 +124,8 @@ namespace Ecosave
             }
         }
 
-        private void HomeBtn_Click(object sender, EventArgs e)
+        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
             if (!Utils.FormIsOpen("HomePage"))
             {
                 {
@@ -137,6 +137,21 @@ namespace Ecosave
                 }
             }
         }
+
+        private void HomeBtn_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("HomePage"))
+            {
+                {
+                    if (ActiveMdiChild != null)
+                        ActiveMdiChild.Close();
+                    var HomePage = new HomePage();
+                    HomePage.MdiParent = this;
+                    HomePage.Show();
+                }
+            }
+        }
+
         private void CalculatorBtn_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("Calculator_Page"))
@@ -148,21 +163,23 @@ namespace Ecosave
                 Calculate.Show();
             }
         }
+
         private void ProfileBtn_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("ProfilePage"))
             {
-                
+
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var newland = tsilogintext.Text;
-                var Profile = new ProfilePage(_user); 
+                var Profile = new ProfilePage(_user);
                 Profile.MdiParent = this;
                 Profile.Show();
 
             }
         }
-        private void pictureBox2_Click(object sender, EventArgs e)
+
+        private void Storepage_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("Store_Page"))
             {
@@ -173,6 +190,7 @@ namespace Ecosave
                 Store_Page.Show();
             }
         }
+
         private void TipsBtn_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("Tips_Page"))
@@ -197,20 +215,6 @@ namespace Ecosave
                     var Billing_Table = new Billing_Table_Screen();
                     Billing_Table.MdiParent = this;
                     Billing_Table.Show();
-                }
-            }
-        }
-
-        private void homeToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("HomePage"))
-            {
-                {
-                    if (ActiveMdiChild != null)
-                        ActiveMdiChild.Close();
-                    var HomePage = new HomePage();
-                    HomePage.MdiParent = this;
-                    HomePage.Show();
                 }
             }
         }
@@ -240,35 +244,6 @@ namespace Ecosave
                 About_Us.Show();
             }
         }
-<<<<<<< HEAD
-        }
-
-        private void billingTableToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("BillingTable"))
-            {
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var BillingTable = new Billing_Table_Screen();
-                BillingTable.MdiParent = this;
-                BillingTable.Show();
-            }
-        }
-    }
-}
-=======
-
-        private void Storepage_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("Store_Page"))
-            {
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var Store_Page = new Store_Page();
-                Store_Page.MdiParent = this;
-                Store_Page.Show();
-            }
-        }
 
         private void Bills_Click(object sender, EventArgs e)
         {
@@ -283,6 +258,7 @@ namespace Ecosave
                 }
             }
         }
+
+        
     }
 }
->>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5

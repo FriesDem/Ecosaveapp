@@ -37,11 +37,11 @@ namespace Ecosave
             energyCharge = double.Parse(txtEnergyCharge.Text);
             readingType = cmboReadingType.Text;
 
-            billing.Fuel_Charge = fuelCharge.ToString();
-            billing.IPP_Charge = IPPCharge.ToString();
-            billing.Exchange_Rate = exRate.ToString();
-            billing.Customer_Charge = custCharge.ToString();
-            billing.Energy_Charge = energyCharge.ToString(); 
+            billing.Fuel_Charge = fuelCharge;
+            billing.IPP_Charge = IPPCharge;
+            billing.Exchange_Rate = exRate;
+            billing.Customer_Charge = custCharge;
+            billing.Energy_Charge = energyCharge; 
             billing.Reading_Type = readingType;
             billing.Energy_Used = energyUsed;
             

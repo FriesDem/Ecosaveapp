@@ -121,7 +121,6 @@
     <Compile Include="Adduser.Designer.cs">
       <DependentUpon>Adduser.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Billing Table Screen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,13 +129,6 @@
     </Compile>
     <Compile Include="Billing_Table.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
-=======
-    <Compile Include="Billing_Table_Screen.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Billing_Table_Screen.Designer.cs">
-      <DependentUpon>Billing_Table_Screen.cs</DependentUpon>
->>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5
     </Compile>
     <Compile Include="Calculator.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
@@ -147,13 +139,24 @@
     <Compile Include="CalculatorInfo.Designer.cs">
       <DependentUpon>CalculatorInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Calculator_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculator_Page.Designer.cs">
+      <DependentUpon>Calculator_Page.cs</DependentUpon>
+    </Compile>
     <Compile Include="Creating profile 1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Creating profile 1.Designer.cs">
       <DependentUpon>Creating profile 1.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
+    <Compile Include="DeviceData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeviceData.Designer.cs">
+      <DependentUpon>DeviceData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Devices_Table.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
@@ -171,13 +174,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ECOSAVE.edmx</DependentUpon>
-=======
-    <Compile Include="DeviceData.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DeviceData.Designer.cs">
-      <DependentUpon>DeviceData.cs</DependentUpon>
->>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5
     </Compile>
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
@@ -185,17 +181,17 @@
     <Compile Include="ForgotPassword.Designer.cs">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="Calc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Calc.Designer.cs">
-      <DependentUpon>Calc.cs</DependentUpon>
-    </Compile>
     <Compile Include="ForgotPassword2.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ForgotPassword2.Designer.cs">
       <DependentUpon>ForgotPassword2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
@@ -212,31 +208,23 @@
     <Compile Include="Paasword Reset.Designer.cs">
       <DependentUpon>Paasword Reset.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="Person_Table.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
     <Compile Include="Role.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
-=======
+    </Compile>
     <Compile Include="RoomsData.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RoomsData.Designer.cs">
       <DependentUpon>RoomsData.cs</DependentUpon>
->>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5
     </Compile>
     <Compile Include="Tips Page.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Tips Page.Designer.cs">
       <DependentUpon>Tips Page.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Home.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="manageUsers.cs">
       <SubType>Form</SubType>
@@ -292,16 +280,14 @@
     <EmbeddedResource Include="About Us.resx">
       <DependentUpon>About Us.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="Billing Table Screen.resx">
       <DependentUpon>Billing Table Screen.cs</DependentUpon>
-=======
-    <EmbeddedResource Include="Billing_Table_Screen.resx">
-      <DependentUpon>Billing_Table_Screen.cs</DependentUpon>
->>>>>>> 1da4c87f0dd7ea5093ed81e3e7e47c2d0d1c08c5
     </EmbeddedResource>
     <EmbeddedResource Include="CalculatorInfo.resx">
       <DependentUpon>CalculatorInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculator_Page.resx">
+      <DependentUpon>Calculator_Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Creating profile 1.resx">
       <DependentUpon>Creating profile 1.cs</DependentUpon>
@@ -321,11 +307,11 @@
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Calc.resx">
-      <DependentUpon>Calc.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword2.resx">
       <DependentUpon>ForgotPassword2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
@@ -341,9 +327,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="manageUsers.resx">
       <DependentUpon>manageUsers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Page.resx">
       <DependentUpon>Login_Page.cs</DependentUpon>
@@ -373,7 +356,6 @@
     <None Include="ECOSAVE.edmx.diagram">
       <DependentUpon>ECOSAVE.edmx</DependentUpon>
     </None>
-    <None Include="Ecosave_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -392,18 +374,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ECOSAVE.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ECOSAVE.edmx</DependentUpon>
-      <LastGenOutput>ECOSAVE.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="ECOSAVE.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ECOSAVE.edmx</DependentUpon>
-      <LastGenOutput>ECOSAVE.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
@@ -414,6 +384,18 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ECOSAVE.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ECOSAVE.edmx</DependentUpon>
+      <LastGenOutput>ECOSAVE.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ECOSAVE.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ECOSAVE.edmx</DependentUpon>
+      <LastGenOutput>ECOSAVE.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
