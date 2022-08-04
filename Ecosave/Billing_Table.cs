@@ -14,7 +14,7 @@ namespace Ecosave
     
     public partial class Billing_Table
     {
-        public string ID { get; set; }
+        public int ID { get; set; }
         public Nullable<double> Energy_Used { get; set; }
         public Nullable<double> Fuel_Charge { get; set; }
         public Nullable<double> Energy_Charge { get; set; }

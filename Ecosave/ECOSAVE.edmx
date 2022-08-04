@@ -4,12 +4,12 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ECOSAVEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="ECOSAVEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Billing Table">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Energy Used" Type="float" />
           <Property Name="Fuel Charge" Type="float" />
           <Property Name="Energy Charge" Type="float" />
@@ -24,9 +24,14 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Power Average" Type="float" />
           <Property Name="Number Of Devices" Type="int" />
+          <Property Name="Hours Used" Type="int" />
+          <Property Name="Daily Average" Type="float" />
+          <Property Name="Weekly Average" Type="float" />
+          <Property Name="Monthly Average" Type="float" />
+          <Property Name="Yearly Average" Type="float" />
         </EntityType>
         <EntityType Name="Devices Table">
           <Key>
@@ -44,7 +49,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Number of Rooms" Type="int" />
           <Property Name="Number of Devices per Room" Type="int" />
         </EntityType>
@@ -151,8 +156,7 @@
             <End Role="UserRoles" EntitySet="UserRoles" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ECOSAVEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -160,7 +164,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Energy_Used" Type="Double" />
           <Property Name="Fuel_Charge" Type="Double" />
           <Property Name="Energy_Charge" Type="Double" />
@@ -175,9 +179,14 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Power_Average" Type="Double" />
           <Property Name="Number_Of_Devices" Type="Int32" />
+          <Property Name="Hours_Used" Type="Int32" />
+          <Property Name="Daily_Average" Type="Int32" />
+          <Property Name="Weekly_Average" Type="Int32" />
+          <Property Name="Monthly_Average" Type="Int32" />
+          <Property Name="Yearly_Average" Type="Int32" />
         </EntityType>
         <EntityType Name="Devices_Table">
           <Key>
@@ -195,7 +204,7 @@
           <Key>
             <PropertyRef Name="ID" />
           </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Number_of_Rooms" Type="Int32" />
           <Property Name="Number_of_Devices_per_Room" Type="Int32" />
         </EntityType>
@@ -333,6 +342,11 @@
           <EntitySetMapping Name="Calculators">
             <EntityTypeMapping TypeName="ECOSAVEModel.Calculator">
               <MappingFragment StoreEntitySet="Calculator">
+                <ScalarProperty Name="Yearly_Average" ColumnName="Yearly Average" />
+                <ScalarProperty Name="Monthly_Average" ColumnName="Monthly Average" />
+                <ScalarProperty Name="Weekly_Average" ColumnName="Weekly Average" />
+                <ScalarProperty Name="Daily_Average" ColumnName="Daily Average" />
+                <ScalarProperty Name="Hours_Used" ColumnName="Hours Used" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Power_Average" ColumnName="Power Average" />
                 <ScalarProperty Name="Number_Of_Devices" ColumnName="Number Of Devices" />
