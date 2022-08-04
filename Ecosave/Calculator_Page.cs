@@ -21,125 +21,57 @@ namespace Ecosave
             ecosaveDB = new ECOSAVEEntities();
             calculator = new Calculator();
         }
-        double result = 0.0;
-        int equalBtnCount = 0;
-        string function = "";
-        bool functionPerformed = false;
-        int numDevices;
-
-        double finalAvg = 0.0;
-        double tempVal;
+        double dailyCost = 0, weeklyCost = 0, montlyCost = 0, yearlyCost = 0;
+        double fuelCost = 7.32, IPPCharge = 13.22, GCT = 0.15, finalCharge = 0;
+        int numDevices = 0;
+        
 
         private void clearBtn_Click(object sender, EventArgs e)
         {
-            calculatorDisplay.Text = "0";
-            tempValueLabel.Text = "";
+            finalCharge = 0;
+            lblDailyCostDisplay.Text = "";
+            lblWeeklyCostDisplay.Text = "";
+            lblMonthlyCostDisplay.Text = ""; 
+            lblYearlyCostDisplay.Text = "";
+            txtHoursUsed.Text = "";
+            txtPowerOutput.Text = "";
+            numberOfDevices.Value = 0;
 
-            result = 0.0;
         }
 
-        private void equalBtn_Click(object sender, EventArgs e)
+        private void calculateBtn_Click(object sender, EventArgs e)
         {
-            equalBtnCount++;
-
-            if (numDevices == 0)
+            if (numberOfDevices.Value == 0)
             {
-                MessageBox.Show("Please choose the number of devices you wish to find the average of first");
+                MessageBox.Show("Please Enter the number of devices you wish to calculate for");
             }
-            else if (numDevices > 0)
+            else
             {
-                switch (function)
-                {
+                finalCharge = ((fuelCost * (Double.Parse(txtHoursUsed.Text) * Double.Parse(txtPowerOutput.Text)) + (IPPCharge * (Double.Parse(txtHoursUsed.Text) * Double.Parse(txtPowerOutput.Text)))));
+                dailyCost = finalCharge;
+                weeklyCost = finalCharge * 7;
+                montlyCost = finalCharge * 30;
+                yearlyCost = finalCharge * 365;
+                numDevices = int.Parse(numberOfDevices.Text);
+                lblDailyCostDisplay.Text = "$ " + dailyCost.ToString("N2") + "JMD";
+                lblWeeklyCostDisplay.Text = "$ " + weeklyCost.ToString("N2") + "JMD";
+                lblMonthlyCostDisplay.Text = "$ " + montlyCost.ToString("N2") + "JMD";
+                lblYearlyCostDisplay.Text = "$ " + yearlyCost.ToString("N2") + "JMD";
 
-                    case "+":
-                        calculatorDisplay.Text = (tempVal + Double.Parse(calculatorDisplay.Text)).ToString();
-                        result += double.Parse(calculatorDisplay.Text);
-                        break;
 
-                    case "-":
-                        calculatorDisplay.Text = (tempVal - Double.Parse(calculatorDisplay.Text)).ToString();
-                        result += double.Parse(calculatorDisplay.Text);
-                        break;
+                calculator.Number_Of_Devices = numDevices;
+                calculator.Power_Average = double.Parse(txtPowerOutput.Text);
+                calculator.Hours_Used = int.Parse(txtHoursUsed.Text);
+                calculator.Daily_Average = Convert.ToInt32(dailyCost);
+                calculator.Weekly_Average = Convert.ToInt32(weeklyCost);
+                calculator.Monthly_Average = Convert.ToInt32(montlyCost);
+                ecosaveDB.Calculators.Add(calculator);
+                ecosaveDB.SaveChanges();
 
-                    case "/":
-                        calculatorDisplay.Text = (tempVal / Double.Parse(calculatorDisplay.Text)).ToString();
-                        result += double.Parse(calculatorDisplay.Text);
-                        break;
-
-                    case "x":
-                        calculatorDisplay.Text = (tempVal * Double.Parse(calculatorDisplay.Text)).ToString();
-                        result += double.Parse(calculatorDisplay.Text);
-                        break;
-
-                    default:
-                        break;
-                }
-                if (equalBtnCount == numDevices)
-                {
-                    tempValueLabel.Text = "";
-                    finalAvg = result / numDevices;
-
-                    MessageBox.Show($" Your Power Average is {finalAvg}\n Click the submit button to submit your device averages");
-                    calculatorDisplay.Visible = false;
-                }
-            }
-        }
-
-        private void num0_Click(object sender, EventArgs e)
-        {
-            {
-                if (calculatorDisplay.Text == "0" || functionPerformed == true)
-                    calculatorDisplay.Clear();
-                functionPerformed = false;
-
-                Button button = (Button)sender;
-                if (button.Text == ".")
-                {
-                    if (!calculatorDisplay.Text.Contains("."))
-                        calculatorDisplay.Text += button.Text;
-                }
-                else
-                    calculatorDisplay.Text += button.Text;
-            }
-        }
-
-        private void submitBtn_Click(object sender, EventArgs e)
-        {
-            calculator.Number_Of_Devices = numDevices;
-            calculator.Power_Average = finalAvg;
-            ecosaveDB.Calculators.Add(calculator);
-            ecosaveDB.SaveChanges();
-            MessageBox.Show($"The final average of your devices is {finalAvg.ToString("N1")}");
-            calculatorDisplay.Visible = true;
-            numDevices = 0;
-            numberOfDevices.Text = "0";
-        }
-
-        private void numDevicesBtn_Click(object sender, EventArgs e)
-        {
-            numDevices = int.Parse(numberOfDevices.Text);
-
-            MessageBox.Show("Now, Enter the kwh of the device * the number of hours used\nFormat: kwH * hours used\n");
-            numberOfDevices.Visible = false;
-            calculatorDisplay.Visible = true;
-        }
-
-        private void Calculator_Page_Load(object sender, EventArgs e)
-        {
-            {
-                MessageBox.Show("Choose the number of devices you will be finding the average for.\n Then, input the power rating times the number" +
-                "of hours you use for each. \nThis will give you your average. \nE.g. 60 * 5 = 300 kwH.");
-                calculatorDisplay.Visible = false;
             }
 
-        }
-        private void arithmeticBtn(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            function = button.Text;
-            functionPerformed = true;
-            tempVal = Double.Parse(calculatorDisplay.Text);
-            tempValueLabel.Text = tempVal.ToString() + " " + function;
+
+
         }
     }
 }
