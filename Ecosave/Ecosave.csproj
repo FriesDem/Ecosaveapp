@@ -63,6 +63,7 @@
       <Private>True</Private>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
       <Private>True</Private>
@@ -183,6 +184,12 @@
     <Compile Include="Houses_Table.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
+    <Compile Include="Lightbulb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lightbulb.Designer.cs">
+      <DependentUpon>Lightbulb.cs</DependentUpon>
+    </Compile>
     <Compile Include="Paasword Reset.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +199,12 @@
     <Compile Include="Person_Table.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
+    <Compile Include="Powerbank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Powerbank.Designer.cs">
+      <DependentUpon>Powerbank.cs</DependentUpon>
+    </Compile>
     <Compile Include="Role.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
@@ -200,6 +213,18 @@
     </Compile>
     <Compile Include="RoomsData.Designer.cs">
       <DependentUpon>RoomsData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Smarthubdevices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Smarthubdevices.Designer.cs">
+      <DependentUpon>Smarthubdevices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Solargenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Solargenerator.Designer.cs">
+      <DependentUpon>Solargenerator.cs</DependentUpon>
     </Compile>
     <Compile Include="Tips Page.cs">
       <SubType>Form</SubType>
@@ -288,17 +313,35 @@
     <EmbeddedResource Include="ForgotPassword2.resx">
       <DependentUpon>ForgotPassword2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Home.en-029.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.es.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Lightbulb.resx">
+      <DependentUpon>Lightbulb.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Paasword Reset.resx">
       <DependentUpon>Paasword Reset.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Powerbank.resx">
+      <DependentUpon>Powerbank.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RoomsData.resx">
       <DependentUpon>RoomsData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Smarthubdevices.resx">
+      <DependentUpon>Smarthubdevices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Solargenerator.resx">
+      <DependentUpon>Solargenerator.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tips Page.resx">
       <DependentUpon>Tips Page.cs</DependentUpon>

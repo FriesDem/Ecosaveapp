@@ -55,7 +55,7 @@ namespace Ecosave
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             {
-                this.Close();
+                this.Hide();
                 LoginForm log = new LoginForm();
                 log.Show();
             }
