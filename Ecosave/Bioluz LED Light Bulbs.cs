@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class Solargenerator : Form
+    public partial class Bioluz_LED_Light_Bulbs : Form
     {
-        public Solargenerator()
+        public Bioluz_LED_Light_Bulbs()
         {
             InitializeComponent();
-        }
-
-        private void BacklogoBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

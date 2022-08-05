@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class Solargenerator : Form
+    public partial class SYLVANIA_ECO_LED_A19_Light_Bulb : Form
     {
-        public Solargenerator()
+        public SYLVANIA_ECO_LED_A19_Light_Bulb()
         {
             InitializeComponent();
-        }
-
-        private void BacklogoBtn_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

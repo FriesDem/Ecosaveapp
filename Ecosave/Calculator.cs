@@ -18,9 +18,9 @@ namespace Ecosave
         public Nullable<double> Power_Average { get; set; }
         public Nullable<int> Number_Of_Devices { get; set; }
         public Nullable<int> Hours_Used { get; set; }
-        public Nullable<int> Daily_Average { get; set; }
-        public Nullable<int> Weekly_Average { get; set; }
-        public Nullable<int> Monthly_Average { get; set; }
-        public Nullable<int> Yearly_Average { get; set; }
+        public Nullable<double> Daily_Average { get; set; }
+        public Nullable<double> Weekly_Average { get; set; }
+        public Nullable<double> Monthly_Average { get; set; }
+        public Nullable<double> Yearly_Average { get; set; }
     }
 }

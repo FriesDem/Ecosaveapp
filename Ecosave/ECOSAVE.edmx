@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="ECOSAVEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="ECOSAVEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Billing Table">
           <Key>
             <PropertyRef Name="ID" />
@@ -156,7 +156,8 @@
             <End Role="UserRoles" EntitySet="UserRoles" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ECOSAVEModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -183,10 +184,10 @@
           <Property Name="Power_Average" Type="Double" />
           <Property Name="Number_Of_Devices" Type="Int32" />
           <Property Name="Hours_Used" Type="Int32" />
-          <Property Name="Daily_Average" Type="Int32" />
-          <Property Name="Weekly_Average" Type="Int32" />
-          <Property Name="Monthly_Average" Type="Int32" />
-          <Property Name="Yearly_Average" Type="Int32" />
+          <Property Name="Daily_Average" Type="Double" />
+          <Property Name="Weekly_Average" Type="Double" />
+          <Property Name="Monthly_Average" Type="Double" />
+          <Property Name="Yearly_Average" Type="Double" />
         </EntityType>
         <EntityType Name="Devices_Table">
           <Key>
@@ -342,14 +343,14 @@
           <EntitySetMapping Name="Calculators">
             <EntityTypeMapping TypeName="ECOSAVEModel.Calculator">
               <MappingFragment StoreEntitySet="Calculator">
-                <ScalarProperty Name="Yearly_Average" ColumnName="Yearly Average" />
-                <ScalarProperty Name="Monthly_Average" ColumnName="Monthly Average" />
-                <ScalarProperty Name="Weekly_Average" ColumnName="Weekly Average" />
-                <ScalarProperty Name="Daily_Average" ColumnName="Daily Average" />
-                <ScalarProperty Name="Hours_Used" ColumnName="Hours Used" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Power_Average" ColumnName="Power Average" />
                 <ScalarProperty Name="Number_Of_Devices" ColumnName="Number Of Devices" />
+                <ScalarProperty Name="Hours_Used" ColumnName="Hours Used" />
+                <ScalarProperty Name="Daily_Average" ColumnName="Daily Average" />
+                <ScalarProperty Name="Weekly_Average" ColumnName="Weekly Average" />
+                <ScalarProperty Name="Monthly_Average" ColumnName="Monthly Average" />
+                <ScalarProperty Name="Yearly_Average" ColumnName="Yearly Average" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

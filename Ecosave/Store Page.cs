@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CouncilGamingClub;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,62 +24,146 @@ namespace Ecosave
             this.Close();
         }
 
-  
-
-        private void backpack_Click(object sender, EventArgs e)
+        private void lightbulbToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.com/s?k=solar+backpack&sprefix=solar+backpa%2Caps%2C176&ref=nb_sb_ss_mission-aware-v1_1_12");
-            Process.Start(sInfo);
+            if (!Utils.FormIsOpen("Lightbulb"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Lightbulb = new Lightbulb();
+                Lightbulb.MdiParent = this.MdiParent;
+                Lightbulb.Show();
+
+            }
         }
 
-        private void lightbulb_Click(object sender, EventArgs e)
+        private void solarGeneratorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.com/s?k=cree+60w+bulbs&crid=3PDAKEB4K3XBY&sprefix=cree+60w+bulbs%2Caps%2C138&ref=nb_sb_noss_2");
-            Process.Start(sInfo);
+            if (!Utils.FormIsOpen("Solargenerator"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Solargenerator = new Solargenerator();
+                Solargenerator.MdiParent = this.MdiParent;
+                Solargenerator.Show();
+
+            }
         }
 
-        private void kettle_Click(object sender, EventArgs e)
+        private void powerBankToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.co.uk/s?k=energy+saving+kettle&i=kitchen&ref=nb_sb_noss");
-            Process.Start(sInfo);
+
+            if (!Utils.FormIsOpen("Powerbank"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Powerbank = new Powerbank();
+                Powerbank.MdiParent = this.MdiParent;
+                Powerbank.Show();
+
+            }
         }
 
-        private void Fridge_Click(object sender, EventArgs e)
+        private void smartHubDevicesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.com/s?k=portable+solar+fridge&crid=29CWMKOSOO70I&sprefix=portable+solar+fridge%2Caps%2C148&ref=nb_sb_noss_1");
-            Process.Start(sInfo);
+
+            if (!Utils.FormIsOpen("Smarthubdevices"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Smarthubdevices = new Smarthubdevices();
+                Smarthubdevices.MdiParent = this.MdiParent;
+                Smarthubdevices.Show();
+
+            }
         }
 
-        private void Generator_Click(object sender, EventArgs e)
+        private void LightBulbs_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.com/s?k=solar+generator&crid=UP3AGFVA0Q3G&sprefix=solar+generator%2Caps%2C161&ref=nb_sb_noss_1");
-            Process.Start(sInfo);
+            if (!Utils.FormIsOpen("Lightbulb"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Lightbulb = new Lightbulb();
+                Lightbulb.MdiParent = this.MdiParent;
+                Lightbulb.Show();
+
+            }
         }
 
-        private void powerbank_Click(object sender, EventArgs e)
+        private void SolarGenerators_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.com/s?k=solar+power+bank&crid=C78G9Q93HQEM&sprefix=solar+power+bank%2Caps%2C162&ref=nb_sb_noss_1");
-            Process.Start(sInfo);
+            if (!Utils.FormIsOpen("Solargenerator"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Solargenerator = new Solargenerator();
+                Solargenerator.MdiParent = this.MdiParent;
+                Solargenerator.Show();
+
+            }
         }
 
-        private void Smartplugs_Click(object sender, EventArgs e)
+        private void PowerBanks_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.com/s?k=smart+electric+outlet&crid=2WMMPBQKT7G5O&sprefix=smart+electric+outle%2Caps%2C154&ref=nb_sb_noss_2");
-            Process.Start(sInfo);
+            if (!Utils.FormIsOpen("Powerbank"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Powerbank = new Powerbank();
+                Powerbank.MdiParent = this.MdiParent;
+                Powerbank.Show();
+
+            }
         }
 
-        private void Smartmeters_Click(object sender, EventArgs e)
+        private void SmartHubDevices_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.com/s?k=smart+meters&crid=3REM71OZ2D8A1&sprefix=smart+meters%2Caps%2C164&ref=nb_sb_noss_1");
-            Process.Start(sInfo);
+            if (!Utils.FormIsOpen("Smarthubdevices"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Smarthubdevices = new Smarthubdevices();
+                Smarthubdevices.MdiParent = this.MdiParent;
+                Smarthubdevices.Show();
+
+            }
         }
 
-        private void tumbleballs_Click(object sender, EventArgs e)
+        private void bulb1_Click(object sender, EventArgs e)
         {
-            ProcessStartInfo sInfo = new ProcessStartInfo("https://www.amazon.com/s?k=tumble+dryer+balls&crid=399X1X617DRJZ&sprefix=tumble+dryer+balls%2Caps%2C163&ref=nb_sb_noss_1");
-            Process.Start(sInfo);
+            if (!Utils.FormIsOpen("Bioluz_LED_Light_Bulbs"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Bioluz_LED_Light_Bulbs = new Bioluz_LED_Light_Bulbs();
+                Bioluz_LED_Light_Bulbs.MdiParent = this.MdiParent;
+                Bioluz_LED_Light_Bulbs.Show();
+
+            }
         }
 
-      
+        private void bulb2_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Ecosmart_8_Pack_LED_Light_bulb"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Ecosmart_8_Pack_LED_Light_bulb = new Ecosmart_8_Pack_LED_Light_bulb();
+                Ecosmart_8_Pack_LED_Light_bulb.MdiParent = this.MdiParent;
+                Ecosmart_8_Pack_LED_Light_bulb.Show();
+
+            }
+        }
     }
 }

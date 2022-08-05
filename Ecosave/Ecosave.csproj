@@ -112,6 +112,12 @@
     <Compile Include="Billing_Table.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
+    <Compile Include="Bioluz LED Light Bulbs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bioluz LED Light Bulbs.Designer.cs">
+      <DependentUpon>Bioluz LED Light Bulbs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Calculator.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
@@ -156,6 +162,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ECOSAVE.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Ecosmart 8 Pack LED Light bulb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ecosmart 8 Pack LED Light bulb.Designer.cs">
+      <DependentUpon>Ecosmart 8 Pack LED Light bulb.cs</DependentUpon>
     </Compile>
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
@@ -226,6 +238,18 @@
     <Compile Include="Solargenerator.Designer.cs">
       <DependentUpon>Solargenerator.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sylvania 13W CFL T2 Spiral Light Bulb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sylvania 13W CFL T2 Spiral Light Bulb.Designer.cs">
+      <DependentUpon>Sylvania 13W CFL T2 Spiral Light Bulb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SYLVANIA ECO LED A19 Light Bulb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SYLVANIA ECO LED A19 Light Bulb.Designer.cs">
+      <DependentUpon>SYLVANIA ECO LED A19 Light Bulb.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tips Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -286,6 +310,9 @@
     <EmbeddedResource Include="About Us.resx">
       <DependentUpon>About Us.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Bioluz LED Light Bulbs.resx">
+      <DependentUpon>Bioluz LED Light Bulbs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CalculatorInfo.resx">
       <DependentUpon>CalculatorInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -300,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DeviceData.resx">
       <DependentUpon>DeviceData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ecosmart 8 Pack LED Light bulb.resx">
+      <DependentUpon>Ecosmart 8 Pack LED Light bulb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditProfile.resx">
       <DependentUpon>EditProfile.cs</DependentUpon>
@@ -342,6 +372,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Solargenerator.resx">
       <DependentUpon>Solargenerator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sylvania 13W CFL T2 Spiral Light Bulb.resx">
+      <DependentUpon>Sylvania 13W CFL T2 Spiral Light Bulb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SYLVANIA ECO LED A19 Light Bulb.resx">
+      <DependentUpon>SYLVANIA ECO LED A19 Light Bulb.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tips Page.resx">
       <DependentUpon>Tips Page.cs</DependentUpon>

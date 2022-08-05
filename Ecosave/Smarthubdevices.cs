@@ -16,5 +16,10 @@ namespace Ecosave
         {
             InitializeComponent();
         }
+
+        private void BacklogoBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
