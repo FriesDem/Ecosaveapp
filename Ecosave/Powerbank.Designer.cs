@@ -32,11 +32,13 @@
             this.BacklogoBtn = new System.Windows.Forms.PictureBox();
             this.Backbtn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SolarGen6 = new System.Windows.Forms.Label();
             this.SolarGen5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -56,12 +58,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.NameLbl = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -75,7 +76,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // BacklogoBtn
@@ -126,6 +126,19 @@
             this.panel1.Size = new System.Drawing.Size(1311, 939);
             this.panel1.TabIndex = 76;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(194, 739);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(132, 25);
+            this.label1.TabIndex = 90;
+            this.label1.Text = "Coming Soon";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -149,6 +162,7 @@
             this.SolarGen6.Size = new System.Drawing.Size(132, 25);
             this.SolarGen6.TabIndex = 88;
             this.SolarGen6.Text = "Coming Soon";
+            this.SolarGen6.Click += new System.EventHandler(this.SolarGen6_Click);
             // 
             // SolarGen5
             // 
@@ -161,6 +175,7 @@
             this.SolarGen5.Size = new System.Drawing.Size(132, 25);
             this.SolarGen5.TabIndex = 87;
             this.SolarGen5.Text = "Coming Soon";
+            this.SolarGen5.Click += new System.EventHandler(this.SolarGen5_Click);
             // 
             // panel5
             // 
@@ -179,6 +194,16 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(292, 234);
             this.panel6.TabIndex = 74;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(0, 1);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(292, 233);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
             // 
             // panel8
             // 
@@ -245,6 +270,7 @@
             this.SolarGen3.Size = new System.Drawing.Size(321, 25);
             this.SolarGen3.TabIndex = 81;
             this.SolarGen3.Text = "Takki 83Wh Portable Power Station";
+            this.SolarGen3.Click += new System.EventHandler(this.SolarGen3_Click);
             // 
             // SolarGen2
             // 
@@ -257,6 +283,7 @@
             this.SolarGen2.Size = new System.Drawing.Size(344, 25);
             this.SolarGen2.TabIndex = 80;
             this.SolarGen2.Text = "Durecopow Solar Charger 20000mAh ";
+            this.SolarGen2.Click += new System.EventHandler(this.SolarGen2_Click);
             // 
             // SolarGen1
             // 
@@ -269,6 +296,7 @@
             this.SolarGen1.Size = new System.Drawing.Size(311, 25);
             this.SolarGen1.TabIndex = 78;
             this.SolarGen1.Text = "Tranmix Solar Charger 25000mAh";
+            this.SolarGen1.Click += new System.EventHandler(this.SolarGen1_Click);
             // 
             // panel2
             // 
@@ -364,28 +392,6 @@
             this.NameLbl.TabIndex = 53;
             this.NameLbl.Text = "Eco Save Solutions";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(292, 233);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(194, 739);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 25);
-            this.label1.TabIndex = 90;
-            this.label1.Text = "Coming Soon";
-            // 
             // Powerbank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -405,6 +411,7 @@
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -418,7 +425,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

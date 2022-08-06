@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class Sylvania_13W_CFL_T2_Spiral_Light_Bulb : Form
+    public partial class Takki_83Wh_Portable_Power_Station : Form
     {
-        public Sylvania_13W_CFL_T2_Spiral_Light_Bulb()
+        public Takki_83Wh_Portable_Power_Station()
         {
             InitializeComponent();
         }

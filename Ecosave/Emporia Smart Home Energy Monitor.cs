@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class Sylvania_13W_CFL_T2_Spiral_Light_Bulb : Form
+    public partial class Emporia_Smart_Home_Energy_Monitor : Form
     {
-        public Sylvania_13W_CFL_T2_Spiral_Light_Bulb()
+        public Emporia_Smart_Home_Energy_Monitor()
         {
             InitializeComponent();
         }

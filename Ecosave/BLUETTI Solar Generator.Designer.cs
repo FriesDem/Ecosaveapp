@@ -1,6 +1,6 @@
 ﻿namespace Ecosave
 {
-    partial class Sylvania_13W_CFL_T2_Spiral_Light_Bulb
+    partial class BLUETTI_Solar_Generator
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sylvania_13W_CFL_T2_Spiral_Light_Bulb));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BLUETTI_Solar_Generator));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.AddToCart = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -40,19 +40,21 @@
             this.LightBulbs1 = new System.Windows.Forms.Label();
             this.BacklogoBtn = new System.Windows.Forms.PictureBox();
             this.Backbtn = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AddToCart)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BuyNow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label1);
@@ -61,16 +63,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1338, 687);
             this.panel1.TabIndex = 49;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(672, 687);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 86;
-            this.pictureBox3.TabStop = false;
             // 
             // label3
             // 
@@ -83,6 +75,18 @@
             this.label3.Size = new System.Drawing.Size(45, 25);
             this.label3.TabIndex = 85;
             this.label3.Text = "$30";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(682, 302);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(533, 240);
+            this.label2.TabIndex = 83;
+            this.label2.Text = resources.GetString("label2.Text");
             // 
             // panel3
             // 
@@ -125,26 +129,26 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(754, 38);
+            this.label1.Location = new System.Drawing.Point(770, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(357, 75);
+            this.label1.Size = new System.Drawing.Size(349, 100);
             this.label1.TabIndex = 80;
-            this.label1.Text = "Sylvania 13W CFL T2 Spiral Light Bulb,\r\n 60W Equivalent, 850 Lumens, 2700K \r\nSoft" +
-    " White, Non-Dimmable (8-Pack)";
+            this.label1.Text = "BLUETTI Solar Generator AC200MAX\r\n with 3 PV200 Solar Panels Included,\r\n 2048Wh P" +
+    "ortable Power Station\r\n with 4 2200W AC Outlet";
             // 
             // LightBulbs1
             // 
             this.LightBulbs1.AutoSize = true;
             this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LightBulbs1.Location = new System.Drawing.Point(721, 162);
+            this.LightBulbs1.Location = new System.Drawing.Point(693, 164);
             this.LightBulbs1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LightBulbs1.Name = "LightBulbs1";
-            this.LightBulbs1.Size = new System.Drawing.Size(288, 100);
+            this.LightBulbs1.Size = new System.Drawing.Size(211, 100);
             this.LightBulbs1.TabIndex = 79;
-            this.LightBulbs1.Text = "Special Feature\tNot Dimmable\r\nLight Type\tCFL\r\nIndoor/Outdoor Usage\tOutdoor, Indoo" +
-    "r\r\nWattage\t13 watts\r\nLight Color\tSoft White";
+            this.LightBulbs1.Text = "Special Feature\t(Null)\r\nBrand\tBLUETTI\r\nWattage\t2200 watts\r\nVoltage\t120 Volts\r\nOut" +
+    "put Wattage\t2200 Watts";
             // 
             // BacklogoBtn
             // 
@@ -171,28 +175,38 @@
             this.Backbtn.TabIndex = 50;
             this.Backbtn.Text = "Back";
             // 
-            // Sylvania_13W_CFL_T2_Spiral_Light_Bulb
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(643, 684);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 86;
+            this.pictureBox2.TabStop = false;
+            // 
+            // BLUETTI_Solar_Generator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1906, 1055);
+            this.ClientSize = new System.Drawing.Size(1888, 1008);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BacklogoBtn);
             this.Controls.Add(this.Backbtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Sylvania_13W_CFL_T2_Spiral_Light_Bulb";
+            this.Name = "BLUETTI_Solar_Generator";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sylvania_13W_CFL_T2_Spiral_Light_Bulb";
+            this.Text = "BLUETTI_Solar_Generator";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AddToCart)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BuyNow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,6 +216,7 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox AddToCart;
         private System.Windows.Forms.Panel panel2;
@@ -210,6 +225,6 @@
         private System.Windows.Forms.Label LightBulbs1;
         private System.Windows.Forms.PictureBox BacklogoBtn;
         private System.Windows.Forms.Label Backbtn;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

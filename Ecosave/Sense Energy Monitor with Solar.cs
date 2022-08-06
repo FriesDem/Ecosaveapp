@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class Sylvania_13W_CFL_T2_Spiral_Light_Bulb : Form
+    public partial class Sense_Energy_Monitor_with_Solar : Form
     {
-        public Sylvania_13W_CFL_T2_Spiral_Light_Bulb()
+        public Sense_Energy_Monitor_with_Solar()
         {
             InitializeComponent();
         }

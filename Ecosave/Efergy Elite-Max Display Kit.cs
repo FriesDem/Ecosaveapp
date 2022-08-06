@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class Sylvania_13W_CFL_T2_Spiral_Light_Bulb : Form
+    public partial class Efergy_Elite_Max_Display_Kit : Form
     {
-        public Sylvania_13W_CFL_T2_Spiral_Light_Bulb()
+        public Efergy_Elite_Max_Display_Kit()
         {
             InitializeComponent();
         }

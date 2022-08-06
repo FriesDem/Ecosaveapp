@@ -137,6 +137,7 @@
             this.label1.Size = new System.Drawing.Size(132, 25);
             this.label1.TabIndex = 90;
             this.label1.Text = "Coming Soon";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label4
             // 
@@ -161,6 +162,7 @@
             this.SolarGen6.Size = new System.Drawing.Size(132, 25);
             this.SolarGen6.TabIndex = 88;
             this.SolarGen6.Text = "Coming Soon";
+            this.SolarGen6.Click += new System.EventHandler(this.SolarGen6_Click);
             // 
             // SolarGen5
             // 
@@ -173,6 +175,7 @@
             this.SolarGen5.Size = new System.Drawing.Size(132, 25);
             this.SolarGen5.TabIndex = 87;
             this.SolarGen5.Text = "Coming Soon";
+            this.SolarGen5.Click += new System.EventHandler(this.SolarGen5_Click);
             // 
             // panel5
             // 
@@ -267,6 +270,7 @@
             this.SolarGen3.Size = new System.Drawing.Size(257, 25);
             this.SolarGen3.TabIndex = 81;
             this.SolarGen3.Text = "Efergy Elite-Max Display Kit ";
+            this.SolarGen3.Click += new System.EventHandler(this.SolarGen3_Click);
             // 
             // SolarGen2
             // 
@@ -279,6 +283,7 @@
             this.SolarGen2.Size = new System.Drawing.Size(301, 25);
             this.SolarGen2.TabIndex = 80;
             this.SolarGen2.Text = "Sense Energy Monitor with Solar ";
+            this.SolarGen2.Click += new System.EventHandler(this.SolarGen2_Click);
             // 
             // SolarGen1
             // 
@@ -291,6 +296,7 @@
             this.SolarGen1.Size = new System.Drawing.Size(340, 25);
             this.SolarGen1.TabIndex = 78;
             this.SolarGen1.Text = "Emporia Smart Home Energy Monitor ";
+            this.SolarGen1.Click += new System.EventHandler(this.SolarGen1_Click);
             // 
             // panel2
             // 

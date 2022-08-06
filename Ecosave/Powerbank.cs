@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CouncilGamingClub;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,63 @@ namespace Ecosave
         private void BacklogoBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void SolarGen1_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Tranmix_Solar_Charger"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Tranmix_Solar_Charger = new Tranmix_Solar_Charger();
+                Tranmix_Solar_Charger.MdiParent = this.MdiParent;
+                Tranmix_Solar_Charger.Show();
+
+            }
+        }
+
+        private void SolarGen2_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Durecopow_Solar_Charger"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Durecopow_Solar_Charger = new Durecopow_Solar_Charger();
+                Durecopow_Solar_Charger.MdiParent = this.MdiParent;
+                Durecopow_Solar_Charger.Show();
+
+            }
+        }
+
+        private void SolarGen3_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Takki_83Wh_Portable_Power_Station"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Takki_83Wh_Portable_Power_Station = new Takki_83Wh_Portable_Power_Station();
+                Takki_83Wh_Portable_Power_Station.MdiParent = this.MdiParent;
+                Takki_83Wh_Portable_Power_Station.Show();
+
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
+
+        private void SolarGen5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
+
+        private void SolarGen6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
         }
     }
 }

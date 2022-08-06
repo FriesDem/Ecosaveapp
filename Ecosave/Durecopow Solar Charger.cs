@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class Sylvania_13W_CFL_T2_Spiral_Light_Bulb : Form
+    public partial class Durecopow_Solar_Charger : Form
     {
-        public Sylvania_13W_CFL_T2_Spiral_Light_Bulb()
+        public Durecopow_Solar_Charger()
         {
             InitializeComponent();
         }

@@ -118,6 +118,12 @@
     <Compile Include="Bioluz LED Light Bulbs.Designer.cs">
       <DependentUpon>Bioluz LED Light Bulbs.cs</DependentUpon>
     </Compile>
+    <Compile Include="BLUETTI Solar Generator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BLUETTI Solar Generator.Designer.cs">
+      <DependentUpon>BLUETTI Solar Generator.cs</DependentUpon>
+    </Compile>
     <Compile Include="Calculator.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
@@ -148,6 +154,12 @@
     <Compile Include="Devices_Table.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
+    <Compile Include="Durecopow Solar Charger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Durecopow Solar Charger.Designer.cs">
+      <DependentUpon>Durecopow Solar Charger.cs</DependentUpon>
+    </Compile>
     <Compile Include="ECOSAVE.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -168,6 +180,30 @@
     </Compile>
     <Compile Include="Ecosmart 8 Pack LED Light bulb.Designer.cs">
       <DependentUpon>Ecosmart 8 Pack LED Light bulb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EF ECOFLOW Solar Generator Delta Max.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EF ECOFLOW Solar Generator Delta Max.Designer.cs">
+      <DependentUpon>EF ECOFLOW Solar Generator Delta Max.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EF ECOFLOW Solar Generator RIVER Pro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EF ECOFLOW Solar Generator RIVER Pro.Designer.cs">
+      <DependentUpon>EF ECOFLOW Solar Generator RIVER Pro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Efergy Elite-Max Display Kit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Efergy Elite-Max Display Kit.Designer.cs">
+      <DependentUpon>Efergy Elite-Max Display Kit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emporia Smart Home Energy Monitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Emporia Smart Home Energy Monitor.Designer.cs">
+      <DependentUpon>Emporia Smart Home Energy Monitor.cs</DependentUpon>
     </Compile>
     <Compile Include="ForgotPassword.cs">
       <SubType>Form</SubType>
@@ -195,6 +231,12 @@
     </Compile>
     <Compile Include="Houses_Table.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Jackery Solar Generator 1500.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jackery Solar Generator 1500.Designer.cs">
+      <DependentUpon>Jackery Solar Generator 1500.cs</DependentUpon>
     </Compile>
     <Compile Include="Lightbulb.cs">
       <SubType>Form</SubType>
@@ -226,6 +268,12 @@
     <Compile Include="RoomsData.Designer.cs">
       <DependentUpon>RoomsData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sense Energy Monitor with Solar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sense Energy Monitor with Solar.Designer.cs">
+      <DependentUpon>Sense Energy Monitor with Solar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Smarthubdevices.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -250,6 +298,12 @@
     <Compile Include="SYLVANIA ECO LED A19 Light Bulb.Designer.cs">
       <DependentUpon>SYLVANIA ECO LED A19 Light Bulb.cs</DependentUpon>
     </Compile>
+    <Compile Include="Takki 83Wh Portable Power Station.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Takki 83Wh Portable Power Station.Designer.cs">
+      <DependentUpon>Takki 83Wh Portable Power Station.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tips Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -261,6 +315,12 @@
     </Compile>
     <Compile Include="manageUsers.Designer.cs">
       <DependentUpon>manageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tranmix Solar Charger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tranmix Solar Charger.Designer.cs">
+      <DependentUpon>Tranmix Solar Charger.cs</DependentUpon>
     </Compile>
     <Compile Include="User.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
@@ -313,6 +373,9 @@
     <EmbeddedResource Include="Bioluz LED Light Bulbs.resx">
       <DependentUpon>Bioluz LED Light Bulbs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BLUETTI Solar Generator.resx">
+      <DependentUpon>BLUETTI Solar Generator.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CalculatorInfo.resx">
       <DependentUpon>CalculatorInfo.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +391,9 @@
     <EmbeddedResource Include="DeviceData.resx">
       <DependentUpon>DeviceData.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Durecopow Solar Charger.resx">
+      <DependentUpon>Durecopow Solar Charger.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ecosmart 8 Pack LED Light bulb.resx">
       <DependentUpon>Ecosmart 8 Pack LED Light bulb.cs</DependentUpon>
     </EmbeddedResource>
@@ -336,6 +402,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Adduser.resx">
       <DependentUpon>Adduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EF ECOFLOW Solar Generator Delta Max.resx">
+      <DependentUpon>EF ECOFLOW Solar Generator Delta Max.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EF ECOFLOW Solar Generator RIVER Pro.resx">
+      <DependentUpon>EF ECOFLOW Solar Generator RIVER Pro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Efergy Elite-Max Display Kit.resx">
+      <DependentUpon>Efergy Elite-Max Display Kit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Emporia Smart Home Energy Monitor.resx">
+      <DependentUpon>Emporia Smart Home Energy Monitor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ForgotPassword.resx">
       <DependentUpon>ForgotPassword.cs</DependentUpon>
@@ -355,6 +433,9 @@
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Jackery Solar Generator 1500.resx">
+      <DependentUpon>Jackery Solar Generator 1500.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lightbulb.resx">
       <DependentUpon>Lightbulb.cs</DependentUpon>
     </EmbeddedResource>
@@ -367,6 +448,9 @@
     <EmbeddedResource Include="RoomsData.resx">
       <DependentUpon>RoomsData.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Sense Energy Monitor with Solar.resx">
+      <DependentUpon>Sense Energy Monitor with Solar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Smarthubdevices.resx">
       <DependentUpon>Smarthubdevices.cs</DependentUpon>
     </EmbeddedResource>
@@ -378,6 +462,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SYLVANIA ECO LED A19 Light Bulb.resx">
       <DependentUpon>SYLVANIA ECO LED A19 Light Bulb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Takki 83Wh Portable Power Station.resx">
+      <DependentUpon>Takki 83Wh Portable Power Station.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tips Page.resx">
       <DependentUpon>Tips Page.cs</DependentUpon>
@@ -405,6 +492,9 @@
     </Compile>
     <EmbeddedResource Include="Store Page.resx">
       <DependentUpon>Store Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tranmix Solar Charger.resx">
+      <DependentUpon>Tranmix Solar Charger.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="ECOSAVE.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

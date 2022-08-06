@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class Sylvania_13W_CFL_T2_Spiral_Light_Bulb : Form
+    public partial class EF_ECOFLOW_Solar_Generator_Delta_Max : Form
     {
-        public Sylvania_13W_CFL_T2_Spiral_Light_Bulb()
+        public EF_ECOFLOW_Solar_Generator_Delta_Max()
         {
             InitializeComponent();
         }

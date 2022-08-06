@@ -34,6 +34,10 @@
             this.NameLbl = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.SmartHubDevices = new System.Windows.Forms.Label();
+            this.PowerBanks = new System.Windows.Forms.Label();
+            this.SolarGenerators = new System.Windows.Forms.Label();
+            this.LightBulbs = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.bulb2 = new System.Windows.Forms.PictureBox();
@@ -58,13 +62,9 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.lightbulbToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.powerBankToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solarGeneratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.powerBankToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.smartHubDevicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.LightBulbs = new System.Windows.Forms.Label();
-            this.SolarGenerators = new System.Windows.Forms.Label();
-            this.PowerBanks = new System.Windows.Forms.Label();
-            this.SmartHubDevices = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -155,10 +155,62 @@
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.NameLbl);
-            this.panel1.Location = new System.Drawing.Point(344, 31);
+            this.panel1.Location = new System.Drawing.Point(345, 31);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1311, 949);
             this.panel1.TabIndex = 73;
+            // 
+            // SmartHubDevices
+            // 
+            this.SmartHubDevices.AutoSize = true;
+            this.SmartHubDevices.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.SmartHubDevices.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SmartHubDevices.Location = new System.Drawing.Point(529, 771);
+            this.SmartHubDevices.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SmartHubDevices.Name = "SmartHubDevices";
+            this.SmartHubDevices.Size = new System.Drawing.Size(232, 29);
+            this.SmartHubDevices.TabIndex = 83;
+            this.SmartHubDevices.Text = "Smart Hub Devices";
+            this.SmartHubDevices.Click += new System.EventHandler(this.SmartHubDevices_Click);
+            // 
+            // PowerBanks
+            // 
+            this.PowerBanks.AutoSize = true;
+            this.PowerBanks.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.PowerBanks.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PowerBanks.Location = new System.Drawing.Point(931, 420);
+            this.PowerBanks.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PowerBanks.Name = "PowerBanks";
+            this.PowerBanks.Size = new System.Drawing.Size(162, 29);
+            this.PowerBanks.TabIndex = 81;
+            this.PowerBanks.Text = "Power Banks";
+            this.PowerBanks.Click += new System.EventHandler(this.PowerBanks_Click);
+            // 
+            // SolarGenerators
+            // 
+            this.SolarGenerators.AutoSize = true;
+            this.SolarGenerators.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.SolarGenerators.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.SolarGenerators.Location = new System.Drawing.Point(548, 420);
+            this.SolarGenerators.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.SolarGenerators.Name = "SolarGenerators";
+            this.SolarGenerators.Size = new System.Drawing.Size(204, 29);
+            this.SolarGenerators.TabIndex = 80;
+            this.SolarGenerators.Text = "Solar Generators";
+            this.SolarGenerators.Click += new System.EventHandler(this.SolarGenerators_Click);
+            // 
+            // LightBulbs
+            // 
+            this.LightBulbs.AutoSize = true;
+            this.LightBulbs.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.LightBulbs.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LightBulbs.Location = new System.Drawing.Point(175, 420);
+            this.LightBulbs.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LightBulbs.Name = "LightBulbs";
+            this.LightBulbs.Size = new System.Drawing.Size(139, 29);
+            this.LightBulbs.TabIndex = 78;
+            this.LightBulbs.Text = "Light Bulbs";
+            this.LightBulbs.Click += new System.EventHandler(this.LightBulbs_Click);
             // 
             // panel2
             // 
@@ -393,13 +445,6 @@
             this.lightbulbToolStripMenuItem.Text = "Light Bulbs";
             this.lightbulbToolStripMenuItem.Click += new System.EventHandler(this.lightbulbToolStripMenuItem_Click);
             // 
-            // powerBankToolStripMenuItem
-            // 
-            this.powerBankToolStripMenuItem.Name = "powerBankToolStripMenuItem";
-            this.powerBankToolStripMenuItem.Size = new System.Drawing.Size(99, 24);
-            this.powerBankToolStripMenuItem.Text = "Power Bank";
-            this.powerBankToolStripMenuItem.Click += new System.EventHandler(this.powerBankToolStripMenuItem_Click);
-            // 
             // solarGeneratorToolStripMenuItem
             // 
             this.solarGeneratorToolStripMenuItem.Name = "solarGeneratorToolStripMenuItem";
@@ -407,64 +452,19 @@
             this.solarGeneratorToolStripMenuItem.Text = "Solar Generator";
             this.solarGeneratorToolStripMenuItem.Click += new System.EventHandler(this.solarGeneratorToolStripMenuItem_Click);
             // 
+            // powerBankToolStripMenuItem
+            // 
+            this.powerBankToolStripMenuItem.Name = "powerBankToolStripMenuItem";
+            this.powerBankToolStripMenuItem.Size = new System.Drawing.Size(99, 24);
+            this.powerBankToolStripMenuItem.Text = "Power Bank";
+            this.powerBankToolStripMenuItem.Click += new System.EventHandler(this.powerBankToolStripMenuItem_Click);
+            // 
             // smartHubDevicesToolStripMenuItem
             // 
             this.smartHubDevicesToolStripMenuItem.Name = "smartHubDevicesToolStripMenuItem";
             this.smartHubDevicesToolStripMenuItem.Size = new System.Drawing.Size(149, 24);
             this.smartHubDevicesToolStripMenuItem.Text = "Smart Hub Devices";
             this.smartHubDevicesToolStripMenuItem.Click += new System.EventHandler(this.smartHubDevicesToolStripMenuItem_Click);
-            // 
-            // LightBulbs
-            // 
-            this.LightBulbs.AutoSize = true;
-            this.LightBulbs.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.LightBulbs.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LightBulbs.Location = new System.Drawing.Point(175, 420);
-            this.LightBulbs.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LightBulbs.Name = "LightBulbs";
-            this.LightBulbs.Size = new System.Drawing.Size(139, 29);
-            this.LightBulbs.TabIndex = 78;
-            this.LightBulbs.Text = "Light Bulbs";
-            this.LightBulbs.Click += new System.EventHandler(this.LightBulbs_Click);
-            // 
-            // SolarGenerators
-            // 
-            this.SolarGenerators.AutoSize = true;
-            this.SolarGenerators.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.SolarGenerators.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SolarGenerators.Location = new System.Drawing.Point(548, 420);
-            this.SolarGenerators.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.SolarGenerators.Name = "SolarGenerators";
-            this.SolarGenerators.Size = new System.Drawing.Size(204, 29);
-            this.SolarGenerators.TabIndex = 80;
-            this.SolarGenerators.Text = "Solar Generators";
-            this.SolarGenerators.Click += new System.EventHandler(this.SolarGenerators_Click);
-            // 
-            // PowerBanks
-            // 
-            this.PowerBanks.AutoSize = true;
-            this.PowerBanks.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.PowerBanks.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PowerBanks.Location = new System.Drawing.Point(931, 420);
-            this.PowerBanks.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.PowerBanks.Name = "PowerBanks";
-            this.PowerBanks.Size = new System.Drawing.Size(162, 29);
-            this.PowerBanks.TabIndex = 81;
-            this.PowerBanks.Text = "Power Banks";
-            this.PowerBanks.Click += new System.EventHandler(this.PowerBanks_Click);
-            // 
-            // SmartHubDevices
-            // 
-            this.SmartHubDevices.AutoSize = true;
-            this.SmartHubDevices.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.SmartHubDevices.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SmartHubDevices.Location = new System.Drawing.Point(529, 771);
-            this.SmartHubDevices.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.SmartHubDevices.Name = "SmartHubDevices";
-            this.SmartHubDevices.Size = new System.Drawing.Size(232, 29);
-            this.SmartHubDevices.TabIndex = 83;
-            this.SmartHubDevices.Text = "Smart Hub Devices";
-            this.SmartHubDevices.Click += new System.EventHandler(this.SmartHubDevices_Click);
             // 
             // Store_Page
             // 
