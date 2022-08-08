@@ -139,6 +139,12 @@
     <Compile Include="Calculator_Page.Designer.cs">
       <DependentUpon>Calculator_Page.cs</DependentUpon>
     </Compile>
+    <Compile Include="Checkout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checkout.Designer.cs">
+      <DependentUpon>Checkout.cs</DependentUpon>
+    </Compile>
     <Compile Include="Creating profile 1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,6 +236,9 @@
       <DependentUpon>HomePage.cs</DependentUpon>
     </Compile>
     <Compile Include="Houses_Table.cs">
+      <DependentUpon>ECOSAVE.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs">
       <DependentUpon>ECOSAVE.tt</DependentUpon>
     </Compile>
     <Compile Include="Jackery Solar Generator 1500.cs">
@@ -381,6 +390,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Calculator_Page.resx">
       <DependentUpon>Calculator_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Checkout.resx">
+      <DependentUpon>Checkout.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Creating profile 1.resx">
       <DependentUpon>Creating profile 1.cs</DependentUpon>

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.NavPanel = new System.Windows.Forms.Panel();
-            this.Aboutus = new System.Windows.Forms.Button();
             this.Storepage = new System.Windows.Forms.Button();
             this.ProfileBtn = new System.Windows.Forms.Button();
             this.CalculatorBtn = new System.Windows.Forms.Button();
@@ -39,7 +38,6 @@
             this.tsilogintext = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.manageUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.storeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.calculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.profileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,7 +56,6 @@
             // 
             this.NavPanel.AutoSize = true;
             this.NavPanel.BackColor = System.Drawing.Color.LightCyan;
-            this.NavPanel.Controls.Add(this.Aboutus);
             this.NavPanel.Controls.Add(this.Storepage);
             this.NavPanel.Controls.Add(this.ProfileBtn);
             this.NavPanel.Controls.Add(this.CalculatorBtn);
@@ -71,25 +68,12 @@
             this.NavPanel.Size = new System.Drawing.Size(1920, 78);
             this.NavPanel.TabIndex = 41;
             // 
-            // Aboutus
-            // 
-            this.Aboutus.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Aboutus.BackgroundImage")));
-            this.Aboutus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Aboutus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Aboutus.Location = new System.Drawing.Point(1297, 14);
-            this.Aboutus.Margin = new System.Windows.Forms.Padding(4);
-            this.Aboutus.Name = "Aboutus";
-            this.Aboutus.Size = new System.Drawing.Size(103, 60);
-            this.Aboutus.TabIndex = 6;
-            this.Aboutus.UseVisualStyleBackColor = true;
-            this.Aboutus.Click += new System.EventHandler(this.Aboutus_Click);
-            // 
             // Storepage
             // 
             this.Storepage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Storepage.BackgroundImage")));
             this.Storepage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Storepage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Storepage.Location = new System.Drawing.Point(1149, 14);
+            this.Storepage.Location = new System.Drawing.Point(1226, 14);
             this.Storepage.Margin = new System.Windows.Forms.Padding(4);
             this.Storepage.Name = "Storepage";
             this.Storepage.Size = new System.Drawing.Size(103, 60);
@@ -102,7 +86,7 @@
             this.ProfileBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProfileBtn.BackgroundImage")));
             this.ProfileBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ProfileBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ProfileBtn.Location = new System.Drawing.Point(1005, 14);
+            this.ProfileBtn.Location = new System.Drawing.Point(1082, 14);
             this.ProfileBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ProfileBtn.Name = "ProfileBtn";
             this.ProfileBtn.Size = new System.Drawing.Size(103, 60);
@@ -115,7 +99,7 @@
             this.CalculatorBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CalculatorBtn.BackgroundImage")));
             this.CalculatorBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CalculatorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculatorBtn.Location = new System.Drawing.Point(853, 14);
+            this.CalculatorBtn.Location = new System.Drawing.Point(930, 14);
             this.CalculatorBtn.Margin = new System.Windows.Forms.Padding(4);
             this.CalculatorBtn.Name = "CalculatorBtn";
             this.CalculatorBtn.Size = new System.Drawing.Size(103, 60);
@@ -128,7 +112,7 @@
             this.TipsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TipsBtn.BackgroundImage")));
             this.TipsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.TipsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TipsBtn.Location = new System.Drawing.Point(698, 14);
+            this.TipsBtn.Location = new System.Drawing.Point(775, 14);
             this.TipsBtn.Margin = new System.Windows.Forms.Padding(4);
             this.TipsBtn.Name = "TipsBtn";
             this.TipsBtn.Size = new System.Drawing.Size(103, 60);
@@ -141,7 +125,7 @@
             this.HomeBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomeBtn.BackgroundImage")));
             this.HomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HomeBtn.Location = new System.Drawing.Point(555, 14);
+            this.HomeBtn.Location = new System.Drawing.Point(632, 14);
             this.HomeBtn.Margin = new System.Windows.Forms.Padding(4);
             this.HomeBtn.Name = "HomeBtn";
             this.HomeBtn.Size = new System.Drawing.Size(103, 60);
@@ -169,56 +153,49 @@
             // manageUserToolStripMenuItem
             // 
             this.manageUserToolStripMenuItem.Name = "manageUserToolStripMenuItem";
-            this.manageUserToolStripMenuItem.Size = new System.Drawing.Size(110, 26);
+            this.manageUserToolStripMenuItem.Size = new System.Drawing.Size(110, 24);
             this.manageUserToolStripMenuItem.Text = "Manage User";
             this.manageUserToolStripMenuItem.Click += new System.EventHandler(this.manageUserToolStripMenuItem_Click);
-            // 
-            // aboutUsToolStripMenuItem
-            // 
-            this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(84, 26);
-            this.aboutUsToolStripMenuItem.Text = "About Us";
-            this.aboutUsToolStripMenuItem.Click += new System.EventHandler(this.aboutUsToolStripMenuItem_Click);
             // 
             // storeToolStripMenuItem
             // 
             this.storeToolStripMenuItem.Name = "storeToolStripMenuItem";
-            this.storeToolStripMenuItem.Size = new System.Drawing.Size(58, 26);
+            this.storeToolStripMenuItem.Size = new System.Drawing.Size(58, 24);
             this.storeToolStripMenuItem.Text = "Store";
             this.storeToolStripMenuItem.Click += new System.EventHandler(this.storeToolStripMenuItem_Click);
             // 
             // calculatorToolStripMenuItem
             // 
             this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
-            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(90, 26);
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
             this.calculatorToolStripMenuItem.Text = "Calculator";
             this.calculatorToolStripMenuItem.Click += new System.EventHandler(this.calculatorToolStripMenuItem_Click);
             // 
             // profileToolStripMenuItem
             // 
             this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(66, 26);
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(66, 24);
             this.profileToolStripMenuItem.Text = "Profile";
             this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // homeToolStripMenuItem
             // 
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(64, 26);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(70, 26);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // tipsToolStripMenuItem
             // 
             this.tipsToolStripMenuItem.Name = "tipsToolStripMenuItem";
-            this.tipsToolStripMenuItem.Size = new System.Drawing.Size(50, 26);
+            this.tipsToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
             this.tipsToolStripMenuItem.Text = "Tips";
             this.tipsToolStripMenuItem.Click += new System.EventHandler(this.tipsToolStripMenuItem_Click);
             // 
@@ -232,7 +209,6 @@
             this.profileToolStripMenuItem,
             this.calculatorToolStripMenuItem,
             this.storeToolStripMenuItem,
-            this.aboutUsToolStripMenuItem,
             this.manageUserToolStripMenuItem,
             this.tipsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -282,7 +258,6 @@
         #endregion
 
         private System.Windows.Forms.ToolStripStatusLabel tsilogintext;
-        private System.Windows.Forms.Button Aboutus;
         private System.Windows.Forms.Button Storepage;
         private System.Windows.Forms.Button ProfileBtn;
         private System.Windows.Forms.Button CalculatorBtn;
@@ -291,7 +266,6 @@
         private System.Windows.Forms.Panel NavPanel;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripMenuItem manageUserToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem aboutUsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem storeToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem calculatorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem profileToolStripMenuItem;

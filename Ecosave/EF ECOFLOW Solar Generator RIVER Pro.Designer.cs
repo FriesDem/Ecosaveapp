@@ -115,6 +115,7 @@
             this.AddToCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.AddToCart.TabIndex = 0;
             this.AddToCart.TabStop = false;
+            this.AddToCart.Click += new System.EventHandler(this.AddToCart_Click);
             // 
             // panel2
             // 
@@ -133,6 +134,7 @@
             this.BuyNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BuyNow.TabIndex = 1;
             this.BuyNow.TabStop = false;
+            this.BuyNow.Click += new System.EventHandler(this.BuyNow_Click);
             // 
             // label1
             // 

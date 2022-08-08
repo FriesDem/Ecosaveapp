@@ -50,7 +50,7 @@ namespace Ecosave
 
         private void ProfilePage_Load(object sender, EventArgs e)
         {
-             
+            
             var user = _db.Person_Tables.FirstOrDefault(x => x.UserID == _user.ID);
             if (user == null)
             {

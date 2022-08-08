@@ -13,9 +13,13 @@ namespace Ecosave
 {
     public partial class Lightbulb : Form
     {
-        public Lightbulb()
+        private readonly ECOSAVEEntities _db;
+        private User _user;
+        public Lightbulb(User user)
         {
             InitializeComponent();
+            _db = new ECOSAVEEntities();
+            _user = user;
         }
 
         private void BacklogoBtn_Click(object sender, EventArgs e)
@@ -30,7 +34,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Bioluz_LED_Light_Bulbs = new Bioluz_LED_Light_Bulbs();
+                var Bioluz_LED_Light_Bulbs = new Bioluz_LED_Light_Bulbs(_user);
                 Bioluz_LED_Light_Bulbs.MdiParent = this.MdiParent;
                 Bioluz_LED_Light_Bulbs.Show();
 
@@ -44,7 +48,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Ecosmart_8_Pack_LED_Light_bulb = new Ecosmart_8_Pack_LED_Light_bulb();
+                var Ecosmart_8_Pack_LED_Light_bulb = new Ecosmart_8_Pack_LED_Light_bulb(_user);
                 Ecosmart_8_Pack_LED_Light_bulb.MdiParent = this.MdiParent;
                 Ecosmart_8_Pack_LED_Light_bulb.Show();
 
@@ -58,7 +62,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Sylvania_13W_CFL_T2_Spiral_Light_Bulb = new Sylvania_13W_CFL_T2_Spiral_Light_Bulb();
+                var Sylvania_13W_CFL_T2_Spiral_Light_Bulb = new Sylvania_13W_CFL_T2_Spiral_Light_Bulb(_user);
                 Sylvania_13W_CFL_T2_Spiral_Light_Bulb.MdiParent = this.MdiParent;
                 Sylvania_13W_CFL_T2_Spiral_Light_Bulb.Show();
 
@@ -72,7 +76,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var SYLVANIA_ECO_LED_A19_Light_Bulb = new SYLVANIA_ECO_LED_A19_Light_Bulb();
+                var SYLVANIA_ECO_LED_A19_Light_Bulb = new SYLVANIA_ECO_LED_A19_Light_Bulb(_user);
                 SYLVANIA_ECO_LED_A19_Light_Bulb.MdiParent = this.MdiParent;
                 SYLVANIA_ECO_LED_A19_Light_Bulb.Show();
 

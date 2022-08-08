@@ -35,7 +35,17 @@ namespace Ecosave
 
         private void Home_Load(object sender, EventArgs e)
         {
-            if (_user.Password == Utils.DefaultHashpassword())
+            if (!Utils.FormIsOpen("HomePage"))
+            {
+                {
+                    if (ActiveMdiChild != null)
+                        ActiveMdiChild.Close();
+                    var HomePage = new HomePage();
+                    HomePage.MdiParent = this;
+                    HomePage.Show();
+                }
+            }
+                if (_user.Password == Utils.DefaultHashpassword())
             {
                 var resetpassword = new Paasword_Reset(_user);
                 resetpassword.ShowDialog();
@@ -94,23 +104,13 @@ namespace Ecosave
             {
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Store_Page = new Store_Page();
+                var Store_Page = new Store_Page(_user);
                 Store_Page.MdiParent = this;
                 Store_Page.Show();
             }
         }
 
-        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("About_Us"))
-            {
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var About_Us = new About_Us();
-                About_Us.MdiParent = this;
-                About_Us.Show();
-            }
-        }
+        
 
         private void manageUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -185,7 +185,7 @@ namespace Ecosave
             {
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Store_Page = new Store_Page();
+                var Store_Page = new Store_Page(_user);
                 Store_Page.MdiParent = this;
                 Store_Page.Show();
             }
@@ -219,19 +219,6 @@ namespace Ecosave
                     Tips_Page.Show();
                 }
             }
-        }
-
-        private void Aboutus_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("About_Us"))
-            {
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var About_Us = new About_Us();
-                About_Us.MdiParent = this;
-                About_Us.Show();
-            }
-        }
-       
+        }       
     }
 }

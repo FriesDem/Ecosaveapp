@@ -28,6 +28,9 @@ namespace Ecosave
         public Nullable<decimal> Budget_for_Utilities { get; set; }
         public Nullable<decimal> Income { get; set; }
         public Nullable<int> UserID { get; set; }
+        public string CardNumber { get; set; }
+        public string CardExperation { get; set; }
+        public string CardCvv { get; set; }
     
         public virtual User User { get; set; }
     }

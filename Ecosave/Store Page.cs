@@ -14,9 +14,13 @@ namespace Ecosave
 {
     public partial class Store_Page : Form
     {
-        public Store_Page()
+        private readonly ECOSAVEEntities _db;
+        private User _user;
+        public Store_Page(User user)
         {
             InitializeComponent();
+            _db = new ECOSAVEEntities();
+            _user = user;
         }
 
         private void BacklogoBtn_Click(object sender, EventArgs e)
@@ -31,7 +35,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Lightbulb = new Lightbulb();
+                var Lightbulb = new Lightbulb(_user);
                 Lightbulb.MdiParent = this.MdiParent;
                 Lightbulb.Show();
 
@@ -45,7 +49,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Solargenerator = new Solargenerator();
+                var Solargenerator = new Solargenerator(_user);
                 Solargenerator.MdiParent = this.MdiParent;
                 Solargenerator.Show();
 
@@ -60,7 +64,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Powerbank = new Powerbank();
+                var Powerbank = new Powerbank(_user);
                 Powerbank.MdiParent = this.MdiParent;
                 Powerbank.Show();
 
@@ -75,7 +79,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Smarthubdevices = new Smarthubdevices();
+                var Smarthubdevices = new Smarthubdevices(_user);
                 Smarthubdevices.MdiParent = this.MdiParent;
                 Smarthubdevices.Show();
 
@@ -89,7 +93,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Lightbulb = new Lightbulb();
+                var Lightbulb = new Lightbulb(_user);
                 Lightbulb.MdiParent = this.MdiParent;
                 Lightbulb.Show();
 
@@ -103,7 +107,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Solargenerator = new Solargenerator();
+                var Solargenerator = new Solargenerator(_user);
                 Solargenerator.MdiParent = this.MdiParent;
                 Solargenerator.Show();
 
@@ -117,7 +121,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Powerbank = new Powerbank();
+                var Powerbank = new Powerbank(_user);
                 Powerbank.MdiParent = this.MdiParent;
                 Powerbank.Show();
 
@@ -131,7 +135,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Smarthubdevices = new Smarthubdevices();
+                var Smarthubdevices = new Smarthubdevices(_user);
                 Smarthubdevices.MdiParent = this.MdiParent;
                 Smarthubdevices.Show();
 
@@ -145,7 +149,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Bioluz_LED_Light_Bulbs = new Bioluz_LED_Light_Bulbs();
+                var Bioluz_LED_Light_Bulbs = new Bioluz_LED_Light_Bulbs(_user);
                 Bioluz_LED_Light_Bulbs.MdiParent = this.MdiParent;
                 Bioluz_LED_Light_Bulbs.Show();
 
@@ -159,11 +163,18 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Ecosmart_8_Pack_LED_Light_bulb = new Ecosmart_8_Pack_LED_Light_bulb();
+                var Ecosmart_8_Pack_LED_Light_bulb = new Ecosmart_8_Pack_LED_Light_bulb(_user);
                 Ecosmart_8_Pack_LED_Light_bulb.MdiParent = this.MdiParent;
                 Ecosmart_8_Pack_LED_Light_bulb.Show();
 
             }
+        }
+
+        
+
+        private void Store_Page_Load(object sender, EventArgs e)
+        {
+          
         }
     }
 }

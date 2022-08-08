@@ -13,11 +13,15 @@ namespace Ecosave
 {
     public partial class Solargenerator : Form
     {
-        public Solargenerator()
+        private readonly ECOSAVEEntities _db;
+        private User _user;
+        public Solargenerator(User user)
         {
             InitializeComponent();
+            _db = new ECOSAVEEntities();
+            _user = user;
         }
-
+       
         private void BacklogoBtn_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -30,7 +34,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var BLUETTI_Solar_Generator = new BLUETTI_Solar_Generator();
+                var BLUETTI_Solar_Generator = new BLUETTI_Solar_Generator(_user);
                 BLUETTI_Solar_Generator.MdiParent = this.MdiParent;
                 BLUETTI_Solar_Generator.Show();
 
@@ -44,7 +48,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var EF_ECOFLOW_Solar_Generator_Delta_Max = new EF_ECOFLOW_Solar_Generator_Delta_Max();
+                var EF_ECOFLOW_Solar_Generator_Delta_Max = new EF_ECOFLOW_Solar_Generator_Delta_Max(_user);
                 EF_ECOFLOW_Solar_Generator_Delta_Max.MdiParent = this.MdiParent;
                 EF_ECOFLOW_Solar_Generator_Delta_Max.Show();
 
@@ -58,7 +62,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var EF_ECOFLOW_Solar_Generator_RIVER_Pro = new EF_ECOFLOW_Solar_Generator_RIVER_Pro();
+                var EF_ECOFLOW_Solar_Generator_RIVER_Pro = new EF_ECOFLOW_Solar_Generator_RIVER_Pro(_user);
                 EF_ECOFLOW_Solar_Generator_RIVER_Pro.MdiParent = this.MdiParent;
                 EF_ECOFLOW_Solar_Generator_RIVER_Pro.Show();
 
@@ -72,7 +76,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Jackery_Solar_Generator_1500 = new Jackery_Solar_Generator_1500();
+                var Jackery_Solar_Generator_1500 = new Jackery_Solar_Generator_1500(_user);
                 Jackery_Solar_Generator_1500.MdiParent = this.MdiParent;
                 Jackery_Solar_Generator_1500.Show();
 

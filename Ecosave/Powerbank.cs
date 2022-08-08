@@ -13,11 +13,15 @@ namespace Ecosave
 {
     public partial class Powerbank : Form
     {
-        public Powerbank()
+        private readonly ECOSAVEEntities _db;
+        private User _user;
+        public Powerbank(User user)
         {
             InitializeComponent();
+            _db = new ECOSAVEEntities();
+            _user = user;
         }
-
+      
         private void BacklogoBtn_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -30,7 +34,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Tranmix_Solar_Charger = new Tranmix_Solar_Charger();
+                var Tranmix_Solar_Charger = new Tranmix_Solar_Charger(_user);
                 Tranmix_Solar_Charger.MdiParent = this.MdiParent;
                 Tranmix_Solar_Charger.Show();
 
@@ -44,7 +48,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Durecopow_Solar_Charger = new Durecopow_Solar_Charger();
+                var Durecopow_Solar_Charger = new Durecopow_Solar_Charger(_user);
                 Durecopow_Solar_Charger.MdiParent = this.MdiParent;
                 Durecopow_Solar_Charger.Show();
 
@@ -58,7 +62,7 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Takki_83Wh_Portable_Power_Station = new Takki_83Wh_Portable_Power_Station();
+                var Takki_83Wh_Portable_Power_Station = new Takki_83Wh_Portable_Power_Station(_user);
                 Takki_83Wh_Portable_Power_Station.MdiParent = this.MdiParent;
                 Takki_83Wh_Portable_Power_Station.Show();
 
