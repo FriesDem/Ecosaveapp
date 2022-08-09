@@ -40,6 +40,7 @@ namespace Ecosave
                 Cost = Itemcost,
                 Name = itemname,
                 Type = itemtype,
+                IsActive = true,
                 Amount = itemamount
             };
             _db.Items.Add(store);
@@ -67,12 +68,14 @@ namespace Ecosave
             var itemtype = "SolarGenerator";
             var itemamount = 1;
             var store = new Item
+            
             {
                 UserID = userid,
                 Cost = Itemcost,
                 Name = itemname,
                 Type = itemtype,
-                Amount = itemamount
+                Amount = itemamount,
+                IsActive = true
             };
             _db.Items.Add(store);
             _db.SaveChanges();

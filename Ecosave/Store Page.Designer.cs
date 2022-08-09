@@ -44,27 +44,28 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.bulb1 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.smarthub1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.powerbank2 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.powerbank1 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.solargen3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.smarthub2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.solargen2 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.solargen1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.lightbulbToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.solarGeneratorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.powerBankToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.smartHubDevicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -73,22 +74,22 @@
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bulb1)).BeginInit();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smarthub1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.powerbank2)).BeginInit();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.powerbank1)).BeginInit();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solargen3)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smarthub2)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solargen2)).BeginInit();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solargen1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -264,21 +265,22 @@
             // 
             // panel13
             // 
-            this.panel13.Controls.Add(this.pictureBox8);
+            this.panel13.Controls.Add(this.smarthub1);
             this.panel13.Location = new System.Drawing.Point(103, 509);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(533, 234);
             this.panel13.TabIndex = 76;
             // 
-            // pictureBox8
+            // smarthub1
             // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(534, 234);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 0;
-            this.pictureBox8.TabStop = false;
+            this.smarthub1.Image = ((System.Drawing.Image)(resources.GetObject("smarthub1.Image")));
+            this.smarthub1.Location = new System.Drawing.Point(-1, 0);
+            this.smarthub1.Name = "smarthub1";
+            this.smarthub1.Size = new System.Drawing.Size(534, 234);
+            this.smarthub1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.smarthub1.TabIndex = 0;
+            this.smarthub1.TabStop = false;
+            this.smarthub1.Click += new System.EventHandler(this.smarthub1_Click);
             // 
             // panel4
             // 
@@ -293,58 +295,61 @@
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel11.Controls.Add(this.pictureBox6);
+            this.panel11.Controls.Add(this.powerbank2);
             this.panel11.Location = new System.Drawing.Point(162, 17);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(147, 234);
             this.panel11.TabIndex = 75;
             // 
-            // pictureBox6
+            // powerbank2
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(2, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(145, 234);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
+            this.powerbank2.Image = ((System.Drawing.Image)(resources.GetObject("powerbank2.Image")));
+            this.powerbank2.Location = new System.Drawing.Point(2, 0);
+            this.powerbank2.Name = "powerbank2";
+            this.powerbank2.Size = new System.Drawing.Size(145, 234);
+            this.powerbank2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.powerbank2.TabIndex = 2;
+            this.powerbank2.TabStop = false;
+            this.powerbank2.Click += new System.EventHandler(this.powerbank2_Click);
             // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel12.Controls.Add(this.pictureBox7);
+            this.panel12.Controls.Add(this.powerbank1);
             this.panel12.Location = new System.Drawing.Point(16, 17);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(145, 234);
             this.panel12.TabIndex = 74;
             // 
-            // pictureBox7
+            // powerbank1
             // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(145, 234);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 1;
-            this.pictureBox7.TabStop = false;
+            this.powerbank1.Image = ((System.Drawing.Image)(resources.GetObject("powerbank1.Image")));
+            this.powerbank1.Location = new System.Drawing.Point(0, 0);
+            this.powerbank1.Name = "powerbank1";
+            this.powerbank1.Size = new System.Drawing.Size(145, 234);
+            this.powerbank1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.powerbank1.TabIndex = 1;
+            this.powerbank1.TabStop = false;
+            this.powerbank1.Click += new System.EventHandler(this.powerbank1_Click);
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.pictureBox5);
+            this.panel10.Controls.Add(this.solargen3);
             this.panel10.Location = new System.Drawing.Point(484, 285);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(326, 106);
             this.panel10.TabIndex = 76;
             // 
-            // pictureBox5
+            // solargen3
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(326, 106);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
+            this.solargen3.Image = ((System.Drawing.Image)(resources.GetObject("solargen3.Image")));
+            this.solargen3.Location = new System.Drawing.Point(0, 0);
+            this.solargen3.Name = "solargen3";
+            this.solargen3.Size = new System.Drawing.Size(326, 106);
+            this.solargen3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.solargen3.TabIndex = 1;
+            this.solargen3.TabStop = false;
+            this.solargen3.Click += new System.EventHandler(this.solargen3_Click);
             // 
             // panel5
             // 
@@ -358,21 +363,22 @@
             // panel14
             // 
             this.panel14.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel14.Controls.Add(this.pictureBox9);
+            this.panel14.Controls.Add(this.smarthub2);
             this.panel14.Location = new System.Drawing.Point(572, 17);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(533, 234);
             this.panel14.TabIndex = 77;
             // 
-            // pictureBox9
+            // smarthub2
             // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(534, 234);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 1;
-            this.pictureBox9.TabStop = false;
+            this.smarthub2.Image = ((System.Drawing.Image)(resources.GetObject("smarthub2.Image")));
+            this.smarthub2.Location = new System.Drawing.Point(-1, 0);
+            this.smarthub2.Name = "smarthub2";
+            this.smarthub2.Size = new System.Drawing.Size(534, 234);
+            this.smarthub2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.smarthub2.TabIndex = 1;
+            this.smarthub2.TabStop = false;
+            this.smarthub2.Click += new System.EventHandler(this.smarthub2_Click);
             // 
             // panel3
             // 
@@ -387,40 +393,42 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel9.Controls.Add(this.pictureBox4);
+            this.panel9.Controls.Add(this.solargen2);
             this.panel9.Location = new System.Drawing.Point(182, 17);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(160, 126);
             this.panel9.TabIndex = 76;
             // 
-            // pictureBox4
+            // solargen2
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(160, 126);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
+            this.solargen2.Image = ((System.Drawing.Image)(resources.GetObject("solargen2.Image")));
+            this.solargen2.Location = new System.Drawing.Point(0, 0);
+            this.solargen2.Name = "solargen2";
+            this.solargen2.Size = new System.Drawing.Size(160, 126);
+            this.solargen2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.solargen2.TabIndex = 1;
+            this.solargen2.TabStop = false;
+            this.solargen2.Click += new System.EventHandler(this.solargen2_Click);
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel8.Controls.Add(this.pictureBox3);
+            this.panel8.Controls.Add(this.solargen1);
             this.panel8.Location = new System.Drawing.Point(16, 17);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(160, 126);
             this.panel8.TabIndex = 75;
             // 
-            // pictureBox3
+            // solargen1
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(160, 126);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
+            this.solargen1.Image = ((System.Drawing.Image)(resources.GetObject("solargen1.Image")));
+            this.solargen1.Location = new System.Drawing.Point(0, 0);
+            this.solargen1.Name = "solargen1";
+            this.solargen1.Size = new System.Drawing.Size(160, 126);
+            this.solargen1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.solargen1.TabIndex = 0;
+            this.solargen1.TabStop = false;
+            this.solargen1.Click += new System.EventHandler(this.solargen1_Click);
             // 
             // menuStrip1
             // 
@@ -431,7 +439,8 @@
             this.lightbulbToolStripMenuItem,
             this.solarGeneratorToolStripMenuItem,
             this.powerBankToolStripMenuItem,
-            this.smartHubDevicesToolStripMenuItem});
+            this.smartHubDevicesToolStripMenuItem,
+            this.cartToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1924, 28);
@@ -466,6 +475,13 @@
             this.smartHubDevicesToolStripMenuItem.Text = "Smart Hub Devices";
             this.smartHubDevicesToolStripMenuItem.Click += new System.EventHandler(this.smartHubDevicesToolStripMenuItem_Click);
             // 
+            // cartToolStripMenuItem
+            // 
+            this.cartToolStripMenuItem.Name = "cartToolStripMenuItem";
+            this.cartToolStripMenuItem.Size = new System.Drawing.Size(50, 24);
+            this.cartToolStripMenuItem.Text = "Cart";
+            this.cartToolStripMenuItem.Click += new System.EventHandler(this.cartToolStripMenuItem_Click);
+            // 
             // Store_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -494,22 +510,22 @@
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bulb1)).EndInit();
             this.panel13.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smarthub1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.powerbank2)).EndInit();
             this.panel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.powerbank1)).EndInit();
             this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solargen3)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smarthub2)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solargen2)).EndInit();
             this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.solargen1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -540,13 +556,13 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox bulb2;
         private System.Windows.Forms.PictureBox bulb1;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox smarthub1;
+        private System.Windows.Forms.PictureBox powerbank2;
+        private System.Windows.Forms.PictureBox powerbank1;
+        private System.Windows.Forms.PictureBox solargen3;
+        private System.Windows.Forms.PictureBox smarthub2;
+        private System.Windows.Forms.PictureBox solargen2;
+        private System.Windows.Forms.PictureBox solargen1;
         private System.Windows.Forms.ToolStripMenuItem powerBankToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem solarGeneratorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem smartHubDevicesToolStripMenuItem;
@@ -554,5 +570,6 @@
         private System.Windows.Forms.Label LightBulbs;
         private System.Windows.Forms.Label SmartHubDevices;
         private System.Windows.Forms.Label PowerBanks;
+        private System.Windows.Forms.ToolStripMenuItem cartToolStripMenuItem;
     }
 }

@@ -40,7 +40,8 @@ namespace Ecosave
                 Cost = Itemcost,
                 Name = itemname,
                 Type = itemtype,
-                Amount = itemamount
+                Amount = itemamount,
+                IsActive = true
             };
             _db.Items.Add(store);
             _db.SaveChanges();
@@ -72,7 +73,8 @@ namespace Ecosave
                 Cost = Itemcost,
                 Name = itemname,
                 Type = itemtype,
-                Amount = itemamount
+                Amount = itemamount,
+                IsActive = true
             };
             _db.Items.Add(store);
             _db.SaveChanges();

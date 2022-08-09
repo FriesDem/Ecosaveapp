@@ -20,6 +20,7 @@ namespace Ecosave
         public Nullable<decimal> Cost { get; set; }
         public Nullable<int> Amount { get; set; }
         public Nullable<int> UserID { get; set; }
+        public Nullable<bool> IsActive { get; set; }
     
         public virtual User User { get; set; }
     }

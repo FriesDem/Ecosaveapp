@@ -83,5 +83,62 @@ namespace Ecosave
 
             }
         }
+
+        private void smh1_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Emporia_Smart_Home_Energy_Monitor"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Emporia_Smart_Home_Energy_Monitor = new Emporia_Smart_Home_Energy_Monitor(_user);
+                Emporia_Smart_Home_Energy_Monitor.MdiParent = this.MdiParent;
+                Emporia_Smart_Home_Energy_Monitor.Show();
+
+            }
+        }
+
+        private void smh2_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Sense_Energy_Monitor_with_Solar"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Sense_Energy_Monitor_with_Solar = new Sense_Energy_Monitor_with_Solar(_user);
+                Sense_Energy_Monitor_with_Solar.MdiParent = this.MdiParent;
+                Sense_Energy_Monitor_with_Solar.Show();
+
+            }
+        }
+
+        private void smh3_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Efergy_Elite_Max_Display_Kit"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Efergy_Elite_Max_Display_Kit = new Efergy_Elite_Max_Display_Kit(_user);
+                Efergy_Elite_Max_Display_Kit.MdiParent = this.MdiParent;
+                Efergy_Elite_Max_Display_Kit.Show();
+
+            }
+        }
+
+        private void cms1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
+
+        private void cms2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
+
+        private void cms3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
     }
 }

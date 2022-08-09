@@ -38,44 +38,44 @@
             this.SolarGen5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.cms1 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.cms3 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.cms2 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.SolarGen3 = new System.Windows.Forms.Label();
             this.SolarGen2 = new System.Windows.Forms.Label();
             this.SolarGen1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.smh1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.smh3 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.smh2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.NameLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cms1)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cms3)).BeginInit();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cms2)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smh1)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smh3)).BeginInit();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smh2)).BeginInit();
             this.SuspendLayout();
             // 
             // BacklogoBtn
@@ -189,21 +189,22 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel6.Controls.Add(this.pictureBox4);
+            this.panel6.Controls.Add(this.cms1);
             this.panel6.Location = new System.Drawing.Point(16, 17);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(292, 234);
             this.panel6.TabIndex = 74;
             // 
-            // pictureBox4
+            // cms1
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(292, 233);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
+            this.cms1.Image = ((System.Drawing.Image)(resources.GetObject("cms1.Image")));
+            this.cms1.Location = new System.Drawing.Point(0, 1);
+            this.cms1.Name = "cms1";
+            this.cms1.Size = new System.Drawing.Size(292, 233);
+            this.cms1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cms1.TabIndex = 1;
+            this.cms1.TabStop = false;
+            this.cms1.Click += new System.EventHandler(this.cms1_Click);
             // 
             // panel8
             // 
@@ -217,39 +218,41 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel9.Controls.Add(this.pictureBox5);
+            this.panel9.Controls.Add(this.cms3);
             this.panel9.Location = new System.Drawing.Point(16, 17);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(293, 234);
             this.panel9.TabIndex = 74;
             // 
-            // pictureBox5
+            // cms3
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(293, 233);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
+            this.cms3.Image = ((System.Drawing.Image)(resources.GetObject("cms3.Image")));
+            this.cms3.Location = new System.Drawing.Point(0, 1);
+            this.cms3.Name = "cms3";
+            this.cms3.Size = new System.Drawing.Size(293, 233);
+            this.cms3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cms3.TabIndex = 1;
+            this.cms3.TabStop = false;
+            this.cms3.Click += new System.EventHandler(this.cms3_Click);
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.pictureBox6);
+            this.panel11.Controls.Add(this.cms2);
             this.panel11.Location = new System.Drawing.Point(498, 486);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(326, 234);
             this.panel11.TabIndex = 84;
             // 
-            // pictureBox6
+            // cms2
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(324, 233);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 0;
-            this.pictureBox6.TabStop = false;
+            this.cms2.Image = ((System.Drawing.Image)(resources.GetObject("cms2.Image")));
+            this.cms2.Location = new System.Drawing.Point(1, 0);
+            this.cms2.Name = "cms2";
+            this.cms2.Size = new System.Drawing.Size(324, 233);
+            this.cms2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.cms2.TabIndex = 0;
+            this.cms2.TabStop = false;
+            this.cms2.Click += new System.EventHandler(this.cms2_Click);
             // 
             // panel13
             // 
@@ -310,21 +313,22 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel7.Controls.Add(this.pictureBox2);
+            this.panel7.Controls.Add(this.smh1);
             this.panel7.Location = new System.Drawing.Point(16, 17);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(292, 234);
             this.panel7.TabIndex = 74;
             // 
-            // pictureBox2
+            // smh1
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-13, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(305, 233);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
+            this.smh1.Image = ((System.Drawing.Image)(resources.GetObject("smh1.Image")));
+            this.smh1.Location = new System.Drawing.Point(-13, 0);
+            this.smh1.Name = "smh1";
+            this.smh1.Size = new System.Drawing.Size(305, 233);
+            this.smh1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.smh1.TabIndex = 1;
+            this.smh1.TabStop = false;
+            this.smh1.Click += new System.EventHandler(this.smh1_Click);
             // 
             // panel4
             // 
@@ -338,39 +342,41 @@
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel12.Controls.Add(this.pictureBox3);
+            this.panel12.Controls.Add(this.smh3);
             this.panel12.Location = new System.Drawing.Point(16, 17);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(293, 234);
             this.panel12.TabIndex = 74;
             // 
-            // pictureBox3
+            // smh3
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(293, 233);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
+            this.smh3.Image = ((System.Drawing.Image)(resources.GetObject("smh3.Image")));
+            this.smh3.Location = new System.Drawing.Point(0, 1);
+            this.smh3.Name = "smh3";
+            this.smh3.Size = new System.Drawing.Size(293, 233);
+            this.smh3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.smh3.TabIndex = 1;
+            this.smh3.TabStop = false;
+            this.smh3.Click += new System.EventHandler(this.smh3_Click);
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.pictureBox1);
+            this.panel10.Controls.Add(this.smh2);
             this.panel10.Location = new System.Drawing.Point(495, 145);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(326, 234);
             this.panel10.TabIndex = 76;
             // 
-            // pictureBox1
+            // smh2
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(324, 233);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.smh2.Image = ((System.Drawing.Image)(resources.GetObject("smh2.Image")));
+            this.smh2.Location = new System.Drawing.Point(1, 0);
+            this.smh2.Name = "smh2";
+            this.smh2.Size = new System.Drawing.Size(324, 233);
+            this.smh2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.smh2.TabIndex = 0;
+            this.smh2.TabStop = false;
+            this.smh2.Click += new System.EventHandler(this.smh2_Click);
             // 
             // panel3
             // 
@@ -411,20 +417,20 @@
             this.panel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cms1)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cms3)).EndInit();
             this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cms2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smh1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smh3)).EndInit();
             this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.smh2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -441,24 +447,24 @@
         private System.Windows.Forms.Label SolarGen5;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox cms1;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox cms3;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox cms2;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label SolarGen3;
         private System.Windows.Forms.Label SolarGen2;
         private System.Windows.Forms.Label SolarGen1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox smh1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox smh3;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox smh2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label NameLbl;
     }

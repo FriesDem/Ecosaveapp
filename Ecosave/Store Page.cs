@@ -176,5 +176,117 @@ namespace Ecosave
         {
           
         }
-    }
+
+        private void cartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Checkout"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Checkout = new Checkout(_user);
+                Checkout.MdiParent = this.MdiParent;
+                Checkout.Show();
+
+            }
+        }
+
+        private void solargen1_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("EF_ECOFLOW_Solar_Generator_Delta_Max"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var EF_ECOFLOW_Solar_Generator_Delta_Max = new EF_ECOFLOW_Solar_Generator_Delta_Max(_user);
+                EF_ECOFLOW_Solar_Generator_Delta_Max.MdiParent = this.MdiParent;
+                EF_ECOFLOW_Solar_Generator_Delta_Max.Show();
+
+            }
+        }
+
+        private void solargen2_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("EF_ECOFLOW_Solar_Generator_RIVER_Pro"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var EF_ECOFLOW_Solar_Generator_RIVER_Pro = new EF_ECOFLOW_Solar_Generator_RIVER_Pro(_user);
+                EF_ECOFLOW_Solar_Generator_RIVER_Pro.MdiParent = this.MdiParent;
+                EF_ECOFLOW_Solar_Generator_RIVER_Pro.Show();
+
+            }
+        }
+
+        private void solargen3_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("BLUETTI_Solar_Generator"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var BLUETTI_Solar_Generator = new BLUETTI_Solar_Generator(_user);
+                BLUETTI_Solar_Generator.MdiParent = this.MdiParent;
+                BLUETTI_Solar_Generator.Show();
+
+            }
+        }
+
+        private void powerbank1_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Durecopow_Solar_Charger"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Durecopow_Solar_Charger = new Durecopow_Solar_Charger(_user);
+                Durecopow_Solar_Charger.MdiParent = this.MdiParent;
+                Durecopow_Solar_Charger.Show();
+
+            }
+        }
+
+        private void powerbank2_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Tranmix_Solar_Charger"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Tranmix_Solar_Charger = new Tranmix_Solar_Charger(_user);
+                Tranmix_Solar_Charger.MdiParent = this.MdiParent;
+                Tranmix_Solar_Charger.Show();
+
+            }
+        }
+
+        private void smarthub1_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Emporia_Smart_Home_Energy_Monitor"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Emporia_Smart_Home_Energy_Monitor = new Emporia_Smart_Home_Energy_Monitor(_user);
+                Emporia_Smart_Home_Energy_Monitor.MdiParent = this.MdiParent;
+                Emporia_Smart_Home_Energy_Monitor.Show();
+
+            }
+        }
+
+        private void smarthub2_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Sense_Energy_Monitor_with_Solar"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Sense_Energy_Monitor_with_Solar = new Sense_Energy_Monitor_with_Solar(_user);
+                Sense_Energy_Monitor_with_Solar.MdiParent = this.MdiParent;
+                Sense_Energy_Monitor_with_Solar.Show();
+
+            }
+        }
+}
 }

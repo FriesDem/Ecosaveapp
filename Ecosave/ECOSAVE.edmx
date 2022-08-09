@@ -63,6 +63,7 @@
           <Property Name="Cost" Type="money" />
           <Property Name="Amount" Type="int" />
           <Property Name="UserID" Type="int" />
+          <Property Name="IsActive" Type="bit" />
         </EntityType>
         <EntityType Name="Person Table">
           <Key>
@@ -276,6 +277,7 @@
           <Property Name="Cost" Type="Decimal" Precision="19" Scale="4" />
           <Property Name="Amount" Type="Int32" />
           <Property Name="UserID" Type="Int32" />
+          <Property Name="IsActive" Type="Boolean" />
           <NavigationProperty Name="User" Relationship="ECOSAVEModel.FK_Items_Users" FromRole="Item" ToRole="User" />
         </EntityType>
         <EntityType Name="Person_Table">
@@ -442,6 +444,7 @@
           <EntitySetMapping Name="Items">
             <EntityTypeMapping TypeName="ECOSAVEModel.Item">
               <MappingFragment StoreEntitySet="Items">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
                 <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="Amount" ColumnName="Amount" />
                 <ScalarProperty Name="Cost" ColumnName="Cost" />

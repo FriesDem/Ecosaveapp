@@ -37,21 +37,22 @@
             this.Cexp = new System.Windows.Forms.MaskedTextBox();
             this.Cnum = new System.Windows.Forms.MaskedTextBox();
             this.CardInfo = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.NameLbl = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Amountselect = new System.Windows.Forms.NumericUpDown();
+            this.Checkoutbtn = new System.Windows.Forms.Button();
+            this.deleteorder = new System.Windows.Forms.Button();
             this.Store = new System.Windows.Forms.DataGridView();
+            this.SubmitAmount = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Amountselect)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Store)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.SubmitAmount);
             this.panel1.Controls.Add(this.submit);
             this.panel1.Controls.Add(this.cccv);
             this.panel1.Controls.Add(this.cexperation);
@@ -60,13 +61,12 @@
             this.panel1.Controls.Add(this.Cexp);
             this.panel1.Controls.Add(this.Cnum);
             this.panel1.Controls.Add(this.CardInfo);
-            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.NameLbl);
-            this.panel1.Controls.Add(this.numericUpDown1);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.Amountselect);
+            this.panel1.Controls.Add(this.Checkoutbtn);
+            this.panel1.Controls.Add(this.deleteorder);
             this.panel1.Controls.Add(this.Store);
             this.panel1.Location = new System.Drawing.Point(320, 30);
             this.panel1.Name = "panel1";
@@ -156,16 +156,6 @@
             this.CardInfo.UseVisualStyleBackColor = false;
             this.CardInfo.Click += new System.EventHandler(this.CardInfo_Click);
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.PowderBlue;
-            this.button3.Location = new System.Drawing.Point(52, 236);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 31);
-            this.button3.TabIndex = 77;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -202,42 +192,63 @@
             this.NameLbl.TabIndex = 73;
             this.NameLbl.Text = "Eco Save Solutions";
             // 
-            // numericUpDown1
+            // Amountselect
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(52, 337);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(44, 22);
-            this.numericUpDown1.TabIndex = 3;
+            this.Amountselect.Location = new System.Drawing.Point(52, 337);
+            this.Amountselect.Name = "Amountselect";
+            this.Amountselect.Size = new System.Drawing.Size(44, 22);
+            this.Amountselect.TabIndex = 3;
+            this.Amountselect.ValueChanged += new System.EventHandler(this.Amountslect_ValueChanged);
             // 
-            // button2
+            // Checkoutbtn
             // 
-            this.button2.BackColor = System.Drawing.Color.PowderBlue;
-            this.button2.Location = new System.Drawing.Point(988, 628);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 32);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Checkout";
-            this.button2.UseVisualStyleBackColor = false;
+            this.Checkoutbtn.BackColor = System.Drawing.Color.PowderBlue;
+            this.Checkoutbtn.Location = new System.Drawing.Point(988, 628);
+            this.Checkoutbtn.Name = "Checkoutbtn";
+            this.Checkoutbtn.Size = new System.Drawing.Size(129, 32);
+            this.Checkoutbtn.TabIndex = 2;
+            this.Checkoutbtn.Text = "Checkout";
+            this.Checkoutbtn.UseVisualStyleBackColor = false;
+            this.Checkoutbtn.Click += new System.EventHandler(this.Checkoutbtn_Click);
             // 
-            // button1
+            // deleteorder
             // 
-            this.button1.BackColor = System.Drawing.Color.PowderBlue;
-            this.button1.Location = new System.Drawing.Point(52, 163);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 31);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = false;
+            this.deleteorder.BackColor = System.Drawing.Color.PowderBlue;
+            this.deleteorder.Location = new System.Drawing.Point(52, 132);
+            this.deleteorder.Name = "deleteorder";
+            this.deleteorder.Size = new System.Drawing.Size(75, 31);
+            this.deleteorder.TabIndex = 1;
+            this.deleteorder.Text = "Delete";
+            this.deleteorder.UseVisualStyleBackColor = false;
+            this.deleteorder.Click += new System.EventHandler(this.deleteorder_Click);
             // 
             // Store
             // 
+            this.Store.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Store.BackgroundColor = System.Drawing.Color.PowderBlue;
+            this.Store.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Store.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.Store.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Store.GridColor = System.Drawing.Color.SteelBlue;
             this.Store.Location = new System.Drawing.Point(239, 132);
             this.Store.Name = "Store";
             this.Store.RowHeadersWidth = 51;
             this.Store.RowTemplate.Height = 24;
             this.Store.Size = new System.Drawing.Size(675, 528);
             this.Store.TabIndex = 0;
+            // 
+            // SubmitAmount
+            // 
+            this.SubmitAmount.BackColor = System.Drawing.Color.PowderBlue;
+            this.SubmitAmount.Location = new System.Drawing.Point(114, 337);
+            this.SubmitAmount.Name = "SubmitAmount";
+            this.SubmitAmount.Size = new System.Drawing.Size(75, 27);
+            this.SubmitAmount.TabIndex = 91;
+            this.SubmitAmount.Text = "Submit";
+            this.SubmitAmount.UseVisualStyleBackColor = false;
+            this.SubmitAmount.Click += new System.EventHandler(this.SubmitAmount_Click);
             // 
             // Checkout
             // 
@@ -254,7 +265,7 @@
             this.Load += new System.EventHandler(this.Checkout_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Amountselect)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Store)).EndInit();
             this.ResumeLayout(false);
 
@@ -264,13 +275,12 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView Store;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown Amountselect;
+        private System.Windows.Forms.Button Checkoutbtn;
+        private System.Windows.Forms.Button deleteorder;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label NameLbl;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label cccv;
         private System.Windows.Forms.Label cexperation;
         private System.Windows.Forms.Label cnumber;
@@ -279,5 +289,6 @@
         private System.Windows.Forms.MaskedTextBox Cnum;
         private System.Windows.Forms.Button CardInfo;
         private System.Windows.Forms.Button submit;
+        private System.Windows.Forms.Button SubmitAmount;
     }
 }

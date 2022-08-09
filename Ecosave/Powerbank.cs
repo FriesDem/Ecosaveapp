@@ -83,5 +83,62 @@ namespace Ecosave
         {
             MessageBox.Show("New Products On The Way Stay Tuned");
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Tranmix_Solar_Charger"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Tranmix_Solar_Charger = new Tranmix_Solar_Charger(_user);
+                Tranmix_Solar_Charger.MdiParent = this.MdiParent;
+                Tranmix_Solar_Charger.Show();
+
+            }
+        }
+
+        private void pb2_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Durecopow_Solar_Charger"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Durecopow_Solar_Charger = new Durecopow_Solar_Charger(_user);
+                Durecopow_Solar_Charger.MdiParent = this.MdiParent;
+                Durecopow_Solar_Charger.Show();
+
+            }
+        }
+
+        private void pb3_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Takki_83Wh_Portable_Power_Station"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Takki_83Wh_Portable_Power_Station = new Takki_83Wh_Portable_Power_Station(_user);
+                Takki_83Wh_Portable_Power_Station.MdiParent = this.MdiParent;
+                Takki_83Wh_Portable_Power_Station.Show();
+
+            }
+        }
+
+        private void cms8_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
+
+        private void cms9_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
+
+        private void Cms10_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
     }
 }

@@ -138,8 +138,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.manageuser.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.manageuser.BackgroundColor = System.Drawing.Color.PowderBlue;
             this.manageuser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.manageuser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.manageuser.GridColor = System.Drawing.Color.SteelBlue;
             this.manageuser.Location = new System.Drawing.Point(370, 265);
             this.manageuser.Name = "manageuser";
             this.manageuser.RowHeadersWidth = 51;
