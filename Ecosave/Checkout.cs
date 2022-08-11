@@ -181,7 +181,7 @@ namespace Ecosave
                         MessageBox.Show("Input Card info");
                 }
             }
-            MessageBox.Show("Thanks For Shopping With Us We Will Email You With Your Package Information in 2-3 Buisness Days ( Also Duely Note Transactionsions take 1-2 Buisness Days )");
+            MessageBox.Show("Thanks For Shopping With Us We Will Email You With Your Package Information in 2-3 Buisness Days ( Also Duely Note Transactions take 1-2 Buisness Days )");
         }
 
         private void SubmitAmount_Click(object sender, EventArgs e)

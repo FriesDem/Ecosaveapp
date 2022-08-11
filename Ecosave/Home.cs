@@ -64,11 +64,10 @@ namespace Ecosave
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            {
-                this.Hide();
-                LoginForm log = new LoginForm();
-                log.Show();
-            }
+           this.Hide();
+           LoginForm log = new LoginForm();
+           log.Show();
+            
         }
 
         private void profileToolStripMenuItem_Click(object sender, EventArgs e)
@@ -128,13 +127,13 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("HomePage"))
             {
-                {
+                
                     if (ActiveMdiChild != null)
                         ActiveMdiChild.Close();
                     var HomePage = new HomePage();
                     HomePage.MdiParent = this;
                     HomePage.Show();
-                }
+                
             }
         }
 
@@ -142,13 +141,13 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("HomePage"))
             {
-                {
+                
                     if (ActiveMdiChild != null)
                         ActiveMdiChild.Close();
                     var HomePage = new HomePage();
                     HomePage.MdiParent = this;
                     HomePage.Show();
-                }
+                
             }
         }
 
@@ -211,14 +210,26 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("Tips_Page"))
             {
-                {
-                    if (ActiveMdiChild != null)
-                        ActiveMdiChild.Close();
+                 if (ActiveMdiChild != null)
+                     ActiveMdiChild.Close();
                     var Tips_Page = new Tips_Page();
                     Tips_Page.MdiParent = this;
                     Tips_Page.Show();
-                }
+                
             }
-        }       
+        }
+
+        private void billingTableToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Billing_Table"))
+            {
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var BillingTable = new CalculatorInfo();
+                BillingTable.MdiParent = this;
+                BillingTable.Show();
+
+            }
+        }
     }
 }

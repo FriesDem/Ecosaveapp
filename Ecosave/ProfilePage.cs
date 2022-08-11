@@ -62,8 +62,7 @@ namespace Ecosave
                 var first = user.First_Name.Trim();
                 var last = user.Last_Name.Trim();
                 name.Text = first + last;
-                DeviceCount.Text = user.Number_of_Devices.ToString();
-                NumberRooms.Text = user.Number_of_Houses.ToString();
+               
             }
         }
 

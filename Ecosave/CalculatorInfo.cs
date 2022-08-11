@@ -12,9 +12,15 @@ namespace Ecosave
 {
     public partial class CalculatorInfo : Form
     {
+        private Billing_Table billing;
+        private ECOSAVEEntities ecosaveDB;
+
+        double energyCharge = 0, energyUsed = 0, fuelCharge = 0, custCharge = 0, IPPCharge = 0, demandCharge = 0, finalCharge = 0;
+        string readingType;
         public CalculatorInfo()
         {
             InitializeComponent();
+            billing = new Billing_Table();
         }
 
         private void BacklogoBtn_Click(object sender, EventArgs e)
@@ -24,6 +30,42 @@ namespace Ecosave
 
         private void btnsubmit_Click(object sender, EventArgs e)
         {
+            try
+            {
+                energyCharge = Convert.ToDouble(txtEnergyCharge.Text);
+                energyUsed = Convert.ToDouble(txtEnergyUsed.Text);
+                fuelCharge = Convert.ToDouble(txtFuelCharge.Text);
+                custCharge = Convert.ToDouble(txtCustomerCharge.Text);
+                IPPCharge = Convert.ToDouble(txtIPPCharge.Text);
+                demandCharge = Convert.ToDouble(txtDemandCharge.Text);
+                if (txtReadingType.Equals("Actual") || txtReadingType.Equals("Estimated"))
+                {
+                    readingType = txtReadingType.Text;
+
+                    billing.Energy_Charge = energyCharge;
+                    billing.Energy_Used = energyUsed;
+                    billing.Fuel_Charge = fuelCharge;
+                    billing.Customer_Charge = custCharge;
+                    billing.IPP_Charge = IPPCharge;
+                    billing.Reading_Type = readingType;
+
+                    ecosaveDB.Billing_Tables.Add(billing);
+                    ecosaveDB.SaveChanges();
+                }
+                else
+                {
+                    MessageBox.Show("The Reading Type needs to be either Actual or Estimated");
+
+
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Something went wrong. Please Try Again");
+            }
+            
+
             
         }
     }

@@ -21,9 +21,9 @@ namespace Ecosave
             ecosaveDB = new ECOSAVEEntities();
             calculator = new Calculator();
         }
-        double dailyCost = 0, weeklyCost = 0, montlyCost = 0, yearlyCost = 0;
-        double fuelCost = 7.32, IPPCharge = 13.22, GCT = 0.15, finalCharge = 0;
-        int numDevices = 0;
+        double dailyCost = 0, weeklyCost = 0, monthlyCost = 0, yearlyCost = 0;
+        double fuelCost = 7.32, IPPCharge = 13.22, GCT = 0.15, finalCharge = 0, kwh = 0;
+        double numDevices = 0;
         
 
         private void clearBtn_Click(object sender, EventArgs e)
@@ -47,24 +47,26 @@ namespace Ecosave
             }
             else
             {
-                finalCharge = ((fuelCost * (Double.Parse(txtHoursUsed.Text) * Double.Parse(txtPowerOutput.Text)) + (IPPCharge * (Double.Parse(txtHoursUsed.Text) * Double.Parse(txtPowerOutput.Text)))));
+                numDevices = Convert.ToDouble(numberOfDevices.Value);
+                kwh = Convert.ToDouble(txtPowerOutput.Text);
+                finalCharge = ((fuelCost * kwh) + (IPPCharge * kwh)) / numDevices;
                 dailyCost = finalCharge;
                 weeklyCost = finalCharge * 7;
-                montlyCost = finalCharge * 30;
+                monthlyCost = finalCharge * 30;
                 yearlyCost = finalCharge * 365;
-                numDevices = int.Parse(numberOfDevices.Text);
-                lblDailyCostDisplay.Text = "$ " + dailyCost.ToString("N2") + "JMD";
-                lblWeeklyCostDisplay.Text = "$ " + weeklyCost.ToString("N2") + "JMD";
-                lblMonthlyCostDisplay.Text = "$ " + montlyCost.ToString("N2") + "JMD";
-                lblYearlyCostDisplay.Text = "$ " + yearlyCost.ToString("N2") + "JMD";
+                
+                lblDailyCostDisplay.Text = "$ " + dailyCost.ToString("N2") + " JMD";
+                lblWeeklyCostDisplay.Text = "$ " + weeklyCost.ToString("N2") + " JMD";
+                lblMonthlyCostDisplay.Text = "$ " + monthlyCost.ToString("N2") + " JMD";
+                lblYearlyCostDisplay.Text = "$ " + yearlyCost.ToString("N2") + " JMD";
 
 
-                calculator.Number_Of_Devices = numDevices;
+                calculator.Number_Of_Devices = Convert.ToInt32(numDevices);
                 calculator.Power_Average = double.Parse(txtPowerOutput.Text);
                 calculator.Hours_Used = int.Parse(txtHoursUsed.Text);
-                calculator.Daily_Average = Convert.ToInt32(dailyCost);
-                calculator.Weekly_Average = Convert.ToInt32(weeklyCost);
-                calculator.Monthly_Average = Convert.ToInt32(montlyCost);
+                calculator.Daily_Average = Convert.ToInt64(dailyCost);
+                calculator.Weekly_Average = Convert.ToInt64(weeklyCost);
+                calculator.Monthly_Average = Convert.ToInt64(monthlyCost);
                 ecosaveDB.Calculators.Add(calculator);
                 ecosaveDB.SaveChanges();
 
