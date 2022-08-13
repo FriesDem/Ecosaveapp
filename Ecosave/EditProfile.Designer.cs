@@ -46,7 +46,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnedit = new System.Windows.Forms.Button();
             this.LNameTB = new System.Windows.Forms.TextBox();
-            this.PhoneNumberTB = new System.Windows.Forms.TextBox();
             this.Phone = new System.Windows.Forms.Label();
             this.fname = new System.Windows.Forms.Label();
             this.lname = new System.Windows.Forms.Label();
@@ -55,6 +54,7 @@
             this.zipcodelb = new System.Windows.Forms.Label();
             this.occupationlb = new System.Windows.Forms.Label();
             this.phonenumb = new System.Windows.Forms.Label();
+            this.PhoneNumberTB = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -250,16 +250,6 @@
             this.LNameTB.Size = new System.Drawing.Size(192, 22);
             this.LNameTB.TabIndex = 38;
             // 
-            // PhoneNumberTB
-            // 
-            this.PhoneNumberTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.PhoneNumberTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PhoneNumberTB.Location = new System.Drawing.Point(490, 684);
-            this.PhoneNumberTB.Margin = new System.Windows.Forms.Padding(4);
-            this.PhoneNumberTB.Name = "PhoneNumberTB";
-            this.PhoneNumberTB.Size = new System.Drawing.Size(192, 22);
-            this.PhoneNumberTB.TabIndex = 40;
-            // 
             // Phone
             // 
             this.Phone.AutoSize = true;
@@ -349,12 +339,23 @@
             this.phonenumb.Size = new System.Drawing.Size(0, 20);
             this.phonenumb.TabIndex = 47;
             // 
+            // PhoneNumberTB
+            // 
+            this.PhoneNumberTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.PhoneNumberTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneNumberTB.Location = new System.Drawing.Point(490, 653);
+            this.PhoneNumberTB.Mask = "(999) 000-0000";
+            this.PhoneNumberTB.Name = "PhoneNumberTB";
+            this.PhoneNumberTB.Size = new System.Drawing.Size(181, 30);
+            this.PhoneNumberTB.TabIndex = 64;
+            // 
             // EditProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.PhoneNumberTB);
             this.Controls.Add(this.phonenumb);
             this.Controls.Add(this.occupationlb);
             this.Controls.Add(this.zipcodelb);
@@ -362,7 +363,6 @@
             this.Controls.Add(this.parishlb);
             this.Controls.Add(this.lname);
             this.Controls.Add(this.fname);
-            this.Controls.Add(this.PhoneNumberTB);
             this.Controls.Add(this.Phone);
             this.Controls.Add(this.LNameTB);
             this.Controls.Add(this.btnedit);
@@ -414,7 +414,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnedit;
         private System.Windows.Forms.TextBox LNameTB;
-        private System.Windows.Forms.TextBox PhoneNumberTB;
         private System.Windows.Forms.Label Phone;
         private System.Windows.Forms.Label fname;
         private System.Windows.Forms.Label lname;
@@ -423,5 +422,6 @@
         private System.Windows.Forms.Label zipcodelb;
         private System.Windows.Forms.Label occupationlb;
         private System.Windows.Forms.Label phonenumb;
+        private System.Windows.Forms.MaskedTextBox PhoneNumberTB;
     }
 }

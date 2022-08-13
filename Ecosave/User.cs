@@ -19,6 +19,7 @@ namespace Ecosave
         {
             this.Items = new HashSet<Item>();
             this.UserRoles = new HashSet<UserRole>();
+            this.Person_Table = new HashSet<Person_Table>();
         }
     
         public int ID { get; set; }
@@ -31,5 +32,7 @@ namespace Ecosave
         public virtual ICollection<Item> Items { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UserRole> UserRoles { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Person_Table> Person_Table { get; set; }
     }
 }

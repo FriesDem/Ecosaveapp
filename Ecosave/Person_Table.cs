@@ -28,5 +28,7 @@ namespace Ecosave
         public string CardNumber { get; set; }
         public string CardExperation { get; set; }
         public string CardCvv { get; set; }
+    
+        public virtual User User { get; set; }
     }
 }

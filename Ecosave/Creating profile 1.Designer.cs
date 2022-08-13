@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Creating_profile_1));
             this.Backbtn = new System.Windows.Forms.Label();
             this.BacklogoBtn = new System.Windows.Forms.PictureBox();
-            this.PhoneNumberTB = new System.Windows.Forms.TextBox();
             this.PhoneNumber = new System.Windows.Forms.Label();
             this.LNameTB = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -50,6 +49,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.PhoneNumberTB = new System.Windows.Forms.MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -79,16 +79,6 @@
             this.BacklogoBtn.TabStop = false;
             this.BacklogoBtn.Click += new System.EventHandler(this.BacklogoBtn_Click);
             // 
-            // PhoneNumberTB
-            // 
-            this.PhoneNumberTB.BackColor = System.Drawing.Color.SteelBlue;
-            this.PhoneNumberTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PhoneNumberTB.Location = new System.Drawing.Point(490, 629);
-            this.PhoneNumberTB.Margin = new System.Windows.Forms.Padding(4);
-            this.PhoneNumberTB.Name = "PhoneNumberTB";
-            this.PhoneNumberTB.Size = new System.Drawing.Size(192, 22);
-            this.PhoneNumberTB.TabIndex = 59;
-            // 
             // PhoneNumber
             // 
             this.PhoneNumber.AutoSize = true;
@@ -105,10 +95,11 @@
             // 
             this.LNameTB.BackColor = System.Drawing.Color.SteelBlue;
             this.LNameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LNameTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LNameTB.Location = new System.Drawing.Point(645, 140);
             this.LNameTB.Margin = new System.Windows.Forms.Padding(4);
             this.LNameTB.Name = "LNameTB";
-            this.LNameTB.Size = new System.Drawing.Size(192, 22);
+            this.LNameTB.Size = new System.Drawing.Size(192, 30);
             this.LNameTB.TabIndex = 57;
             // 
             // pictureBox1
@@ -139,50 +130,55 @@
             // 
             this.OccupationTB.BackColor = System.Drawing.Color.SteelBlue;
             this.OccupationTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.OccupationTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OccupationTB.Location = new System.Drawing.Point(444, 541);
             this.OccupationTB.Margin = new System.Windows.Forms.Padding(4);
             this.OccupationTB.Name = "OccupationTB";
-            this.OccupationTB.Size = new System.Drawing.Size(275, 22);
+            this.OccupationTB.Size = new System.Drawing.Size(275, 30);
             this.OccupationTB.TabIndex = 53;
             // 
             // ZipcodeTB
             // 
             this.ZipcodeTB.BackColor = System.Drawing.Color.SteelBlue;
             this.ZipcodeTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZipcodeTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ZipcodeTB.Location = new System.Drawing.Point(490, 454);
             this.ZipcodeTB.Margin = new System.Windows.Forms.Padding(4);
             this.ZipcodeTB.Name = "ZipcodeTB";
-            this.ZipcodeTB.Size = new System.Drawing.Size(192, 22);
+            this.ZipcodeTB.Size = new System.Drawing.Size(192, 30);
             this.ZipcodeTB.TabIndex = 52;
             // 
             // StreetTB
             // 
             this.StreetTB.BackColor = System.Drawing.Color.SteelBlue;
             this.StreetTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StreetTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StreetTB.Location = new System.Drawing.Point(444, 350);
             this.StreetTB.Margin = new System.Windows.Forms.Padding(4);
             this.StreetTB.Name = "StreetTB";
-            this.StreetTB.Size = new System.Drawing.Size(275, 22);
+            this.StreetTB.Size = new System.Drawing.Size(275, 30);
             this.StreetTB.TabIndex = 51;
             // 
             // ParishTB
             // 
             this.ParishTB.BackColor = System.Drawing.Color.SteelBlue;
             this.ParishTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ParishTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ParishTB.Location = new System.Drawing.Point(398, 256);
             this.ParishTB.Margin = new System.Windows.Forms.Padding(4);
             this.ParishTB.Name = "ParishTB";
-            this.ParishTB.Size = new System.Drawing.Size(370, 22);
+            this.ParishTB.Size = new System.Drawing.Size(370, 30);
             this.ParishTB.TabIndex = 50;
             // 
             // FNameTB
             // 
             this.FNameTB.BackColor = System.Drawing.Color.SteelBlue;
             this.FNameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FNameTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FNameTB.Location = new System.Drawing.Point(347, 141);
             this.FNameTB.Margin = new System.Windows.Forms.Padding(4);
             this.FNameTB.Name = "FNameTB";
-            this.FNameTB.Size = new System.Drawing.Size(192, 22);
+            this.FNameTB.Size = new System.Drawing.Size(192, 30);
             this.FNameTB.TabIndex = 49;
             // 
             // Occcupation
@@ -293,16 +289,26 @@
             this.label3.TabIndex = 62;
             this.label3.Text = "Please to enter relevant data";
             // 
+            // PhoneNumberTB
+            // 
+            this.PhoneNumberTB.BackColor = System.Drawing.Color.SteelBlue;
+            this.PhoneNumberTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PhoneNumberTB.Location = new System.Drawing.Point(490, 627);
+            this.PhoneNumberTB.Mask = "(999) 000-0000";
+            this.PhoneNumberTB.Name = "PhoneNumberTB";
+            this.PhoneNumberTB.Size = new System.Drawing.Size(181, 30);
+            this.PhoneNumberTB.TabIndex = 63;
+            // 
             // Creating_profile_1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1469, 741);
+            this.Controls.Add(this.PhoneNumberTB);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.PhoneNumberTB);
             this.Controls.Add(this.PhoneNumber);
             this.Controls.Add(this.LNameTB);
             this.Controls.Add(this.pictureBox1);
@@ -335,7 +341,6 @@
 
         private System.Windows.Forms.Label Backbtn;
         private System.Windows.Forms.PictureBox BacklogoBtn;
-        private System.Windows.Forms.TextBox PhoneNumberTB;
         private System.Windows.Forms.Label PhoneNumber;
         private System.Windows.Forms.TextBox LNameTB;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -354,5 +359,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.MaskedTextBox PhoneNumberTB;
     }
 }

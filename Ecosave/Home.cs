@@ -170,7 +170,6 @@ namespace Ecosave
 
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var newland = tsilogintext.Text;
                 var Profile = new ProfilePage(_user);
                 Profile.MdiParent = this;
                 Profile.Show();
@@ -221,13 +220,13 @@ namespace Ecosave
 
         private void billingTableToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!Utils.FormIsOpen("Billing_Table"))
+            if (!Utils.FormIsOpen("CalculatorInfo"))
             {
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var BillingTable = new CalculatorInfo();
-                BillingTable.MdiParent = this;
-                BillingTable.Show();
+                var CalculatorInfo = new CalculatorInfo();
+                CalculatorInfo.MdiParent = this;
+                CalculatorInfo.Show();
 
             }
         }

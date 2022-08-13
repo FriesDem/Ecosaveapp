@@ -35,6 +35,38 @@ namespace Ecosave
             var user = _db.Users.FirstOrDefault(x => x.ID == _user.ID);
             try
             {
+               var test1 = FNameTB.ToString();
+
+                if (FNameTB.Text == "")
+                {
+                    MessageBox.Show("Enter First Name ");
+                }
+                if (LNameTB.Text == "")
+                {
+                    MessageBox.Show("Enter Last Name ");
+
+                }
+                if (ParishTB.Text == "")
+                {
+                    MessageBox.Show("Enter The  Parish In Which You Live ");
+                }
+                if (StreetTB.Text == "")
+                {
+                    MessageBox.Show("Enter The Street Name For Where You Live ");
+                }
+                if (ZipcodeTB.Text == "")
+                {
+                    MessageBox.Show("Enter Your Countries Zipcode ");
+                }
+                if (OccupationTB.Text == "")
+                {
+                    MessageBox.Show("Enter Your Occupation ");
+                }
+                if (PhoneNumberTB.Text == "" )
+                {
+                    MessageBox.Show("Enter Your PhoneNumber");
+                }
+               
                 var First = FNameTB.Text;
                 var Last = LNameTB.Text;
                 var Parish = ParishTB.Text;

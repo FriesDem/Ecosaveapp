@@ -97,12 +97,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="About Us.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="About Us.Designer.cs">
-      <DependentUpon>About Us.cs</DependentUpon>
-    </Compile>
     <Compile Include="Adduser.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -376,9 +370,6 @@
     <Compile Include="Store Page.Designer.cs">
       <DependentUpon>Store Page.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="About Us.resx">
-      <DependentUpon>About Us.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Bioluz LED Light Bulbs.resx">
       <DependentUpon>Bioluz LED Light Bulbs.cs</DependentUpon>
     </EmbeddedResource>

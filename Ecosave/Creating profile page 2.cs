@@ -28,30 +28,40 @@ namespace Ecosave
 
         private void SUYASubBtn_Click(object sender, EventArgs e)
         {
-            
+
             try
             {
-                var HowRooms = int.Parse(HowManyRoomsTB.Text);
-                var HowDevices = int.Parse(HowManyDeviceTB.Text);
-                var occupants  = int.Parse(OccupantsTB.Text);
-                var Budget     = int.Parse(BudgetTB.Text); 
-                var income = int.Parse(IncomeTB.Text) ;
 
-
-                var person = _db.Person_Tables.FirstOrDefault(x => x.UserID == _user.ID);
+                var Budget = int.Parse(BudgetTB.Text);
+                var income = int.Parse(IncomeTB.Text);
+                if (income >= 1 && income <= 999999999)
                 {
-                    
-                    person.Budget_for_Utilities = Budget;
-                    person.Income = income;              
-                };
-               
-                _db.SaveChanges();
-                MessageBox.Show("Welcome To Eco Save");
-                this.Close();
-                LoginForm log = new LoginForm();
-                log.Show();
-            }
+                    if (Budget >= 1 && Budget <= 999999999)
+                    {
+                        var person = _db.Person_Tables.FirstOrDefault(x => x.UserID == _user.ID);
+                        {
 
+                            person.Budget_for_Utilities = Budget;
+                            person.Income = income;
+                        };
+
+                        _db.SaveChanges();
+                        MessageBox.Show("Welcome To Eco Save");
+                        this.Close();
+                        LoginForm log = new LoginForm();
+                        log.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please To Enter a Numeric Value");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Please To Enter a Numeric Value");
+                }
+            }
+          
             catch (Exception)
             {
 

@@ -35,7 +35,6 @@
             this.NameLbl = new System.Windows.Forms.Label();
             this.EditProfileBtn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.DeviceData = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.DeviceCount = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,7 +42,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.Roomsdata = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.NumberRooms = new System.Windows.Forms.Label();
             this.lbname = new System.Windows.Forms.Label();
@@ -120,7 +118,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel1.Controls.Add(this.DeviceData);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.DeviceCount);
             this.panel1.Location = new System.Drawing.Point(1146, 181);
@@ -128,16 +125,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(335, 172);
             this.panel1.TabIndex = 24;
-            // 
-            // DeviceData
-            // 
-            this.DeviceData.Location = new System.Drawing.Point(171, 147);
-            this.DeviceData.Name = "DeviceData";
-            this.DeviceData.Size = new System.Drawing.Size(163, 24);
-            this.DeviceData.TabIndex = 40;
-            this.DeviceData.Text = "Enter Device Data";
-            this.DeviceData.UseVisualStyleBackColor = true;
-            this.DeviceData.Click += new System.EventHandler(this.DeviceData_Click);
             // 
             // pictureBox1
             // 
@@ -213,7 +200,6 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.SteelBlue;
-            this.panel2.Controls.Add(this.Roomsdata);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.NumberRooms);
             this.panel2.Location = new System.Drawing.Point(1146, 429);
@@ -221,16 +207,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(335, 172);
             this.panel2.TabIndex = 40;
-            // 
-            // Roomsdata
-            // 
-            this.Roomsdata.Location = new System.Drawing.Point(194, 145);
-            this.Roomsdata.Name = "Roomsdata";
-            this.Roomsdata.Size = new System.Drawing.Size(141, 24);
-            this.Roomsdata.TabIndex = 41;
-            this.Roomsdata.Text = "Enter Room Data";
-            this.Roomsdata.UseVisualStyleBackColor = true;
-            this.Roomsdata.Click += new System.EventHandler(this.Roomsdata_Click);
             // 
             // pictureBox3
             // 
@@ -334,7 +310,5 @@
         private System.Windows.Forms.Label NumberRooms;
         private System.Windows.Forms.Label lbname;
         private System.Windows.Forms.Label name;
-        private System.Windows.Forms.Button DeviceData;
-        private System.Windows.Forms.Button Roomsdata;
     }
 }

@@ -32,7 +32,7 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("Lightbulb"))
             {
-
+              
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var Lightbulb = new Lightbulb(_user);
@@ -46,7 +46,7 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("Solargenerator"))
             {
-
+              
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var Solargenerator = new Solargenerator(_user);
@@ -61,7 +61,7 @@ namespace Ecosave
 
             if (!Utils.FormIsOpen("Powerbank"))
             {
-
+                
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var Powerbank = new Powerbank(_user);
@@ -76,7 +76,7 @@ namespace Ecosave
 
             if (!Utils.FormIsOpen("Smarthubdevices"))
             {
-
+          
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var Smarthubdevices = new Smarthubdevices(_user);
@@ -90,7 +90,7 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("Lightbulb"))
             {
-
+                
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var Lightbulb = new Lightbulb(_user);
@@ -104,7 +104,7 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("Solargenerator"))
             {
-
+           
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var Solargenerator = new Solargenerator(_user);
@@ -118,7 +118,7 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("Powerbank"))
             {
-
+             
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var Powerbank = new Powerbank(_user);
@@ -132,7 +132,7 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("Smarthubdevices"))
             {
-
+                
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var Smarthubdevices = new Smarthubdevices(_user);
@@ -146,7 +146,7 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("Bioluz_LED_Light_Bulbs"))
             {
-
+             
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var Bioluz_LED_Light_Bulbs = new Bioluz_LED_Light_Bulbs(_user);
@@ -160,7 +160,7 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("Ecosmart_8_Pack_LED_Light_bulb"))
             {
-
+               
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var Ecosmart_8_Pack_LED_Light_bulb = new Ecosmart_8_Pack_LED_Light_bulb(_user);
@@ -170,18 +170,12 @@ namespace Ecosave
             }
         }
 
-        
-
-        private void Store_Page_Load(object sender, EventArgs e)
-        {
-          
-        }
 
         private void cartToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("Checkout"))
             {
-
+               
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var Checkout = new Checkout(_user);

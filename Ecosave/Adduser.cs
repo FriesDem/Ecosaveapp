@@ -74,10 +74,8 @@ namespace Ecosave
 
                 MessageBox.Show("New User Added Succesfully");
                 _manageUsers.PopulateGrid();
-                
                 Creating_profile_1 create = new Creating_profile_1(user);
-                create.MdiParent = this;
-                this.Close();
+                create.MdiParent = this.MdiParent;
                 create.Show();
                 
             }

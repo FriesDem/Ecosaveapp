@@ -53,7 +53,7 @@ namespace Ecosave
             var user = _db.Items.FirstOrDefault(x => x.UserID == _user.ID);
             if (user == null)
             {
-                MessageBox.Show("Invalid User");
+                MessageBox.Show("Go To The Shop And Buy Stuff For Them To BE Added To Your Cart");
                 return;
             }
            
@@ -74,35 +74,45 @@ namespace Ecosave
         {
             var person = _db.Person_Tables.FirstOrDefault(x => x.UserID == _user.ID);
             {
-               
-                if (person == null)
+                try
                 {
-                    MessageBox.Show("Invalid User");
-                    return;
+
+                    if (person == null)
+                    {
+                        MessageBox.Show("Please Validate Who You Are");
+                        return;
+                    }
+                    if (person != null)
+                    {
+                        if (Cnum.Text != "")
+                        {
+
+                            person.CardNumber = Cnum.Text;
+
+                            _db.SaveChanges();
+                        }
+                        if (Cexp.Text != "")
+                        {
+                            person.CardExperation = Cexp.Text;
+
+                            _db.SaveChanges();
+                        }
+                        if (Ccvv.Text != "")
+
+                            person.CardCvv = Ccvv.Text;
+
+                        _db.SaveChanges();
+                    }
                 }
-                if (person != null)
+
+
+                catch (Exception)
                 {
-                    if (Cnum.Text != "")
-                    {
-                        
-                        person.CardNumber = Cnum.Text;
-                       
-                        _db.SaveChanges();
-                    }
-                    if (Cexp.Text != "")
-                    {
-                        person.CardExperation = Cexp.Text;
-                  
-                        _db.SaveChanges();
-                    }
-                    if (Ccvv.Text != "")
-                    
-                        person.CardCvv = Ccvv.Text;
-                   
-                        _db.SaveChanges();
-                    }
+
+                    MessageBox.Show("Unfortunate Error");
                 }
             }
+        }
         public void PopulateGrid()
         {
 
@@ -129,59 +139,104 @@ namespace Ecosave
 
         private void deleteorder_Click(object sender, EventArgs e)
         {
-            var ID = (int)Store.SelectedRows[0].Cells["ID"].Value;
-
-            //query Database 
-
-            var delete = _db.Items.FirstOrDefault(Queryable => Queryable.ID == ID);
+            try
             {
-                delete.IsActive = false;
-            }
+                var ID = (int)Store.SelectedRows[0].Cells["ID"].Value;
 
-            _db.SaveChanges();
+                //query Database 
+
+                var delete = _db.Items.FirstOrDefault(Queryable => Queryable.ID == ID);
+                {
+                    _db.Items.Remove(delete);
+                }
+
+                _db.SaveChanges();
+                PopulateGrid();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Select Row To Edit");
+            }
+           
+
         }
 
         private void Amountslect_ValueChanged(object sender, EventArgs e)
         {
-            var ID = (int)Store.SelectedRows[0].Cells["ID"].Value;
-
-          var item = _db.Items.FirstOrDefault(Queryable => Queryable.ID == ID);
+            try
             {
-                var itemamount = Amountselect.Value.ToString();
-                item.Amount = int.Parse(itemamount);
+                var ID = (int)Store.SelectedRows[0].Cells["ID"].Value;
+
+                var item = _db.Items.FirstOrDefault(Queryable => Queryable.ID == ID);
+                {
+                    var itemamount = Amountselect.Value.ToString();
+                    item.Amount = int.Parse(itemamount);
+                }
+
+                _db.SaveChanges();
             }
-            
-            _db.SaveChanges();
+            catch (Exception)
+            {
+                MessageBox.Show("Select Row To Edit");
+
+            }
+         
 
         }
 
         private void Checkoutbtn_Click(object sender, EventArgs e)
         {
-            var person = _db.Person_Tables.FirstOrDefault(x => x.UserID == _user.ID);
+            try
             {
+                var person = _db.Person_Tables.FirstOrDefault(x => x.UserID == _user.ID);
+                {
+                    if (person == null)
+                    {
+                        MessageBox.Show("Check To Ensure All Your Details Are Correct");
+                    }
 
-                if (person == null)
-                {
-                    MessageBox.Show("Invalid User");
-                    return;
-                }
-                if (person != null)
-                {
-                    if (person.CardNumber != "")
+                    if (person.CardNumber == null)
                     {
 
-                        MessageBox.Show("Input Card info");
+                        MessageBox.Show("Input Card Number info");
                     }
-                    if (person.CardExperation != "")
+                    if (person.CardExperation == null)
                     {
-                        MessageBox.Show("Input Card info");
+                        MessageBox.Show("Input Card Date info");
                     }
-                    if (person.CardCvv != "")
+                    if (person.CardCvv == null)
+                    {
+                        MessageBox.Show("Input Card  Ccvv info");
+                    }
 
-                        MessageBox.Show("Input Card info");
+                    if (person.CardNumber != null && person.CardExperation != null && person.CardCvv != null)
+                    {
+                        
+                        var Sum = _db.Items.Where(x => x.UserID == _user.ID && x.IsActive == true).Sum(x => x.Amount * x.Cost);
+                        MessageBox.Show("Total Amount To Be Paid Is :" + Sum);
+                        MessageBox.Show("Your Account Will BE Charged Within 3-4 Working Days");
+                        
+                        for(int i = 0; i < 100; i++)
+                        {
+                            var item = _db.Items.FirstOrDefault(x => x.UserID == _user.ID && x.IsActive == true);
+                          
+                            {
+                                item.IsActive = false;
+                            }
+                        }
+                        
+                    }
+                    _db.SaveChanges();
+                    PopulateGrid();
                 }
             }
-            MessageBox.Show("Thanks For Shopping With Us We Will Email You With Your Package Information in 2-3 Buisness Days ( Also Duely Note Transactions take 1-2 Buisness Days )");
+            catch (Exception)
+            {
+
+                MessageBox.Show("An Unforseen Error Has Occured");
+            }
+          
         }
 
         private void SubmitAmount_Click(object sender, EventArgs e)

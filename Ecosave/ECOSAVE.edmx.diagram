@@ -5,18 +5,19 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="f0dfbfe75d0342659b4c904402a61e50" Name="Diagram1">
-        <EntityTypeShape EntityType="ECOSAVEModel.Billing_Table" Width="1.5" PointX="5.75" PointY="1.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Calculator" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Devices_Table" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Houses_Table" Width="1.5" PointX="7.75" PointY="1.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Item" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Person_Table" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ECOSAVEModel.Role" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ECOSAVEModel.UserRole" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ECOSAVEModel.User" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
-        <AssociationConnector Association="ECOSAVEModel.FK_Items_Users" ManuallyRouted="false" />
-        <AssociationConnector Association="ECOSAVEModel.FK_UserRoles_Roles" ManuallyRouted="false" />
-        <AssociationConnector Association="ECOSAVEModel.FK_UserRoles_Users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Billing_Table" Width="1.5" PointX="5.75" PointY="1.625" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Calculator" Width="1.5" PointX="5.75" PointY="5.625" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Devices_Table" Width="1.5" PointX="7.75" PointY="1.625" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Houses_Table" Width="1.5" PointX="7.75" PointY="5.625" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Item" Width="1.5" PointX="3" PointY="6.125" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Person_Table" Width="1.5" PointX="7.75" PointY="8.625" />
+        <EntityTypeShape EntityType="ECOSAVEModel.Role" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ECOSAVEModel.UserRole" Width="1.5" PointX="3" PointY="2.625" />
+        <EntityTypeShape EntityType="ECOSAVEModel.User" Width="1.5" PointX="0.75" PointY="3.5" />
+        <AssociationConnector Association="ECOSAVEModel.FK_Items_Users" />
+        <AssociationConnector Association="ECOSAVEModel.FK_UserRoles_Roles" />
+        <AssociationConnector Association="ECOSAVEModel.FK_UserRoles_Users" />
+        <AssociationConnector Association="ECOSAVEModel.FK_Person_Table_Users" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
