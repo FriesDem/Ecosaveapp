@@ -38,8 +38,10 @@
             this.btnResetPassword = new System.Windows.Forms.Button();
             this.btnDeactivateUser = new System.Windows.Forms.Button();
             this.manageuser = new System.Windows.Forms.DataGridView();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.manageuser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Backbtn
@@ -47,10 +49,9 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(79, 65);
-            this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Backbtn.Location = new System.Drawing.Point(59, 53);
             this.Backbtn.Name = "Backbtn";
-            this.Backbtn.Size = new System.Drawing.Size(56, 25);
+            this.Backbtn.Size = new System.Drawing.Size(45, 20);
             this.Backbtn.TabIndex = 22;
             this.Backbtn.Text = "Back";
             // 
@@ -58,10 +59,9 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(13, 56);
-            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.BacklogoBtn.Location = new System.Drawing.Point(10, 46);
             this.BacklogoBtn.Name = "BacklogoBtn";
-            this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
+            this.BacklogoBtn.Size = new System.Drawing.Size(40, 28);
             this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BacklogoBtn.TabIndex = 21;
             this.BacklogoBtn.TabStop = false;
@@ -72,10 +72,9 @@
             this.CreateanLbl.AutoSize = true;
             this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateanLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CreateanLbl.Location = new System.Drawing.Point(716, 87);
-            this.CreateanLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CreateanLbl.Location = new System.Drawing.Point(537, 71);
             this.CreateanLbl.Name = "CreateanLbl";
-            this.CreateanLbl.Size = new System.Drawing.Size(230, 39);
+            this.CreateanLbl.Size = new System.Drawing.Size(183, 31);
             this.CreateanLbl.TabIndex = 23;
             this.CreateanLbl.Text = "Manage User ";
             // 
@@ -84,19 +83,19 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(60, 168);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(45, 136);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(656, 20);
+            this.label1.Size = new System.Drawing.Size(558, 17);
             this.label1.TabIndex = 24;
             this.label1.Text = "Please ensure to review all changes before saving, deleting ,changing a persons s" +
     "tatus";
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(105, 265);
+            this.btnRefresh.Location = new System.Drawing.Point(79, 215);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(98, 25);
+            this.btnRefresh.Size = new System.Drawing.Size(74, 20);
             this.btnRefresh.TabIndex = 25;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -104,9 +103,10 @@
             // 
             // btnAddUser
             // 
-            this.btnAddUser.Location = new System.Drawing.Point(105, 389);
+            this.btnAddUser.Location = new System.Drawing.Point(79, 316);
+            this.btnAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(98, 25);
+            this.btnAddUser.Size = new System.Drawing.Size(74, 20);
             this.btnAddUser.TabIndex = 26;
             this.btnAddUser.Text = "Add User";
             this.btnAddUser.UseVisualStyleBackColor = true;
@@ -114,9 +114,10 @@
             // 
             // btnResetPassword
             // 
-            this.btnResetPassword.Location = new System.Drawing.Point(105, 527);
+            this.btnResetPassword.Location = new System.Drawing.Point(79, 428);
+            this.btnResetPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnResetPassword.Name = "btnResetPassword";
-            this.btnResetPassword.Size = new System.Drawing.Size(154, 25);
+            this.btnResetPassword.Size = new System.Drawing.Size(116, 20);
             this.btnResetPassword.TabIndex = 27;
             this.btnResetPassword.Text = "Reset Password";
             this.btnResetPassword.UseVisualStyleBackColor = true;
@@ -124,9 +125,10 @@
             // 
             // btnDeactivateUser
             // 
-            this.btnDeactivateUser.Location = new System.Drawing.Point(105, 684);
+            this.btnDeactivateUser.Location = new System.Drawing.Point(79, 556);
+            this.btnDeactivateUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDeactivateUser.Name = "btnDeactivateUser";
-            this.btnDeactivateUser.Size = new System.Drawing.Size(259, 25);
+            this.btnDeactivateUser.Size = new System.Drawing.Size(194, 20);
             this.btnDeactivateUser.TabIndex = 28;
             this.btnDeactivateUser.Text = "Deactivate User / Activate";
             this.btnDeactivateUser.UseVisualStyleBackColor = true;
@@ -142,19 +144,32 @@
             this.manageuser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.manageuser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.manageuser.GridColor = System.Drawing.Color.SteelBlue;
-            this.manageuser.Location = new System.Drawing.Point(370, 265);
+            this.manageuser.Location = new System.Drawing.Point(278, 215);
+            this.manageuser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.manageuser.Name = "manageuser";
             this.manageuser.RowHeadersWidth = 51;
             this.manageuser.RowTemplate.Height = 24;
-            this.manageuser.Size = new System.Drawing.Size(1341, 444);
+            this.manageuser.Size = new System.Drawing.Size(1006, 361);
             this.manageuser.TabIndex = 29;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1305, -15);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(158, 139);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 88;
+            this.pictureBox2.TabStop = false;
             // 
             // manageUsers
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.ClientSize = new System.Drawing.Size(1443, 857);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.manageuser);
             this.Controls.Add(this.btnDeactivateUser);
             this.Controls.Add(this.btnResetPassword);
@@ -165,6 +180,7 @@
             this.Controls.Add(this.Backbtn);
             this.Controls.Add(this.BacklogoBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "manageUsers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "manageUserscs";
@@ -172,6 +188,7 @@
             this.Load += new System.EventHandler(this.manageUsers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.manageuser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +205,6 @@
         private System.Windows.Forms.Button btnResetPassword;
         private System.Windows.Forms.Button btnDeactivateUser;
         private System.Windows.Forms.DataGridView manageuser;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

@@ -41,6 +41,7 @@
             this.LightBulbs1 = new System.Windows.Forms.Label();
             this.BacklogoBtn = new System.Windows.Forms.PictureBox();
             this.Backbtn = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -48,6 +49,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BuyNow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -59,9 +61,10 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.LightBulbs1);
-            this.panel1.Location = new System.Drawing.Point(364, 37);
+            this.panel1.Location = new System.Drawing.Point(207, 140);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1338, 687);
+            this.panel1.Size = new System.Drawing.Size(1004, 558);
             this.panel1.TabIndex = 46;
             // 
             // label3
@@ -69,19 +72,19 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1195, 564);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(896, 458);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 25);
+            this.label3.Size = new System.Drawing.Size(36, 20);
             this.label3.TabIndex = 85;
             this.label3.Text = "$30";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(594, 681);
+            this.pictureBox1.Size = new System.Drawing.Size(446, 553);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 84;
             this.pictureBox1.TabStop = false;
@@ -91,28 +94,29 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(682, 302);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(512, 245);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(529, 160);
+            this.label2.Size = new System.Drawing.Size(446, 136);
             this.label2.TabIndex = 83;
             this.label2.Text = resources.GetString("label2.Text");
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.AddToCart);
-            this.panel3.Location = new System.Drawing.Point(1025, 610);
+            this.panel3.Location = new System.Drawing.Point(769, 496);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(107, 39);
+            this.panel3.Size = new System.Drawing.Size(80, 32);
             this.panel3.TabIndex = 82;
             // 
             // AddToCart
             // 
             this.AddToCart.Image = ((System.Drawing.Image)(resources.GetObject("AddToCart.Image")));
             this.AddToCart.Location = new System.Drawing.Point(0, 0);
+            this.AddToCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddToCart.Name = "AddToCart";
-            this.AddToCart.Size = new System.Drawing.Size(107, 38);
-            this.AddToCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.AddToCart.Size = new System.Drawing.Size(80, 31);
+            this.AddToCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.AddToCart.TabIndex = 0;
             this.AddToCart.TabStop = false;
             this.AddToCart.Click += new System.EventHandler(this.AddToCart_Click);
@@ -120,17 +124,19 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.BuyNow);
-            this.panel2.Location = new System.Drawing.Point(1160, 610);
+            this.panel2.Location = new System.Drawing.Point(870, 496);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(126, 39);
+            this.panel2.Size = new System.Drawing.Size(94, 32);
             this.panel2.TabIndex = 81;
             // 
             // BuyNow
             // 
             this.BuyNow.Image = ((System.Drawing.Image)(resources.GetObject("BuyNow.Image")));
             this.BuyNow.Location = new System.Drawing.Point(0, -2);
+            this.BuyNow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BuyNow.Name = "BuyNow";
-            this.BuyNow.Size = new System.Drawing.Size(126, 41);
+            this.BuyNow.Size = new System.Drawing.Size(94, 33);
             this.BuyNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BuyNow.TabIndex = 1;
             this.BuyNow.TabStop = false;
@@ -141,10 +147,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(754, 38);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(566, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(337, 50);
+            this.label1.Size = new System.Drawing.Size(275, 40);
             this.label1.TabIndex = 80;
             this.label1.Text = "Ecosmart 8 Pack LED A19 Light bulb,\r\n 60w Equivalent (A19 Daylight)";
             // 
@@ -153,10 +158,9 @@
             this.LightBulbs1.AutoSize = true;
             this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LightBulbs1.Location = new System.Drawing.Point(693, 164);
-            this.LightBulbs1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LightBulbs1.Location = new System.Drawing.Point(520, 133);
             this.LightBulbs1.Name = "LightBulbs1";
-            this.LightBulbs1.Size = new System.Drawing.Size(490, 100);
+            this.LightBulbs1.Size = new System.Drawing.Size(413, 85);
             this.LightBulbs1.TabIndex = 79;
             this.LightBulbs1.Text = "Special Feature\tShatter resistant, Instant On, Not Dimmable, A19\r\nLight Type\tInca" +
     "ndescent, LED\r\nIndoor/Outdoor Usage\tIndoor\r\nWattage\t9.5 watts\r\nLight Color\tDayli" +
@@ -166,10 +170,9 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(3, 13);
-            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.BacklogoBtn.Location = new System.Drawing.Point(2, 11);
             this.BacklogoBtn.Name = "BacklogoBtn";
-            this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
+            this.BacklogoBtn.Size = new System.Drawing.Size(40, 28);
             this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BacklogoBtn.TabIndex = 48;
             this.BacklogoBtn.TabStop = false;
@@ -180,23 +183,35 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(59, 21);
-            this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Backbtn.Location = new System.Drawing.Point(44, 17);
             this.Backbtn.Name = "Backbtn";
-            this.Backbtn.Size = new System.Drawing.Size(56, 25);
+            this.Backbtn.Size = new System.Drawing.Size(45, 20);
             this.Backbtn.TabIndex = 47;
             this.Backbtn.Text = "Back";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1304, -23);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(158, 139);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 49;
+            this.pictureBox2.TabStop = false;
+            // 
             // Ecosmart_8_Pack_LED_Light_bulb
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1906, 1055);
+            this.ClientSize = new System.Drawing.Size(1430, 857);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BacklogoBtn);
             this.Controls.Add(this.Backbtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Ecosmart_8_Pack_LED_Light_bulb";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ecosmart_8_Pack_LED_Light_bulb";
@@ -209,6 +224,7 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BuyNow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,5 +244,6 @@
         private System.Windows.Forms.Label Backbtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

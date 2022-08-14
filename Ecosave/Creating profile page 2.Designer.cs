@@ -39,17 +39,18 @@
             this.IncomeTB = new System.Windows.Forms.TextBox();
             this.BudgetTB = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // BacklogoBtn
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(16, 30);
-            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.BacklogoBtn.Location = new System.Drawing.Point(12, 24);
             this.BacklogoBtn.Name = "BacklogoBtn";
-            this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
+            this.BacklogoBtn.Size = new System.Drawing.Size(40, 28);
             this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BacklogoBtn.TabIndex = 17;
             this.BacklogoBtn.TabStop = false;
@@ -60,10 +61,9 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(77, 39);
-            this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Backbtn.Location = new System.Drawing.Point(58, 32);
             this.Backbtn.Name = "Backbtn";
-            this.Backbtn.Size = new System.Drawing.Size(56, 25);
+            this.Backbtn.Size = new System.Drawing.Size(45, 20);
             this.Backbtn.TabIndex = 16;
             this.Backbtn.Text = "Back";
             // 
@@ -72,10 +72,9 @@
             this.CreateanLbl.AutoSize = true;
             this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateanLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CreateanLbl.Location = new System.Drawing.Point(185, 30);
-            this.CreateanLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CreateanLbl.Location = new System.Drawing.Point(139, 24);
             this.CreateanLbl.Name = "CreateanLbl";
-            this.CreateanLbl.Size = new System.Drawing.Size(170, 39);
+            this.CreateanLbl.Size = new System.Drawing.Size(136, 31);
             this.CreateanLbl.TabIndex = 28;
             this.CreateanLbl.Text = "Setting up";
             // 
@@ -84,20 +83,18 @@
             this.AccountLbl.AutoSize = true;
             this.AccountLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AccountLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AccountLbl.Location = new System.Drawing.Point(363, 30);
-            this.AccountLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AccountLbl.Location = new System.Drawing.Point(272, 24);
             this.AccountLbl.Name = "AccountLbl";
-            this.AccountLbl.Size = new System.Drawing.Size(216, 39);
+            this.AccountLbl.Size = new System.Drawing.Size(174, 31);
             this.AccountLbl.TabIndex = 40;
             this.AccountLbl.Text = "Your account";
             // 
             // SUYASubBtn
             // 
             this.SUYASubBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SUYASubBtn.Location = new System.Drawing.Point(709, 668);
-            this.SUYASubBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.SUYASubBtn.Location = new System.Drawing.Point(532, 543);
             this.SUYASubBtn.Name = "SUYASubBtn";
-            this.SUYASubBtn.Size = new System.Drawing.Size(136, 30);
+            this.SUYASubBtn.Size = new System.Drawing.Size(102, 24);
             this.SUYASubBtn.TabIndex = 45;
             this.SUYASubBtn.Text = "Submit";
             this.SUYASubBtn.UseVisualStyleBackColor = true;
@@ -108,10 +105,9 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(799, 285);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(599, 232);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 20);
+            this.label3.Size = new System.Drawing.Size(53, 17);
             this.label3.TabIndex = 65;
             this.label3.Text = "Income";
             // 
@@ -120,10 +116,9 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(168, 282);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(126, 229);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 20);
+            this.label4.Size = new System.Drawing.Size(127, 17);
             this.label4.TabIndex = 64;
             this.label4.Text = "Budget For Utilities";
             // 
@@ -131,20 +126,18 @@
             // 
             this.IncomeTB.BackColor = System.Drawing.Color.SteelBlue;
             this.IncomeTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.IncomeTB.Location = new System.Drawing.Point(916, 283);
-            this.IncomeTB.Margin = new System.Windows.Forms.Padding(4);
+            this.IncomeTB.Location = new System.Drawing.Point(687, 230);
             this.IncomeTB.Name = "IncomeTB";
-            this.IncomeTB.Size = new System.Drawing.Size(222, 22);
+            this.IncomeTB.Size = new System.Drawing.Size(167, 20);
             this.IncomeTB.TabIndex = 63;
             // 
             // BudgetTB
             // 
             this.BudgetTB.BackColor = System.Drawing.Color.SteelBlue;
             this.BudgetTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BudgetTB.Location = new System.Drawing.Point(392, 283);
-            this.BudgetTB.Margin = new System.Windows.Forms.Padding(4);
+            this.BudgetTB.Location = new System.Drawing.Point(294, 230);
             this.BudgetTB.Name = "BudgetTB";
-            this.BudgetTB.Size = new System.Drawing.Size(195, 22);
+            this.BudgetTB.Size = new System.Drawing.Size(147, 20);
             this.BudgetTB.TabIndex = 62;
             // 
             // label6
@@ -152,19 +145,30 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(81, 151);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(61, 123);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(424, 20);
+            this.label6.Size = new System.Drawing.Size(360, 17);
             this.label6.TabIndex = 68;
             this.label6.Text = "These information are collected to better define your bill";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(966, -19);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(158, 139);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 69;
+            this.pictureBox2.TabStop = false;
+            // 
             // Creating_profile_page_2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1469, 741);
+            this.ClientSize = new System.Drawing.Size(1102, 602);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -176,11 +180,11 @@
             this.Controls.Add(this.BacklogoBtn);
             this.Controls.Add(this.Backbtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Creating_profile_page_2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Creating_profile_page_2";
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -198,5 +202,6 @@
         private System.Windows.Forms.TextBox IncomeTB;
         private System.Windows.Forms.TextBox BudgetTB;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

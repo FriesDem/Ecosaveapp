@@ -42,18 +42,20 @@
             this.txtHoursUsed = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.lblWeeklyCostDisplay = new System.Windows.Forms.Label();
-            this.clearBtn = new System.Windows.Forms.Button();
-            this.calculateBtn = new System.Windows.Forms.Button();
             this.lblDailyCostDisplay = new System.Windows.Forms.Label();
             this.lblYearlyCostDisplay = new System.Windows.Forms.Label();
             this.lblMonthlyCostDisplay = new System.Windows.Forms.Label();
             this.txtPowerOutput = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.numberOfDevices = new System.Windows.Forms.NumericUpDown();
+            this.clearBtn = new System.Windows.Forms.Button();
+            this.calculateBtn = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.tblCalculator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numberOfDevices)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -205,26 +207,6 @@
             this.lblWeeklyCostDisplay.Size = new System.Drawing.Size(263, 32);
             this.lblWeeklyCostDisplay.TabIndex = 0;
             // 
-            // clearBtn
-            // 
-            this.clearBtn.Location = new System.Drawing.Point(730, 469);
-            this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(85, 29);
-            this.clearBtn.TabIndex = 3;
-            this.clearBtn.Text = "Clear";
-            this.clearBtn.UseVisualStyleBackColor = true;
-            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
-            // 
-            // calculateBtn
-            // 
-            this.calculateBtn.Location = new System.Drawing.Point(630, 469);
-            this.calculateBtn.Name = "calculateBtn";
-            this.calculateBtn.Size = new System.Drawing.Size(74, 29);
-            this.calculateBtn.TabIndex = 3;
-            this.calculateBtn.Text = "Calculate";
-            this.calculateBtn.UseVisualStyleBackColor = true;
-            this.calculateBtn.Click += new System.EventHandler(this.calculateBtn_Click);
-            // 
             // lblDailyCostDisplay
             // 
             this.lblDailyCostDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -272,12 +254,44 @@
             this.numberOfDevices.Size = new System.Drawing.Size(120, 20);
             this.numberOfDevices.TabIndex = 4;
             // 
+            // clearBtn
+            // 
+            this.clearBtn.Location = new System.Drawing.Point(730, 469);
+            this.clearBtn.Name = "clearBtn";
+            this.clearBtn.Size = new System.Drawing.Size(85, 29);
+            this.clearBtn.TabIndex = 3;
+            this.clearBtn.Text = "Clear";
+            this.clearBtn.UseVisualStyleBackColor = true;
+            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
+            // 
+            // calculateBtn
+            // 
+            this.calculateBtn.Location = new System.Drawing.Point(630, 469);
+            this.calculateBtn.Name = "calculateBtn";
+            this.calculateBtn.Size = new System.Drawing.Size(74, 29);
+            this.calculateBtn.TabIndex = 3;
+            this.calculateBtn.Text = "Calculate";
+            this.calculateBtn.UseVisualStyleBackColor = true;
+            this.calculateBtn.Click += new System.EventHandler(this.calculateBtn_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(918, -34);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(158, 139);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 89;
+            this.pictureBox2.TabStop = false;
+            // 
             // Calculator_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1040, 640);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.tblCalculator);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
@@ -296,6 +310,7 @@
             this.tblCalculator.ResumeLayout(false);
             this.tblCalculator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numberOfDevices)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,5 +339,6 @@
         private System.Windows.Forms.Button clearBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numberOfDevices;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

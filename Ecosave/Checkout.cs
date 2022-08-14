@@ -244,6 +244,16 @@ namespace Ecosave
             _db.SaveChanges();
             PopulateGrid();
         }
+
+        private void BacklogoBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Backbtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
     }
 
