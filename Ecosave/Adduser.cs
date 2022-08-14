@@ -36,14 +36,8 @@ namespace Ecosave
             cbroles.DisplayMember = "name";
         }
 
-        private void btncancel_Click(object sender, EventArgs e)
-        {
-            tbusername.Text = "";
-            tbemail.Text = "";
-            cbroles.SelectedValue = 0;
-        }
-
-        private void btnSubmit_Click(object sender, EventArgs e)
+        
+        private void btnSubmit_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -77,13 +71,19 @@ namespace Ecosave
                 Creating_profile_1 create = new Creating_profile_1(user);
                 create.MdiParent = this.MdiParent;
                 create.Show();
-                
+
             }
             catch (Exception)
             {
                 MessageBox.Show("An error has occured");
             }
+        }
 
+        private void btncancel_Click(object sender, EventArgs e)
+        {
+            tbusername.Text = "";
+            tbemail.Text = "";
+            cbroles.SelectedValue = 0;
         }
     }
 }

@@ -34,9 +34,8 @@ namespace Ecosave
             this.Hide();
         }
 
-        private void btnsubmit_Click(object sender, EventArgs e)
+        private void btnsubmit_Click_1(object sender, EventArgs e)
         {
-
             try
             {
                 var tpassword = tbpassword.Text;
@@ -92,12 +91,11 @@ namespace Ecosave
             {
                 MessageBox.Show("An error has occured");
             }
-
         }
 
-        private void reveal_Click(object sender, EventArgs e)
+        private void reveal_Click_1(object sender, EventArgs e)
         {
-            if (tbpassword.PasswordChar == '*') 
+            if (tbpassword.PasswordChar == '*')
             {
                 tbpassword.PasswordChar = '\0';
             }
@@ -107,9 +105,9 @@ namespace Ecosave
             }
         }
 
-        private void reveal2_Click(object sender, EventArgs e)
+        private void reveal2_Click_1(object sender, EventArgs e)
         {
-            if  (tbconfirmpassword.PasswordChar == '*')
+            if (tbconfirmpassword.PasswordChar == '*')
             {
                 tbconfirmpassword.PasswordChar = '\0';
             }

@@ -37,16 +37,7 @@ namespace Ecosave
             this.Close();
         }
 
-        private void EditProfileBtn_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("EditProfile"))
-            {
-                var EditProfile = new EditProfile(_user);
-                EditProfile.MdiParent = this.MdiParent;
-                EditProfile.Show();
-
-            }
-        }
+        
 
         private void ProfilePage_Load(object sender, EventArgs e)
         {
@@ -66,26 +57,13 @@ namespace Ecosave
             }
         }
 
-        private void DeviceData_Click(object sender, EventArgs e)
+        private void EditProfileBtn_Click(object sender, EventArgs e)
         {
-            
-            if (!Utils.FormIsOpen("DeviceData"))
+            if (!Utils.FormIsOpen("EditProfile"))
             {
-                var DeviceData = new DeviceData();
-                DeviceData.MdiParent = this.MdiParent;
-                DeviceData.Show();
-
-            }
-        }
-
-        private void Roomsdata_Click(object sender, EventArgs e)
-        {
-           
-            if (!Utils.FormIsOpen("RoomsData"))
-            {
-                var RoomsData = new RoomsData();
-                RoomsData.MdiParent = this.MdiParent;
-                RoomsData.Show();
+                var EditProfile = new EditProfile(_user);
+                EditProfile.MdiParent = this.MdiParent;
+                EditProfile.Show();
 
             }
         }

@@ -27,22 +27,7 @@ namespace Ecosave
             this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("New Products On The Way Stay Tuned");
-        }
-
-        private void SolarGen5_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("New Products On The Way Stay Tuned");
-        }
-
-        private void SolarGen6_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("New Products On The Way Stay Tuned");
-        }
-
-        private void SolarGen1_Click(object sender, EventArgs e)
+        private void smh1_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("Emporia_Smart_Home_Energy_Monitor"))
             {
@@ -56,35 +41,7 @@ namespace Ecosave
             }
         }
 
-        private void SolarGen2_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("Sense_Energy_Monitor_with_Solar"))
-            {
-
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var Sense_Energy_Monitor_with_Solar = new Sense_Energy_Monitor_with_Solar(_user);
-                Sense_Energy_Monitor_with_Solar.MdiParent = this.MdiParent;
-                Sense_Energy_Monitor_with_Solar.Show();
-
-            }
-        }
-
-        private void SolarGen3_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("Efergy_Elite_Max_Display_Kit"))
-            {
-
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var Efergy_Elite_Max_Display_Kit = new Efergy_Elite_Max_Display_Kit(_user);
-                Efergy_Elite_Max_Display_Kit.MdiParent = this.MdiParent;
-                Efergy_Elite_Max_Display_Kit.Show();
-
-            }
-        }
-
-        private void smh1_Click(object sender, EventArgs e)
+        private void Smarthub1_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("Emporia_Smart_Home_Energy_Monitor"))
             {
@@ -112,7 +69,35 @@ namespace Ecosave
             }
         }
 
+        private void Smarthub2_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Sense_Energy_Monitor_with_Solar"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Sense_Energy_Monitor_with_Solar = new Sense_Energy_Monitor_with_Solar(_user);
+                Sense_Energy_Monitor_with_Solar.MdiParent = this.MdiParent;
+                Sense_Energy_Monitor_with_Solar.Show();
+
+            }
+        }
+
         private void smh3_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Efergy_Elite_Max_Display_Kit"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Efergy_Elite_Max_Display_Kit = new Efergy_Elite_Max_Display_Kit(_user);
+                Efergy_Elite_Max_Display_Kit.MdiParent = this.MdiParent;
+                Efergy_Elite_Max_Display_Kit.Show();
+
+            }
+        }
+
+        private void SolarGen3_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("Efergy_Elite_Max_Display_Kit"))
             {
@@ -131,12 +116,27 @@ namespace Ecosave
             MessageBox.Show("New Products On The Way Stay Tuned");
         }
 
+        private void Smarthub4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
+
         private void cms2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("New Products On The Way Stay Tuned");
         }
 
+        private void Smarthub5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
+
         private void cms3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
+
+        private void Smarthub6_Click(object sender, EventArgs e)
         {
             MessageBox.Show("New Products On The Way Stay Tuned");
         }

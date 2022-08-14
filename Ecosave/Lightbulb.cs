@@ -27,7 +27,7 @@ namespace Ecosave
             this.Close();
         }
 
-        private void LightBulbs1_Click(object sender, EventArgs e)
+        private void bulb1_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("Bioluz_LED_Light_Bulbs"))
             {
@@ -41,59 +41,7 @@ namespace Ecosave
             }
         }
 
-        private void LightBulbs2_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("Ecosmart_8_Pack_LED_Light_bulb"))
-            {
-
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var Ecosmart_8_Pack_LED_Light_bulb = new Ecosmart_8_Pack_LED_Light_bulb(_user);
-                Ecosmart_8_Pack_LED_Light_bulb.MdiParent = this.MdiParent;
-                Ecosmart_8_Pack_LED_Light_bulb.Show();
-
-            }
-        }
-
-        private void LightBulbs3_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("Sylvania_13W_CFL_T2_Spiral_Light_Bulb"))
-            {
-
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var Sylvania_13W_CFL_T2_Spiral_Light_Bulb = new Sylvania_13W_CFL_T2_Spiral_Light_Bulb(_user);
-                Sylvania_13W_CFL_T2_Spiral_Light_Bulb.MdiParent = this.MdiParent;
-                Sylvania_13W_CFL_T2_Spiral_Light_Bulb.Show();
-
-            }
-        }
-
-        private void LightBulbs4_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("SYLVANIA_ECO_LED_A19_Light_Bulb"))
-            {
-
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var SYLVANIA_ECO_LED_A19_Light_Bulb = new SYLVANIA_ECO_LED_A19_Light_Bulb(_user);
-                SYLVANIA_ECO_LED_A19_Light_Bulb.MdiParent = this.MdiParent;
-                SYLVANIA_ECO_LED_A19_Light_Bulb.Show();
-
-            }
-        }
-
-        private void LightBulbs5_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("New Products On The Way Stay Tuned");
-        }
-
-        private void LightBulbs6_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("New Products On The Way Stay Tuned");
-        }
-
-        private void bulb1_Click(object sender, EventArgs e)
+        private void LightBulbs1_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("Bioluz_LED_Light_Bulbs"))
             {
@@ -121,7 +69,35 @@ namespace Ecosave
             }
         }
 
+        private void LightBulbs2_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Ecosmart_8_Pack_LED_Light_bulb"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Ecosmart_8_Pack_LED_Light_bulb = new Ecosmart_8_Pack_LED_Light_bulb(_user);
+                Ecosmart_8_Pack_LED_Light_bulb.MdiParent = this.MdiParent;
+                Ecosmart_8_Pack_LED_Light_bulb.Show();
+
+            }
+        }
+
         private void bulb3_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Sylvania_13W_CFL_T2_Spiral_Light_Bulb"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Sylvania_13W_CFL_T2_Spiral_Light_Bulb = new Sylvania_13W_CFL_T2_Spiral_Light_Bulb(_user);
+                Sylvania_13W_CFL_T2_Spiral_Light_Bulb.MdiParent = this.MdiParent;
+                Sylvania_13W_CFL_T2_Spiral_Light_Bulb.Show();
+
+            }
+        }
+
+        private void LightBulbs3_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("Sylvania_13W_CFL_T2_Spiral_Light_Bulb"))
             {
@@ -149,7 +125,26 @@ namespace Ecosave
             }
         }
 
+        private void LightBulbs4_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("SYLVANIA_ECO_LED_A19_Light_Bulb"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var SYLVANIA_ECO_LED_A19_Light_Bulb = new SYLVANIA_ECO_LED_A19_Light_Bulb(_user);
+                SYLVANIA_ECO_LED_A19_Light_Bulb.MdiParent = this.MdiParent;
+                SYLVANIA_ECO_LED_A19_Light_Bulb.Show();
+
+            }
+        }
+
         private void cms6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
+
+        private void LightBulbs5_Click(object sender, EventArgs e)
         {
             MessageBox.Show("New Products On The Way Stay Tuned");
         }
@@ -158,5 +153,11 @@ namespace Ecosave
         {
             MessageBox.Show("New Products On The Way Stay Tuned");
         }
-    }
+
+        private void LightBulbs6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+
+        }
+    } 
 }

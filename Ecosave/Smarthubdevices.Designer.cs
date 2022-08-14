@@ -32,11 +32,10 @@
             this.BacklogoBtn = new System.Windows.Forms.PictureBox();
             this.Backbtn = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Smarthub4 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.SolarGen6 = new System.Windows.Forms.Label();
-            this.SolarGen5 = new System.Windows.Forms.Label();
+            this.Smarthub6 = new System.Windows.Forms.Label();
+            this.Smarthub5 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.cms1 = new System.Windows.Forms.PictureBox();
@@ -47,8 +46,8 @@
             this.cms2 = new System.Windows.Forms.PictureBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.SolarGen3 = new System.Windows.Forms.Label();
-            this.SolarGen2 = new System.Windows.Forms.Label();
-            this.SolarGen1 = new System.Windows.Forms.Label();
+            this.Smarthub2 = new System.Windows.Forms.Label();
+            this.Smarthub1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.smh1 = new System.Windows.Forms.PictureBox();
@@ -59,10 +58,10 @@
             this.smh2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.NameLbl = new System.Windows.Forms.Label();
+            this.Smarthub3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cms1)).BeginInit();
@@ -79,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.smh3)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.smh2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Smarthub3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -86,9 +86,10 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(3, 11);
+            this.BacklogoBtn.Location = new System.Drawing.Point(4, 14);
+            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BacklogoBtn.Name = "BacklogoBtn";
-            this.BacklogoBtn.Size = new System.Drawing.Size(40, 28);
+            this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
             this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BacklogoBtn.TabIndex = 48;
             this.BacklogoBtn.TabStop = false;
@@ -99,179 +100,181 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(49, 18);
+            this.Backbtn.Location = new System.Drawing.Point(65, 22);
+            this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Backbtn.Name = "Backbtn";
-            this.Backbtn.Size = new System.Drawing.Size(45, 20);
+            this.Backbtn.Size = new System.Drawing.Size(56, 25);
             this.Backbtn.TabIndex = 49;
             this.Backbtn.Text = "Back";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.Smarthub4);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.SolarGen6);
-            this.panel1.Controls.Add(this.SolarGen5);
+            this.panel1.Controls.Add(this.Smarthub6);
+            this.panel1.Controls.Add(this.Smarthub5);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel8);
             this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.panel13);
             this.panel1.Controls.Add(this.SolarGen3);
-            this.panel1.Controls.Add(this.SolarGen2);
-            this.panel1.Controls.Add(this.SolarGen1);
+            this.panel1.Controls.Add(this.Smarthub2);
+            this.panel1.Controls.Add(this.Smarthub1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.NameLbl);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(210, 9);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Controls.Add(this.Smarthub3);
+            this.panel1.Location = new System.Drawing.Point(280, 11);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(983, 763);
+            this.panel1.Size = new System.Drawing.Size(1311, 939);
             this.panel1.TabIndex = 77;
             // 
-            // pictureBox1
+            // Smarthub4
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(3, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(977, 748);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(144, 665);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 20);
-            this.label1.TabIndex = 106;
-            this.label1.Text = "Coming Soon";
+            this.Smarthub4.AutoSize = true;
+            this.Smarthub4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Smarthub4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Smarthub4.Location = new System.Drawing.Point(192, 818);
+            this.Smarthub4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Smarthub4.Name = "Smarthub4";
+            this.Smarthub4.Size = new System.Drawing.Size(132, 25);
+            this.Smarthub4.TabIndex = 106;
+            this.Smarthub4.Text = "Coming Soon";
+            this.Smarthub4.Click += new System.EventHandler(this.Smarthub4_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(376, 110);
+            this.label4.Location = new System.Drawing.Point(501, 135);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(313, 25);
+            this.label4.Size = new System.Drawing.Size(404, 29);
             this.label4.TabIndex = 105;
             this.label4.Text = "Energy Saving Smart Hub Devices";
             // 
-            // SolarGen6
+            // Smarthub6
             // 
-            this.SolarGen6.AutoSize = true;
-            this.SolarGen6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SolarGen6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SolarGen6.Location = new System.Drawing.Point(741, 665);
-            this.SolarGen6.Name = "SolarGen6";
-            this.SolarGen6.Size = new System.Drawing.Size(105, 20);
-            this.SolarGen6.TabIndex = 104;
-            this.SolarGen6.Text = "Coming Soon";
+            this.Smarthub6.AutoSize = true;
+            this.Smarthub6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Smarthub6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Smarthub6.Location = new System.Drawing.Point(988, 818);
+            this.Smarthub6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Smarthub6.Name = "Smarthub6";
+            this.Smarthub6.Size = new System.Drawing.Size(132, 25);
+            this.Smarthub6.TabIndex = 104;
+            this.Smarthub6.Text = "Coming Soon";
+            this.Smarthub6.Click += new System.EventHandler(this.Smarthub6_Click);
             // 
-            // SolarGen5
+            // Smarthub5
             // 
-            this.SolarGen5.AutoSize = true;
-            this.SolarGen5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SolarGen5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SolarGen5.Location = new System.Drawing.Point(438, 665);
-            this.SolarGen5.Name = "SolarGen5";
-            this.SolarGen5.Size = new System.Drawing.Size(105, 20);
-            this.SolarGen5.TabIndex = 103;
-            this.SolarGen5.Text = "Coming Soon";
+            this.Smarthub5.AutoSize = true;
+            this.Smarthub5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Smarthub5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Smarthub5.Location = new System.Drawing.Point(584, 818);
+            this.Smarthub5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Smarthub5.Name = "Smarthub5";
+            this.Smarthub5.Size = new System.Drawing.Size(132, 25);
+            this.Smarthub5.TabIndex = 103;
+            this.Smarthub5.Text = "Coming Soon";
+            this.Smarthub5.Click += new System.EventHandler(this.Smarthub5_Click);
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.PowderBlue;
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(73, 446);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Location = new System.Drawing.Point(97, 549);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(242, 217);
+            this.panel5.Size = new System.Drawing.Size(323, 267);
             this.panel5.TabIndex = 102;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.SteelBlue;
             this.panel6.Controls.Add(this.cms1);
-            this.panel6.Location = new System.Drawing.Point(12, 14);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
+            this.panel6.Location = new System.Drawing.Point(16, 17);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(219, 190);
+            this.panel6.Size = new System.Drawing.Size(292, 234);
             this.panel6.TabIndex = 74;
             // 
             // cms1
             // 
             this.cms1.Image = ((System.Drawing.Image)(resources.GetObject("cms1.Image")));
             this.cms1.Location = new System.Drawing.Point(0, 1);
-            this.cms1.Margin = new System.Windows.Forms.Padding(2);
+            this.cms1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cms1.Name = "cms1";
-            this.cms1.Size = new System.Drawing.Size(219, 189);
+            this.cms1.Size = new System.Drawing.Size(292, 233);
             this.cms1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cms1.TabIndex = 1;
             this.cms1.TabStop = false;
+            this.cms1.Click += new System.EventHandler(this.cms1_Click);
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.PowderBlue;
             this.panel8.Controls.Add(this.panel9);
-            this.panel8.Location = new System.Drawing.Point(670, 446);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2);
+            this.panel8.Location = new System.Drawing.Point(893, 549);
+            this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(242, 217);
+            this.panel8.Size = new System.Drawing.Size(323, 267);
             this.panel8.TabIndex = 100;
             // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.SteelBlue;
             this.panel9.Controls.Add(this.cms3);
-            this.panel9.Location = new System.Drawing.Point(12, 14);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2);
+            this.panel9.Location = new System.Drawing.Point(16, 17);
+            this.panel9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(220, 190);
+            this.panel9.Size = new System.Drawing.Size(293, 234);
             this.panel9.TabIndex = 74;
             // 
             // cms3
             // 
             this.cms3.Image = ((System.Drawing.Image)(resources.GetObject("cms3.Image")));
             this.cms3.Location = new System.Drawing.Point(0, 1);
-            this.cms3.Margin = new System.Windows.Forms.Padding(2);
+            this.cms3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cms3.Name = "cms3";
-            this.cms3.Size = new System.Drawing.Size(220, 189);
+            this.cms3.Size = new System.Drawing.Size(293, 233);
             this.cms3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cms3.TabIndex = 1;
             this.cms3.TabStop = false;
+            this.cms3.Click += new System.EventHandler(this.cms3_Click);
             // 
             // panel11
             // 
             this.panel11.Controls.Add(this.cms2);
-            this.panel11.Location = new System.Drawing.Point(372, 460);
-            this.panel11.Margin = new System.Windows.Forms.Padding(2);
+            this.panel11.Location = new System.Drawing.Point(496, 566);
+            this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(244, 190);
+            this.panel11.Size = new System.Drawing.Size(325, 234);
             this.panel11.TabIndex = 101;
             // 
             // cms2
             // 
             this.cms2.Image = ((System.Drawing.Image)(resources.GetObject("cms2.Image")));
             this.cms2.Location = new System.Drawing.Point(1, 0);
-            this.cms2.Margin = new System.Windows.Forms.Padding(2);
+            this.cms2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cms2.Name = "cms2";
-            this.cms2.Size = new System.Drawing.Size(243, 189);
+            this.cms2.Size = new System.Drawing.Size(324, 233);
             this.cms2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cms2.TabIndex = 0;
             this.cms2.TabStop = false;
+            this.cms2.Click += new System.EventHandler(this.cms2_Click);
             // 
             // panel13
             // 
             this.panel13.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel13.Location = new System.Drawing.Point(360, 446);
-            this.panel13.Margin = new System.Windows.Forms.Padding(2);
+            this.panel13.Location = new System.Drawing.Point(480, 549);
+            this.panel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(269, 217);
+            this.panel13.Size = new System.Drawing.Size(359, 267);
             this.panel13.TabIndex = 99;
             // 
             // SolarGen3
@@ -279,123 +282,132 @@
             this.SolarGen3.AutoSize = true;
             this.SolarGen3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SolarGen3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SolarGen3.Location = new System.Drawing.Point(688, 388);
+            this.SolarGen3.Location = new System.Drawing.Point(917, 478);
+            this.SolarGen3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SolarGen3.Name = "SolarGen3";
-            this.SolarGen3.Size = new System.Drawing.Size(205, 20);
+            this.SolarGen3.Size = new System.Drawing.Size(257, 25);
             this.SolarGen3.TabIndex = 98;
             this.SolarGen3.Text = "Efergy Elite-Max Display Kit ";
+            this.SolarGen3.Click += new System.EventHandler(this.SolarGen3_Click);
             // 
-            // SolarGen2
+            // Smarthub2
             // 
-            this.SolarGen2.AutoSize = true;
-            this.SolarGen2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SolarGen2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SolarGen2.Location = new System.Drawing.Point(376, 388);
-            this.SolarGen2.Name = "SolarGen2";
-            this.SolarGen2.Size = new System.Drawing.Size(243, 20);
-            this.SolarGen2.TabIndex = 97;
-            this.SolarGen2.Text = "Sense Energy Monitor with Solar ";
+            this.Smarthub2.AutoSize = true;
+            this.Smarthub2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Smarthub2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Smarthub2.Location = new System.Drawing.Point(501, 478);
+            this.Smarthub2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Smarthub2.Name = "Smarthub2";
+            this.Smarthub2.Size = new System.Drawing.Size(301, 25);
+            this.Smarthub2.TabIndex = 97;
+            this.Smarthub2.Text = "Sense Energy Monitor with Solar ";
+            this.Smarthub2.Click += new System.EventHandler(this.Smarthub2_Click);
             // 
-            // SolarGen1
+            // Smarthub1
             // 
-            this.SolarGen1.AutoSize = true;
-            this.SolarGen1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SolarGen1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SolarGen1.Location = new System.Drawing.Point(71, 388);
-            this.SolarGen1.Name = "SolarGen1";
-            this.SolarGen1.Size = new System.Drawing.Size(277, 20);
-            this.SolarGen1.TabIndex = 96;
-            this.SolarGen1.Text = "Emporia Smart Home Energy Monitor ";
+            this.Smarthub1.AutoSize = true;
+            this.Smarthub1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Smarthub1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Smarthub1.Location = new System.Drawing.Point(95, 478);
+            this.Smarthub1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Smarthub1.Name = "Smarthub1";
+            this.Smarthub1.Size = new System.Drawing.Size(340, 25);
+            this.Smarthub1.TabIndex = 96;
+            this.Smarthub1.Text = "Emporia Smart Home Energy Monitor ";
+            this.Smarthub1.Click += new System.EventHandler(this.Smarthub1_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.PowderBlue;
             this.panel2.Controls.Add(this.panel7);
-            this.panel2.Location = new System.Drawing.Point(71, 169);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(95, 208);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(242, 217);
+            this.panel2.Size = new System.Drawing.Size(323, 267);
             this.panel2.TabIndex = 95;
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.SteelBlue;
             this.panel7.Controls.Add(this.smh1);
-            this.panel7.Location = new System.Drawing.Point(12, 14);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2);
+            this.panel7.Location = new System.Drawing.Point(16, 17);
+            this.panel7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(219, 190);
+            this.panel7.Size = new System.Drawing.Size(292, 234);
             this.panel7.TabIndex = 74;
             // 
             // smh1
             // 
             this.smh1.Image = ((System.Drawing.Image)(resources.GetObject("smh1.Image")));
-            this.smh1.Location = new System.Drawing.Point(-10, 0);
-            this.smh1.Margin = new System.Windows.Forms.Padding(2);
+            this.smh1.Location = new System.Drawing.Point(-13, 0);
+            this.smh1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.smh1.Name = "smh1";
-            this.smh1.Size = new System.Drawing.Size(229, 189);
+            this.smh1.Size = new System.Drawing.Size(305, 233);
             this.smh1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.smh1.TabIndex = 1;
             this.smh1.TabStop = false;
+            this.smh1.Click += new System.EventHandler(this.smh1_Click);
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.PowderBlue;
             this.panel4.Controls.Add(this.panel12);
-            this.panel4.Location = new System.Drawing.Point(668, 169);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Location = new System.Drawing.Point(891, 208);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(242, 217);
+            this.panel4.Size = new System.Drawing.Size(323, 267);
             this.panel4.TabIndex = 93;
             // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.SteelBlue;
             this.panel12.Controls.Add(this.smh3);
-            this.panel12.Location = new System.Drawing.Point(12, 14);
-            this.panel12.Margin = new System.Windows.Forms.Padding(2);
+            this.panel12.Location = new System.Drawing.Point(16, 17);
+            this.panel12.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(220, 190);
+            this.panel12.Size = new System.Drawing.Size(293, 234);
             this.panel12.TabIndex = 74;
             // 
             // smh3
             // 
             this.smh3.Image = ((System.Drawing.Image)(resources.GetObject("smh3.Image")));
             this.smh3.Location = new System.Drawing.Point(0, 1);
-            this.smh3.Margin = new System.Windows.Forms.Padding(2);
+            this.smh3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.smh3.Name = "smh3";
-            this.smh3.Size = new System.Drawing.Size(220, 189);
+            this.smh3.Size = new System.Drawing.Size(293, 233);
             this.smh3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.smh3.TabIndex = 1;
             this.smh3.TabStop = false;
+            this.smh3.Click += new System.EventHandler(this.smh3_Click);
             // 
             // panel10
             // 
             this.panel10.Controls.Add(this.smh2);
-            this.panel10.Location = new System.Drawing.Point(369, 183);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2);
+            this.panel10.Location = new System.Drawing.Point(492, 225);
+            this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(244, 190);
+            this.panel10.Size = new System.Drawing.Size(325, 234);
             this.panel10.TabIndex = 94;
             // 
             // smh2
             // 
             this.smh2.Image = ((System.Drawing.Image)(resources.GetObject("smh2.Image")));
             this.smh2.Location = new System.Drawing.Point(1, 0);
-            this.smh2.Margin = new System.Windows.Forms.Padding(2);
+            this.smh2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.smh2.Name = "smh2";
-            this.smh2.Size = new System.Drawing.Size(243, 189);
+            this.smh2.Size = new System.Drawing.Size(324, 233);
             this.smh2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.smh2.TabIndex = 0;
             this.smh2.TabStop = false;
+            this.smh2.Click += new System.EventHandler(this.smh2_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel3.Location = new System.Drawing.Point(357, 169);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
+            this.panel3.Location = new System.Drawing.Point(476, 208);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(269, 217);
+            this.panel3.Size = new System.Drawing.Size(359, 267);
             this.panel3.TabIndex = 92;
             // 
             // NameLbl
@@ -403,35 +415,48 @@
             this.NameLbl.AutoSize = true;
             this.NameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.NameLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NameLbl.Location = new System.Drawing.Point(438, 77);
+            this.NameLbl.Location = new System.Drawing.Point(584, 95);
+            this.NameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLbl.Name = "NameLbl";
-            this.NameLbl.Size = new System.Drawing.Size(183, 25);
+            this.NameLbl.Size = new System.Drawing.Size(234, 29);
             this.NameLbl.TabIndex = 91;
             this.NameLbl.Text = "Eco Save Solutions";
+            // 
+            // Smarthub3
+            // 
+            this.Smarthub3.Image = ((System.Drawing.Image)(resources.GetObject("Smarthub3.Image")));
+            this.Smarthub3.Location = new System.Drawing.Point(4, 0);
+            this.Smarthub3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Smarthub3.Name = "Smarthub3";
+            this.Smarthub3.Size = new System.Drawing.Size(1303, 921);
+            this.Smarthub3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Smarthub3.TabIndex = 0;
+            this.Smarthub3.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1267, -12);
+            this.pictureBox2.Location = new System.Drawing.Point(1689, -15);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(158, 139);
+            this.pictureBox2.Size = new System.Drawing.Size(211, 171);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 90;
             this.pictureBox2.TabStop = false;
             // 
             // Smarthubdevices
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1402, 781);
+            this.ClientSize = new System.Drawing.Size(1869, 961);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Backbtn);
             this.Controls.Add(this.BacklogoBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Smarthubdevices";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Smarthubdevices";
@@ -439,7 +464,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cms1)).EndInit();
@@ -456,6 +480,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.smh3)).EndInit();
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.smh2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Smarthub3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -467,10 +492,10 @@
         private System.Windows.Forms.PictureBox BacklogoBtn;
         private System.Windows.Forms.Label Backbtn;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Smarthub4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label SolarGen6;
-        private System.Windows.Forms.Label SolarGen5;
+        private System.Windows.Forms.Label Smarthub6;
+        private System.Windows.Forms.Label Smarthub5;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox cms1;
@@ -481,8 +506,8 @@
         private System.Windows.Forms.PictureBox cms2;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label SolarGen3;
-        private System.Windows.Forms.Label SolarGen2;
-        private System.Windows.Forms.Label SolarGen1;
+        private System.Windows.Forms.Label Smarthub2;
+        private System.Windows.Forms.Label Smarthub1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox smh1;
@@ -493,7 +518,7 @@
         private System.Windows.Forms.PictureBox smh2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label NameLbl;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox Smarthub3;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

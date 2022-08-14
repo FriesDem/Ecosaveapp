@@ -29,9 +29,10 @@ namespace Ecosave
             login.Show();
         }
 
+        
+
         private void btnreset_Click(object sender, EventArgs e)
         {
-
             var email = tbemail.Text.Trim();
             var username = tbusername.Text.Trim();
 
@@ -50,7 +51,6 @@ namespace Ecosave
 
 
             }
-            
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

@@ -23,6 +23,12 @@ namespace Ecosave
         }
         double dailyCost = 0, weeklyCost = 0, monthlyCost = 0, yearlyCost = 0;
         double fuelCost = 7.32, IPPCharge = 13.22, GCT = 0.15, finalCharge = 0, kwh = 0;
+
+        private void BacklogoBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         double numDevices = 0;
         
 

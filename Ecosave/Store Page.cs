@@ -86,58 +86,19 @@ namespace Ecosave
             }
         }
 
-        private void LightBulbs_Click(object sender, EventArgs e)
+       
+
+
+        private void cartToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (!Utils.FormIsOpen("Lightbulb"))
+            if (!Utils.FormIsOpen("Checkout"))
             {
-                
+               
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Lightbulb = new Lightbulb(_user);
-                Lightbulb.MdiParent = this.MdiParent;
-                Lightbulb.Show();
-
-            }
-        }
-
-        private void SolarGenerators_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("Solargenerator"))
-            {
-           
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var Solargenerator = new Solargenerator(_user);
-                Solargenerator.MdiParent = this.MdiParent;
-                Solargenerator.Show();
-
-            }
-        }
-
-        private void PowerBanks_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("Powerbank"))
-            {
-             
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var Powerbank = new Powerbank(_user);
-                Powerbank.MdiParent = this.MdiParent;
-                Powerbank.Show();
-
-            }
-        }
-
-        private void SmartHubDevices_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("Smarthubdevices"))
-            {
-                
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var Smarthubdevices = new Smarthubdevices(_user);
-                Smarthubdevices.MdiParent = this.MdiParent;
-                Smarthubdevices.Show();
+                var Checkout = new Checkout(_user);
+                Checkout.MdiParent = this.MdiParent;
+                Checkout.Show();
 
             }
         }
@@ -146,7 +107,7 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("Bioluz_LED_Light_Bulbs"))
             {
-             
+
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var Bioluz_LED_Light_Bulbs = new Bioluz_LED_Light_Bulbs(_user);
@@ -160,7 +121,7 @@ namespace Ecosave
         {
             if (!Utils.FormIsOpen("Ecosmart_8_Pack_LED_Light_bulb"))
             {
-               
+
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
                 var Ecosmart_8_Pack_LED_Light_bulb = new Ecosmart_8_Pack_LED_Light_bulb(_user);
@@ -170,17 +131,16 @@ namespace Ecosave
             }
         }
 
-
-        private void cartToolStripMenuItem_Click(object sender, EventArgs e)
+        private void LightBulbs_Click(object sender, EventArgs e)
         {
-            if (!Utils.FormIsOpen("Checkout"))
+            if (!Utils.FormIsOpen("Lightbulb"))
             {
-               
+
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Checkout = new Checkout(_user);
-                Checkout.MdiParent = this.MdiParent;
-                Checkout.Show();
+                var Lightbulb = new Lightbulb(_user);
+                Lightbulb.MdiParent = this.MdiParent;
+                Lightbulb.Show();
 
             }
         }
@@ -227,6 +187,20 @@ namespace Ecosave
             }
         }
 
+        private void SolarGenerators_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Solargenerator"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Solargenerator = new Solargenerator(_user);
+                Solargenerator.MdiParent = this.MdiParent;
+                Solargenerator.Show();
+
+            }
+        }
+
         private void powerbank1_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("Durecopow_Solar_Charger"))
@@ -251,6 +225,20 @@ namespace Ecosave
                 var Tranmix_Solar_Charger = new Tranmix_Solar_Charger(_user);
                 Tranmix_Solar_Charger.MdiParent = this.MdiParent;
                 Tranmix_Solar_Charger.Show();
+
+            }
+        }
+
+        private void PowerBanks_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Powerbank"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Powerbank = new Powerbank(_user);
+                Powerbank.MdiParent = this.MdiParent;
+                Powerbank.Show();
 
             }
         }
@@ -282,5 +270,19 @@ namespace Ecosave
 
             }
         }
-}
+
+        private void SmartHubDevices_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Smarthubdevices"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Smarthubdevices = new Smarthubdevices(_user);
+                Smarthubdevices.MdiParent = this.MdiParent;
+                Smarthubdevices.Show();
+
+            }
+        }
+    }
 }

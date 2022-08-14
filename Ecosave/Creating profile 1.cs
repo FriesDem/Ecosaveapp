@@ -29,13 +29,12 @@ namespace Ecosave
             Caa.Show();
         }
 
-
-        private void btnsubmit_Click_1(object sender, EventArgs e)
+        private void btnsubmit_Click(object sender, EventArgs e)
         {
             var user = _db.Users.FirstOrDefault(x => x.ID == _user.ID);
             try
             {
-               var test1 = FNameTB.ToString();
+                var test1 = FNameTB.ToString();
 
                 if (FNameTB.Text == "")
                 {
@@ -62,11 +61,11 @@ namespace Ecosave
                 {
                     MessageBox.Show("Enter Your Occupation ");
                 }
-                if (PhoneNumberTB.Text == "" )
+                if (PhoneNumberTB.Text == "")
                 {
                     MessageBox.Show("Enter Your PhoneNumber");
                 }
-               
+
                 var First = FNameTB.Text;
                 var Last = LNameTB.Text;
                 var Parish = ParishTB.Text;
@@ -85,7 +84,7 @@ namespace Ecosave
                     ZIP_Code = ZipCode,
                     Occupation = Occupation,
                     Telephone = Phone,
-                    UserID = id   
+                    UserID = id
                 };
                 _db.Person_Tables.Add(person);
                 _db.SaveChanges();
@@ -97,13 +96,12 @@ namespace Ecosave
                 var createprofile = new Creating_profile_page_2(_user);
                 createprofile.Show();
             }
-            
+
             catch (Exception)
             {
 
                 MessageBox.Show("Error");
-            }    
-               
+            }
         }
     }
 }

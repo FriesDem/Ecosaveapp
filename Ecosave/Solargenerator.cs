@@ -27,7 +27,7 @@ namespace Ecosave
             this.Close();
         }
 
-        private void SolarGen1_Click(object sender, EventArgs e)
+        private void sg1_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("BLUETTI_Solar_Generator"))
             {
@@ -41,59 +41,7 @@ namespace Ecosave
             }
         }
 
-        private void SolarGen2_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("EF_ECOFLOW_Solar_Generator_Delta_Max"))
-            {
-
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var EF_ECOFLOW_Solar_Generator_Delta_Max = new EF_ECOFLOW_Solar_Generator_Delta_Max(_user);
-                EF_ECOFLOW_Solar_Generator_Delta_Max.MdiParent = this.MdiParent;
-                EF_ECOFLOW_Solar_Generator_Delta_Max.Show();
-
-            }
-        }
-
-        private void SolarGen3_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("EF_ECOFLOW_Solar_Generator_RIVER_Pro"))
-            {
-
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var EF_ECOFLOW_Solar_Generator_RIVER_Pro = new EF_ECOFLOW_Solar_Generator_RIVER_Pro(_user);
-                EF_ECOFLOW_Solar_Generator_RIVER_Pro.MdiParent = this.MdiParent;
-                EF_ECOFLOW_Solar_Generator_RIVER_Pro.Show();
-
-            }
-        }
-
-        private void SolarGen4_Click(object sender, EventArgs e)
-        {
-            if (!Utils.FormIsOpen("Jackery_Solar_Generator_1500"))
-            {
-
-                if (ActiveMdiChild != null)
-                    ActiveMdiChild.Close();
-                var Jackery_Solar_Generator_1500 = new Jackery_Solar_Generator_1500(_user);
-                Jackery_Solar_Generator_1500.MdiParent = this.MdiParent;
-                Jackery_Solar_Generator_1500.Show();
-
-            }
-        }
-
-        private void SolarGen5_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("New Products On The Way Stay Tuned");
-        }
-
-        private void SolarGen6_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("New Products On The Way Stay Tuned");
-        }
-
-        private void sg1_Click(object sender, EventArgs e)
+        private void SolarGen1_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("BLUETTI_Solar_Generator"))
             {
@@ -121,7 +69,35 @@ namespace Ecosave
             }
         }
 
+        private void SolarGen2_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("EF_ECOFLOW_Solar_Generator_Delta_Max"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var EF_ECOFLOW_Solar_Generator_Delta_Max = new EF_ECOFLOW_Solar_Generator_Delta_Max(_user);
+                EF_ECOFLOW_Solar_Generator_Delta_Max.MdiParent = this.MdiParent;
+                EF_ECOFLOW_Solar_Generator_Delta_Max.Show();
+
+            }
+        }
+
         private void sg3_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("EF_ECOFLOW_Solar_Generator_RIVER_Pro"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var EF_ECOFLOW_Solar_Generator_RIVER_Pro = new EF_ECOFLOW_Solar_Generator_RIVER_Pro(_user);
+                EF_ECOFLOW_Solar_Generator_RIVER_Pro.MdiParent = this.MdiParent;
+                EF_ECOFLOW_Solar_Generator_RIVER_Pro.Show();
+
+            }
+        }
+
+        private void SolarGen3_Click(object sender, EventArgs e)
         {
             if (!Utils.FormIsOpen("EF_ECOFLOW_Solar_Generator_RIVER_Pro"))
             {
@@ -149,12 +125,36 @@ namespace Ecosave
             }
         }
 
+        private void SolarGen4_Click(object sender, EventArgs e)
+        {
+            if (!Utils.FormIsOpen("Jackery_Solar_Generator_1500"))
+            {
+
+                if (ActiveMdiChild != null)
+                    ActiveMdiChild.Close();
+                var Jackery_Solar_Generator_1500 = new Jackery_Solar_Generator_1500(_user);
+                Jackery_Solar_Generator_1500.MdiParent = this.MdiParent;
+                Jackery_Solar_Generator_1500.Show();
+
+            }
+        }
+
         private void cms4_Click(object sender, EventArgs e)
         {
             MessageBox.Show("New Products On The Way Stay Tuned");
         }
 
+        private void SolarGen5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
+
         private void cms5_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("New Products On The Way Stay Tuned");
+        }
+
+        private void SolarGen6_Click(object sender, EventArgs e)
         {
             MessageBox.Show("New Products On The Way Stay Tuned");
         }
