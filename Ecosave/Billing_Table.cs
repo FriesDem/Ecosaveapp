@@ -24,5 +24,8 @@ namespace Ecosave
         public Nullable<double> IPP_Charge { get; set; }
         public Nullable<double> Demand_Charge { get; set; }
         public Nullable<double> Final_Charge { get; set; }
+        public Nullable<int> UserID { get; set; }
+    
+        public virtual Person_Table Person_Table { get; set; }
     }
 }

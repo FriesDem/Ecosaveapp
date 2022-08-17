@@ -16,11 +16,15 @@ namespace Ecosave
         private ECOSAVEEntities ecosaveDB;
 
         double energyCharge = 0, energyUsed = 0, fuelCharge = 0, custCharge = 0, IPPCharge = 0, demandCharge = 0, finalCharge = 0;
+
+        
+
         string readingType;
         public CalculatorInfo()
         {
             InitializeComponent();
             billing = new Billing_Table();
+            ecosaveDB = new ECOSAVEEntities();
         }
 
         private void BacklogoBtn_Click(object sender, EventArgs e)
@@ -38,7 +42,7 @@ namespace Ecosave
                 custCharge = Convert.ToDouble(txtCustomerCharge.Text);
                 IPPCharge = Convert.ToDouble(txtIPPCharge.Text);
                 demandCharge = Convert.ToDouble(txtDemandCharge.Text);
-                if (txtReadingType.Equals("Actual") || txtReadingType.Equals("Estimated"))
+                if (txtReadingType.Text == "Actual" || txtReadingType.Text == "Estimated")
                 {
                     readingType = txtReadingType.Text;
 
@@ -51,6 +55,7 @@ namespace Ecosave
 
                     ecosaveDB.Billing_Tables.Add(billing);
                     ecosaveDB.SaveChanges();
+                    MessageBox.Show("Data Saved Successfully");
                 }
                 else
                 {

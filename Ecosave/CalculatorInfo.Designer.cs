@@ -41,7 +41,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.txtEnergyUsed = new System.Windows.Forms.TextBox();
             this.txtFuelCharge = new System.Windows.Forms.TextBox();
             this.txtEnergyCharge = new System.Windows.Forms.TextBox();
@@ -50,7 +49,6 @@
             this.txtCustomerCharge = new System.Windows.Forms.TextBox();
             this.txtIPPCharge = new System.Windows.Forms.TextBox();
             this.txtDemandCharge = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
@@ -105,7 +103,6 @@
             this.tableLayoutPanel1.Controls.Add(this.label6, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 6);
             this.tableLayoutPanel1.Controls.Add(this.label8, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.txtEnergyUsed, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtFuelCharge, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtEnergyCharge, 1, 2);
@@ -114,10 +111,9 @@
             this.tableLayoutPanel1.Controls.Add(this.txtCustomerCharge, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.txtIPPCharge, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.txtDemandCharge, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.label10, 1, 8);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(296, 163);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 9;
+            this.tableLayoutPanel1.RowCount = 8;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
@@ -126,8 +122,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(493, 320);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(563, 320);
             this.tableLayoutPanel1.TabIndex = 28;
             // 
             // label1
@@ -136,35 +131,35 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 24);
+            this.label1.Size = new System.Drawing.Size(175, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Energy Used";
+            this.label1.Text = "Energy Used (kWh)";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label2.Location = new System.Drawing.Point(3, 35);
+            this.label2.Location = new System.Drawing.Point(3, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(115, 24);
+            this.label2.Size = new System.Drawing.Size(218, 24);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Fuel Charge";
+            this.label2.Text = "Fuel Charge ($ per kWh)";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label3.Location = new System.Drawing.Point(3, 70);
+            this.label3.Location = new System.Drawing.Point(3, 80);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 24);
+            this.label3.Size = new System.Drawing.Size(241, 24);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Energy Charge";
+            this.label3.Text = "Energy Charge ($ per kWh)";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.Location = new System.Drawing.Point(3, 105);
+            this.label4.Location = new System.Drawing.Point(3, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(140, 24);
             this.label4.TabIndex = 0;
@@ -174,7 +169,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label5.Location = new System.Drawing.Point(3, 140);
+            this.label5.Location = new System.Drawing.Point(3, 160);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(129, 24);
             this.label5.TabIndex = 0;
@@ -184,106 +179,87 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label6.Location = new System.Drawing.Point(3, 175);
+            this.label6.Location = new System.Drawing.Point(3, 200);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(158, 24);
+            this.label6.Size = new System.Drawing.Size(185, 24);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Customer Charge";
+            this.label6.Text = "Customer Charge ($)";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label7.Location = new System.Drawing.Point(3, 210);
+            this.label7.Location = new System.Drawing.Point(3, 240);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(105, 24);
+            this.label7.Size = new System.Drawing.Size(208, 24);
             this.label7.TabIndex = 0;
-            this.label7.Text = "IPP Charge";
+            this.label7.Text = "IPP Charge ($ per kWh)";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label8.Location = new System.Drawing.Point(3, 245);
+            this.label8.Location = new System.Drawing.Point(3, 280);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(149, 24);
             this.label8.TabIndex = 0;
             this.label8.Text = "Demand Charge";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label9.Location = new System.Drawing.Point(3, 280);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(118, 24);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Final Charge";
-            // 
             // txtEnergyUsed
             // 
-            this.txtEnergyUsed.Location = new System.Drawing.Point(249, 3);
+            this.txtEnergyUsed.Location = new System.Drawing.Point(284, 3);
             this.txtEnergyUsed.Name = "txtEnergyUsed";
             this.txtEnergyUsed.Size = new System.Drawing.Size(100, 20);
             this.txtEnergyUsed.TabIndex = 1;
             // 
             // txtFuelCharge
             // 
-            this.txtFuelCharge.Location = new System.Drawing.Point(249, 38);
+            this.txtFuelCharge.Location = new System.Drawing.Point(284, 43);
             this.txtFuelCharge.Name = "txtFuelCharge";
             this.txtFuelCharge.Size = new System.Drawing.Size(100, 20);
             this.txtFuelCharge.TabIndex = 1;
             // 
             // txtEnergyCharge
             // 
-            this.txtEnergyCharge.Location = new System.Drawing.Point(249, 73);
+            this.txtEnergyCharge.Location = new System.Drawing.Point(284, 83);
             this.txtEnergyCharge.Name = "txtEnergyCharge";
             this.txtEnergyCharge.Size = new System.Drawing.Size(100, 20);
             this.txtEnergyCharge.TabIndex = 1;
             // 
             // txtExRate
             // 
-            this.txtExRate.Location = new System.Drawing.Point(249, 108);
+            this.txtExRate.Location = new System.Drawing.Point(284, 123);
             this.txtExRate.Name = "txtExRate";
             this.txtExRate.Size = new System.Drawing.Size(100, 20);
             this.txtExRate.TabIndex = 1;
             // 
             // txtReadingType
             // 
-            this.txtReadingType.Location = new System.Drawing.Point(249, 143);
+            this.txtReadingType.Location = new System.Drawing.Point(284, 163);
             this.txtReadingType.Name = "txtReadingType";
             this.txtReadingType.Size = new System.Drawing.Size(100, 20);
             this.txtReadingType.TabIndex = 1;
             // 
             // txtCustomerCharge
             // 
-            this.txtCustomerCharge.Location = new System.Drawing.Point(249, 178);
+            this.txtCustomerCharge.Location = new System.Drawing.Point(284, 203);
             this.txtCustomerCharge.Name = "txtCustomerCharge";
             this.txtCustomerCharge.Size = new System.Drawing.Size(100, 20);
             this.txtCustomerCharge.TabIndex = 1;
             // 
             // txtIPPCharge
             // 
-            this.txtIPPCharge.Location = new System.Drawing.Point(249, 213);
+            this.txtIPPCharge.Location = new System.Drawing.Point(284, 243);
             this.txtIPPCharge.Name = "txtIPPCharge";
             this.txtIPPCharge.Size = new System.Drawing.Size(100, 20);
             this.txtIPPCharge.TabIndex = 1;
             // 
             // txtDemandCharge
             // 
-            this.txtDemandCharge.Location = new System.Drawing.Point(249, 248);
+            this.txtDemandCharge.Location = new System.Drawing.Point(284, 283);
             this.txtDemandCharge.Name = "txtDemandCharge";
             this.txtDemandCharge.Size = new System.Drawing.Size(100, 20);
             this.txtDemandCharge.TabIndex = 1;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label10.Location = new System.Drawing.Point(249, 280);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(0, 24);
-            this.label10.TabIndex = 0;
             // 
             // label11
             // 
@@ -348,7 +324,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtEnergyUsed;
         private System.Windows.Forms.TextBox txtFuelCharge;
         private System.Windows.Forms.TextBox txtEnergyCharge;
@@ -357,7 +332,6 @@
         private System.Windows.Forms.TextBox txtCustomerCharge;
         private System.Windows.Forms.TextBox txtIPPCharge;
         private System.Windows.Forms.TextBox txtDemandCharge;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox2;
     }

@@ -17,9 +17,12 @@ namespace Ecosave
         public int ID { get; set; }
         public string Brand { get; set; }
         public string Model { get; set; }
-        public string Year { get; set; }
+        public string Type_Of_Device { get; set; }
+        public Nullable<int> Year { get; set; }
         public Nullable<int> Number_of_Devices { get; set; }
-        public string Power_Input { get; set; }
-        public string Power_Output { get; set; }
+        public Nullable<int> Power_Output { get; set; }
+        public Nullable<int> UserID { get; set; }
+    
+        public virtual Person_Table Person_Table { get; set; }
     }
 }

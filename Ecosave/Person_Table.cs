@@ -14,6 +14,14 @@ namespace Ecosave
     
     public partial class Person_Table
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Person_Table()
+        {
+            this.Billing_Table = new HashSet<Billing_Table>();
+            this.Calculators = new HashSet<Calculator>();
+            this.Devices_Table = new HashSet<Devices_Table>();
+        }
+    
         public int ID { get; set; }
         public string First_Name { get; set; }
         public string Last_Name { get; set; }
@@ -29,6 +37,11 @@ namespace Ecosave
         public string CardExperation { get; set; }
         public string CardCvv { get; set; }
     
-        public virtual User User { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Billing_Table> Billing_Table { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Calculator> Calculators { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Devices_Table> Devices_Table { get; set; }
     }
 }

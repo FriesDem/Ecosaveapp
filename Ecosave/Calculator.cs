@@ -16,11 +16,14 @@ namespace Ecosave
     {
         public int ID { get; set; }
         public Nullable<double> Power_Average { get; set; }
-        public Nullable<int> Number_Of_Devices { get; set; }
+        public string Device { get; set; }
         public Nullable<int> Hours_Used { get; set; }
         public Nullable<double> Daily_Average { get; set; }
         public Nullable<double> Weekly_Average { get; set; }
         public Nullable<double> Monthly_Average { get; set; }
         public Nullable<double> Yearly_Average { get; set; }
+        public Nullable<int> UserID { get; set; }
+    
+        public virtual Person_Table Person_Table { get; set; }
     }
 }
