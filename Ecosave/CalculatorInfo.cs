@@ -10,17 +10,28 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class CalculatorInfo : Form
+    public partial class btnClear : Form
     {
         private Billing_Table billing;
         private ECOSAVEEntities ecosaveDB;
 
-        double energyCharge = 0, energyUsed = 0, fuelCharge = 0, custCharge = 0, IPPCharge = 0, demandCharge = 0, finalCharge = 0;
+        double energyCharge = 0, kwh = 0, fuelCost = 0, custCharge = 0, IPPCharge = 0, demandCharge = 0, finalCharge = 0;
 
-        
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtCustomerCharge.Text = "";
+            txtDemandCharge.Text = "";
+            txtEnergyCharge.Text = "";
+            txtEnergyUsed.Text = "";
+            txtExRate.Text = "";
+            txtFuelCharge.Text = "";
+            txtIPPCharge.Text = "";
+            txtReadingType.Text = "";
+            lblFinalCharge.Text = "";
+        }
 
         string readingType;
-        public CalculatorInfo()
+        public btnClear()
         {
             InitializeComponent();
             billing = new Billing_Table();
@@ -36,22 +47,28 @@ namespace Ecosave
         {
             try
             {
+                
                 energyCharge = Convert.ToDouble(txtEnergyCharge.Text);
-                energyUsed = Convert.ToDouble(txtEnergyUsed.Text);
-                fuelCharge = Convert.ToDouble(txtFuelCharge.Text);
+                kwh = Convert.ToDouble(txtEnergyUsed.Text);
+                fuelCost = Convert.ToDouble(txtFuelCharge.Text);
                 custCharge = Convert.ToDouble(txtCustomerCharge.Text);
                 IPPCharge = Convert.ToDouble(txtIPPCharge.Text);
                 demandCharge = Convert.ToDouble(txtDemandCharge.Text);
+                finalCharge = ((fuelCost * kwh) + (IPPCharge * kwh));
+                
+
                 if (txtReadingType.Text == "Actual" || txtReadingType.Text == "Estimated")
                 {
                     readingType = txtReadingType.Text;
 
                     billing.Energy_Charge = energyCharge;
-                    billing.Energy_Used = energyUsed;
-                    billing.Fuel_Charge = fuelCharge;
+                    billing.Energy_Used = kwh;
+                    billing.Fuel_Charge = fuelCost;
                     billing.Customer_Charge = custCharge;
                     billing.IPP_Charge = IPPCharge;
                     billing.Reading_Type = readingType;
+                    billing.Final_Charge = finalCharge;
+                    lblFinalCharge.Text = "$ " + finalCharge.ToString("N2") + " JMD";
 
                     ecosaveDB.Billing_Tables.Add(billing);
                     ecosaveDB.SaveChanges();
