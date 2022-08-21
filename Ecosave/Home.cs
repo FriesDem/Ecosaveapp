@@ -224,7 +224,7 @@ namespace Ecosave
             {
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var CalculatorInfo = new CalculatorInfo();
+                var CalculatorInfo = new btnClear();
                 CalculatorInfo.MdiParent = this;
                 CalculatorInfo.Show();
 

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class CalculatorInfo : Form
+    public partial class btnClear : Form
     {
         private Billing_Table billing;
         private ECOSAVEEntities ecosaveDB;
@@ -33,7 +33,7 @@ namespace Ecosave
         
 
         string readingType;
-        public CalculatorInfo()
+        public btnClear()
         {
             InitializeComponent();
             billing = new Billing_Table();
@@ -49,16 +49,12 @@ namespace Ecosave
         {
             try
             {
-
                 energyCharge = Convert.ToDouble(txtEnergyCharge.Text);
                 kwh = Convert.ToDouble(txtEnergyUsed.Text);
                 fuelCost = Convert.ToDouble(txtFuelCharge.Text);
                 custCharge = Convert.ToDouble(txtCustomerCharge.Text);
                 IPPCharge = Convert.ToDouble(txtIPPCharge.Text);
                 demandCharge = Convert.ToDouble(txtDemandCharge.Text);
-                finalCharge = ((fuelCost * kwh) + (IPPCharge * kwh));
-
-
                 if (txtReadingType.Text == "Actual" || txtReadingType.Text == "Estimated")
                 {
                     readingType = txtReadingType.Text;

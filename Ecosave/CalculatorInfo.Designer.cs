@@ -1,6 +1,6 @@
 ﻿namespace Ecosave
 {
-    partial class CalculatorInfo
+    partial class btnClear
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalculatorInfo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(btnClear));
             this.Backbtn = new System.Windows.Forms.Label();
             this.BacklogoBtn = new System.Windows.Forms.PictureBox();
             this.btnsubmit = new System.Windows.Forms.Button();
@@ -343,7 +343,36 @@
             this.pictureBox1.TabIndex = 88;
             this.pictureBox1.TabStop = false;
             // 
-            // CalculatorInfo
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label9.Location = new System.Drawing.Point(3, 280);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(118, 24);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Final Charge";
+            // 
+            // lblFinalCharge
+            // 
+            this.lblFinalCharge.AutoSize = true;
+            this.lblFinalCharge.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblFinalCharge.Location = new System.Drawing.Point(284, 280);
+            this.lblFinalCharge.Name = "lblFinalCharge";
+            this.lblFinalCharge.Size = new System.Drawing.Size(0, 24);
+            this.lblFinalCharge.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(546, 459);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 29);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Clear";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // btnClear
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -353,6 +382,7 @@
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnsubmit);
             this.Controls.Add(this.Backbtn);
             this.Controls.Add(this.BacklogoBtn);
@@ -362,6 +392,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CalculatorInfo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Click += new System.EventHandler(this.btnClear_Click);
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
