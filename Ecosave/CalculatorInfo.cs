@@ -58,6 +58,7 @@ namespace Ecosave
                 custCharge = Convert.ToDouble(txtCustomerCharge.Text);
                 IPPCharge = Convert.ToDouble(txtIPPCharge.Text);
                 demandCharge = Convert.ToDouble(txtDemandCharge.Text);
+                finalCharge = ((fuelCost * kwh) + (IPPCharge * kwh));
                 if (txtReadingType.Text == "Actual" || txtReadingType.Text == "Estimated")
                 {
                     readingType = txtReadingType.Text;
