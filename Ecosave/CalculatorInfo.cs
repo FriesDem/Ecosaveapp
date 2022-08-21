@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class btnClear : Form
+    public partial class BillingPage : Form
     {
         private Billing_Table billing;
         private ECOSAVEEntities ecosaveDB;
 
         double energyCharge = 0, kwh = 0, fuelCost = 0, custCharge = 0, IPPCharge = 0, demandCharge = 0, finalCharge = 0;
 
-        private void btnClear_Click(object sender, EventArgs e)
-        
+        private void clear_Click(object sender, EventArgs e)
+        {
             {
                 txtCustomerCharge.Text = "";
                 txtDemandCharge.Text = "";
@@ -30,10 +30,13 @@ namespace Ecosave
                 txtReadingType.Text = "";
                 lblFinalCharge.Text = "";
             }
+        }
+
+       
         
 
         string readingType;
-        public btnClear()
+        public BillingPage()
         {
             InitializeComponent();
             billing = new Billing_Table();
