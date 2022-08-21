@@ -70,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cms5)).BeginInit();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cms4)).BeginInit();
+            this.panel13.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sg1)).BeginInit();
@@ -78,6 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sg3)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sg2)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -115,29 +117,28 @@
             this.panel1.Controls.Add(this.SolarGen4);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.panel13);
             this.panel1.Controls.Add(this.SolarGen3);
             this.panel1.Controls.Add(this.SolarGen2);
             this.panel1.Controls.Add(this.SolarGen1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.NameLbl);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(289, 34);
+            this.panel1.Location = new System.Drawing.Point(289, 54);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1311, 939);
+            this.panel1.Size = new System.Drawing.Size(1311, 919);
             this.panel1.TabIndex = 75;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.SlateGray;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(488, 139);
+            this.label4.Location = new System.Drawing.Point(471, 53);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(376, 29);
@@ -147,9 +148,10 @@
             // SolarGen6
             // 
             this.SolarGen6.AutoSize = true;
+            this.SolarGen6.BackColor = System.Drawing.Color.SlateGray;
             this.SolarGen6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SolarGen6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SolarGen6.Location = new System.Drawing.Point(955, 818);
+            this.SolarGen6.Location = new System.Drawing.Point(985, 711);
             this.SolarGen6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SolarGen6.Name = "SolarGen6";
             this.SolarGen6.Size = new System.Drawing.Size(132, 25);
@@ -160,9 +162,10 @@
             // SolarGen5
             // 
             this.SolarGen5.AutoSize = true;
+            this.SolarGen5.BackColor = System.Drawing.Color.SlateGray;
             this.SolarGen5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SolarGen5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SolarGen5.Location = new System.Drawing.Point(551, 818);
+            this.SolarGen5.Location = new System.Drawing.Point(567, 711);
             this.SolarGen5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SolarGen5.Name = "SolarGen5";
             this.SolarGen5.Size = new System.Drawing.Size(132, 25);
@@ -173,9 +176,10 @@
             // SolarGen4
             // 
             this.SolarGen4.AutoSize = true;
+            this.SolarGen4.BackColor = System.Drawing.Color.SlateGray;
             this.SolarGen4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SolarGen4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SolarGen4.Location = new System.Drawing.Point(81, 818);
+            this.SolarGen4.Location = new System.Drawing.Point(93, 711);
             this.SolarGen4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SolarGen4.Name = "SolarGen4";
             this.SolarGen4.Size = new System.Drawing.Size(273, 25);
@@ -185,9 +189,9 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel5.BackColor = System.Drawing.Color.SlateGray;
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(64, 549);
+            this.panel5.Location = new System.Drawing.Point(95, 442);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(323, 267);
@@ -217,9 +221,9 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel8.BackColor = System.Drawing.Color.SlateGray;
             this.panel8.Controls.Add(this.panel9);
-            this.panel8.Location = new System.Drawing.Point(860, 549);
+            this.panel8.Location = new System.Drawing.Point(891, 442);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(323, 267);
@@ -250,7 +254,7 @@
             // panel11
             // 
             this.panel11.Controls.Add(this.cms4);
-            this.panel11.Location = new System.Drawing.Point(463, 566);
+            this.panel11.Location = new System.Drawing.Point(20, 17);
             this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(325, 234);
@@ -258,11 +262,12 @@
             // 
             // cms4
             // 
+            this.cms4.BackColor = System.Drawing.Color.SteelBlue;
             this.cms4.Image = ((System.Drawing.Image)(resources.GetObject("cms4.Image")));
-            this.cms4.Location = new System.Drawing.Point(1, 0);
+            this.cms4.Location = new System.Drawing.Point(0, 0);
             this.cms4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cms4.Name = "cms4";
-            this.cms4.Size = new System.Drawing.Size(324, 233);
+            this.cms4.Size = new System.Drawing.Size(325, 232);
             this.cms4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cms4.TabIndex = 0;
             this.cms4.TabStop = false;
@@ -270,8 +275,9 @@
             // 
             // panel13
             // 
-            this.panel13.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel13.Location = new System.Drawing.Point(447, 549);
+            this.panel13.BackColor = System.Drawing.Color.SlateGray;
+            this.panel13.Controls.Add(this.panel11);
+            this.panel13.Location = new System.Drawing.Point(466, 442);
             this.panel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(359, 267);
@@ -280,9 +286,10 @@
             // SolarGen3
             // 
             this.SolarGen3.AutoSize = true;
+            this.SolarGen3.BackColor = System.Drawing.Color.SlateGray;
             this.SolarGen3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SolarGen3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SolarGen3.Location = new System.Drawing.Point(828, 478);
+            this.SolarGen3.Location = new System.Drawing.Point(886, 369);
             this.SolarGen3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SolarGen3.Name = "SolarGen3";
             this.SolarGen3.Size = new System.Drawing.Size(386, 25);
@@ -293,9 +300,10 @@
             // SolarGen2
             // 
             this.SolarGen2.AutoSize = true;
+            this.SolarGen2.BackColor = System.Drawing.Color.SlateGray;
             this.SolarGen2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SolarGen2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SolarGen2.Location = new System.Drawing.Point(425, 478);
+            this.SolarGen2.Location = new System.Drawing.Point(471, 369);
             this.SolarGen2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SolarGen2.Name = "SolarGen2";
             this.SolarGen2.Size = new System.Drawing.Size(386, 25);
@@ -306,9 +314,10 @@
             // SolarGen1
             // 
             this.SolarGen1.AutoSize = true;
+            this.SolarGen1.BackColor = System.Drawing.Color.SlateGray;
             this.SolarGen1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SolarGen1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.SolarGen1.Location = new System.Drawing.Point(101, 478);
+            this.SolarGen1.Location = new System.Drawing.Point(90, 369);
             this.SolarGen1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SolarGen1.Name = "SolarGen1";
             this.SolarGen1.Size = new System.Drawing.Size(242, 25);
@@ -318,9 +327,9 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel2.BackColor = System.Drawing.Color.SlateGray;
             this.panel2.Controls.Add(this.panel7);
-            this.panel2.Location = new System.Drawing.Point(61, 208);
+            this.panel2.Location = new System.Drawing.Point(95, 100);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(323, 267);
@@ -350,9 +359,9 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel4.BackColor = System.Drawing.Color.SlateGray;
             this.panel4.Controls.Add(this.panel12);
-            this.panel4.Location = new System.Drawing.Point(857, 208);
+            this.panel4.Location = new System.Drawing.Point(891, 100);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(323, 267);
@@ -383,7 +392,7 @@
             // panel10
             // 
             this.panel10.Controls.Add(this.sg2);
-            this.panel10.Location = new System.Drawing.Point(459, 225);
+            this.panel10.Location = new System.Drawing.Point(23, 17);
             this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(325, 234);
@@ -392,10 +401,10 @@
             // sg2
             // 
             this.sg2.Image = ((System.Drawing.Image)(resources.GetObject("sg2.Image")));
-            this.sg2.Location = new System.Drawing.Point(1, 0);
+            this.sg2.Location = new System.Drawing.Point(-2, -90);
             this.sg2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.sg2.Name = "sg2";
-            this.sg2.Size = new System.Drawing.Size(324, 233);
+            this.sg2.Size = new System.Drawing.Size(324, 322);
             this.sg2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.sg2.TabIndex = 0;
             this.sg2.TabStop = false;
@@ -403,8 +412,9 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel3.Location = new System.Drawing.Point(443, 208);
+            this.panel3.BackColor = System.Drawing.Color.SlateGray;
+            this.panel3.Controls.Add(this.panel10);
+            this.panel3.Location = new System.Drawing.Point(476, 100);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(359, 267);
@@ -413,9 +423,10 @@
             // NameLbl
             // 
             this.NameLbl.AutoSize = true;
+            this.NameLbl.BackColor = System.Drawing.Color.SlateGray;
             this.NameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.NameLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NameLbl.Location = new System.Drawing.Point(551, 95);
+            this.NameLbl.Location = new System.Drawing.Point(537, 12);
             this.NameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLbl.Name = "NameLbl";
             this.NameLbl.Size = new System.Drawing.Size(234, 29);
@@ -424,11 +435,12 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SlateGray;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(5, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(5, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1301, 934);
+            this.pictureBox1.Size = new System.Drawing.Size(1301, 939);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -437,12 +449,12 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1716, -11);
+            this.pictureBox2.Location = new System.Drawing.Point(1476, -101);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(211, 171);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 90;
+            this.pictureBox2.Size = new System.Drawing.Size(742, 479);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 108;
             this.pictureBox2.TabStop = false;
             // 
             // Solargenerator
@@ -450,11 +462,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1888, 1008);
-            this.Controls.Add(this.pictureBox2);
+            this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BacklogoBtn);
             this.Controls.Add(this.Backbtn);
+            this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Solargenerator";
@@ -472,6 +484,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cms5)).EndInit();
             this.panel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cms4)).EndInit();
+            this.panel13.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.sg1)).EndInit();
@@ -480,6 +493,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.sg3)).EndInit();
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.sg2)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

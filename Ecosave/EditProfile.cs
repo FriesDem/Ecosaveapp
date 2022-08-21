@@ -92,56 +92,111 @@ namespace Ecosave
         {
             try
             {
-                var firstname = FNameTB;
-                var lastname = LNameTB;
-                var parishlb = ParishTB;
-                var streetlb = StreetTB;
-                var zipcodelb = ZipcodeTB;
-                var occupationlb = OccupationTB;
-                var telephonelb = PhoneNumberTB;
+                var firstname = FNameTB.Text;
+                var lastname = LNameTB.Text;
+                var parishlb = ParishTB.Text;
+                var streetlb = StreetTB.Text;
+                var zipcodelb = ZipcodeTB.Text;
+                var occupationlb = OccupationTB.Text;
+                var telephonelb = PhoneNumberTB.Text;
 
                 var person = _db.Person_Tables.FirstOrDefault(x => x.UserID == _user.ID);
                 {
-                    if(firstname.Text != "")
+                  
+                    int myNumber;
+                    bool test1 = true;
+                    bool test2 = true;
+                    bool test3 = true;
+                    bool test4 = true;
+                    bool test5 = true;
+                    bool test6 = true;
+                    bool test7 = true;
+                    if (int.TryParse(firstname, out myNumber) == true)
                     {
-                        person.First_Name = firstname.Text;
+                        test1 = false;
+                    }
+                    if (int.TryParse(lastname, out myNumber) == true)
+                    {
+                        test2 = false;
+                    }
+                    if (int.TryParse(parishlb, out myNumber) == true)
+                    {
+                        test3 = false;
+                    }
+                    if (int.TryParse(occupationlb, out myNumber) == true)
+                    {
+                        test4 = false;
+                    }
+                    if (string.IsNullOrEmpty(StreetTB.Text))
+                    {
+                        test5 = false;
+                    }
+                    if (string.IsNullOrEmpty(ZipcodeTB.Text))
+                    {
+                        test6 = false;
+                    }
+
+                    if (PhoneNumberTB.Text == "(   )    -")
+                    {
+                        test7 = false;
+                    }
+
+                    if (test1 == false)
+                    {
+                        MessageBox.Show("Check To Ensure Name Is Letters");
+                    }
+                    if (test2 == false)
+                    {
+                        MessageBox.Show("Check To Ensure Name Is Letters");
+                    }
+                    if (test3 == false)
+                    {
+                        MessageBox.Show("Check To Ensure Parish Is Letters");
+                    }
+                    if (test4 == false)
+                    {
+                        MessageBox.Show("Check To Ensure Occupation Is Letters");
+                    }
+
+                    if (firstname != "" && test1 == true)
+                    {
+                        person.First_Name = firstname;
                         _db.SaveChanges();
                     }
-                   if(lastname.Text != "")
+                    if (lastname != "" && test2 == true)
                     {
-                        person.Last_Name = lastname.Text;
+                        person.Last_Name = lastname;
                         _db.SaveChanges();
                     }
-                    if(parishlb.Text != "")
+                    if (parishlb != "" && test3 == true)
                     {
-                        person.Parish = parishlb.Text;
+                        person.Parish = parishlb;
                         _db.SaveChanges();
                     }
-                    if(streetlb.Text != "")
+                    if (streetlb != "" && test5 == true)
                     {
-                        person.Street = streetlb.Text;
+                        person.Street = streetlb;
                         _db.SaveChanges();
                     }
-                    if(zipcodelb.Text != "")
+                    if (zipcodelb != "" && test6 == true)
                     {
-                        person.ZIP_Code = zipcodelb.Text;
+                        person.ZIP_Code = zipcodelb;
                         _db.SaveChanges();
                     }
-                    if(occupationlb.Text != "")
+                    if (occupationlb != "" && test4 == true)
                     {
-                        person.Occupation = occupationlb.Text;
+                        person.Occupation = occupationlb;
                         _db.SaveChanges();
                     }
-                    if(telephonelb.Text != "")
+                    if (telephonelb != "(   )    -" && test7 == true)
                     {
-                        person.Telephone = telephonelb.Text;
+                        person.Telephone = telephonelb;
                         _db.SaveChanges();
                     }
-                   
+
+                    MessageBox.Show("Updated Succesfully");
+                    Close();
                 };
-                
-                MessageBox.Show("Updated Succesfully");
-                Close();
             }
             catch (Exception)
             {

@@ -106,22 +106,19 @@ namespace Ecosave
                     if (person.CardNumber != null && person.CardExperation != null && person.CardCvv != null)
                     {
 
-                        var Sum = _db.Items.Where(x => x.UserID == _user.ID && x.IsActive == true).Sum(x => x.Amount * x.Cost);
-                        MessageBox.Show("Total Amount To Be Paid Is :" + Sum);
-                        MessageBox.Show("Your Account Will BE Charged Within 3-4 Working Days");
 
-                        for (int i = 0; i < 100; i++)
+                        var ID = (int)Store.SelectedRows[0].Cells["ID"].Value;
+                        var pay = _db.Items.FirstOrDefault(Queryable => Queryable.ID == ID);
+
                         {
-                            var item = _db.Items.FirstOrDefault(x => x.UserID == _user.ID && x.IsActive == true);
-
-                            {
-                                item.IsActive = false;
-                            }
+                            pay.IsActive = false;
+                            _db.SaveChanges();
+                            PopulateGrid();
+                            MessageBox.Show("Item Selected Will Be Billed To your Account in 2-3 Working Days");
+                            MessageBox.Show("Thanks For Your Service");
                         }
 
                     }
-                    _db.SaveChanges();
-                    PopulateGrid();
                 }
             }
             catch (Exception)
@@ -251,6 +248,12 @@ namespace Ecosave
                 MessageBox.Show("Select Row To Edit");
 
             }
+        }
+
+        private void Total_Click(object sender, EventArgs e)
+        {
+            var Sum = _db.Items.Where(x => x.UserID == _user.ID && x.IsActive == true).Sum(x => x.Amount * x.Cost);
+            MessageBox.Show("Total Amount To Be Paid Is :" + Sum);
         }
     }
     }

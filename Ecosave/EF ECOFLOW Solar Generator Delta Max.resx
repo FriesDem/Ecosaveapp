@@ -402,21 +402,21 @@ no noise and renewable charging. Compatible with both
   </data>
   <data name="AddToCart.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABGdBTUEAALGPC/xhBQAAAx1JREFUeF7t
+        3MvLTVEYx/EXIYokEzF2GZi6jAyUvwAZi0wwIQMD5TJHKDLAVKJMjDBzy23OjHLJ/VZy/T4D9Q6etTvn
+        be317L3271ufEm+tvVbnPWevs44zoZRSSikV0lycxkf8TXiHG9iJOVBT6Ay8xU15htVQYzQd3+EtaJNv
+        WAc1YlNdaPMC86BGbNynjskOQI2YvbidxAd4i9nkKVSmZmArvIU2K6Ey9gDeQu+DytgheAt9Cypjdu/s
+        LfRPLIDKlN0KvoK32FugMnYe3kJfhMrYJngL/Qb2iFeZmo8f8BZ7LVTGbsJb6CNQGdsLb6EfQWVsObyF
+        /oOlUBmz9zi8xd4BlbHj8BZ6SOzU6RhmobU2wht8iGyxW2s2vsAbeGjeotWuwBt4aN6j1bbDG3horqHV
+        FsNu6bzBh2Q3Wu8hvMGHxPYVrXcY3uBD8RxFWgPvAobiHIrUdBgwBEUPPC7Au4ja/cYiFGszvAup3X0U
+        rekwoGZHUbzUYUDN1qN4qcOAWn2Fvd9TvBXwLqhWrW+7m0odBtSoyLY71Ql4F1WjItvuVEM5DCi27U5l
+        Lw6f4V1cTYptu5u6Cu/iatKJzxnWfhhQfNudqvbDgOLb7qZqPgwI2XanqvkwIGTbnarWw4CwbXeqWg8D
+        QrfdqWo8DAjddqeq8TAgdNudqrbDgPBtd1M1HQZ0YtudqqbDgE7/975l8C66b+wpcCE63W14F98nl9H5
+        NsC7+L74hVXoRWfhTaIPDqI3zcQleBPpslOYhl5l23K7C7EvvfIm1SX2Cf5t6HX2pvl+2D32a9gb6d5k
+        S7Ln4Ze4jl3QF3IppZRSSo2dnb3twV3YWZyxP9spRpvnclHjhrQET+Dd05rHsJ/JXdS4Idmjpmmy/9mk
+        cz7CosYNy35tvQl6bJeWq6hxw7oHb3KeO8hV1LhhjfMdH/azuYoaN6xxJvwJuYoaNyw9dRTK7le9yXly
+        vihFjRuW3TrZLZQ3wcnsZ3J++1bUuKHZpqBp0vZvbW1YIsYNzR419itqz4f2QmXsown2d20+oqLGVUop
+        pZRSSqkuNTHxDwuWI7uLwnbcAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="BuyNow.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
