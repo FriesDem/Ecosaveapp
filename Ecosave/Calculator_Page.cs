@@ -69,7 +69,7 @@ namespace Ecosave
         {
             try
             {
-                var userid = _user.ID;
+            
                 hours = Convert.ToDouble(txtHoursUsed.Text);
                 kwh = Convert.ToDouble(txtPowerOutput.Text);
                 finalCharge = ((fuelCost * kwh * hours) + (IPPCharge * kwh * hours));
@@ -84,7 +84,7 @@ namespace Ecosave
                 lblWeeklyCostDisplay.Text = "$ " + weeklyCost.ToString("N2") + " JMD";
                 lblMonthlyCostDisplay.Text = "$ " + monthlyCost.ToString("N2") + " JMD";
                 lblYearlyCostDisplay.Text = "$ " + yearlyCost.ToString("N2") + " JMD";
-                calculator.UserID = userid;
+               
                 calculator.Device = device;
                 calculator.Power_Average = double.Parse(txtPowerOutput.Text);
                 calculator.Hours_Used = int.Parse(txtHoursUsed.Text);
@@ -92,6 +92,7 @@ namespace Ecosave
                 calculator.Weekly_Average = Convert.ToInt64(weeklyCost);
                 calculator.Monthly_Average = Convert.ToInt64(monthlyCost);
                 ecosaveDB.Calculators.Add(calculator);
+               
                 ecosaveDB.SaveChanges();
             }
             catch (Exception ex)

@@ -55,7 +55,6 @@ namespace Ecosave
         {
             try
             {
-                var userid = _user.ID;
                 energyCharge = Convert.ToDouble(txtEnergyCharge.Text);
                 kwh = Convert.ToDouble(txtEnergyUsed.Text);
                 fuelCost = Convert.ToDouble(txtFuelCharge.Text);
@@ -66,7 +65,6 @@ namespace Ecosave
                 if (txtReadingType.Text == "Actual" || txtReadingType.Text == "Estimated")
                 {
                     readingType = txtReadingType.Text;
-                    billing.UserID = userid;
                     billing.Energy_Charge = energyCharge;
                     billing.Energy_Used = kwh;
                     billing.Fuel_Charge = fuelCost;
