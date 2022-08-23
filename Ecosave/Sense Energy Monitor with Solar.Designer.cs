@@ -83,7 +83,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1301, 585);
+            this.label3.Location = new System.Drawing.Point(1299, 602);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 25);
@@ -93,12 +93,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(693, 329);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(684, 220);
+            this.label2.Size = new System.Drawing.Size(731, 242);
             this.label2.TabIndex = 83;
             this.label2.Text = resources.GetString("label2.Text");
             // 
@@ -147,12 +147,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(692, 31);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(449, 75);
+            this.label1.Size = new System.Drawing.Size(500, 75);
             this.label1.TabIndex = 80;
             this.label1.Text = "Sense Energy Monitor with Solar – Track Electricity\r\n Usage and Solar Production " +
     "in Real Time Meets \r\nRigorous ETL Intertek Safety Standards";
@@ -160,12 +160,12 @@
             // LightBulbs1
             // 
             this.LightBulbs1.AutoSize = true;
-            this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.LightBulbs1.Location = new System.Drawing.Point(693, 164);
             this.LightBulbs1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LightBulbs1.Name = "LightBulbs1";
-            this.LightBulbs1.Size = new System.Drawing.Size(263, 140);
+            this.LightBulbs1.Size = new System.Drawing.Size(288, 154);
             this.LightBulbs1.TabIndex = 79;
             this.LightBulbs1.Text = "Special Feature\t(Null)\r\nCompatible Devices\tMonitors\r\nBrand\tSense\r\nPower Source\tSo" +
     "lar Powered\r\nPackage Type\tStandard Packaging\r\nUnit Count\t1.0 Count\r\nNumber of It" +

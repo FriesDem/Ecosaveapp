@@ -44,7 +44,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AddToCart)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BuyNow)).BeginInit();
@@ -54,8 +53,9 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.AddToCart);
             this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.panel2);
@@ -83,7 +83,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1324, 634);
+            this.label3.Location = new System.Drawing.Point(1322, 666);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 25);
@@ -93,19 +93,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(688, 226);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(632, 400);
+            this.label2.Size = new System.Drawing.Size(679, 440);
             this.label2.TabIndex = 83;
             this.label2.Text = resources.GetString("label2.Text");
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.AddToCart);
-            this.panel3.Location = new System.Drawing.Point(1157, 665);
+            this.panel3.Location = new System.Drawing.Point(1160, 689);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(107, 39);
@@ -114,7 +113,7 @@
             // AddToCart
             // 
             this.AddToCart.Image = ((System.Drawing.Image)(resources.GetObject("AddToCart.Image")));
-            this.AddToCart.Location = new System.Drawing.Point(0, 0);
+            this.AddToCart.Location = new System.Drawing.Point(1160, 689);
             this.AddToCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddToCart.Name = "AddToCart";
             this.AddToCart.Size = new System.Drawing.Size(107, 38);
@@ -126,7 +125,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.BuyNow);
-            this.panel2.Location = new System.Drawing.Point(1292, 665);
+            this.panel2.Location = new System.Drawing.Point(1290, 689);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(125, 39);
@@ -135,10 +134,10 @@
             // BuyNow
             // 
             this.BuyNow.Image = ((System.Drawing.Image)(resources.GetObject("BuyNow.Image")));
-            this.BuyNow.Location = new System.Drawing.Point(0, -2);
+            this.BuyNow.Location = new System.Drawing.Point(0, 0);
             this.BuyNow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BuyNow.Name = "BuyNow";
-            this.BuyNow.Size = new System.Drawing.Size(125, 41);
+            this.BuyNow.Size = new System.Drawing.Size(128, 39);
             this.BuyNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BuyNow.TabIndex = 1;
             this.BuyNow.TabStop = false;
@@ -147,12 +146,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(687, 18);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(283, 75);
+            this.label1.Size = new System.Drawing.Size(313, 75);
             this.label1.TabIndex = 80;
             this.label1.Text = "Jackery Solar Generator 1500, \r\n1800W Generator Explorer \r\n1500 and SolarSaga 100" +
     "W";
@@ -160,12 +159,12 @@
             // LightBulbs1
             // 
             this.LightBulbs1.AutoSize = true;
-            this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.LightBulbs1.Location = new System.Drawing.Point(688, 113);
             this.LightBulbs1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LightBulbs1.Name = "LightBulbs1";
-            this.LightBulbs1.Size = new System.Drawing.Size(202, 100);
+            this.LightBulbs1.Size = new System.Drawing.Size(217, 110);
             this.LightBulbs1.TabIndex = 79;
             this.LightBulbs1.Text = "Special Feature\t(Null)\r\nBrand\tJackery\r\nWattage\t1800 watts\r\nVoltage\t110 Volts\r\nOut" +
     "put Wattage\t100 Watts";
@@ -226,7 +225,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AddToCart)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BuyNow)).EndInit();

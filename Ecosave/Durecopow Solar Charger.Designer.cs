@@ -93,12 +93,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(696, 350);
+            this.label2.Location = new System.Drawing.Point(700, 320);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(642, 220);
+            this.label2.Size = new System.Drawing.Size(689, 242);
             this.label2.TabIndex = 83;
             this.label2.Text = resources.GetString("label2.Text");
             // 
@@ -147,12 +147,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(699, 48);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(551, 100);
+            this.label1.Size = new System.Drawing.Size(612, 100);
             this.label1.TabIndex = 80;
             this.label1.Text = "Solar Charger, Durecopow 20000mAh Portable Outdoor \r\nWaterproof Solar Power Bank," +
     " Camping External Backup \r\nBattery Pack Dual 5V USB Ports Output, 2 Led Light Fl" +
@@ -161,12 +161,12 @@
             // LightBulbs1
             // 
             this.LightBulbs1.AutoSize = true;
-            this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LightBulbs1.Location = new System.Drawing.Point(700, 188);
+            this.LightBulbs1.Location = new System.Drawing.Point(700, 169);
             this.LightBulbs1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LightBulbs1.Name = "LightBulbs1";
-            this.LightBulbs1.Size = new System.Drawing.Size(592, 120);
+            this.LightBulbs1.Size = new System.Drawing.Size(641, 132);
             this.LightBulbs1.TabIndex = 79;
             this.LightBulbs1.Text = "Special Feature\t(Null)\r\nCompatible Phone Models\tAudiovox CDM3000\r\nColor\t20000mAh-" +
     "Orange\r\nRecommended Uses For Product\tCellular Phone,Camera,Iphone,Tablet,Tablets" +

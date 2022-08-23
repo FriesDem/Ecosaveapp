@@ -30,11 +30,11 @@ namespace Ecosave
         public string ZIP_Code { get; set; }
         public string Occupation { get; set; }
         public string Telephone { get; set; }
-        public Nullable<decimal> Budget_for_Utilities { get; set; }
-        public Nullable<decimal> Income { get; set; }
-        public Nullable<int> UserID { get; set; }
+        public decimal Budget_for_Utilities { get; set; }
+        public decimal Income { get; set; }
+        public int UserID { get; set; }
         public string CardNumber { get; set; }
-        public string CardExperation { get; set; }
+        public string CardExpiration { get; set; }
         public string CardCvv { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

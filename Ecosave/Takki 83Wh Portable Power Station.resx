@@ -557,16 +557,6 @@ and 1x USB C port(PD 30W) that deliver stable and secure power as you expect.
  It's a great choice for car tent, mobile office, hurricane emergency supplies, 
 RV camping accessories, road trip must haves, home appliances.</value>
   </data>
-  <data name="LightBulbs1.Text" xml:space="preserve">
-    <value>Special Feature	Portable, Rechargeable Battery, Quiet, Fast Charging, Outlets
-Brand	Takki
-Wattage	83.25 watt_hours
-Item Dimensions LxWxH	3.78 x 2.87 x 7.52 inches
-Item Weight	1.98 Pounds
-Voltage	110 Volts (AC)
-Runtime	13 hours
-</value>
-  </data>
   <data name="AddToCart.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABGdBTUEAALGPC/xhBQAAAx1JREFUeF7t
@@ -906,6 +896,16 @@ Runtime	13 hours
         GzOZTCYz+Eg2ZjKZTGbwkWzMZDKZzOAj2ZjJZDKZwUeyMZPJZDKDj2RjJpPJZAYfycZMJpPJDD6SjZlM
         JpMZfCQbM5lMJjP4SDZmMplMZvCRbMxkMpnM4CPZmMlkMpnBR7Ixk8lkMoOPZGMmk8lkBh/Jxkwmk8kM
         PpKNmUwmkxl8JBszmUwmM/hINmYymUxmsOH+5v8D7Fu8kzboV8UAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="LightBulbs1.Text" xml:space="preserve">
+    <value>Special Feature	Portable, Rechargeable Battery, Quiet, Fast Charging, Outlets
+Brand	Takki
+Wattage	83.25 watt_hours
+Item Dimensions LxWxH	3.78 x 2.87 x 7.52 inches
+Item Weight	1.98 Pounds
+Voltage	110 Volts (AC)
+Runtime	13 hours
 </value>
   </data>
   <data name="BacklogoBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

@@ -72,7 +72,7 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(81, 22);
+            this.Backbtn.Location = new System.Drawing.Point(74, 31);
             this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Backbtn.Name = "Backbtn";
             this.Backbtn.Size = new System.Drawing.Size(56, 25);
@@ -83,7 +83,7 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(29, 22);
+            this.BacklogoBtn.Location = new System.Drawing.Point(13, 22);
             this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
@@ -119,7 +119,7 @@
             // reveal2
             // 
             this.reveal2.Image = ((System.Drawing.Image)(resources.GetObject("reveal2.Image")));
-            this.reveal2.Location = new System.Drawing.Point(824, 692);
+            this.reveal2.Location = new System.Drawing.Point(824, 700);
             this.reveal2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.reveal2.Name = "reveal2";
             this.reveal2.Size = new System.Drawing.Size(37, 17);
@@ -131,7 +131,7 @@
             // reveal
             // 
             this.reveal.Image = ((System.Drawing.Image)(resources.GetObject("reveal.Image")));
-            this.reveal.Location = new System.Drawing.Point(824, 592);
+            this.reveal.Location = new System.Drawing.Point(824, 600);
             this.reveal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.reveal.Name = "reveal";
             this.reveal.Size = new System.Drawing.Size(37, 17);
@@ -142,7 +142,7 @@
             // 
             // btnsubmit
             // 
-            this.btnsubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsubmit.Location = new System.Drawing.Point(761, 728);
             this.btnsubmit.Margin = new System.Windows.Forms.Padding(4);
             this.btnsubmit.Name = "btnsubmit";
@@ -156,35 +156,38 @@
             // 
             this.tbconfirmpassword.BackColor = System.Drawing.Color.SteelBlue;
             this.tbconfirmpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbconfirmpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbconfirmpassword.ForeColor = System.Drawing.SystemColors.Window;
             this.tbconfirmpassword.Location = new System.Drawing.Point(441, 664);
             this.tbconfirmpassword.Margin = new System.Windows.Forms.Padding(4);
             this.tbconfirmpassword.Name = "tbconfirmpassword";
             this.tbconfirmpassword.PasswordChar = '*';
-            this.tbconfirmpassword.Size = new System.Drawing.Size(420, 22);
+            this.tbconfirmpassword.Size = new System.Drawing.Size(420, 30);
             this.tbconfirmpassword.TabIndex = 45;
             // 
             // tbpassword
             // 
             this.tbpassword.BackColor = System.Drawing.Color.SteelBlue;
             this.tbpassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbpassword.ForeColor = System.Drawing.SystemColors.Window;
             this.tbpassword.Location = new System.Drawing.Point(441, 564);
             this.tbpassword.Margin = new System.Windows.Forms.Padding(4);
             this.tbpassword.Name = "tbpassword";
             this.tbpassword.PasswordChar = '*';
-            this.tbpassword.Size = new System.Drawing.Size(420, 22);
+            this.tbpassword.Size = new System.Drawing.Size(420, 30);
             this.tbpassword.TabIndex = 44;
             // 
             // tbusername
             // 
             this.tbusername.BackColor = System.Drawing.Color.SteelBlue;
             this.tbusername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbusername.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbusername.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbusername.Location = new System.Drawing.Point(445, 358);
             this.tbusername.Margin = new System.Windows.Forms.Padding(4);
             this.tbusername.Name = "tbusername";
-            this.tbusername.Size = new System.Drawing.Size(416, 22);
+            this.tbusername.Size = new System.Drawing.Size(416, 30);
             this.tbusername.TabIndex = 42;
             // 
             // ConfirmPasswordlbl
@@ -238,30 +241,30 @@
             // AccountLbl
             // 
             this.AccountLbl.AutoSize = true;
-            this.AccountLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AccountLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AccountLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AccountLbl.Location = new System.Drawing.Point(696, 58);
             this.AccountLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AccountLbl.Name = "AccountLbl";
-            this.AccountLbl.Size = new System.Drawing.Size(140, 39);
+            this.AccountLbl.Size = new System.Drawing.Size(143, 38);
             this.AccountLbl.TabIndex = 37;
             this.AccountLbl.Text = "Account";
             // 
             // CreateanLbl
             // 
             this.CreateanLbl.AutoSize = true;
-            this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateanLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.CreateanLbl.Location = new System.Drawing.Point(522, 58);
+            this.CreateanLbl.Location = new System.Drawing.Point(513, 58);
             this.CreateanLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CreateanLbl.Name = "CreateanLbl";
-            this.CreateanLbl.Size = new System.Drawing.Size(166, 39);
+            this.CreateanLbl.Size = new System.Drawing.Size(169, 38);
             this.CreateanLbl.TabIndex = 36;
             this.CreateanLbl.Text = "Create an";
             // 
             // Cancel
             // 
-            this.Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cancel.Location = new System.Drawing.Point(653, 728);
             this.Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.Cancel.Name = "Cancel";
@@ -274,11 +277,12 @@
             // 
             this.tbemail.BackColor = System.Drawing.Color.SteelBlue;
             this.tbemail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tbemail.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbemail.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.tbemail.Location = new System.Drawing.Point(445, 457);
             this.tbemail.Margin = new System.Windows.Forms.Padding(4);
             this.tbemail.Name = "tbemail";
-            this.tbemail.Size = new System.Drawing.Size(416, 22);
+            this.tbemail.Size = new System.Drawing.Size(416, 30);
             this.tbemail.TabIndex = 43;
             // 
             // CAAForm

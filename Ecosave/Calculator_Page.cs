@@ -11,19 +11,23 @@ using System.Windows.Forms;
 namespace Ecosave
 {
     public partial class Calculator_Page : Form
+
     {
+        private readonly ECOSAVEEntities _db;
         private readonly ECOSAVEEntities ecosaveDB;
         private readonly Calculator calculator;
         private readonly Billing_Table billing;
         private readonly Devices_Table devices;
-
-        public Calculator_Page()
+        private User _user;
+        public Calculator_Page(User user)
         {
             InitializeComponent();
+            _db = new ECOSAVEEntities();
             ecosaveDB = new ECOSAVEEntities();
             calculator = new Calculator();
             billing = new Billing_Table();
             devices = new Devices_Table();
+            _user = user;
         }
         double dailyCost = 0, weeklyCost = 0, monthlyCost = 0, yearlyCost = 0;
         double fuelCost = 7.32, IPPCharge = 13.22, GCT = 0.15, finalCharge = 0, kwh = 0, hours;
@@ -65,6 +69,7 @@ namespace Ecosave
         {
             try
             {
+                var userid = _user.ID;
                 hours = Convert.ToDouble(txtHoursUsed.Text);
                 kwh = Convert.ToDouble(txtPowerOutput.Text);
                 finalCharge = ((fuelCost * kwh * hours) + (IPPCharge * kwh * hours));
@@ -79,7 +84,7 @@ namespace Ecosave
                 lblWeeklyCostDisplay.Text = "$ " + weeklyCost.ToString("N2") + " JMD";
                 lblMonthlyCostDisplay.Text = "$ " + monthlyCost.ToString("N2") + " JMD";
                 lblYearlyCostDisplay.Text = "$ " + yearlyCost.ToString("N2") + " JMD";
-
+                calculator.UserID = userid;
                 calculator.Device = device;
                 calculator.Power_Average = double.Parse(txtPowerOutput.Text);
                 calculator.Hours_Used = int.Parse(txtHoursUsed.Text);

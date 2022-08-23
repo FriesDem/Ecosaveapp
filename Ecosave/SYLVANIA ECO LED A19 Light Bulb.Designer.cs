@@ -70,12 +70,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(733, 270);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(579, 260);
+            this.label2.Size = new System.Drawing.Size(621, 286);
             this.label2.TabIndex = 87;
             this.label2.Text = resources.GetString("label2.Text");
             // 
@@ -95,7 +95,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1195, 564);
+            this.label3.Location = new System.Drawing.Point(1196, 583);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 25);
@@ -147,12 +147,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(755, 38);
+            this.label1.Location = new System.Drawing.Point(742, 36);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(517, 75);
+            this.label1.Size = new System.Drawing.Size(572, 75);
             this.label1.TabIndex = 80;
             this.label1.Text = "SYLVANIA ECO LED A19 Light Bulb,\r\n 60W Equivalent, Efficient 9W, 7 Year, 750 Lume" +
     "ns, \r\nNon-Dimmable, Frosted, 5000K, Daylight - 8 Pack (40883)";
@@ -160,12 +160,12 @@
             // LightBulbs1
             // 
             this.LightBulbs1.AutoSize = true;
-            this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LightBulbs1.Location = new System.Drawing.Point(805, 156);
+            this.LightBulbs1.Location = new System.Drawing.Point(743, 140);
             this.LightBulbs1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LightBulbs1.Name = "LightBulbs1";
-            this.LightBulbs1.Size = new System.Drawing.Size(383, 100);
+            this.LightBulbs1.Size = new System.Drawing.Size(410, 110);
             this.LightBulbs1.TabIndex = 79;
             this.LightBulbs1.Text = "Special Feature\tEnergy Efficient, Shatter Resistant\r\nLight Type\tLED\r\nIndoor/Outdo" +
     "or Usage\tOutdoor, Indoor\r\nWattage\t9 watts\r\nLight Color\tDaylight";

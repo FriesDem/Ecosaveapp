@@ -83,7 +83,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1344, 676);
+            this.label3.Location = new System.Drawing.Point(1339, 679);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 25);
@@ -93,12 +93,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(703, 308);
+            this.label2.Location = new System.Drawing.Point(703, 318);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(707, 340);
+            this.label2.Size = new System.Drawing.Size(746, 374);
             this.label2.TabIndex = 83;
             this.label2.Text = resources.GetString("label2.Text");
             // 
@@ -147,12 +147,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(702, 12);
+            this.label1.Location = new System.Drawing.Point(702, 11);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(396, 125);
+            this.label1.Size = new System.Drawing.Size(434, 125);
             this.label1.TabIndex = 80;
             this.label1.Text = "EF ECOFLOW Solar Generator RIVER Pro, \r\n720Wh Portable Power Station with \r\n160W " +
     "Solar Panel, Power Multiple Devices\r\n,Recharge 0-80% Within 1 Hour,\r\n for Campin" +
@@ -161,12 +161,12 @@
             // LightBulbs1
             // 
             this.LightBulbs1.AutoSize = true;
-            this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LightBulbs1.Location = new System.Drawing.Point(703, 153);
+            this.LightBulbs1.Location = new System.Drawing.Point(703, 154);
             this.LightBulbs1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LightBulbs1.Name = "LightBulbs1";
-            this.LightBulbs1.Size = new System.Drawing.Size(360, 140);
+            this.LightBulbs1.Size = new System.Drawing.Size(384, 154);
             this.LightBulbs1.TabIndex = 79;
             this.LightBulbs1.Text = "Special Feature\t(Null)\r\nBrand\tEF ECOFLOW\r\nWattage\t720 watt_hours\r\nItem Dimensions" +
     " LxWxH\t7.3 x 9.96 x 7.3 inches\r\nItem Weight\t16.8 Pounds\r\nVoltage\t110 Volts\r\nTota" +

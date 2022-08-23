@@ -64,7 +64,7 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(25, 44);
+            this.BacklogoBtn.Location = new System.Drawing.Point(16, 13);
             this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
@@ -78,7 +78,7 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(77, 44);
+            this.Backbtn.Location = new System.Drawing.Point(77, 22);
             this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Backbtn.Name = "Backbtn";
             this.Backbtn.Size = new System.Drawing.Size(56, 25);
@@ -101,50 +101,55 @@
             // 
             this.OccupationTB.BackColor = System.Drawing.Color.SteelBlue;
             this.OccupationTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.OccupationTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OccupationTB.Location = new System.Drawing.Point(374, 660);
             this.OccupationTB.Margin = new System.Windows.Forms.Padding(4);
             this.OccupationTB.Name = "OccupationTB";
-            this.OccupationTB.Size = new System.Drawing.Size(181, 22);
+            this.OccupationTB.Size = new System.Drawing.Size(181, 30);
             this.OccupationTB.TabIndex = 34;
             // 
             // ZipcodeTB
             // 
             this.ZipcodeTB.BackColor = System.Drawing.Color.SteelBlue;
             this.ZipcodeTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ZipcodeTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ZipcodeTB.Location = new System.Drawing.Point(374, 576);
             this.ZipcodeTB.Margin = new System.Windows.Forms.Padding(4);
             this.ZipcodeTB.Name = "ZipcodeTB";
-            this.ZipcodeTB.Size = new System.Drawing.Size(181, 22);
+            this.ZipcodeTB.Size = new System.Drawing.Size(181, 30);
             this.ZipcodeTB.TabIndex = 33;
             // 
             // StreetTB
             // 
             this.StreetTB.BackColor = System.Drawing.Color.SteelBlue;
             this.StreetTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StreetTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.StreetTB.Location = new System.Drawing.Point(374, 471);
             this.StreetTB.Margin = new System.Windows.Forms.Padding(4);
             this.StreetTB.Name = "StreetTB";
-            this.StreetTB.Size = new System.Drawing.Size(432, 22);
+            this.StreetTB.Size = new System.Drawing.Size(432, 30);
             this.StreetTB.TabIndex = 32;
             // 
             // ParishTB
             // 
             this.ParishTB.BackColor = System.Drawing.Color.SteelBlue;
             this.ParishTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ParishTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ParishTB.Location = new System.Drawing.Point(374, 386);
             this.ParishTB.Margin = new System.Windows.Forms.Padding(4);
             this.ParishTB.Name = "ParishTB";
-            this.ParishTB.Size = new System.Drawing.Size(432, 22);
+            this.ParishTB.Size = new System.Drawing.Size(432, 30);
             this.ParishTB.TabIndex = 31;
             // 
             // FNameTB
             // 
             this.FNameTB.BackColor = System.Drawing.Color.SteelBlue;
             this.FNameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FNameTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FNameTB.Location = new System.Drawing.Point(374, 293);
             this.FNameTB.Margin = new System.Windows.Forms.Padding(4);
             this.FNameTB.Name = "FNameTB";
-            this.FNameTB.Size = new System.Drawing.Size(191, 22);
+            this.FNameTB.Size = new System.Drawing.Size(191, 30);
             this.FNameTB.TabIndex = 30;
             // 
             // Occcupation
@@ -209,11 +214,11 @@
             // 
             // EditProfileSubbtn
             // 
-            this.EditProfileSubbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditProfileSubbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditProfileSubbtn.Location = new System.Drawing.Point(706, 800);
             this.EditProfileSubbtn.Margin = new System.Windows.Forms.Padding(4);
             this.EditProfileSubbtn.Name = "EditProfileSubbtn";
-            this.EditProfileSubbtn.Size = new System.Drawing.Size(100, 28);
+            this.EditProfileSubbtn.Size = new System.Drawing.Size(100, 32);
             this.EditProfileSubbtn.TabIndex = 35;
             this.EditProfileSubbtn.Text = "Submit";
             this.EditProfileSubbtn.UseVisualStyleBackColor = true;
@@ -221,10 +226,11 @@
             // 
             // btnedit
             // 
+            this.btnedit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnedit.Location = new System.Drawing.Point(251, 226);
             this.btnedit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnedit.Name = "btnedit";
-            this.btnedit.Size = new System.Drawing.Size(108, 23);
+            this.btnedit.Size = new System.Drawing.Size(108, 26);
             this.btnedit.TabIndex = 37;
             this.btnedit.Text = "Edit";
             this.btnedit.UseVisualStyleBackColor = true;
@@ -234,10 +240,11 @@
             // 
             this.LNameTB.BackColor = System.Drawing.Color.SteelBlue;
             this.LNameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LNameTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LNameTB.Location = new System.Drawing.Point(615, 293);
             this.LNameTB.Margin = new System.Windows.Forms.Padding(4);
             this.LNameTB.Name = "LNameTB";
-            this.LNameTB.Size = new System.Drawing.Size(191, 22);
+            this.LNameTB.Size = new System.Drawing.Size(191, 30);
             this.LNameTB.TabIndex = 38;
             // 
             // Phone

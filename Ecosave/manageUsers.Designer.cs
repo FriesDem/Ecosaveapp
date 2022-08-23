@@ -72,12 +72,12 @@
             // CreateanLbl
             // 
             this.CreateanLbl.AutoSize = true;
-            this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateanLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.CreateanLbl.Location = new System.Drawing.Point(822, 87);
             this.CreateanLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CreateanLbl.Name = "CreateanLbl";
-            this.CreateanLbl.Size = new System.Drawing.Size(230, 39);
+            this.CreateanLbl.Size = new System.Drawing.Size(234, 38);
             this.CreateanLbl.TabIndex = 23;
             this.CreateanLbl.Text = "Manage User ";
             // 
@@ -96,10 +96,11 @@
             // 
             // btnRefresh
             // 
+            this.btnRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRefresh.Location = new System.Drawing.Point(105, 265);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(99, 25);
+            this.btnRefresh.Size = new System.Drawing.Size(99, 30);
             this.btnRefresh.TabIndex = 25;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = true;
@@ -107,10 +108,11 @@
             // 
             // btnAddUser
             // 
+            this.btnAddUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddUser.Location = new System.Drawing.Point(105, 389);
             this.btnAddUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(99, 25);
+            this.btnAddUser.Size = new System.Drawing.Size(99, 29);
             this.btnAddUser.TabIndex = 26;
             this.btnAddUser.Text = "Add User";
             this.btnAddUser.UseVisualStyleBackColor = true;
@@ -118,10 +120,11 @@
             // 
             // btnResetPassword
             // 
+            this.btnResetPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnResetPassword.Location = new System.Drawing.Point(105, 527);
             this.btnResetPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnResetPassword.Name = "btnResetPassword";
-            this.btnResetPassword.Size = new System.Drawing.Size(155, 25);
+            this.btnResetPassword.Size = new System.Drawing.Size(155, 31);
             this.btnResetPassword.TabIndex = 27;
             this.btnResetPassword.Text = "Reset Password";
             this.btnResetPassword.UseVisualStyleBackColor = true;
@@ -129,10 +132,11 @@
             // 
             // btnDeactivateUser
             // 
-            this.btnDeactivateUser.Location = new System.Drawing.Point(105, 684);
+            this.btnDeactivateUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeactivateUser.Location = new System.Drawing.Point(106, 677);
             this.btnDeactivateUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeactivateUser.Name = "btnDeactivateUser";
-            this.btnDeactivateUser.Size = new System.Drawing.Size(259, 25);
+            this.btnDeactivateUser.Size = new System.Drawing.Size(259, 32);
             this.btnDeactivateUser.TabIndex = 28;
             this.btnDeactivateUser.Text = "Deactivate User / Activate";
             this.btnDeactivateUser.UseVisualStyleBackColor = true;

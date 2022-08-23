@@ -83,23 +83,23 @@
             // name
             // 
             this.name.AutoSize = true;
-            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.name.Location = new System.Drawing.Point(456, 241);
+            this.name.Location = new System.Drawing.Point(456, 234);
             this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(0, 17);
+            this.name.Size = new System.Drawing.Size(0, 25);
             this.name.TabIndex = 101;
             // 
             // lbname
             // 
             this.lbname.AutoSize = true;
-            this.lbname.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.lbname.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbname.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbname.Location = new System.Drawing.Point(456, 241);
+            this.lbname.Location = new System.Drawing.Point(456, 234);
             this.lbname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbname.Name = "lbname";
-            this.lbname.Size = new System.Drawing.Size(0, 17);
+            this.lbname.Size = new System.Drawing.Size(0, 25);
             this.lbname.TabIndex = 100;
             // 
             // panel2
@@ -221,12 +221,12 @@
             // EditProfileBtn
             // 
             this.EditProfileBtn.AutoSize = true;
-            this.EditProfileBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.EditProfileBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditProfileBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.EditProfileBtn.Location = new System.Drawing.Point(369, 294);
             this.EditProfileBtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EditProfileBtn.Name = "EditProfileBtn";
-            this.EditProfileBtn.Size = new System.Drawing.Size(76, 17);
+            this.EditProfileBtn.Size = new System.Drawing.Size(79, 18);
             this.EditProfileBtn.TabIndex = 93;
             this.EditProfileBtn.Text = "Edit Profile";
             this.EditProfileBtn.Click += new System.EventHandler(this.EditProfileBtn_Click);

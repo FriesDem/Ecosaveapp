@@ -53,19 +53,19 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Number of Rooms" Type="int" />
-          <Property Name="Number of Devices per Room" Type="int" />
+          <Property Name="Number of Rooms" Type="int" Nullable="false" />
+          <Property Name="Number of Devices per Room" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Items">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Name" Type="nvarchar" MaxLength="100" />
-          <Property Name="Type" Type="nvarchar" MaxLength="100" />
-          <Property Name="Cost" Type="money" />
-          <Property Name="Amount" Type="int" />
-          <Property Name="UserID" Type="int" />
+          <Property Name="Name" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Type" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Cost" Type="money" Nullable="false" />
+          <Property Name="Amount" Type="int" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
           <Property Name="IsActive" Type="bit" />
         </EntityType>
         <EntityType Name="Person Table">
@@ -73,18 +73,18 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="First Name" Type="nchar" MaxLength="50" />
-          <Property Name="Last Name" Type="nchar" MaxLength="50" />
-          <Property Name="Parish" Type="nchar" MaxLength="200" />
-          <Property Name="Street" Type="nchar" MaxLength="100" />
-          <Property Name="ZIP Code" Type="nchar" MaxLength="10" />
-          <Property Name="Occupation" Type="nchar" MaxLength="200" />
-          <Property Name="Telephone" Type="nchar" MaxLength="15" />
-          <Property Name="Budget for Utilities" Type="money" />
-          <Property Name="Income" Type="money" />
-          <Property Name="UserID" Type="int" />
+          <Property Name="First Name" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="Last Name" Type="nchar" MaxLength="50" Nullable="false" />
+          <Property Name="Parish" Type="nchar" MaxLength="200" Nullable="false" />
+          <Property Name="Street" Type="nchar" MaxLength="100" Nullable="false" />
+          <Property Name="ZIP Code" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="Occupation" Type="nchar" MaxLength="200" Nullable="false" />
+          <Property Name="Telephone" Type="nchar" MaxLength="15" Nullable="false" />
+          <Property Name="Budget for Utilities" Type="money" Nullable="false" />
+          <Property Name="Income" Type="money" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
           <Property Name="CardNumber" Type="nvarchar" MaxLength="50" />
-          <Property Name="CardExperation" Type="nvarchar" MaxLength="50" />
+          <Property Name="CardExpiration" Type="nvarchar" MaxLength="50" />
           <Property Name="CardCvv" Type="nvarchar" MaxLength="50" />
         </EntityType>
         <EntityType Name="Roles">
@@ -92,8 +92,8 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="name" Type="varchar" MaxLength="50" />
-          <Property Name="shortname" Type="varchar" MaxLength="50" />
+          <Property Name="name" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="shortname" Type="varchar" MaxLength="50" Nullable="false" />
         </EntityType>
         <EntityType Name="UserRoles">
           <Key>
@@ -150,7 +150,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Items_Users">
-          <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+          <End Role="Users" Type="Self.Users" Multiplicity="1" />
           <End Role="Items" Type="Self.Items" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Users">
@@ -310,19 +310,19 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Number_of_Rooms" Type="Int32" />
-          <Property Name="Number_of_Devices_per_Room" Type="Int32" />
+          <Property Name="Number_of_Rooms" Type="Int32" Nullable="false" />
+          <Property Name="Number_of_Devices_per_Room" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Item">
           <Key>
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="Type" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
-          <Property Name="Cost" Type="Decimal" Precision="19" Scale="4" />
-          <Property Name="Amount" Type="Int32" />
-          <Property Name="UserID" Type="Int32" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Type" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Cost" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="Amount" Type="Int32" Nullable="false" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
           <Property Name="IsActive" Type="Boolean" />
           <NavigationProperty Name="User" Relationship="ECOSAVEModel.FK_Items_Users" FromRole="Item" ToRole="User" />
         </EntityType>
@@ -331,18 +331,18 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="First_Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-          <Property Name="Last_Name" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
-          <Property Name="Parish" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
-          <Property Name="Street" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
-          <Property Name="ZIP_Code" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
-          <Property Name="Occupation" Type="String" MaxLength="200" FixedLength="true" Unicode="true" />
-          <Property Name="Telephone" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
-          <Property Name="Budget_for_Utilities" Type="Decimal" Precision="19" Scale="4" />
-          <Property Name="Income" Type="Decimal" Precision="19" Scale="4" />
-          <Property Name="UserID" Type="Int32" />
+          <Property Name="First_Name" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Last_Name" Type="String" Nullable="false" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="Parish" Type="String" Nullable="false" MaxLength="200" FixedLength="true" Unicode="true" />
+          <Property Name="Street" Type="String" Nullable="false" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="ZIP_Code" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Occupation" Type="String" Nullable="false" MaxLength="200" FixedLength="true" Unicode="true" />
+          <Property Name="Telephone" Type="String" Nullable="false" MaxLength="15" FixedLength="true" Unicode="true" />
+          <Property Name="Budget_for_Utilities" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="Income" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
           <Property Name="CardNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-          <Property Name="CardExperation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CardExpiration" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CardCvv" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Billing_Table" Relationship="ECOSAVEModel.FK_Billing_Table_PK_Person_Table" FromRole="Person_Table" ToRole="Billing_Table" />
           <NavigationProperty Name="Calculators" Relationship="ECOSAVEModel.FK_Calculator_Person_Table" FromRole="Person_Table" ToRole="Calculator" />
@@ -353,8 +353,8 @@
             <PropertyRef Name="id" />
           </Key>
           <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="shortname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="shortname" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="UserRoles" Relationship="ECOSAVEModel.FK_UserRoles_Roles" FromRole="Role" ToRole="UserRole" />
         </EntityType>
         <EntityType Name="UserRole">
@@ -416,7 +416,7 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="FK_Items_Users">
-          <End Type="ECOSAVEModel.User" Role="User" Multiplicity="0..1" />
+          <End Type="ECOSAVEModel.User" Role="User" Multiplicity="1" />
           <End Type="ECOSAVEModel.Item" Role="Item" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="User">
@@ -451,7 +451,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -529,7 +529,7 @@
             <EntityTypeMapping TypeName="ECOSAVEModel.Person_Table">
               <MappingFragment StoreEntitySet="Person Table">
                 <ScalarProperty Name="CardCvv" ColumnName="CardCvv" />
-                <ScalarProperty Name="CardExperation" ColumnName="CardExperation" />
+                <ScalarProperty Name="CardExpiration" ColumnName="CardExpiration" />
                 <ScalarProperty Name="CardNumber" ColumnName="CardNumber" />
                 <ScalarProperty Name="UserID" ColumnName="UserID" />
                 <ScalarProperty Name="Income" ColumnName="Income" />

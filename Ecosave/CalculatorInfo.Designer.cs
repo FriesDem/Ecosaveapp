@@ -86,6 +86,7 @@
             // 
             // btnsubmit
             // 
+            this.btnsubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsubmit.Location = new System.Drawing.Point(644, 635);
             this.btnsubmit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnsubmit.Name = "btnsubmit";
@@ -334,6 +335,7 @@
             // 
             // clear
             // 
+            this.clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clear.Location = new System.Drawing.Point(779, 635);
             this.clear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.clear.Name = "clear";

@@ -118,6 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="AddToCart.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABGdBTUEAALGPC/xhBQAAAx1JREFUeF7t
+        3MvLTVEYx/EXIYokEzF2GZi6jAyUvwAZi0wwIQMD5TJHKDLAVKJMjDBzy23OjHLJ/VZy/T4D9Q6etTvn
+        be317L3271ufEm+tvVbnPWevs44zoZRSSikV0lycxkf8TXiHG9iJOVBT6Ay8xU15htVQYzQd3+EtaJNv
+        WAc1YlNdaPMC86BGbNynjskOQI2YvbidxAd4i9nkKVSmZmArvIU2K6Ey9gDeQu+DytgheAt9Cypjdu/s
+        LfRPLIDKlN0KvoK32FugMnYe3kJfhMrYJngL/Qb2iFeZmo8f8BZ7LVTGbsJb6CNQGdsLb6EfQWVsObyF
+        /oOlUBmz9zi8xd4BlbHj8BZ6SOzU6RhmobU2wht8iGyxW2s2vsAbeGjeotWuwBt4aN6j1bbDG3horqHV
+        FsNu6bzBh2Q3Wu8hvMGHxPYVrXcY3uBD8RxFWgPvAobiHIrUdBgwBEUPPC7Au4ja/cYiFGszvAup3X0U
+        rekwoGZHUbzUYUDN1qN4qcOAWn2Fvd9TvBXwLqhWrW+7m0odBtSoyLY71Ql4F1WjItvuVEM5DCi27U5l
+        Lw6f4V1cTYptu5u6Cu/iatKJzxnWfhhQfNudqvbDgOLb7qZqPgwI2XanqvkwIGTbnarWw4CwbXeqWg8D
+        QrfdqWo8DAjddqeq8TAgdNudqrbDgPBtd1M1HQZ0YtudqqbDgE7/975l8C66b+wpcCE63W14F98nl9H5
+        NsC7+L74hVXoRWfhTaIPDqI3zcQleBPpslOYhl5l23K7C7EvvfIm1SX2Cf5t6HX2pvl+2D32a9gb6d5k
+        S7Ln4Ze4jl3QF3IppZRSSo2dnb3twV3YWZyxP9spRpvnclHjhrQET+Dd05rHsJ/JXdS4Idmjpmmy/9mk
+        cz7CosYNy35tvQl6bJeWq6hxw7oHb3KeO8hV1LhhjfMdH/azuYoaN6xxJvwJuYoaNyw9dRTK7le9yXly
+        vihFjRuW3TrZLZQ3wcnsZ3J++1bUuKHZpqBp0vZvbW1YIsYNzR419itqz4f2QmXsown2d20+oqLGVUop
+        pZRSSqkuNTHxDwuWI7uLwnbcAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEAAAAAAAD/2wBDAAkJCggKCAsLCQsKCwsLDhAMCgsNExcVEBQPFhISDhYSDxQP
@@ -514,25 +533,6 @@ Optimum Solar Efficiency: Jackery's Solarpeak Technology boosts a 30%
 more recharging efficiency with its MPPT solar regulartor.
  It takes 4 hours of solar energy to have 80% power for the Explorer
  1500 power station. The solar portable power is always consistent and stable.</value>
-  </data>
-  <data name="AddToCart.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAABGdBTUEAALGPC/xhBQAAAx1JREFUeF7t
-        3MvLTVEYx/EXIYokEzF2GZi6jAyUvwAZi0wwIQMD5TJHKDLAVKJMjDBzy23OjHLJ/VZy/T4D9Q6etTvn
-        be317L3271ufEm+tvVbnPWevs44zoZRSSikV0lycxkf8TXiHG9iJOVBT6Ay8xU15htVQYzQd3+EtaJNv
-        WAc1YlNdaPMC86BGbNynjskOQI2YvbidxAd4i9nkKVSmZmArvIU2K6Ey9gDeQu+DytgheAt9Cypjdu/s
-        LfRPLIDKlN0KvoK32FugMnYe3kJfhMrYJngL/Qb2iFeZmo8f8BZ7LVTGbsJb6CNQGdsLb6EfQWVsObyF
-        /oOlUBmz9zi8xd4BlbHj8BZ6SOzU6RhmobU2wht8iGyxW2s2vsAbeGjeotWuwBt4aN6j1bbDG3horqHV
-        FsNu6bzBh2Q3Wu8hvMGHxPYVrXcY3uBD8RxFWgPvAobiHIrUdBgwBEUPPC7Au4ja/cYiFGszvAup3X0U
-        rekwoGZHUbzUYUDN1qN4qcOAWn2Fvd9TvBXwLqhWrW+7m0odBtSoyLY71Ql4F1WjItvuVEM5DCi27U5l
-        Lw6f4V1cTYptu5u6Cu/iatKJzxnWfhhQfNudqvbDgOLb7qZqPgwI2XanqvkwIGTbnarWw4CwbXeqWg8D
-        QrfdqWo8DAjddqeq8TAgdNudqrbDgPBtd1M1HQZ0YtudqqbDgE7/975l8C66b+wpcCE63W14F98nl9H5
-        NsC7+L74hVXoRWfhTaIPDqI3zcQleBPpslOYhl5l23K7C7EvvfIm1SX2Cf5t6HX2pvl+2D32a9gb6d5k
-        S7Ln4Ze4jl3QF3IppZRSSo2dnb3twV3YWZyxP9spRpvnclHjhrQET+Dd05rHsJ/JXdS4Idmjpmmy/9mk
-        cz7CosYNy35tvQl6bJeWq6hxw7oHb3KeO8hV1LhhjfMdH/azuYoaN6xxJvwJuYoaNyw9dRTK7le9yXly
-        vihFjRuW3TrZLZQ3wcnsZ3J++1bUuKHZpqBp0vZvbW1YIsYNzR419itqz4f2QmXsown2d20+oqLGVUop
-        pZRSSqkuNTHxDwuWI7uLwnbcAAAAAElFTkSuQmCC
-</value>
   </data>
   <data name="BuyNow.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

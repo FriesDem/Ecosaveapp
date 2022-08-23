@@ -102,6 +102,7 @@
             // Total
             // 
             this.Total.BackColor = System.Drawing.Color.PowderBlue;
+            this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Total.Location = new System.Drawing.Point(1269, 624);
             this.Total.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Total.Name = "Total";
@@ -124,10 +125,11 @@
             // SubmitAmount
             // 
             this.SubmitAmount.BackColor = System.Drawing.Color.PowderBlue;
+            this.SubmitAmount.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SubmitAmount.Location = new System.Drawing.Point(144, 713);
             this.SubmitAmount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.SubmitAmount.Name = "SubmitAmount";
-            this.SubmitAmount.Size = new System.Drawing.Size(75, 27);
+            this.SubmitAmount.Size = new System.Drawing.Size(75, 32);
             this.SubmitAmount.TabIndex = 91;
             this.SubmitAmount.Text = "Submit";
             this.SubmitAmount.UseVisualStyleBackColor = false;
@@ -148,6 +150,7 @@
             // submit
             // 
             this.submit.BackColor = System.Drawing.Color.PowderBlue;
+            this.submit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.submit.Location = new System.Drawing.Point(1451, 267);
             this.submit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.submit.Name = "submit";
@@ -224,6 +227,7 @@
             // CardInfo
             // 
             this.CardInfo.BackColor = System.Drawing.Color.PowderBlue;
+            this.CardInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CardInfo.Location = new System.Drawing.Point(1368, 2);
             this.CardInfo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CardInfo.Name = "CardInfo";
@@ -248,24 +252,24 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(736, 83);
+            this.label10.Location = new System.Drawing.Point(736, 30);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(60, 29);
+            this.label10.Size = new System.Drawing.Size(71, 32);
             this.label10.TabIndex = 74;
             this.label10.Text = "Cart";
             // 
             // NameLbl
             // 
             this.NameLbl.AutoSize = true;
-            this.NameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.NameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NameLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NameLbl.Location = new System.Drawing.Point(665, -4);
+            this.NameLbl.Location = new System.Drawing.Point(632, -2);
             this.NameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLbl.Name = "NameLbl";
-            this.NameLbl.Size = new System.Drawing.Size(234, 29);
+            this.NameLbl.Size = new System.Drawing.Size(279, 32);
             this.NameLbl.TabIndex = 73;
             this.NameLbl.Text = "Eco Save Solutions";
             // 
@@ -281,6 +285,7 @@
             // Checkoutbtn
             // 
             this.Checkoutbtn.BackColor = System.Drawing.Color.PowderBlue;
+            this.Checkoutbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Checkoutbtn.Location = new System.Drawing.Point(1269, 713);
             this.Checkoutbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Checkoutbtn.Name = "Checkoutbtn";
@@ -293,6 +298,7 @@
             // deleteorder
             // 
             this.deleteorder.BackColor = System.Drawing.Color.PowderBlue;
+            this.deleteorder.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deleteorder.Location = new System.Drawing.Point(81, 624);
             this.deleteorder.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.deleteorder.Name = "deleteorder";
@@ -337,7 +343,7 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(16, 30);
+            this.BacklogoBtn.Location = new System.Drawing.Point(8, 21);
             this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);

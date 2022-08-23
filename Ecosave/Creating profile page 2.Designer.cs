@@ -74,34 +74,34 @@
             // CreateanLbl
             // 
             this.CreateanLbl.AutoSize = true;
-            this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateanLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.CreateanLbl.Location = new System.Drawing.Point(185, 30);
             this.CreateanLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CreateanLbl.Name = "CreateanLbl";
-            this.CreateanLbl.Size = new System.Drawing.Size(170, 39);
+            this.CreateanLbl.Size = new System.Drawing.Size(173, 38);
             this.CreateanLbl.TabIndex = 28;
             this.CreateanLbl.Text = "Setting up";
             // 
             // AccountLbl
             // 
             this.AccountLbl.AutoSize = true;
-            this.AccountLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AccountLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AccountLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AccountLbl.Location = new System.Drawing.Point(363, 30);
             this.AccountLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.AccountLbl.Name = "AccountLbl";
-            this.AccountLbl.Size = new System.Drawing.Size(216, 39);
+            this.AccountLbl.Size = new System.Drawing.Size(222, 38);
             this.AccountLbl.TabIndex = 40;
             this.AccountLbl.Text = "Your account";
             // 
             // SUYASubBtn
             // 
-            this.SUYASubBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SUYASubBtn.Location = new System.Drawing.Point(709, 668);
+            this.SUYASubBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SUYASubBtn.Location = new System.Drawing.Point(711, 665);
             this.SUYASubBtn.Margin = new System.Windows.Forms.Padding(4);
             this.SUYASubBtn.Name = "SUYASubBtn";
-            this.SUYASubBtn.Size = new System.Drawing.Size(136, 30);
+            this.SUYASubBtn.Size = new System.Drawing.Size(107, 34);
             this.SUYASubBtn.TabIndex = 45;
             this.SUYASubBtn.Text = "Submit";
             this.SUYASubBtn.UseVisualStyleBackColor = true;
@@ -135,31 +135,33 @@
             // 
             this.IncomeTB.BackColor = System.Drawing.Color.SteelBlue;
             this.IncomeTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.IncomeTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IncomeTB.Location = new System.Drawing.Point(916, 283);
             this.IncomeTB.Margin = new System.Windows.Forms.Padding(4);
             this.IncomeTB.Name = "IncomeTB";
-            this.IncomeTB.Size = new System.Drawing.Size(222, 22);
+            this.IncomeTB.Size = new System.Drawing.Size(222, 30);
             this.IncomeTB.TabIndex = 63;
             // 
             // BudgetTB
             // 
             this.BudgetTB.BackColor = System.Drawing.Color.SteelBlue;
             this.BudgetTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BudgetTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BudgetTB.Location = new System.Drawing.Point(392, 283);
             this.BudgetTB.Margin = new System.Windows.Forms.Padding(4);
             this.BudgetTB.Name = "BudgetTB";
-            this.BudgetTB.Size = new System.Drawing.Size(195, 22);
+            this.BudgetTB.Size = new System.Drawing.Size(195, 30);
             this.BudgetTB.TabIndex = 62;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label6.Location = new System.Drawing.Point(81, 151);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(424, 20);
+            this.label6.Size = new System.Drawing.Size(487, 25);
             this.label6.TabIndex = 68;
             this.label6.Text = "These information are collected to better define your bill";
             // 

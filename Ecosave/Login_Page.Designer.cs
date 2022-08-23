@@ -112,22 +112,24 @@
             // EmailTB1
             // 
             this.EmailTB1.BackColor = System.Drawing.Color.SteelBlue;
-            this.EmailTB1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.EmailTB1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmailTB1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.EmailTB1.Location = new System.Drawing.Point(439, 420);
             this.EmailTB1.Margin = new System.Windows.Forms.Padding(4);
             this.EmailTB1.Name = "EmailTB1";
-            this.EmailTB1.Size = new System.Drawing.Size(641, 22);
+            this.EmailTB1.Size = new System.Drawing.Size(641, 30);
             this.EmailTB1.TabIndex = 5;
             // 
             // PasswordTB2
             // 
             this.PasswordTB2.BackColor = System.Drawing.Color.SteelBlue;
-            this.PasswordTB2.ForeColor = System.Drawing.SystemColors.Window;
+            this.PasswordTB2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PasswordTB2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.PasswordTB2.Location = new System.Drawing.Point(439, 538);
             this.PasswordTB2.Margin = new System.Windows.Forms.Padding(4);
             this.PasswordTB2.Name = "PasswordTB2";
             this.PasswordTB2.PasswordChar = '*';
-            this.PasswordTB2.Size = new System.Drawing.Size(641, 22);
+            this.PasswordTB2.Size = new System.Drawing.Size(641, 30);
             this.PasswordTB2.TabIndex = 6;
             // 
             // ExitBtn
@@ -196,7 +198,7 @@
             // reveal
             // 
             this.reveal.Image = ((System.Drawing.Image)(resources.GetObject("reveal.Image")));
-            this.reveal.Location = new System.Drawing.Point(1042, 567);
+            this.reveal.Location = new System.Drawing.Point(1042, 575);
             this.reveal.Name = "reveal";
             this.reveal.Size = new System.Drawing.Size(38, 17);
             this.reveal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

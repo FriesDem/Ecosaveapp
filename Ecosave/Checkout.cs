@@ -94,7 +94,7 @@ namespace Ecosave
 
                         MessageBox.Show("Input Card Number info");
                     }
-                    if (person.CardExperation == null)
+                    if (person.CardExpiration == null)
                     {
                         MessageBox.Show("Input Card Date info");
                     }
@@ -103,7 +103,7 @@ namespace Ecosave
                         MessageBox.Show("Input Card  Ccvv info");
                     }
 
-                    if (person.CardNumber != null && person.CardExperation != null && person.CardCvv != null)
+                    if (person.CardNumber != null && person.CardExpiration != null && person.CardCvv != null)
                     {
 
 
@@ -151,7 +151,7 @@ namespace Ecosave
                         }
                         if (Cexp.Text != "")
                         {
-                            person.CardExperation = Cexp.Text;
+                            person.CardExpiration = Cexp.Text;
 
                             _db.SaveChanges();
                         }

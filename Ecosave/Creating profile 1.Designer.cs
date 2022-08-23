@@ -107,12 +107,12 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(155, 80);
+            this.label3.Location = new System.Drawing.Point(206, 78);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(223, 20);
+            this.label3.Size = new System.Drawing.Size(259, 25);
             this.label3.TabIndex = 81;
             this.label3.Text = "Please to enter relevant data";
             // 
@@ -165,11 +165,11 @@
             // 
             // btnsubmit
             // 
-            this.btnsubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsubmit.Location = new System.Drawing.Point(787, 707);
             this.btnsubmit.Margin = new System.Windows.Forms.Padding(4);
             this.btnsubmit.Name = "btnsubmit";
-            this.btnsubmit.Size = new System.Drawing.Size(100, 28);
+            this.btnsubmit.Size = new System.Drawing.Size(100, 31);
             this.btnsubmit.TabIndex = 76;
             this.btnsubmit.Text = "Submit";
             this.btnsubmit.UseVisualStyleBackColor = true;
@@ -294,12 +294,12 @@
             // 
             this.EditProfileLbl.AutoSize = true;
             this.EditProfileLbl.BackColor = System.Drawing.Color.SteelBlue;
-            this.EditProfileLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EditProfileLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditProfileLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.EditProfileLbl.Location = new System.Drawing.Point(509, 21);
             this.EditProfileLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.EditProfileLbl.Name = "EditProfileLbl";
-            this.EditProfileLbl.Size = new System.Drawing.Size(252, 39);
+            this.EditProfileLbl.Size = new System.Drawing.Size(257, 38);
             this.EditProfileLbl.TabIndex = 65;
             this.EditProfileLbl.Text = "Creating Profile";
             // 

@@ -134,32 +134,35 @@
             // 
             // tbpassword
             // 
-            this.tbpassword.BackColor = System.Drawing.Color.SteelBlue;
-            this.tbpassword.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbpassword.BackColor = System.Drawing.Color.White;
+            this.tbpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbpassword.ForeColor = System.Drawing.Color.Black;
             this.tbpassword.Location = new System.Drawing.Point(816, 341);
             this.tbpassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbpassword.Name = "tbpassword";
             this.tbpassword.PasswordChar = '*';
-            this.tbpassword.Size = new System.Drawing.Size(319, 22);
+            this.tbpassword.Size = new System.Drawing.Size(319, 30);
             this.tbpassword.TabIndex = 30;
             // 
             // tbconfirmpassword
             // 
-            this.tbconfirmpassword.BackColor = System.Drawing.Color.SteelBlue;
-            this.tbconfirmpassword.ForeColor = System.Drawing.SystemColors.Window;
+            this.tbconfirmpassword.BackColor = System.Drawing.Color.White;
+            this.tbconfirmpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbconfirmpassword.ForeColor = System.Drawing.Color.Black;
             this.tbconfirmpassword.Location = new System.Drawing.Point(816, 412);
             this.tbconfirmpassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbconfirmpassword.Name = "tbconfirmpassword";
             this.tbconfirmpassword.PasswordChar = '*';
-            this.tbconfirmpassword.Size = new System.Drawing.Size(319, 22);
+            this.tbconfirmpassword.Size = new System.Drawing.Size(319, 30);
             this.tbconfirmpassword.TabIndex = 31;
             // 
             // btnreset
             // 
+            this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreset.Location = new System.Drawing.Point(816, 465);
             this.btnreset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnreset.Name = "btnreset";
-            this.btnreset.Size = new System.Drawing.Size(75, 23);
+            this.btnreset.Size = new System.Drawing.Size(75, 27);
             this.btnreset.TabIndex = 32;
             this.btnreset.Text = "Reset";
             this.btnreset.UseVisualStyleBackColor = true;
@@ -167,10 +170,11 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(1059, 465);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(75, 27);
             this.btnCancel.TabIndex = 33;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;

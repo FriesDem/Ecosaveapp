@@ -12,9 +12,10 @@ namespace Ecosave
 {
     public partial class BillingPage : Form
     {
+        private readonly ECOSAVEEntities _db;
         private Billing_Table billing;
         private ECOSAVEEntities ecosaveDB;
-
+        private User _user;
         double energyCharge = 0, kwh = 0, fuelCost = 0, custCharge = 0, IPPCharge = 0, demandCharge = 0, finalCharge = 0;
 
         private void clear_Click(object sender, EventArgs e)
@@ -36,11 +37,13 @@ namespace Ecosave
         
 
         string readingType;
-        public BillingPage()
+        public BillingPage(User user)
         {
             InitializeComponent();
+            _db = new ECOSAVEEntities();
             billing = new Billing_Table();
             ecosaveDB = new ECOSAVEEntities();
+            _user = user;
         }
 
         private void BacklogoBtn_Click(object sender, EventArgs e)
@@ -52,6 +55,7 @@ namespace Ecosave
         {
             try
             {
+                var userid = _user.ID;
                 energyCharge = Convert.ToDouble(txtEnergyCharge.Text);
                 kwh = Convert.ToDouble(txtEnergyUsed.Text);
                 fuelCost = Convert.ToDouble(txtFuelCharge.Text);
@@ -62,7 +66,7 @@ namespace Ecosave
                 if (txtReadingType.Text == "Actual" || txtReadingType.Text == "Estimated")
                 {
                     readingType = txtReadingType.Text;
-
+                    billing.UserID = userid;
                     billing.Energy_Charge = energyCharge;
                     billing.Energy_Used = kwh;
                     billing.Fuel_Charge = fuelCost;
@@ -83,7 +87,7 @@ namespace Ecosave
 
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
                 MessageBox.Show("Something went wrong. Please Try Again");
