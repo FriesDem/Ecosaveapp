@@ -49,12 +49,9 @@
             this.txtCustomerCharge = new System.Windows.Forms.TextBox();
             this.txtIPPCharge = new System.Windows.Forms.TextBox();
             this.txtDemandCharge = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label9 = new System.Windows.Forms.Label();
+          
+          
+           
             this.lblFinalCharge = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();

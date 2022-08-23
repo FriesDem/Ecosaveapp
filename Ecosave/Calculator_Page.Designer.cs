@@ -53,9 +53,11 @@
             this.calculateBtn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.tblCalculator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.devicesTableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -70,18 +72,6 @@
             this.label2.Size = new System.Drawing.Size(127, 29);
             this.label2.TabIndex = 87;
             this.label2.Text = "Calculator";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1470, -103);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(742, 479);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 86;
-            this.pictureBox1.TabStop = false;
             // 
             // Backbtn
             // 
@@ -331,12 +321,25 @@
             this.label10.TabIndex = 87;
             this.label10.Text = "This will calculate the cost associated with a single device";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1477, -104);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(742, 479);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 91;
+            this.pictureBox1.TabStop = false;
+            // 
             // Calculator_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1942, 1102);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.tblCalculator);
             this.Controls.Add(this.label10);
@@ -356,6 +359,7 @@
             this.tblCalculator.ResumeLayout(false);
             this.tblCalculator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.devicesTableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -388,5 +392,6 @@
         private System.Windows.Forms.BindingSource devicesTableBindingSource;
        
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
