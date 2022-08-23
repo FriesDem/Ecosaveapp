@@ -70,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cms7)).BeginInit();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cms6)).BeginInit();
+            this.panel13.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bulb1)).BeginInit();
@@ -78,6 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bulb3)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bulb2)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -99,7 +101,7 @@
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
             this.BacklogoBtn.Location = new System.Drawing.Point(13, 14);
-            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
             this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -115,14 +117,12 @@
             this.panel1.Controls.Add(this.LightBulbs4);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.panel13);
             this.panel1.Controls.Add(this.LightBulbs3);
             this.panel1.Controls.Add(this.LightBulbs2);
             this.panel1.Controls.Add(this.LightBulbs1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.NameLbl);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -135,9 +135,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.SlateGray;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(547, 140);
+            this.label4.Location = new System.Drawing.Point(483, 56);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(311, 29);
@@ -147,9 +148,10 @@
             // LightBulbs6
             // 
             this.LightBulbs6.AutoSize = true;
+            this.LightBulbs6.BackColor = System.Drawing.Color.SlateGray;
             this.LightBulbs6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LightBulbs6.Location = new System.Drawing.Point(979, 818);
+            this.LightBulbs6.Location = new System.Drawing.Point(993, 711);
             this.LightBulbs6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LightBulbs6.Name = "LightBulbs6";
             this.LightBulbs6.Size = new System.Drawing.Size(132, 25);
@@ -160,9 +162,10 @@
             // LightBulbs5
             // 
             this.LightBulbs5.AutoSize = true;
+            this.LightBulbs5.BackColor = System.Drawing.Color.SlateGray;
             this.LightBulbs5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LightBulbs5.Location = new System.Drawing.Point(575, 818);
+            this.LightBulbs5.Location = new System.Drawing.Point(572, 711);
             this.LightBulbs5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LightBulbs5.Name = "LightBulbs5";
             this.LightBulbs5.Size = new System.Drawing.Size(132, 25);
@@ -173,9 +176,10 @@
             // LightBulbs4
             // 
             this.LightBulbs4.AutoSize = true;
+            this.LightBulbs4.BackColor = System.Drawing.Color.SlateGray;
             this.LightBulbs4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LightBulbs4.Location = new System.Drawing.Point(73, 818);
+            this.LightBulbs4.Location = new System.Drawing.Point(73, 711);
             this.LightBulbs4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LightBulbs4.Name = "LightBulbs4";
             this.LightBulbs4.Size = new System.Drawing.Size(335, 25);
@@ -185,9 +189,9 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel5.BackColor = System.Drawing.Color.SlateGray;
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(88, 549);
+            this.panel5.Location = new System.Drawing.Point(78, 442);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(323, 267);
@@ -217,9 +221,9 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel8.BackColor = System.Drawing.Color.SlateGray;
             this.panel8.Controls.Add(this.panel9);
-            this.panel8.Location = new System.Drawing.Point(884, 549);
+            this.panel8.Location = new System.Drawing.Point(883, 442);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(323, 267);
@@ -250,7 +254,7 @@
             // panel11
             // 
             this.panel11.Controls.Add(this.cms6);
-            this.panel11.Location = new System.Drawing.Point(487, 566);
+            this.panel11.Location = new System.Drawing.Point(13, 16);
             this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(325, 234);
@@ -258,8 +262,9 @@
             // 
             // cms6
             // 
+            this.cms6.BackColor = System.Drawing.Color.SteelBlue;
             this.cms6.Image = ((System.Drawing.Image)(resources.GetObject("cms6.Image")));
-            this.cms6.Location = new System.Drawing.Point(1, 0);
+            this.cms6.Location = new System.Drawing.Point(-2, 2);
             this.cms6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cms6.Name = "cms6";
             this.cms6.Size = new System.Drawing.Size(324, 233);
@@ -270,8 +275,9 @@
             // 
             // panel13
             // 
-            this.panel13.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel13.Location = new System.Drawing.Point(471, 549);
+            this.panel13.BackColor = System.Drawing.Color.SlateGray;
+            this.panel13.Controls.Add(this.panel11);
+            this.panel13.Location = new System.Drawing.Point(471, 442);
             this.panel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(359, 267);
@@ -280,9 +286,10 @@
             // LightBulbs3
             // 
             this.LightBulbs3.AutoSize = true;
+            this.LightBulbs3.BackColor = System.Drawing.Color.SlateGray;
             this.LightBulbs3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LightBulbs3.Location = new System.Drawing.Point(865, 478);
+            this.LightBulbs3.Location = new System.Drawing.Point(895, 379);
             this.LightBulbs3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LightBulbs3.Name = "LightBulbs3";
             this.LightBulbs3.Size = new System.Drawing.Size(352, 25);
@@ -293,9 +300,10 @@
             // LightBulbs2
             // 
             this.LightBulbs2.AutoSize = true;
+            this.LightBulbs2.BackColor = System.Drawing.Color.SlateGray;
             this.LightBulbs2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LightBulbs2.Location = new System.Drawing.Point(497, 478);
+            this.LightBulbs2.Location = new System.Drawing.Point(501, 379);
             this.LightBulbs2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LightBulbs2.Name = "LightBulbs2";
             this.LightBulbs2.Size = new System.Drawing.Size(291, 25);
@@ -306,9 +314,10 @@
             // LightBulbs1
             // 
             this.LightBulbs1.AutoSize = true;
+            this.LightBulbs1.BackColor = System.Drawing.Color.SlateGray;
             this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LightBulbs1.Location = new System.Drawing.Point(143, 478);
+            this.LightBulbs1.Location = new System.Drawing.Point(136, 379);
             this.LightBulbs1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LightBulbs1.Name = "LightBulbs1";
             this.LightBulbs1.Size = new System.Drawing.Size(209, 25);
@@ -318,9 +327,9 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel2.BackColor = System.Drawing.Color.SlateGray;
             this.panel2.Controls.Add(this.panel7);
-            this.panel2.Location = new System.Drawing.Point(85, 208);
+            this.panel2.Location = new System.Drawing.Point(78, 109);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(323, 267);
@@ -350,9 +359,9 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel4.BackColor = System.Drawing.Color.SlateGray;
             this.panel4.Controls.Add(this.panel12);
-            this.panel4.Location = new System.Drawing.Point(881, 208);
+            this.panel4.Location = new System.Drawing.Point(900, 110);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(323, 267);
@@ -371,7 +380,7 @@
             // bulb3
             // 
             this.bulb3.Image = ((System.Drawing.Image)(resources.GetObject("bulb3.Image")));
-            this.bulb3.Location = new System.Drawing.Point(0, 1);
+            this.bulb3.Location = new System.Drawing.Point(-3, 2);
             this.bulb3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bulb3.Name = "bulb3";
             this.bulb3.Size = new System.Drawing.Size(293, 233);
@@ -383,7 +392,7 @@
             // panel10
             // 
             this.panel10.Controls.Add(this.bulb2);
-            this.panel10.Location = new System.Drawing.Point(483, 225);
+            this.panel10.Location = new System.Drawing.Point(12, 17);
             this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(325, 234);
@@ -392,7 +401,7 @@
             // bulb2
             // 
             this.bulb2.Image = ((System.Drawing.Image)(resources.GetObject("bulb2.Image")));
-            this.bulb2.Location = new System.Drawing.Point(1, 0);
+            this.bulb2.Location = new System.Drawing.Point(5, 1);
             this.bulb2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bulb2.Name = "bulb2";
             this.bulb2.Size = new System.Drawing.Size(324, 233);
@@ -403,8 +412,9 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel3.Location = new System.Drawing.Point(467, 208);
+            this.panel3.BackColor = System.Drawing.Color.SlateGray;
+            this.panel3.Controls.Add(this.panel10);
+            this.panel3.Location = new System.Drawing.Point(471, 109);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(359, 267);
@@ -413,9 +423,10 @@
             // NameLbl
             // 
             this.NameLbl.AutoSize = true;
+            this.NameLbl.BackColor = System.Drawing.Color.SlateGray;
             this.NameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.NameLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NameLbl.Location = new System.Drawing.Point(575, 95);
+            this.NameLbl.Location = new System.Drawing.Point(522, 15);
             this.NameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLbl.Name = "NameLbl";
             this.NameLbl.Size = new System.Drawing.Size(234, 29);
@@ -425,10 +436,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 5);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1303, 935);
+            this.pictureBox1.Size = new System.Drawing.Size(1303, 940);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -437,11 +448,11 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1733, -18);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Location = new System.Drawing.Point(1473, -101);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(211, 171);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.Size = new System.Drawing.Size(742, 479);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 106;
             this.pictureBox2.TabStop = false;
             // 
@@ -450,11 +461,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1924, 1100);
-            this.Controls.Add(this.pictureBox2);
+            this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BacklogoBtn);
             this.Controls.Add(this.Backbtn);
+            this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Lightbulb";
@@ -472,6 +483,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cms7)).EndInit();
             this.panel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cms6)).EndInit();
+            this.panel13.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bulb1)).EndInit();
@@ -480,6 +492,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bulb3)).EndInit();
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bulb2)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

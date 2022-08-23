@@ -10,34 +10,40 @@ using System.Windows.Forms;
 
 namespace Ecosave
 {
-    public partial class btnClear : Form
+    public partial class BillingPage : Form
     {
+        private readonly ECOSAVEEntities _db;
         private Billing_Table billing;
         private ECOSAVEEntities ecosaveDB;
-
+        private User _user;
         double energyCharge = 0, kwh = 0, fuelCost = 0, custCharge = 0, IPPCharge = 0, demandCharge = 0, finalCharge = 0;
 
-      
-
-        private void btnClear_Click(object sender, EventArgs e)
+        private void clear_Click(object sender, EventArgs e)
         {
-            txtCustomerCharge.Text = "";
-            txtDemandCharge.Text = "";
-            txtEnergyCharge.Text = "";
-            txtEnergyUsed.Text = "";
-            txtExRate.Text = "";
-            txtFuelCharge.Text = "";
-            txtIPPCharge.Text = "";
-            txtReadingType.Text = "";
-            lblFinalCharge.Text = "";
+            {
+                txtCustomerCharge.Text = "";
+                txtDemandCharge.Text = "";
+                txtEnergyCharge.Text = "";
+                txtEnergyUsed.Text = "";
+                txtExRate.Text = "";
+                txtFuelCharge.Text = "";
+                txtIPPCharge.Text = "";
+                txtReadingType.Text = "";
+                lblFinalCharge.Text = "";
+            }
         }
 
+       
+        
+
         string readingType;
-        public btnClear()
+        public BillingPage(User user)
         {
             InitializeComponent();
+            _db = new ECOSAVEEntities();
             billing = new Billing_Table();
             ecosaveDB = new ECOSAVEEntities();
+            _user = user;
         }
 
         private void BacklogoBtn_Click(object sender, EventArgs e)
@@ -49,7 +55,6 @@ namespace Ecosave
         {
             try
             {
-                
                 energyCharge = Convert.ToDouble(txtEnergyCharge.Text);
                 kwh = Convert.ToDouble(txtEnergyUsed.Text);
                 fuelCost = Convert.ToDouble(txtFuelCharge.Text);
@@ -57,12 +62,9 @@ namespace Ecosave
                 IPPCharge = Convert.ToDouble(txtIPPCharge.Text);
                 demandCharge = Convert.ToDouble(txtDemandCharge.Text);
                 finalCharge = ((fuelCost * kwh) + (IPPCharge * kwh));
-                
-
                 if (txtReadingType.Text == "Actual" || txtReadingType.Text == "Estimated")
                 {
                     readingType = txtReadingType.Text;
-
                     billing.Energy_Charge = energyCharge;
                     billing.Energy_Used = kwh;
                     billing.Fuel_Charge = fuelCost;
@@ -83,7 +85,7 @@ namespace Ecosave
 
                 }
             }
-            catch (Exception ex)
+            catch (Exception )
             {
 
                 MessageBox.Show("Something went wrong. Please Try Again");

@@ -70,6 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Cms10)).BeginInit();
             this.panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cms9)).BeginInit();
+            this.panel13.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
@@ -78,6 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
+            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -115,14 +117,12 @@
             this.panel1.Controls.Add(this.PowerBanks5);
             this.panel1.Controls.Add(this.panel5);
             this.panel1.Controls.Add(this.panel8);
-            this.panel1.Controls.Add(this.panel11);
             this.panel1.Controls.Add(this.panel13);
             this.panel1.Controls.Add(this.PowerBanks3);
             this.panel1.Controls.Add(this.PowerBanks2);
             this.panel1.Controls.Add(this.PowerBanks);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.panel10);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Controls.Add(this.NameLbl);
             this.panel1.Controls.Add(this.pictureBox1);
@@ -135,9 +135,10 @@
             // PowerBanks4
             // 
             this.PowerBanks4.AutoSize = true;
+            this.PowerBanks4.BackColor = System.Drawing.Color.SlateGray;
             this.PowerBanks4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PowerBanks4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PowerBanks4.Location = new System.Drawing.Point(181, 818);
+            this.PowerBanks4.Location = new System.Drawing.Point(175, 718);
             this.PowerBanks4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PowerBanks4.Name = "PowerBanks4";
             this.PowerBanks4.Size = new System.Drawing.Size(132, 25);
@@ -148,9 +149,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.SlateGray;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(533, 138);
+            this.label4.Location = new System.Drawing.Point(496, 54);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(334, 29);
@@ -160,9 +162,10 @@
             // PowerBanks6
             // 
             this.PowerBanks6.AutoSize = true;
+            this.PowerBanks6.BackColor = System.Drawing.Color.SlateGray;
             this.PowerBanks6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PowerBanks6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PowerBanks6.Location = new System.Drawing.Point(977, 818);
+            this.PowerBanks6.Location = new System.Drawing.Point(971, 718);
             this.PowerBanks6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PowerBanks6.Name = "PowerBanks6";
             this.PowerBanks6.Size = new System.Drawing.Size(132, 25);
@@ -173,9 +176,10 @@
             // PowerBanks5
             // 
             this.PowerBanks5.AutoSize = true;
+            this.PowerBanks5.BackColor = System.Drawing.Color.SlateGray;
             this.PowerBanks5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PowerBanks5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PowerBanks5.Location = new System.Drawing.Point(573, 818);
+            this.PowerBanks5.Location = new System.Drawing.Point(567, 718);
             this.PowerBanks5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PowerBanks5.Name = "PowerBanks5";
             this.PowerBanks5.Size = new System.Drawing.Size(132, 25);
@@ -185,9 +189,9 @@
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel5.BackColor = System.Drawing.Color.SlateGray;
             this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(87, 549);
+            this.panel5.Location = new System.Drawing.Point(90, 449);
             this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(323, 267);
@@ -217,9 +221,9 @@
             // 
             // panel8
             // 
-            this.panel8.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel8.BackColor = System.Drawing.Color.SlateGray;
             this.panel8.Controls.Add(this.panel9);
-            this.panel8.Location = new System.Drawing.Point(883, 549);
+            this.panel8.Location = new System.Drawing.Point(886, 449);
             this.panel8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(323, 267);
@@ -250,7 +254,7 @@
             // panel11
             // 
             this.panel11.Controls.Add(this.cms9);
-            this.panel11.Location = new System.Drawing.Point(485, 566);
+            this.panel11.Location = new System.Drawing.Point(19, 18);
             this.panel11.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(325, 234);
@@ -258,11 +262,12 @@
             // 
             // cms9
             // 
+            this.cms9.BackColor = System.Drawing.Color.SteelBlue;
             this.cms9.Image = ((System.Drawing.Image)(resources.GetObject("cms9.Image")));
-            this.cms9.Location = new System.Drawing.Point(1, 0);
+            this.cms9.Location = new System.Drawing.Point(3, -1);
             this.cms9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cms9.Name = "cms9";
-            this.cms9.Size = new System.Drawing.Size(324, 233);
+            this.cms9.Size = new System.Drawing.Size(317, 233);
             this.cms9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.cms9.TabIndex = 0;
             this.cms9.TabStop = false;
@@ -270,8 +275,9 @@
             // 
             // panel13
             // 
-            this.panel13.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel13.Location = new System.Drawing.Point(469, 549);
+            this.panel13.BackColor = System.Drawing.Color.SlateGray;
+            this.panel13.Controls.Add(this.panel11);
+            this.panel13.Location = new System.Drawing.Point(472, 449);
             this.panel13.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(359, 267);
@@ -280,9 +286,10 @@
             // PowerBanks3
             // 
             this.PowerBanks3.AutoSize = true;
+            this.PowerBanks3.BackColor = System.Drawing.Color.SlateGray;
             this.PowerBanks3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PowerBanks3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PowerBanks3.Location = new System.Drawing.Point(881, 478);
+            this.PowerBanks3.Location = new System.Drawing.Point(888, 378);
             this.PowerBanks3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PowerBanks3.Name = "PowerBanks3";
             this.PowerBanks3.Size = new System.Drawing.Size(321, 25);
@@ -293,9 +300,10 @@
             // PowerBanks2
             // 
             this.PowerBanks2.AutoSize = true;
+            this.PowerBanks2.BackColor = System.Drawing.Color.SlateGray;
             this.PowerBanks2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PowerBanks2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PowerBanks2.Location = new System.Drawing.Point(467, 478);
+            this.PowerBanks2.Location = new System.Drawing.Point(474, 378);
             this.PowerBanks2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PowerBanks2.Name = "PowerBanks2";
             this.PowerBanks2.Size = new System.Drawing.Size(344, 25);
@@ -306,9 +314,10 @@
             // PowerBanks
             // 
             this.PowerBanks.AutoSize = true;
+            this.PowerBanks.BackColor = System.Drawing.Color.SlateGray;
             this.PowerBanks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PowerBanks.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.PowerBanks.Location = new System.Drawing.Point(84, 478);
+            this.PowerBanks.Location = new System.Drawing.Point(91, 378);
             this.PowerBanks.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PowerBanks.Name = "PowerBanks";
             this.PowerBanks.Size = new System.Drawing.Size(311, 25);
@@ -318,9 +327,9 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel2.BackColor = System.Drawing.Color.SlateGray;
             this.panel2.Controls.Add(this.panel7);
-            this.panel2.Location = new System.Drawing.Point(84, 208);
+            this.panel2.Location = new System.Drawing.Point(90, 109);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(323, 267);
@@ -350,9 +359,9 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.PowderBlue;
+            this.panel4.BackColor = System.Drawing.Color.SlateGray;
             this.panel4.Controls.Add(this.panel12);
-            this.panel4.Location = new System.Drawing.Point(880, 208);
+            this.panel4.Location = new System.Drawing.Point(886, 109);
             this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(323, 267);
@@ -383,7 +392,7 @@
             // panel10
             // 
             this.panel10.Controls.Add(this.pb2);
-            this.panel10.Location = new System.Drawing.Point(481, 225);
+            this.panel10.Location = new System.Drawing.Point(15, 18);
             this.panel10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(325, 234);
@@ -392,10 +401,10 @@
             // pb2
             // 
             this.pb2.Image = ((System.Drawing.Image)(resources.GetObject("pb2.Image")));
-            this.pb2.Location = new System.Drawing.Point(1, 0);
+            this.pb2.Location = new System.Drawing.Point(-1, -1);
             this.pb2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pb2.Name = "pb2";
-            this.pb2.Size = new System.Drawing.Size(324, 233);
+            this.pb2.Size = new System.Drawing.Size(331, 233);
             this.pb2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb2.TabIndex = 0;
             this.pb2.TabStop = false;
@@ -403,8 +412,9 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel3.Location = new System.Drawing.Point(465, 208);
+            this.panel3.BackColor = System.Drawing.Color.SlateGray;
+            this.panel3.Controls.Add(this.panel10);
+            this.panel3.Location = new System.Drawing.Point(471, 109);
             this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(359, 267);
@@ -413,9 +423,10 @@
             // NameLbl
             // 
             this.NameLbl.AutoSize = true;
+            this.NameLbl.BackColor = System.Drawing.Color.SlateGray;
             this.NameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.NameLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.NameLbl.Location = new System.Drawing.Point(573, 95);
+            this.NameLbl.Location = new System.Drawing.Point(557, 15);
             this.NameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NameLbl.Name = "NameLbl";
             this.NameLbl.Size = new System.Drawing.Size(234, 29);
@@ -425,10 +436,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(4, 5);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1303, 935);
+            this.pictureBox1.Size = new System.Drawing.Size(1303, 940);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -437,12 +448,12 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1715, -11);
+            this.pictureBox2.Location = new System.Drawing.Point(1467, -101);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(211, 171);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 89;
+            this.pictureBox2.Size = new System.Drawing.Size(742, 479);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 107;
             this.pictureBox2.TabStop = false;
             // 
             // Powerbank
@@ -450,11 +461,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1907, 1055);
-            this.Controls.Add(this.pictureBox2);
+            this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BacklogoBtn);
             this.Controls.Add(this.Backbtn);
+            this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Powerbank";
@@ -472,6 +483,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Cms10)).EndInit();
             this.panel11.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cms9)).EndInit();
+            this.panel13.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
@@ -480,6 +492,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
+            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

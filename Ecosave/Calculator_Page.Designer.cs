@@ -51,13 +51,11 @@
             this.devicesTableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.clearBtn = new System.Windows.Forms.Button();
             this.calculateBtn = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.tblCalculator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.devicesTableBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -66,20 +64,34 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(417, 36);
+            this.label2.Location = new System.Drawing.Point(556, 44);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 25);
+            this.label2.Size = new System.Drawing.Size(127, 29);
             this.label2.TabIndex = 87;
             this.label2.Text = "Calculator";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1470, -103);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(742, 479);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 86;
+            this.pictureBox1.TabStop = false;
             // 
             // Backbtn
             // 
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(50, 40);
+            this.Backbtn.Location = new System.Drawing.Point(78, 13);
+            this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Backbtn.Name = "Backbtn";
-            this.Backbtn.Size = new System.Drawing.Size(45, 20);
+            this.Backbtn.Size = new System.Drawing.Size(56, 25);
             this.Backbtn.TabIndex = 79;
             this.Backbtn.Text = "Back";
             // 
@@ -87,9 +99,10 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(10, 40);
+            this.BacklogoBtn.Location = new System.Drawing.Point(17, 13);
+            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
-            this.BacklogoBtn.Size = new System.Drawing.Size(40, 28);
+            this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
             this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BacklogoBtn.TabIndex = 78;
             this.BacklogoBtn.TabStop = false;
@@ -115,7 +128,8 @@
             this.tblCalculator.Controls.Add(this.txtPowerOutput, 1, 1);
             this.tblCalculator.Controls.Add(this.label1, 0, 0);
             this.tblCalculator.Controls.Add(this.cmboDeviceSelect, 1, 0);
-            this.tblCalculator.Location = new System.Drawing.Point(201, 119);
+            this.tblCalculator.Location = new System.Drawing.Point(268, 146);
+            this.tblCalculator.Margin = new System.Windows.Forms.Padding(4);
             this.tblCalculator.Name = "tblCalculator";
             this.tblCalculator.RowCount = 8;
             this.tblCalculator.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
@@ -126,15 +140,16 @@
             this.tblCalculator.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tblCalculator.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
             this.tblCalculator.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
-            this.tblCalculator.Size = new System.Drawing.Size(537, 344);
+            this.tblCalculator.Size = new System.Drawing.Size(716, 423);
             this.tblCalculator.TabIndex = 88;
             // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label7.Location = new System.Drawing.Point(3, 215);
+            this.label7.Location = new System.Drawing.Point(4, 260);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(137, 38);
+            this.label7.Size = new System.Drawing.Size(183, 47);
             this.label7.TabIndex = 0;
             this.label7.Text = "Weekly Cost";
             // 
@@ -142,100 +157,112 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label8.Location = new System.Drawing.Point(3, 258);
+            this.label8.Location = new System.Drawing.Point(4, 312);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(118, 24);
+            this.label8.Size = new System.Drawing.Size(151, 29);
             this.label8.TabIndex = 0;
             this.label8.Text = "Monthly Cost";
             // 
             // label9
             // 
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label9.Location = new System.Drawing.Point(3, 301);
+            this.label9.Location = new System.Drawing.Point(4, 364);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(123, 25);
+            this.label9.Size = new System.Drawing.Size(164, 31);
             this.label9.TabIndex = 0;
             this.label9.Text = "Yearly Cost";
             // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label3.Location = new System.Drawing.Point(3, 43);
+            this.label3.Location = new System.Drawing.Point(4, 52);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(198, 37);
+            this.label3.Size = new System.Drawing.Size(264, 46);
             this.label3.TabIndex = 0;
             this.label3.Text = "Power Output (Watts)";
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.Location = new System.Drawing.Point(3, 86);
+            this.label4.Location = new System.Drawing.Point(4, 104);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(179, 29);
+            this.label4.Size = new System.Drawing.Size(239, 36);
             this.label4.TabIndex = 0;
             this.label4.Text = "Hours Used (h)";
             // 
             // txtHoursUsed
             // 
-            this.txtHoursUsed.Location = new System.Drawing.Point(317, 89);
+            this.txtHoursUsed.Location = new System.Drawing.Point(422, 108);
+            this.txtHoursUsed.Margin = new System.Windows.Forms.Padding(4);
             this.txtHoursUsed.Name = "txtHoursUsed";
-            this.txtHoursUsed.Size = new System.Drawing.Size(103, 20);
+            this.txtHoursUsed.Size = new System.Drawing.Size(136, 22);
             this.txtHoursUsed.TabIndex = 2;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label6.Location = new System.Drawing.Point(3, 172);
+            this.label6.Location = new System.Drawing.Point(4, 208);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(127, 34);
+            this.label6.Size = new System.Drawing.Size(169, 42);
             this.label6.TabIndex = 0;
             this.label6.Text = "Daily Cost ";
             // 
             // lblWeeklyCostDisplay
             // 
             this.lblWeeklyCostDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblWeeklyCostDisplay.Location = new System.Drawing.Point(317, 215);
+            this.lblWeeklyCostDisplay.Location = new System.Drawing.Point(422, 260);
+            this.lblWeeklyCostDisplay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWeeklyCostDisplay.Name = "lblWeeklyCostDisplay";
-            this.lblWeeklyCostDisplay.Size = new System.Drawing.Size(217, 32);
+            this.lblWeeklyCostDisplay.Size = new System.Drawing.Size(289, 39);
             this.lblWeeklyCostDisplay.TabIndex = 0;
             // 
             // lblDailyCostDisplay
             // 
             this.lblDailyCostDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblDailyCostDisplay.Location = new System.Drawing.Point(317, 172);
+            this.lblDailyCostDisplay.Location = new System.Drawing.Point(422, 208);
+            this.lblDailyCostDisplay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDailyCostDisplay.Name = "lblDailyCostDisplay";
-            this.lblDailyCostDisplay.Size = new System.Drawing.Size(217, 32);
+            this.lblDailyCostDisplay.Size = new System.Drawing.Size(289, 39);
             this.lblDailyCostDisplay.TabIndex = 0;
             // 
             // lblYearlyCostDisplay
             // 
             this.lblYearlyCostDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblYearlyCostDisplay.Location = new System.Drawing.Point(317, 301);
+            this.lblYearlyCostDisplay.Location = new System.Drawing.Point(422, 364);
+            this.lblYearlyCostDisplay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblYearlyCostDisplay.Name = "lblYearlyCostDisplay";
-            this.lblYearlyCostDisplay.Size = new System.Drawing.Size(217, 32);
+            this.lblYearlyCostDisplay.Size = new System.Drawing.Size(289, 39);
             this.lblYearlyCostDisplay.TabIndex = 0;
             // 
             // lblMonthlyCostDisplay
             // 
             this.lblMonthlyCostDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblMonthlyCostDisplay.Location = new System.Drawing.Point(317, 258);
+            this.lblMonthlyCostDisplay.Location = new System.Drawing.Point(422, 312);
+            this.lblMonthlyCostDisplay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMonthlyCostDisplay.Name = "lblMonthlyCostDisplay";
-            this.lblMonthlyCostDisplay.Size = new System.Drawing.Size(217, 32);
+            this.lblMonthlyCostDisplay.Size = new System.Drawing.Size(289, 39);
             this.lblMonthlyCostDisplay.TabIndex = 0;
             // 
             // txtPowerOutput
             // 
-            this.txtPowerOutput.Location = new System.Drawing.Point(317, 46);
+            this.txtPowerOutput.Location = new System.Drawing.Point(422, 56);
+            this.txtPowerOutput.Margin = new System.Windows.Forms.Padding(4);
             this.txtPowerOutput.Name = "txtPowerOutput";
-            this.txtPowerOutput.Size = new System.Drawing.Size(103, 20);
+            this.txtPowerOutput.Size = new System.Drawing.Size(136, 22);
             this.txtPowerOutput.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Location = new System.Drawing.Point(4, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 37);
+            this.label1.Size = new System.Drawing.Size(121, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Device";
             // 
@@ -244,9 +271,10 @@
             this.cmboDeviceSelect.DataSource = this.devicesTableBindingSource;
             this.cmboDeviceSelect.DisplayMember = "Type Of Device";
             this.cmboDeviceSelect.FormattingEnabled = true;
-            this.cmboDeviceSelect.Location = new System.Drawing.Point(317, 3);
+            this.cmboDeviceSelect.Location = new System.Drawing.Point(422, 4);
+            this.cmboDeviceSelect.Margin = new System.Windows.Forms.Padding(4);
             this.cmboDeviceSelect.Name = "cmboDeviceSelect";
-            this.cmboDeviceSelect.Size = new System.Drawing.Size(185, 21);
+            this.cmboDeviceSelect.Size = new System.Drawing.Size(245, 24);
             this.cmboDeviceSelect.TabIndex = 3;
             this.cmboDeviceSelect.ValueMember = "ID";
             // 
@@ -256,9 +284,11 @@
             // 
             // clearBtn
             // 
-            this.clearBtn.Location = new System.Drawing.Point(656, 469);
+            this.clearBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearBtn.Location = new System.Drawing.Point(875, 577);
+            this.clearBtn.Margin = new System.Windows.Forms.Padding(4);
             this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(85, 29);
+            this.clearBtn.Size = new System.Drawing.Size(113, 36);
             this.clearBtn.TabIndex = 3;
             this.clearBtn.Text = "Clear";
             this.clearBtn.UseVisualStyleBackColor = true;
@@ -266,32 +296,24 @@
             // 
             // calculateBtn
             // 
-            this.calculateBtn.Location = new System.Drawing.Point(576, 469);
+            this.calculateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculateBtn.Location = new System.Drawing.Point(768, 577);
+            this.calculateBtn.Margin = new System.Windows.Forms.Padding(4);
             this.calculateBtn.Name = "calculateBtn";
-            this.calculateBtn.Size = new System.Drawing.Size(74, 29);
+            this.calculateBtn.Size = new System.Drawing.Size(99, 36);
             this.calculateBtn.TabIndex = 3;
             this.calculateBtn.Text = "Calculate";
             this.calculateBtn.UseVisualStyleBackColor = true;
             this.calculateBtn.Click += new System.EventHandler(this.calculateBtn_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1088, -34);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(158, 139);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 89;
-            this.pictureBox2.TabStop = false;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label5.Location = new System.Drawing.Point(197, 501);
+            this.label5.Location = new System.Drawing.Point(263, 617);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(489, 48);
+            this.label5.Size = new System.Drawing.Size(627, 58);
             this.label5.TabIndex = 90;
             this.label5.Text = "*The charges displayed here are subject to change. \r\nContact your Power Service P" +
     "rovider for more information";
@@ -302,20 +324,20 @@
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label10.Location = new System.Drawing.Point(203, 80);
+            this.label10.Location = new System.Drawing.Point(271, 98);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(508, 25);
+            this.label10.Size = new System.Drawing.Size(665, 29);
             this.label10.TabIndex = 87;
             this.label10.Text = "This will calculate the cost associated with a single device";
             // 
             // Calculator_Page
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1258, 640);
+            this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.tblCalculator);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label2);
@@ -324,7 +346,7 @@
             this.Controls.Add(this.calculateBtn);
             this.Controls.Add(this.clearBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Calculator_Page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "                                    ";
@@ -334,7 +356,6 @@
             this.tblCalculator.ResumeLayout(false);
             this.tblCalculator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.devicesTableBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,7 +382,6 @@
         private System.Windows.Forms.Button calculateBtn;
         private System.Windows.Forms.Button clearBtn;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmboDeviceSelect;
        

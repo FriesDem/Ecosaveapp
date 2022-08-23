@@ -91,7 +91,7 @@ namespace Ecosave
             {
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Calculate = new Calculator_Page();
+                var Calculate = new Calculator_Page(_user);
                 Calculate.MdiParent = this;
                 Calculate.Show();
             }
@@ -157,7 +157,7 @@ namespace Ecosave
             {
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var Calculate = new Calculator_Page();
+                var Calculate = new Calculator_Page(_user);
                 Calculate.MdiParent = this;
                 Calculate.Show();
             }
@@ -224,7 +224,7 @@ namespace Ecosave
             {
                 if (ActiveMdiChild != null)
                     ActiveMdiChild.Close();
-                var CalculatorInfo = new btnClear();
+                var CalculatorInfo = new BillingPage(_user);
                 CalculatorInfo.MdiParent = this;
                 CalculatorInfo.Show();
 

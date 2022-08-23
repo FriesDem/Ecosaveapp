@@ -45,8 +45,8 @@
             this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.billingTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.NavPanel.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -63,9 +63,10 @@
             this.NavPanel.Controls.Add(this.TipsBtn);
             this.NavPanel.Controls.Add(this.HomeBtn);
             this.NavPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.NavPanel.Location = new System.Drawing.Point(0, 9);
+            this.NavPanel.Location = new System.Drawing.Point(0, 11);
+            this.NavPanel.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.NavPanel.Name = "NavPanel";
-            this.NavPanel.Size = new System.Drawing.Size(1028, 63);
+            this.NavPanel.Size = new System.Drawing.Size(1924, 78);
             this.NavPanel.TabIndex = 41;
             // 
             // Storepage
@@ -73,9 +74,10 @@
             this.Storepage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Storepage.BackgroundImage")));
             this.Storepage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.Storepage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Storepage.Location = new System.Drawing.Point(920, 11);
+            this.Storepage.Location = new System.Drawing.Point(1227, 14);
+            this.Storepage.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Storepage.Name = "Storepage";
-            this.Storepage.Size = new System.Drawing.Size(77, 49);
+            this.Storepage.Size = new System.Drawing.Size(102, 60);
             this.Storepage.TabIndex = 4;
             this.Storepage.UseVisualStyleBackColor = true;
             this.Storepage.Click += new System.EventHandler(this.Storepage_Click);
@@ -85,9 +87,10 @@
             this.ProfileBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ProfileBtn.BackgroundImage")));
             this.ProfileBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ProfileBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ProfileBtn.Location = new System.Drawing.Point(812, 11);
+            this.ProfileBtn.Location = new System.Drawing.Point(1083, 14);
+            this.ProfileBtn.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.ProfileBtn.Name = "ProfileBtn";
-            this.ProfileBtn.Size = new System.Drawing.Size(77, 49);
+            this.ProfileBtn.Size = new System.Drawing.Size(102, 60);
             this.ProfileBtn.TabIndex = 3;
             this.ProfileBtn.UseVisualStyleBackColor = true;
             this.ProfileBtn.Click += new System.EventHandler(this.ProfileBtn_Click);
@@ -97,9 +100,10 @@
             this.CalculatorBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("CalculatorBtn.BackgroundImage")));
             this.CalculatorBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.CalculatorBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CalculatorBtn.Location = new System.Drawing.Point(698, 11);
+            this.CalculatorBtn.Location = new System.Drawing.Point(931, 14);
+            this.CalculatorBtn.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.CalculatorBtn.Name = "CalculatorBtn";
-            this.CalculatorBtn.Size = new System.Drawing.Size(77, 49);
+            this.CalculatorBtn.Size = new System.Drawing.Size(102, 60);
             this.CalculatorBtn.TabIndex = 2;
             this.CalculatorBtn.UseVisualStyleBackColor = true;
             this.CalculatorBtn.Click += new System.EventHandler(this.CalculatorBtn_Click);
@@ -109,9 +113,10 @@
             this.TipsBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TipsBtn.BackgroundImage")));
             this.TipsBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.TipsBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TipsBtn.Location = new System.Drawing.Point(581, 11);
+            this.TipsBtn.Location = new System.Drawing.Point(774, 14);
+            this.TipsBtn.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TipsBtn.Name = "TipsBtn";
-            this.TipsBtn.Size = new System.Drawing.Size(77, 49);
+            this.TipsBtn.Size = new System.Drawing.Size(102, 60);
             this.TipsBtn.TabIndex = 1;
             this.TipsBtn.UseVisualStyleBackColor = true;
             this.TipsBtn.Click += new System.EventHandler(this.TipsBtn_Click);
@@ -121,9 +126,10 @@
             this.HomeBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("HomeBtn.BackgroundImage")));
             this.HomeBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.HomeBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.HomeBtn.Location = new System.Drawing.Point(474, 11);
+            this.HomeBtn.Location = new System.Drawing.Point(632, 14);
+            this.HomeBtn.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.HomeBtn.Name = "HomeBtn";
-            this.HomeBtn.Size = new System.Drawing.Size(77, 49);
+            this.HomeBtn.Size = new System.Drawing.Size(102, 60);
             this.HomeBtn.TabIndex = 0;
             this.HomeBtn.UseVisualStyleBackColor = true;
             this.HomeBtn.Click += new System.EventHandler(this.HomeBtn_Click);
@@ -131,73 +137,87 @@
             // tsilogintext
             // 
             this.tsilogintext.Name = "tsilogintext";
-            this.tsilogintext.Size = new System.Drawing.Size(0, 13);
+            this.tsilogintext.Size = new System.Drawing.Size(0, 16);
             // 
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsilogintext});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 836);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 1029);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Padding = new System.Windows.Forms.Padding(1, 0, 10, 0);
-            this.statusStrip1.Size = new System.Drawing.Size(1440, 18);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(2, 0, 13, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1920, 22);
             this.statusStrip1.TabIndex = 12;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.Visible = false;
             // 
             // manageUserToolStripMenuItem
             // 
+            this.manageUserToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageUserToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Desktop;
             this.manageUserToolStripMenuItem.Name = "manageUserToolStripMenuItem";
-            this.manageUserToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.manageUserToolStripMenuItem.Size = new System.Drawing.Size(131, 26);
             this.manageUserToolStripMenuItem.Text = "Manage User";
             this.manageUserToolStripMenuItem.Click += new System.EventHandler(this.manageUserToolStripMenuItem_Click);
             // 
             // storeToolStripMenuItem
             // 
+            this.storeToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.storeToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Desktop;
             this.storeToolStripMenuItem.Name = "storeToolStripMenuItem";
-            this.storeToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.storeToolStripMenuItem.Size = new System.Drawing.Size(67, 26);
             this.storeToolStripMenuItem.Text = "Store";
             this.storeToolStripMenuItem.Click += new System.EventHandler(this.storeToolStripMenuItem_Click);
             // 
             // calculatorToolStripMenuItem
             // 
+            this.calculatorToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.calculatorToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Desktop;
             this.calculatorToolStripMenuItem.Name = "calculatorToolStripMenuItem";
-            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.calculatorToolStripMenuItem.Size = new System.Drawing.Size(105, 26);
             this.calculatorToolStripMenuItem.Text = "Calculator";
             this.calculatorToolStripMenuItem.Click += new System.EventHandler(this.calculatorToolStripMenuItem_Click);
             // 
             // profileToolStripMenuItem
             // 
+            this.profileToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.profileToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Desktop;
             this.profileToolStripMenuItem.Name = "profileToolStripMenuItem";
-            this.profileToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.profileToolStripMenuItem.Size = new System.Drawing.Size(75, 26);
             this.profileToolStripMenuItem.Text = "Profile";
             this.profileToolStripMenuItem.Click += new System.EventHandler(this.profileToolStripMenuItem_Click);
             // 
             // homeToolStripMenuItem
             // 
+            this.homeToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.homeToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Desktop;
             this.homeToolStripMenuItem.Name = "homeToolStripMenuItem";
-            this.homeToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.homeToolStripMenuItem.Size = new System.Drawing.Size(71, 26);
             this.homeToolStripMenuItem.Text = "Home";
             this.homeToolStripMenuItem.Click += new System.EventHandler(this.homeToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
+            this.logoutToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Desktop;
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(79, 26);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // tipsToolStripMenuItem
             // 
+            this.tipsToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tipsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.Desktop;
             this.tipsToolStripMenuItem.Name = "tipsToolStripMenuItem";
-            this.tipsToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.tipsToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
             this.tipsToolStripMenuItem.Text = "Tips";
             this.tipsToolStripMenuItem.Click += new System.EventHandler(this.tipsToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.CadetBlue;
+            this.menuStrip1.BackColor = System.Drawing.Color.SteelBlue;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.logoutToolStripMenuItem,
@@ -210,41 +230,47 @@
             this.billingTableToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1028, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(1924, 30);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.NavPanel);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 537);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1028, 72);
-            this.panel1.TabIndex = 43;
-            // 
             // billingTableToolStripMenuItem
             // 
+            this.billingTableToolStripMenuItem.BackColor = System.Drawing.Color.SteelBlue;
+            this.billingTableToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.billingTableToolStripMenuItem.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.billingTableToolStripMenuItem.Name = "billingTableToolStripMenuItem";
-            this.billingTableToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.billingTableToolStripMenuItem.Size = new System.Drawing.Size(123, 26);
             this.billingTableToolStripMenuItem.Text = "Billing Table";
             this.billingTableToolStripMenuItem.Click += new System.EventHandler(this.billingTableToolStripMenuItem_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.NavPanel);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 966);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1924, 89);
+            this.panel1.TabIndex = 43;
+            // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1028, 609);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.statusStrip1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Home";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Eco Save";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

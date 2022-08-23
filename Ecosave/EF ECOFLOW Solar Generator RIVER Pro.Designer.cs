@@ -61,19 +61,19 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.LightBulbs1);
-            this.panel1.Location = new System.Drawing.Point(180, 90);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(221, 48);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1139, 622);
+            this.panel1.Size = new System.Drawing.Size(1519, 766);
             this.panel1.TabIndex = 52;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(2, 0);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Location = new System.Drawing.Point(3, 0);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(504, 619);
+            this.pictureBox3.Size = new System.Drawing.Size(672, 762);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 86;
             this.pictureBox3.TabStop = false;
@@ -83,39 +83,41 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(1008, 549);
+            this.label3.Location = new System.Drawing.Point(1339, 679);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 20);
+            this.label3.Size = new System.Drawing.Size(67, 25);
             this.label3.TabIndex = 85;
-            this.label3.Text = "$30";
+            this.label3.Text = "$7300";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(527, 250);
+            this.label2.Location = new System.Drawing.Point(703, 318);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(592, 289);
+            this.label2.Size = new System.Drawing.Size(746, 374);
             this.label2.TabIndex = 83;
             this.label2.Text = resources.GetString("label2.Text");
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.AddToCart);
-            this.panel3.Location = new System.Drawing.Point(883, 574);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(1177, 706);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(80, 32);
+            this.panel3.Size = new System.Drawing.Size(107, 39);
             this.panel3.TabIndex = 82;
             // 
             // AddToCart
             // 
             this.AddToCart.Image = ((System.Drawing.Image)(resources.GetObject("AddToCart.Image")));
             this.AddToCart.Location = new System.Drawing.Point(0, 0);
-            this.AddToCart.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddToCart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.AddToCart.Name = "AddToCart";
-            this.AddToCart.Size = new System.Drawing.Size(80, 31);
+            this.AddToCart.Size = new System.Drawing.Size(107, 38);
             this.AddToCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.AddToCart.TabIndex = 0;
             this.AddToCart.TabStop = false;
@@ -124,19 +126,19 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.BuyNow);
-            this.panel2.Location = new System.Drawing.Point(984, 574);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(1312, 706);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(94, 32);
+            this.panel2.Size = new System.Drawing.Size(125, 39);
             this.panel2.TabIndex = 81;
             // 
             // BuyNow
             // 
             this.BuyNow.Image = ((System.Drawing.Image)(resources.GetObject("BuyNow.Image")));
             this.BuyNow.Location = new System.Drawing.Point(0, -2);
-            this.BuyNow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BuyNow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BuyNow.Name = "BuyNow";
-            this.BuyNow.Size = new System.Drawing.Size(94, 33);
+            this.BuyNow.Size = new System.Drawing.Size(125, 41);
             this.BuyNow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.BuyNow.TabIndex = 1;
             this.BuyNow.TabStop = false;
@@ -145,11 +147,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(548, 10);
+            this.label1.Location = new System.Drawing.Point(702, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(323, 100);
+            this.label1.Size = new System.Drawing.Size(434, 125);
             this.label1.TabIndex = 80;
             this.label1.Text = "EF ECOFLOW Solar Generator RIVER Pro, \r\n720Wh Portable Power Station with \r\n160W " +
     "Solar Panel, Power Multiple Devices\r\n,Recharge 0-80% Within 1 Hour,\r\n for Campin" +
@@ -158,11 +161,12 @@
             // LightBulbs1
             // 
             this.LightBulbs1.AutoSize = true;
-            this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LightBulbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LightBulbs1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LightBulbs1.Location = new System.Drawing.Point(549, 120);
+            this.LightBulbs1.Location = new System.Drawing.Point(703, 154);
+            this.LightBulbs1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LightBulbs1.Name = "LightBulbs1";
-            this.LightBulbs1.Size = new System.Drawing.Size(299, 119);
+            this.LightBulbs1.Size = new System.Drawing.Size(384, 154);
             this.LightBulbs1.TabIndex = 79;
             this.LightBulbs1.Text = "Special Feature\t(Null)\r\nBrand\tEF ECOFLOW\r\nWattage\t720 watt_hours\r\nItem Dimensions" +
     " LxWxH\t7.3 x 9.96 x 7.3 inches\r\nItem Weight\t16.8 Pounds\r\nVoltage\t110 Volts\r\nTota" +
@@ -172,9 +176,10 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(2, 11);
+            this.BacklogoBtn.Location = new System.Drawing.Point(3, 14);
+            this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
-            this.BacklogoBtn.Size = new System.Drawing.Size(40, 28);
+            this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
             this.BacklogoBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.BacklogoBtn.TabIndex = 54;
             this.BacklogoBtn.TabStop = false;
@@ -185,9 +190,10 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(44, 17);
+            this.Backbtn.Location = new System.Drawing.Point(59, 21);
+            this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Backbtn.Name = "Backbtn";
-            this.Backbtn.Size = new System.Drawing.Size(45, 20);
+            this.Backbtn.Size = new System.Drawing.Size(56, 25);
             this.Backbtn.TabIndex = 53;
             this.Backbtn.Text = "Back";
             // 
@@ -195,25 +201,26 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1306, -8);
+            this.pictureBox2.Location = new System.Drawing.Point(1475, -105);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(158, 139);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 55;
+            this.pictureBox2.Size = new System.Drawing.Size(742, 479);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 89;
             this.pictureBox2.TabStop = false;
             // 
             // EF_ECOFLOW_Solar_Generator_RIVER_Pro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1430, 857);
-            this.Controls.Add(this.pictureBox2);
+            this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.BacklogoBtn);
             this.Controls.Add(this.Backbtn);
+            this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "EF_ECOFLOW_Solar_Generator_RIVER_Pro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EF_ECOFLOW_Solar_Generator_RIVER_Pro";

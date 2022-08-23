@@ -32,7 +32,6 @@
             this.Backbtn = new System.Windows.Forms.Label();
             this.BacklogoBtn = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -43,7 +42,6 @@
             this.CreateanLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // Backbtn
@@ -51,7 +49,7 @@
             this.Backbtn.AutoSize = true;
             this.Backbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.Backbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Backbtn.Location = new System.Drawing.Point(65, 49);
+            this.Backbtn.Location = new System.Drawing.Point(65, 22);
             this.Backbtn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Backbtn.Name = "Backbtn";
             this.Backbtn.Size = new System.Drawing.Size(56, 25);
@@ -62,7 +60,7 @@
             // 
             this.BacklogoBtn.BackColor = System.Drawing.Color.Transparent;
             this.BacklogoBtn.Image = ((System.Drawing.Image)(resources.GetObject("BacklogoBtn.Image")));
-            this.BacklogoBtn.Location = new System.Drawing.Point(4, 39);
+            this.BacklogoBtn.Location = new System.Drawing.Point(4, 13);
             this.BacklogoBtn.Margin = new System.Windows.Forms.Padding(4);
             this.BacklogoBtn.Name = "BacklogoBtn";
             this.BacklogoBtn.Size = new System.Drawing.Size(53, 34);
@@ -75,35 +73,23 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(220, -66);
+            this.pictureBox1.Location = new System.Drawing.Point(1453, -104);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1892, 1429);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.Size = new System.Drawing.Size(742, 479);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 50;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(1285, -14);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(211, 171);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 52;
-            this.pictureBox2.TabStop = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(80, 226);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(609, 20);
+            this.label1.Size = new System.Drawing.Size(701, 25);
             this.label1.TabIndex = 60;
             this.label1.Text = "Please enter your email that was used to register and your username to validate ";
             // 
@@ -133,10 +119,11 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Location = new System.Drawing.Point(803, 543);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(75, 28);
             this.btnCancel.TabIndex = 57;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -144,10 +131,11 @@
             // 
             // btnreset
             // 
+            this.btnreset.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnreset.Location = new System.Drawing.Point(560, 543);
             this.btnreset.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnreset.Name = "btnreset";
-            this.btnreset.Size = new System.Drawing.Size(75, 23);
+            this.btnreset.Size = new System.Drawing.Size(75, 28);
             this.btnreset.TabIndex = 56;
             this.btnreset.Text = "Reset";
             this.btnreset.UseVisualStyleBackColor = true;
@@ -155,29 +143,31 @@
             // 
             // tbemail
             // 
+            this.tbemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbemail.Location = new System.Drawing.Point(560, 490);
             this.tbemail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbemail.Name = "tbemail";
-            this.tbemail.Size = new System.Drawing.Size(319, 22);
+            this.tbemail.Size = new System.Drawing.Size(319, 30);
             this.tbemail.TabIndex = 55;
             // 
             // tbusername
             // 
+            this.tbusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbusername.Location = new System.Drawing.Point(560, 418);
             this.tbusername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbusername.Name = "tbusername";
-            this.tbusername.Size = new System.Drawing.Size(319, 22);
+            this.tbusername.Size = new System.Drawing.Size(319, 30);
             this.tbusername.TabIndex = 54;
             // 
             // CreateanLbl
             // 
             this.CreateanLbl.AutoSize = true;
-            this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateanLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateanLbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.CreateanLbl.Location = new System.Drawing.Point(552, 119);
             this.CreateanLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CreateanLbl.Name = "CreateanLbl";
-            this.CreateanLbl.Size = new System.Drawing.Size(274, 39);
+            this.CreateanLbl.Size = new System.Drawing.Size(281, 38);
             this.CreateanLbl.TabIndex = 53;
             this.CreateanLbl.Text = "Password Reset ";
             // 
@@ -186,7 +176,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1469, 782);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -195,7 +185,6 @@
             this.Controls.Add(this.tbemail);
             this.Controls.Add(this.tbusername);
             this.Controls.Add(this.CreateanLbl);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Backbtn);
             this.Controls.Add(this.BacklogoBtn);
@@ -206,7 +195,6 @@
             this.Text = "ForgotPassword";
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,7 +205,6 @@
         private System.Windows.Forms.Label Backbtn;
         private System.Windows.Forms.PictureBox BacklogoBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

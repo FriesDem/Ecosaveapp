@@ -34,7 +34,7 @@ namespace Ecosave
         public Nullable<decimal> Income { get; set; }
         public Nullable<int> UserID { get; set; }
         public string CardNumber { get; set; }
-        public string CardExperation { get; set; }
+        public string CardExpiration { get; set; }
         public string CardCvv { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
