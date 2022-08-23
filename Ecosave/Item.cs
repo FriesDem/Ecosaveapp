@@ -17,9 +17,9 @@ namespace Ecosave
         public int ID { get; set; }
         public string Name { get; set; }
         public string Type { get; set; }
-        public decimal Cost { get; set; }
-        public int Amount { get; set; }
-        public int UserID { get; set; }
+        public Nullable<decimal> Cost { get; set; }
+        public Nullable<int> Amount { get; set; }
+        public Nullable<int> UserID { get; set; }
         public Nullable<bool> IsActive { get; set; }
     
         public virtual User User { get; set; }
