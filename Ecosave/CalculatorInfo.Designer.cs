@@ -49,10 +49,10 @@
             this.txtCustomerCharge = new System.Windows.Forms.TextBox();
             this.txtIPPCharge = new System.Windows.Forms.TextBox();
             this.txtDemandCharge = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.lblFinalCharge = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BacklogoBtn)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -84,7 +84,7 @@
             // 
             // btnsubmit
             // 
-            this.btnsubmit.Location = new System.Drawing.Point(450, 459);
+            this.btnsubmit.Location = new System.Drawing.Point(430, 459);
             this.btnsubmit.Margin = new System.Windows.Forms.Padding(2);
             this.btnsubmit.Name = "btnsubmit";
             this.btnsubmit.Size = new System.Drawing.Size(92, 29);
@@ -96,8 +96,8 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
@@ -116,7 +116,7 @@
             this.tableLayoutPanel1.Controls.Add(this.txtDemandCharge, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.lblFinalCharge, 1, 8);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(261, 134);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(261, 120);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 9;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11123F));
@@ -128,7 +128,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11123F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11123F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11013F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(563, 320);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(517, 334);
             this.tableLayoutPanel1.TabIndex = 28;
             // 
             // label1
@@ -145,7 +145,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label2.Location = new System.Drawing.Point(3, 35);
+            this.label2.Location = new System.Drawing.Point(3, 37);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(218, 24);
             this.label2.TabIndex = 0;
@@ -155,7 +155,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label3.Location = new System.Drawing.Point(3, 70);
+            this.label3.Location = new System.Drawing.Point(3, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(241, 24);
             this.label3.TabIndex = 0;
@@ -165,7 +165,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label4.Location = new System.Drawing.Point(3, 105);
+            this.label4.Location = new System.Drawing.Point(3, 111);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(140, 24);
             this.label4.TabIndex = 0;
@@ -175,7 +175,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label5.Location = new System.Drawing.Point(3, 140);
+            this.label5.Location = new System.Drawing.Point(3, 148);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(129, 24);
             this.label5.TabIndex = 0;
@@ -185,7 +185,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label6.Location = new System.Drawing.Point(3, 175);
+            this.label6.Location = new System.Drawing.Point(3, 185);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(185, 24);
             this.label6.TabIndex = 0;
@@ -195,7 +195,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label7.Location = new System.Drawing.Point(3, 210);
+            this.label7.Location = new System.Drawing.Point(3, 222);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(208, 24);
             this.label7.TabIndex = 0;
@@ -205,7 +205,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label8.Location = new System.Drawing.Point(3, 245);
+            this.label8.Location = new System.Drawing.Point(3, 259);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(149, 24);
             this.label8.TabIndex = 0;
@@ -213,59 +213,78 @@
             // 
             // txtEnergyUsed
             // 
-            this.txtEnergyUsed.Location = new System.Drawing.Point(284, 3);
+            this.txtEnergyUsed.Location = new System.Drawing.Point(347, 3);
             this.txtEnergyUsed.Name = "txtEnergyUsed";
             this.txtEnergyUsed.Size = new System.Drawing.Size(100, 20);
             this.txtEnergyUsed.TabIndex = 1;
             // 
             // txtFuelCharge
             // 
-            this.txtFuelCharge.Location = new System.Drawing.Point(284, 38);
+            this.txtFuelCharge.Location = new System.Drawing.Point(347, 40);
             this.txtFuelCharge.Name = "txtFuelCharge";
             this.txtFuelCharge.Size = new System.Drawing.Size(100, 20);
             this.txtFuelCharge.TabIndex = 1;
             // 
             // txtEnergyCharge
             // 
-            this.txtEnergyCharge.Location = new System.Drawing.Point(284, 73);
+            this.txtEnergyCharge.Location = new System.Drawing.Point(347, 77);
             this.txtEnergyCharge.Name = "txtEnergyCharge";
             this.txtEnergyCharge.Size = new System.Drawing.Size(100, 20);
             this.txtEnergyCharge.TabIndex = 1;
             // 
             // txtExRate
             // 
-            this.txtExRate.Location = new System.Drawing.Point(284, 108);
+            this.txtExRate.Location = new System.Drawing.Point(347, 114);
             this.txtExRate.Name = "txtExRate";
             this.txtExRate.Size = new System.Drawing.Size(100, 20);
             this.txtExRate.TabIndex = 1;
             // 
             // txtReadingType
             // 
-            this.txtReadingType.Location = new System.Drawing.Point(284, 143);
+            this.txtReadingType.Location = new System.Drawing.Point(347, 151);
             this.txtReadingType.Name = "txtReadingType";
             this.txtReadingType.Size = new System.Drawing.Size(100, 20);
             this.txtReadingType.TabIndex = 1;
             // 
             // txtCustomerCharge
             // 
-            this.txtCustomerCharge.Location = new System.Drawing.Point(284, 178);
+            this.txtCustomerCharge.Location = new System.Drawing.Point(347, 188);
             this.txtCustomerCharge.Name = "txtCustomerCharge";
             this.txtCustomerCharge.Size = new System.Drawing.Size(100, 20);
             this.txtCustomerCharge.TabIndex = 1;
             // 
             // txtIPPCharge
             // 
-            this.txtIPPCharge.Location = new System.Drawing.Point(284, 213);
+            this.txtIPPCharge.Location = new System.Drawing.Point(347, 225);
             this.txtIPPCharge.Name = "txtIPPCharge";
             this.txtIPPCharge.Size = new System.Drawing.Size(100, 20);
             this.txtIPPCharge.TabIndex = 1;
             // 
             // txtDemandCharge
             // 
-            this.txtDemandCharge.Location = new System.Drawing.Point(284, 248);
+            this.txtDemandCharge.Location = new System.Drawing.Point(347, 262);
             this.txtDemandCharge.Name = "txtDemandCharge";
             this.txtDemandCharge.Size = new System.Drawing.Size(100, 20);
             this.txtDemandCharge.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.label9.Location = new System.Drawing.Point(3, 296);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(118, 24);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Final Charge";
+            // 
+            // lblFinalCharge
+            // 
+            this.lblFinalCharge.AutoSize = true;
+            this.lblFinalCharge.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.lblFinalCharge.Location = new System.Drawing.Point(347, 296);
+            this.lblFinalCharge.Name = "lblFinalCharge";
+            this.lblFinalCharge.Size = new System.Drawing.Size(0, 24);
+            this.lblFinalCharge.TabIndex = 0;
             // 
             // label11
             // 
@@ -289,28 +308,9 @@
             this.pictureBox2.TabIndex = 41;
             this.pictureBox2.TabStop = false;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label9.Location = new System.Drawing.Point(3, 280);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(118, 24);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Final Charge";
-            // 
-            // lblFinalCharge
-            // 
-            this.lblFinalCharge.AutoSize = true;
-            this.lblFinalCharge.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblFinalCharge.Location = new System.Drawing.Point(284, 280);
-            this.lblFinalCharge.Name = "lblFinalCharge";
-            this.lblFinalCharge.Size = new System.Drawing.Size(0, 24);
-            this.lblFinalCharge.TabIndex = 0;
-            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(546, 459);
+            this.button1.Location = new System.Drawing.Point(526, 459);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 29);

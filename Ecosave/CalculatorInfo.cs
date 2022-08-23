@@ -17,6 +17,8 @@ namespace Ecosave
 
         double energyCharge = 0, kwh = 0, fuelCost = 0, custCharge = 0, IPPCharge = 0, demandCharge = 0, finalCharge = 0;
 
+      
+
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtCustomerCharge.Text = "";
